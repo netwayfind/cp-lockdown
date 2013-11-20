@@ -11,7 +11,48 @@ Enabling Javascript for this page is recommended to filter content.
 <h1>Windows</h1>
 
 <div id="table-of-contents">
-<a href="#control-panel">Control Panel</a>
+<a href="#account-lockout-policy">Account Lockout Policy</a><br>
+<a href="#administrative-tools">Administrative Tools</a><br>
+<a href="#control-panel">Control Panel</a><br>
+<a href="#local-security-policy">Local Security Policy</a><br>
+<a href="#password-policy">Password Policy</a><br>
+</div>
+
+<div id="account-lockout-policy">
+<h2>Account Lockout Policy</h2>
+    <div class="win2003 win7 win2008r2">
+        <h3>Windows 7, Windows Server 2003, Windows Server 2008 R2</h3>
+        <ol>
+            <li>Open <a href="#local-security-policy">Local Security Policy</a></li>
+            <li>Open <b>Account Policies</b></li>
+            <li>Open <b>Account Lockout Policy</b></li>
+            <li>Change the following settings</li>
+            <ul>
+                <li>Account lockout duration - 30 minutes</li>
+                <li>Account lockout threshold - 5</li>
+                <li>Reset account lockout counter after - 30 minutes</li>
+            </ul>
+        </ol>
+    </div>
+</div>
+
+<div id="administrative-tools">
+    <h2>Administrative Tools</h2>
+    <div class="win2003">
+        <h3>Windows Server 2003</h3>
+        <ol>
+            <li>Press Start or Windows button</li>
+            <li>Find and move mouse over <b>Administrative Tools</b></li>
+        </ol>
+    </div>
+    <div class="win7 win2008r2">
+        <h3>Windows 7, Windows Server 2008 R2</h3>
+        <ol>
+            <li>Open <b>Control Panel</b></li>
+            <li>Open <b>System and Security</b></li>
+            <li>Open <b>Administrative Tools</b></li>
+        </ol>
+    </div>
 </div>
 
 <div id="control-panel">
@@ -28,6 +69,38 @@ Enabling Javascript for this page is recommended to filter content.
         <ol>
             <li>Press Start or Windows button</li>
             <li>Find and click on <strong>Control Panel</strong></li>
+        </ol>
+    </div>
+</div>
+
+<div id="local-security-policy">
+<h2>Local Security Policy</h2>
+    <div class"win7 win2003 win2008r2">
+        <h3>Windows 7, Windows Server 2003, Windows Server 2008 R2</h3>
+        <ol>
+            <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
+            <li>Open <b>Local Security Policy</b></li>
+        </ol>
+    </div>
+</div>
+
+<div id="password-policy">
+    <h2>Password Policy</h2>
+    <div class"win7 win2003 win2008r2">
+        <h3>Windows 7, Windows Server 2003, Windows Server 2008 R2</h3>
+        <ol>
+            <li>Open <a href="#local-security-policy">Local Security Policy</a></li>
+            <li>Open <b>Account Policies</b></li>
+            <li>Open <b>Password Policy</b></li>
+            <li>Change the following settings</li>
+                <ul>
+                    <li>Enforce password history - 5 passwords remembered</li>
+                    <li>Maximum password age - 30 days</li>
+                    <li>Minimum password age - 5 days</li>
+                    <li>Minimum password length - 8 characters</li>
+                    <li>Password must meet complexity requirements - Enabled</li>
+                    <li>Store passwords using reversible encryption - Disabled</li>
+                </ul>
         </ol>
     </div>
 </div>
