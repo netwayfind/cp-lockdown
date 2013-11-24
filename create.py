@@ -57,7 +57,7 @@ def section(name, version, output_file):
         file_contents = get_contents(res_path(id))
     # if no default file, use TODO
     if file_contents is None:
-        file_contents = "TODO"
+        file_contents = "TODO\n<br />\n"
     output_file.write(file_contents)
     output_file.write("<a href=\"#toc\">Table of Contents</a>\n")
     output_file.write("</div>\n")
