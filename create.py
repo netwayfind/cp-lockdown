@@ -135,6 +135,7 @@ def for_windows_version(full_name, short_name):
     with open(filename, "w") as file:
         file.write("<!DOCTYPE html>\n")
         file.write("<head>\n")
+        file.write("<meta charset=\"UTF-8\">\n")
         file.write("<title>" + full_name + " Lockdown</title>\n") 
         file.write("</head>\n\n")
         file.write("<body>\n")
