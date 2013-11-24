@@ -57,6 +57,16 @@ def for_windows_version(full_name, short_name):
         file.write("</head>\n\n")
         file.write("<body>\n")
         file.write("<h1>" + full_name + "</h1>\n")
+        # table of contents
+        file.write("<div id=\"toc\">\n")
+        for topic in windows_toc:
+             file.write("<a href=\"#")
+             file.write(standard_id(topic))
+             file.write("\">")
+             file.write(topic)
+             file.write("</a><br />\n")
+        file.write("</div>\n")
+        # section contents
         for topic in windows_toc:
             section(topic, short_name, file)
         file.write("</body>\n")
