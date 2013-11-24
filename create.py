@@ -41,6 +41,8 @@ windows_toc = [
     ]
 
 def get_contents(file_path):
+    if file_path is None:
+        return None
     contents = ""
     try:
         with open(file_path, "r") as file:
@@ -52,10 +54,23 @@ def get_contents(file_path):
         contents = None
     return contents
 
-def res_path(file_prefix, version=None):
-    path = "res" + os.sep + file_prefix
-    if version is not None:
-        path += "-" + version
+def res_path(parts):
+    # if empty parts, no path
+    if not parts:
+        return None
+    # each part in parts makes up part of the file name
+    # [section]-[subsection]-...-[version].html
+    path = "res" + os.sep
+    first = True
+    for part in parts:
+        # add hyphen, except for first item
+        if first:
+            first = False
+        else:
+            # avoid consecutive hyphens
+            if path[-1] != '-':
+                path += '-'
+        path += standard_id(part)
     path += ".html"
     return path
 
@@ -85,10 +100,10 @@ def section(name, version, output_file):
     output_file.write("<div id=\"" + id + "\">\n")
     output_file.write("<h2>" + name + "</h2>\n")
     # look for file for specific version
-    file_contents = get_contents(res_path(id, version))
+    file_contents = get_contents(res_path([id, version]))
     # if no specific file, look for default file
     if file_contents is None:
-        file_contents = get_contents(res_path(id))
+        file_contents = get_contents(res_path([id]))
     # if no default file, use TODO
     if file_contents is None:
         file_contents = "TODO\n<br />\n"
