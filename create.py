@@ -15,12 +15,15 @@ def get_contents(file_path):
     except IOError:
         # if error, assume that file doesn't exist
         # when expected file is created, its contents will be used
-        # until then, put TODO placeholder
-        contents = "TODO"
+        contents = None
     return contents
 
-def res_path(file_prefix, version):
-    return "res" + os.sep + file_prefix + "-" + version + ".html"
+def res_path(file_prefix, version=None):
+    path = "res" + os.sep + file_prefix
+    if version is not None:
+        path += "-" + version
+    path += ".html"
+    return path
 
 def standard_id(str):
     output = ""
@@ -45,7 +48,15 @@ def section(name, version, output_file):
     output_file.write("<hr>\n")
     output_file.write("<div id=\"" + id + "\">\n")
     output_file.write("<h2>" + name + "</h2>\n")
-    output_file.write(get_contents(res_path(id, version)))
+    # look for file for specific version
+    file_contents = get_contents(res_path(id, version))
+    # if no specific file, look for default file
+    if file_contents is None:
+        file_contents = get_contents(res_path(id))
+    # if no default file, use TODO
+    if file_contents is None:
+        file_contents = "TODO"
+    output_file.write(file_contents)
     output_file.write("</div>\n")
 
 def for_windows_version(full_name, short_name):
