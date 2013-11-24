@@ -59,6 +59,7 @@ def section(name, version, output_file):
     if file_contents is None:
         file_contents = "TODO"
     output_file.write(file_contents)
+    output_file.write("<a href=\"#toc\">Table of Contents</a>\n")
     output_file.write("</div>\n")
 
 def for_windows_version(full_name, short_name):
