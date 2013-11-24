@@ -65,8 +65,17 @@
 <hr>
 <div id="add-remove-programs">
 <h2>Add/Remove Programs</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find <strong>Programs</strong></li>
+    <li>Find and click on <strong>Uninstall a Program</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Do not remove any necessary programs (e.g. Microsoft, Windows, CyberPatriot, any required by readme)</li>
+    <li>Uninstall all other programs</li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -83,36 +92,81 @@ TODO
 <hr>
 <div id="automatic-login">
 <h2>Automatic Login</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Press Start or Windows button</li>
+    <li>Type <strong>netpzwiz</strong>, press Enter key</li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Under <strong>Users</strong> tab
+        <ul>
+            <li>[x] Users must enter a user name and password to use this computer</li>
+        </ul>
+    </li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
 <div id="automatic-updates">
 <h2>Automatic Updates</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find and click on <strong>System and Security</strong></li>
+    <li>Find <strong>Windows Updates</strong></li>
+    <li>Find and click on <strong>Turn automatic updating on or off</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Under Important Updates
+        <ul>
+            <li>Install updates automatically (recommended)</li>
+            <li>Install new updates [ Every day ] at [ 3:00 AM ]</li>
+        </ul>
+    </li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
 <div id="c-drive">
 <h2>C:\ Drive</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Press Start or Windows button</li>
+    <li>Find and click on <strong>Computer</strong></li>
+    <li>Find and double click on <strong>Local Disk (C:)</strong></li>
+</ol>
+<h3>Settings</h3>
+These are the default folders. Carefully inspect all other folders and files not in the following list.
+<ul>
+    <li>PerfLogs</li>
+    <li><a href="#program-files">Program Files</a></li>
+    <li><a href="#program-files-x86-">Program Files (x86)</a></li>
+    <li>ProgramData (hidden)</li>
+    <li><a href="#users-folder">Users</a></li>
+    <li>Windows</li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
 <div id="command-prompt">
 <h2>Command Prompt</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Press Start or Windows button</li>
+    <li>Type <strong>cmd</strong>, press Enter key</li>
+</ol>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
 <div id="control-panel">
 <h2>Control Panel</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Press Start or Windows button</li>
+    <li>Find and click on <strong>Control Panel</strong></li>
+</ol>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -125,8 +179,18 @@ TODO
 <hr>
 <div id="disk-cleanup">
 <h2>Disk Cleanup</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Press Start or Windows button</li>
+    <li>Find and click on <strong>Computer</strong></li>
+    <li>Right click on <strong>Local Disk (C:)</strong></li>
+    <li>Find and click on <strong>Disk Cleanup</strong></li>
+    <li>Find and click on <strong>Clean up system files</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Put checkmarks for all items under <strong>Files to delete</strong></li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -139,15 +203,57 @@ TODO
 <hr>
 <div id="groups">
 <h2>Groups</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and open <strong>Computer Management</strong></li>
+    <li>Find and open <strong>System Tools</strong></li>
+    <li>Find and open <strong>Local Users and Groups</strong></li>
+    <li>Find and open <strong>Groups</strong></li>
+</ol>
+<h3>Settings</h3>
+Check the following groups.
+<ul>
+    <li>Administrators
+        <ul>
+            <li>only the users suppose to be here</li>
+        </ul>
+    </li>
+    <li>Users
+        <ul>
+            <li>only the users suppose to be on the system</li>
+        </ul>
+    </li>
+    <li>Backup Operators, Guests, Power Users
+        <ul>
+            <li>no users</li>
+        </ul>
+    </li>
+    <li>Other groups
+        <ul>
+            <li>check as needed</li>
+        </ul>
+    </li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
 <div id="hosts-file">
 <h2>Hosts file</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Open Notepad under an administrator account
+        <ul>
+            <li>Right click, select <strong>Run as Administrator</strong></li>
+        </ul>
+    </li>
+    <li>Open file: C:\windows\system32\drivers\etc\hosts</li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Default file has no entries, only has lines that are blank or start with #</li> 
+    <li>Disable any entry lines by adding a # to the start of the line</li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -181,8 +287,22 @@ TODO
 <hr>
 <div id="password-policy">
 <h2>Password Policy</h2>
-TODO
-<br />
+<h3>Location</h3>
+<ol>
+    <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and click on <strong>Local Security Policy</strong></li>
+    <li>Open <strong>Account Policies</strong></li>
+    <li>Open <strong>Password Policy</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Enforce password history - 5 passwords remembered</li>
+    <li>Maximum password age - 30 days</li>
+    <li>Minimum password age - 5 days</li>
+    <li>Minimum password length - 8 characters</li>
+    <li>Password must meet complexity requirements - Enabled</li>
+    <li>Store passwords using reversible encryption - Disabled</li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
