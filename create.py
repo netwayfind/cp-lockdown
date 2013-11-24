@@ -28,19 +28,21 @@ def res_path(file_prefix, version=None):
 def standard_id(str):
     output = ""
     last_char = None
+    current_char = None
     for c in str:
         # use lower case letters
         if re.match('[A-Z]', c):
-            output += c.lower()
+            current_char = c.lower()
         # accept lower case letters and numbers
         elif re.match('[a-z0-9]', c):
-            output += c
+            current_char = c
         # everything else to -
         else:
-            # don't do consecutive -
-            if last_char != '-':
-                output += '-'
-        last_char = c
+            current_char = '-'
+        # don't add consecutive -
+        if current_char != '-' or last_char != '-':
+            output += current_char
+            last_char = current_char
     return output
 
 def section(name, version, output_file):
