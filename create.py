@@ -1,4 +1,5 @@
 import os
+import re
 
 windows_toc = [
     'Account Lockout Policy',
@@ -21,8 +22,26 @@ def get_contents(file_path):
 def res_path(file_prefix, version):
     return "res" + os.sep + file_prefix + "-" + version + ".html"
 
+def standard_id(str):
+    output = ""
+    last_char = None
+    for c in str:
+        # use lower case letters
+        if re.match('[A-Z]', c):
+            output += c.lower()
+        # accept lower case letters and numbers
+        elif re.match('[a-z0-9]', c):
+            output += c
+        # everything else to -
+        else:
+            # don't do consecutive -
+            if last_char != '-':
+                output += '-'
+        last_char = c
+    return output
+
 def section(name, version, output_file):
-    id = name.lower().replace(" ", "-")
+    id = standard_id(name)
     output_file.write("<hr>\n")
     output_file.write("<div id=\"" + id + "\">\n")
     output_file.write("<h2>" + name + "</h2>\n")
