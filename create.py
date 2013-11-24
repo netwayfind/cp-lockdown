@@ -18,7 +18,7 @@ def section(name, win_ver, output_file):
     output_file.write(get_contents(res_path(id, win_ver)))
     output_file.write("</div>\n")
 
-def for_version(full_name, short_name):
+def for_windows_version(full_name, short_name):
     filename = short_name + ".html"
     with open(filename, "w") as file:
         file.write("<!DOCTYPE html>\n")
@@ -33,4 +33,4 @@ def for_version(full_name, short_name):
         file.write("</html>")
 
 # create for various windows versions
-for_version("Windows 7", "win7")
+for_windows_version("Windows 7", "win7")
