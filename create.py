@@ -94,20 +94,39 @@ def standard_id(str):
             last_char = current_char
     return output
 
+def get_subsection(parent_name, sub_name, version):
+    # look for specific version of subsection
+    file_contents = get_contents(res_path([parent_name, sub_name, version]))
+    # if no specific version, look for default contents for subsection
+    if file_contents is None:
+        file_contents = get_contents(res_path([parent_name, sub_name]))
+    return file_contents
+
 def section(name, version, output_file):
     id = standard_id(name)
     output_file.write("<hr>\n")
     output_file.write("<div id=\"" + id + "\">\n")
     output_file.write("<h2>" + name + "</h2>\n")
-    # look for file for specific version
-    file_contents = get_contents(res_path([id, version]))
-    # if no specific file, look for default file
-    if file_contents is None:
-        file_contents = get_contents(res_path([id]))
-    # if no default file, use TODO
-    if file_contents is None:
-        file_contents = "TODO\n<br />\n"
-    output_file.write(file_contents)
+    # look if section has location and settings subsections
+    location_subsection = get_subsection(id, 'location', version)
+    settings_subsection = get_subsection(id, 'settings', version)
+    if location_subsection is not None:
+        output_file.write("<h3>Location</h3>\n")
+        output_file.write(location_subsection)
+    if settings_subsection is not None:
+        output_file.write("<h3>Settings</h3>\n")
+        output_file.write(settings_subsection)
+    # if no subsections, look for section files
+    if location_subsection is None and settings_subsection is None:
+        # look for version-specific section file first
+        section_file = get_contents(res_path([id, version]))
+        # if no version-specific default file, look for default section file
+        if section_file is None:
+            section_file = get_contents(res_path([id]))
+        # if no default section file, use TODO
+        if section_file is None:
+            section_file = "TODO\n<br />\n"
+        output_file.write(section_file)
     output_file.write("<a href=\"#toc\">Table of Contents</a>\n")
     output_file.write("</div>\n")
 
