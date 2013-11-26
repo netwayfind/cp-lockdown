@@ -157,3 +157,4 @@ def for_windows_version(full_name, short_name):
 
 # create for various windows versions
 for_windows_version("Windows 7", "win7")
+for_windows_version("Windows Server 2008 R2", "win2008r2")
