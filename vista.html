@@ -112,18 +112,14 @@
 <h3>Location</h3>
 <ol>
     <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>System and Security</strong></li>
+    <li>Find and click on <strong>System</strong></li>
     <li>Find <strong>Windows Update</strong></li>
     <li>Find and click on <strong>Turn automatic updating on or off</strong></li>
 </ol>
 <h3>Settings</h3>
 <ul>
-    <li>Under Important Updates
-        <ul>
-            <li>Install updates automatically (recommended)</li>
-            <li>Install new updates [ Every day ] at [ 3:00 AM ]</li>
-        </ul>
-    </li>
+    <li>Install updates automatically (recommended)</li>
+    <li>Install new updates [ Every day ] at [ 3:00 AM ]</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -137,7 +133,7 @@
     <li>Find and double click on <strong>Local Disk (C:)</strong></li>
 </ol>
 <h3>Settings</h3>
-These are the default folders. Carefully inspect all other folders and files not in the following list.
+These are the default files and folders. Carefully inspect all other folders and files not in the following list.
 <ul>
     <li>PerfLogs</li>
     <li><a href="#program-files">Program Files</a></li>
@@ -145,6 +141,7 @@ These are the default folders. Carefully inspect all other folders and files not
     <li>ProgramData (hidden)</li>
     <li><a href="#users-folder">Users</a></li>
     <li>Windows</li>
+    <li>BOOTSECT.BAK</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -186,7 +183,7 @@ These are the default folders. Carefully inspect all other folders and files not
     <li>Right click on <strong>Local Disk (C:)</strong></li>
     <li>Select <strong>Properties</strong></li>
     <li>Find and click on <strong>Disk Cleanup</strong></li>
-    <li>Find and click on <strong>Clean up system files</strong></li>
+    <li>For Disk Cleanup Options, select <strong>Files from all users on this computer</strong></li>
     <li>Put checkmarks for all items under Files to delete</li>
     <li>Press <strong>OK</strong></li>
 </ol>
@@ -265,8 +262,13 @@ Check the following groups.
 </ol>
 <h3>Settings</h3>
 <ul>
-    <li>Default file has no entries, only has lines that are blank or start with #</li> 
     <li>Disable any entry lines by adding a # to the start of the line</li>
+    <li>Default file entries:
+        <ul>
+            <li>127.0.0.1 localhost</li>
+            <li>::1 localhost</li>
+        </ul>
+    </li> 
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -278,7 +280,7 @@ Check the following groups.
     <li>Open <a href="#control-panel">Control Panel</a></li>
     <li>Find and click on <strong>Network and Internet</strong></li>
     <li>Find and click on <strong>Network and Sharing Center</strong></li>
-    <li>Find and click on <strong>Change adapter settings</strong></li>
+    <li>Find and click on <strong>Manage network connections</strong></li>
 </ol>
 <h3>Settings</h3>
 For each Local Area Connection or Wireless Network Connection
@@ -359,25 +361,26 @@ Under the Security tab, security zone settings should be:
 <h3>Settings</h3>
 The following are Windows processes that should not be stopped.
 <ul>
-    <li>conhost.exe</li>
     <li>csrss.exe</li>
     <li>dwm.exe</li>
     <li>explorer.exe</li>
     <li>lsass.exe</li>
     <li>lsm.exe</li>
-    <li>MsMpEng.exe</li>
-    <li>msseces.exe</li>
-    <li>MisSrv.exe</li>
+    <li>mmc.exe</li>
+    <li>MSACui.exe</li>
+    <li>SearchIndexer</li>
     <li>services.exe</li>
+    <li>sidebar.exe</li>
+    <li>SLsvc.exe</li>
     <li>smss.exe</li>
     <li>spoolsv.exe</li>
     <li>svchost.exe</li>
     <li>System</li>
-    <li>taskhost.exe</li>
+    <li>taskeng.exe</li>
     <li>taskmgr.exe</li>
     <li>wininit.exe</li>
     <li>winlogon.exe</li>
-    <li>WmiPrvSE.exe</li>
+    <li>winauclt.exe</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -393,17 +396,21 @@ The following are Windows processes that should not be stopped.
 The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
 <ul>
     <li>Common Files</li>
-    <li>DVD Maker</li>
     <li>Internet Explorer</li>
     <li>Microsoft Baseline Security Analyzer</li>
     <li>Microsoft Security Client</li>
+    <li>Movie Maker</li>
+    <li>MSBuild</li>
+    <li>Reference Assemblies</li>
     <li>Uninstall Information (hidden)</li>
+    <li>Windows Calendar</li>
+    <li>Windows Collaboration</li>
     <li>Windows Defender</li>
     <li>Windows Mail</li>
     <li>Windows Media Player</li>
     <li>Windows NT</li>
-    <li>Windows Photo Viewer</li>
-    <li>Windows Portable Devices</li>
+    <li>Windows Photo Gallery</li>
+    <li>Windows Sidebar</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -416,18 +423,24 @@ The following folders are safe to leave alone. Carefully inspect all other folde
     <li>Find and open <strong>Program Files (x86)</strong></li>
 </ol>
 <h3>Settings</h3>
-The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list. 
+The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
 <ul>
     <li>Common Files</li>
     <li>Internet Explorer</li>
+    <li>Microsoft Baseline Security Analyzer</li>
     <li>Microsoft Security Client</li>
-    <li>Microsoft .NET</li>
+    <li>Movie Maker</li>
+    <li>MSBuild</li>
+    <li>Reference Assemblies</li>
     <li>Uninstall Information (hidden)</li>
+    <li>Windows Calendar</li>
+    <li>Windows Collaboration</li>
     <li>Windows Defender</li>
     <li>Windows Mail</li>
+    <li>Windows Media Player</li>
     <li>Windows NT</li>
-    <li>Windows Photo Viewer</li>
-    <li>Windows Portable Devices</li>
+    <li>Windows Photo Gallery</li>
+    <li>Windows Sidebar</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -437,7 +450,7 @@ The following folders are safe to leave alone. Carefully inspect all other folde
 <h3>Location</h3>
 <ol>
     <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>System and Security</strong></li>
+    <li>Find and click on <strong>System and Maintenance</strong></li>
     <li>Find and click on <strong>System</strong></li>
     <li>Find and click on <strong>Remote settings</strong></li>
 </ol>
@@ -454,7 +467,7 @@ Under Remote Assistance
 <h3>Location</h3>
 <ol>
     <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>System and Security</strong></li>
+    <li>Find and click on <strong>System and Maintenance</strong></li>
     <li>Find and click on <strong>System</strong></li>
     <li>Find and click on <strong>Remote settings</strong></li>
 </ol>
@@ -507,6 +520,10 @@ Do not remove any CyberPatriot resource if these tools bring it up. Remove and f
         </ul>
     </li>
 </ol>
+<h3>Settings</h3>
+<ul>
+    <li>For Windows Vista, the latest is Service Pack 2</li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -553,7 +570,7 @@ The following are default shares. Other shares may be deleted, unless required b
         </ul>
     </li>
     <li>IPC$ - [blank] - Windows</li>
-    <li>Users - C:\Users - Windows</li>
+    <li>Public - C:\Users\Public - Windows</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -661,11 +678,6 @@ The following folders are safe to leave alone. Carefully inspect all other folde
 <h3>Settings</h3>
 Uncheck all not mentioned in the following:
 <p></p>
-Minimum required
-<ul>
-    <li>Internet Explorer</li>
-    <li>Windows Search</li>
-</ul>
 May be required
 <ul>
     <li>Microsoft .NET Framework</li>
@@ -685,37 +697,30 @@ Only enable these if required by readme
 <h3>Location</h3>
 <ol>
     <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>System and Security</strong></li>
+    <li>Find and click on <strong>Security</strong></li>
     <li>Find and click on <strong>Windows Firewall</strong></li>
+    <li>Find and click on <strong>Turn Windows Firewall on or off</strong></li>
 </ol>
 <h3>Settings</h3>
-<ol>
-    <li>Find and click on <strong>Turn Windows Firewall on or off</strong></li>
-    <li>For Home, Work, and Public network location settings:
+<ul>
+    <li>Under the General tab
         <ul>
             <li>[x] Turn on Windows Firewall</li>
-            <li>[ ] Block all incoming connections, including those in the list of allowed programs</li>
-            <li>[x] Notify me when Windows Firewall blocks a new program</li>
+            <li>[ ] Block all incoming connections</li>
         </ul>
     </li>
-    <li>Press OK</li>
-    <li>Find and click on <strong>Allow a program or feature through Windows Firewall</strong></li> 
-    <li>Check that only Core Networking and required programs or services have checkmarks</li>
-    <li>Uncheck all other programs and features for both Home/Work (Private) and Public</li>
-    <li>Press OK</li>
-    <li>Find and click on <strong>Advanced settings</strong></li>
-    <li>For Domain Profile, Private Profile, and Public Profile
+    <li>Under the Exceptions tab
         <ul>
-            <li>Windows Firewall is on</li>
-            <li>Inbound connections that do not match a rule are blocked</li>
-            <li>Outbound connections that do not match a rule are not blocked</li>
+            <li>Only Core Networking and any required programs or services should have checkmarks</li>
+            <li>Uncheck all other programs and features</li>
         </ul>
     </li>
-    <li>Find and click on <strong>Inbound Rules</strong></li>
-    <li>Enable the <strong>Core Networking</strong> group and any required programs or services</li>
-    <li>Disable all other rules</strong>
-    <li>Repeat the same for <strong>Outbound Rules</strong></li>
-</ol>
+    <li>Under the Advanced tab
+        <ul>
+            <li>Put a checkmark on all Network connections</li>
+        </ul>
+    </li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -724,7 +729,7 @@ Only enable these if required by readme
 <h3>Location</h3>
 <ol>
     <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>System and Security</strong></li>
+    <li>Find and click on <strong>Security</strong></li>
     <li>Find <strong>Windows Update</strong></li>
 </ol>
 <h3>Settings</h3>
