@@ -1,3 +1,4 @@
+import json
 import os
 import re
 
@@ -155,7 +156,21 @@ def for_windows_version(full_name, short_name):
         file.write("</body>\n")
         file.write("</html>")
 
-# create for various windows versions
-for_windows_version("Windows 7", "win7")
-for_windows_version("Windows Server 2008 R2", "win2008r2")
-for_windows_version("Windows Server 2008", "win2008")
+def topic_json_file(file_path):
+    file_contents = get_contents(file_path)
+    topic = json.loads(file_contents)
+    full_name = topic["full_name"]
+    short_name = topic["short_name"]
+    type = topic["type"]
+
+    if type == 'windows':
+        for_windows_version(full_name, short_name)
+
+# get topics from toc directory
+toc_dir = 'toc'
+for filename in os.listdir(toc_dir):
+    # topics are expected to be in json files
+    if not filename.endswith('.json'):
+        continue
+    file_path = os.path.join(toc_dir, filename)
+    topic_json_file(file_path)
