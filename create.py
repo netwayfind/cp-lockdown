@@ -114,8 +114,13 @@ def for_windows_version(full_name, short_name, sections):
         file.write("</div>\n")
         # section contents
         for section in sections:
+            # first item in list is section title
             section_title = section[0]
-            create_section(section_title, short_name, file)
+            version = short_name
+            # if there is a second item, use it as version
+            if len(section) > 1:
+                version = section[1]
+            create_section(section_title, version, file)
         file.write("</body>\n")
         file.write("</html>")
 

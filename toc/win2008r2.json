@@ -4,14 +4,14 @@
 "sections": [
   ["Account Lockout Policy"],
   ["Add/Remove Programs"],
-  ["Administrative Tools"],
+  ["Administrative Tools", "server"],
   ["Automatic Login"],
   ["Automatic Updates"],
   ["C:\\ Drive"],
   ["Command Prompt"],
   ["Control Panel"],
   ["CrowdInspect"],
-  ["Disk Cleanup"],
+  ["Disk Cleanup", "server"],
   ["Find Unauthorized Files"],
   ["Groups"],
   ["Hosts file"],
@@ -36,7 +36,7 @@
   ["Users Folder"],
   ["Windows Features"],
   ["Windows Firewall"],
-  ["Windows Server Roles"],
+  ["Windows Server Roles", "server"],
   ["Windows Updates"]
   ]
 }
