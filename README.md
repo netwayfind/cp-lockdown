@@ -13,6 +13,6 @@ update information as needed.
   JSON file should contain a mapping for an operating system version's full
   name, short name, type (e.g. Windows), and sections.
 - /res directory - contains the source files for content sections. Sections may
-  have multiple version, as denoted by -<version> .
+  have multiple version, as denoted by -\<version\> .
 - create.py - Python script to recreate the .html guide files after revising
   files in the /toc or /res directories.
