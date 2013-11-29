@@ -2,45 +2,6 @@ import json
 import os
 import re
 
-windows_toc = [
-    'Account Lockout Policy',
-    'Add/Remove Programs',
-    'Administrative Tools',
-    'Automatic Login',
-    'Automatic Updates',
-    'C:\ Drive',
-    'Command Prompt',
-    'Control Panel',
-    'CrowdInspect',
-    'Disk Cleanup',
-    'Find Unauthorized Files',
-    'Groups',
-    'Hosts file',
-    'Internet Connection Sharing',
-    'Internet Explorer',
-    'Microsoft Baseline Security Analyzer',
-    'Microsoft Security Essentials',
-    'Password Policy',
-    'Processes',
-    'Program Files',
-    'Program Files (x86)',
-    'Remote Assistance',
-    'Remote Desktop',
-    'Rootkit Scanners',
-    'Service Packs',
-    'Services',
-    'Shared Folders',
-    'Show Hidden Files and Folders',
-    'Startup Programs',
-    'Task Manager',
-    'User Accounts',
-    'Users Folder',
-    'Windows Features',
-    'Windows Firewall',
-    'Windows Server Roles',
-    'Windows Updates',
-    ]
-
 def get_contents(file_path):
     if file_path is None:
         return None
@@ -103,7 +64,7 @@ def get_subsection(parent_name, sub_name, version):
         file_contents = get_contents(res_path([parent_name, sub_name]))
     return file_contents
 
-def section(name, version, output_file):
+def create_section(name, version, output_file):
     id = standard_id(name)
     output_file.write("<hr>\n")
     output_file.write("<div id=\"" + id + "\">\n")
@@ -131,7 +92,7 @@ def section(name, version, output_file):
     output_file.write("<a href=\"#toc\">Table of Contents</a>\n")
     output_file.write("</div>\n")
 
-def for_windows_version(full_name, short_name):
+def for_windows_version(full_name, short_name, sections):
     filename = short_name + ".html"
     with open(filename, "w") as file:
         file.write("<!DOCTYPE html>\n")
@@ -143,16 +104,18 @@ def for_windows_version(full_name, short_name):
         file.write("<h1>" + full_name + "</h1>\n")
         # table of contents
         file.write("<div id=\"toc\">\n")
-        for topic in windows_toc:
+        for section in sections:
+             section_title = section[0]
              file.write("<a href=\"#")
-             file.write(standard_id(topic))
+             file.write(standard_id(section_title))
              file.write("\">")
-             file.write(topic)
+             file.write(section_title)
              file.write("</a><br />\n")
         file.write("</div>\n")
         # section contents
-        for topic in windows_toc:
-            section(topic, short_name, file)
+        for section in sections:
+            section_title = section[0]
+            create_section(section_title, short_name, file)
         file.write("</body>\n")
         file.write("</html>")
 
@@ -162,9 +125,10 @@ def topic_json_file(file_path):
     full_name = topic["full_name"]
     short_name = topic["short_name"]
     type = topic["type"]
+    sections = topic["sections"]
 
     if type == 'windows':
-        for_windows_version(full_name, short_name)
+        for_windows_version(full_name, short_name, sections)
 
 # get topics from toc directory
 toc_dir = 'toc'
