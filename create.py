@@ -92,7 +92,7 @@ def create_section(name, version, output_file):
     output_file.write("<a href=\"#toc\">Table of Contents</a>\n")
     output_file.write("</div>\n")
 
-def for_windows_version(full_name, short_name, sections):
+def for_topic(full_name, short_name, sections):
     filename = short_name + ".html"
     with open(filename, "w") as file:
         file.write("<!DOCTYPE html>\n")
@@ -129,11 +129,9 @@ def topic_json_file(file_path):
     topic = json.loads(file_contents)
     full_name = topic["full_name"]
     short_name = topic["short_name"]
-    type = topic["type"]
     sections = topic["sections"]
 
-    if type == 'windows':
-        for_windows_version(full_name, short_name, sections)
+    for_topic(full_name, short_name, sections)
 
 # get topics from toc directory
 toc_dir = 'toc'

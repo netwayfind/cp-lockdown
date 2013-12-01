@@ -11,7 +11,7 @@ update information as needed.
 
 - /toc directory - contains JSON files for each operating system version. Each
   JSON file should contain a mapping for an operating system version's full
-  name, short name, type (e.g. Windows), and sections.
+  name, short name, and sections.
 - /res directory - contains the source files for section contents. Sections may
   have multiple version, as denoted by -\<version\>.
 - create.py - Python script to recreate the .html guide files after revising
