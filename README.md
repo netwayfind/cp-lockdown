@@ -3,7 +3,7 @@ cp-lockdown
 
 Guides for locking down a computer
 
-You can read up a guide for a specific operating system. For example, open
+You can read a guide for a specific operating system. For example, open
 win7.html for Windows 7.
 
 The guides are put together from multiple files. This should make it easier to
