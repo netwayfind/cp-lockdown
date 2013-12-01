@@ -57,8 +57,10 @@ def standard_id(str):
     return output
 
 def get_subsection(parent_name, sub_name, version):
+    file_contents = None
     # look for specific version of subsection
-    file_contents = get_contents(res_path([parent_name, sub_name, version]))
+    if version is not None:
+        file_contents = get_contents(res_path([parent_name, sub_name, version]))
     # if no specific version, look for default contents for subsection
     if file_contents is None:
         file_contents = get_contents(res_path([parent_name, sub_name]))
@@ -80,8 +82,10 @@ def create_section(name, version, output_file):
         output_file.write(settings_subsection)
     # if no subsections, look for section files
     if location_subsection is None and settings_subsection is None:
+        section_file = None
         # look for version-specific section file first
-        section_file = get_contents(res_path([id, version]))
+        if version is not None:
+            section_file = get_contents(res_path([id, version]))
         # if no version-specific default file, look for default section file
         if section_file is None:
             section_file = get_contents(res_path([id]))
@@ -116,7 +120,7 @@ def for_topic(full_name, short_name, sections):
         for section in sections:
             # first item in list is section title
             section_title = section[0]
-            version = short_name
+            version = None
             # if there is a second item, use it as version
             if len(section) > 1:
                 version = section[1]
