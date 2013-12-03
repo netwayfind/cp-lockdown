@@ -2,7 +2,11 @@
 "full_name": "Ubuntu",
 "short_name": "ubuntu",
 "sections": [
+  ["Default Groups", "ubuntu"],
+  ["Default Users", "ubuntu"],
+  ["Groups", "linux"],
   ["Terminal", "ubuntu"],
-  ["Updates", "apt-get"]
+  ["Updates", "apt-get"],
+  ["Users", "linux"]
   ]
 }
