@@ -9,7 +9,9 @@
 <div id="toc">
 <a href="#default-groups">Default Groups</a><br />
 <a href="#default-users">Default Users</a><br />
+<a href="#firewall">Firewall</a><br />
 <a href="#groups">Groups</a><br />
+<a href="#network-connections">Network Connections</a><br />
 <a href="#terminal">Terminal</a><br />
 <a href="#updates">Updates</a><br />
 <a href="#users">Users</a><br />
@@ -128,6 +130,27 @@
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
+<div id="firewall">
+<h2>Firewall</h2>
+<h3>Check rules</h3>
+<p>iptables -nL</p>
+<h3>Reset firewall rules</h3>
+<p>iptables -F</p>
+<p>iptables -X</p>
+<h3>Set default rules</h3>
+<p>iptables -P INPUT DROP</p>
+<p>iptables -A INPUT -i lo -j ACCEPT</p>
+<p>iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</p>
+<h3>Add rules</h3>
+For example, add rule for TCP 22 for remote access
+<p>iptables -A INPUT -p tcp --dport 22 -j ACCEPT</p>
+<h3>Set default actions</h3>
+<p>iptables -P INPUT DROP</p>
+<p>iptables -P FORWARD DROP</p>
+<p>iptables -P OUTPUT ACCEPT</p>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
 <div id="groups">
 <h2>Groups</h2>
 <h3>Location</h3>
@@ -139,6 +162,15 @@
 <ul>
     <li>Check <a href="#default-groups">Default Groups</a></li>
 </ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="network-connections">
+<h2>Network Connections</h2>
+<h3>View listening network connections</h3>
+<p>netstat -ntulp</p>
+<h3>View established network connections</h3>
+<p>netstat -ntup</p>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>

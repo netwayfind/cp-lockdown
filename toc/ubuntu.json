@@ -4,7 +4,9 @@
 "sections": [
   ["Default Groups", "ubuntu"],
   ["Default Users", "ubuntu"],
+  ["Firewall", "iptables"],
   ["Groups", "linux"],
+  ["Network Connections", "linux"],
   ["Terminal", "ubuntu"],
   ["Updates", "apt-get"],
   ["Users", "linux"]
