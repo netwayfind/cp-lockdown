@@ -12,3 +12,63 @@
     <li>service [service-name] stop</li>
     <li>service [service-name] restart</li>
 </ul>
+<h3>Disable service autostart</h3>
+<p>service [service-name] stop</p>
+<p>update-rc.d -f [service] remove</p>
+<h3>Common Services</h3>
+<p>The following services should be disabled if they are not required</p>
+<p>Database<p>
+<ul>
+    <li>mysqld</li>
+    <li>postgres</li>
+</ul>
+<p>E-mail</p>
+<ul>
+    <li>dovecot</li>
+    <li>exim4</li>
+    <li>postfix</li>
+</ul>
+<p>File Sharing</p>
+<ul>
+    <li>nfs</li>
+    <li>nmbd</li>
+    <li>rpc.mountd</li>
+    <li>rpc.nfsd</li>
+    <li>smbd</li>
+    <li>vsftpd</li>
+</ul>
+<p>Music</p>
+<ul>
+    <li>mpd</li>
+</ul>
+<p>Networking</p>
+<ul>
+    <li>avahi-daemon</li>
+    <li>bind</li>
+    <li>dnsmasq</li>
+    <li>inetd</li>
+    <li>sshd</li>
+    <li>telnet</li>
+    <li>xinetd</li>
+</ul>
+<p>Printing, Scanning</p>
+<ul>
+    <li>cupsd</li>
+    <li>saned</li>
+</ul>
+<p>Time</p>
+<ul>
+    <li>ntpd</li>
+</ul>
+<p>Scheduled tasks</p>
+<ul>
+    <li>cron</li>
+</ul>
+<p>Web Server<p>
+<ul>
+    <li>apache2</li>
+    <li>httpd</li>
+    <li>jetty</li>
+    <li>nginx</li>
+    <li>tomcat</li>
+</ul>
