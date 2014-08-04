@@ -5,8 +5,7 @@
   ["Remote Assistance and Remote Desktop", "win2008"],
   ["Windows Firewall", "win2008"],
 
-  ["User Accounts"],
-  ["Groups"],
+  ["Local Users and Groups"],
   ["Automatic Login"],
 
   ["Add/Remove Programs"],
