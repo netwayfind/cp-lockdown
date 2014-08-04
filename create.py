@@ -108,13 +108,17 @@ def for_topic(full_name, short_name, sections):
         file.write("<h1>" + full_name + "</h1>\n")
         # table of contents
         file.write("<div id=\"toc\">\n")
+        file.write("<ul>\n")
         for section in sections:
              section_title = section[0]
+             file.write("<li>")
              file.write("<a href=\"#")
              file.write(standard_id(section_title))
              file.write("\">")
              file.write(section_title)
-             file.write("</a><br />\n")
+             file.write("</a><br />")
+             file.write("</li>\n")
+        file.write("</ul>\n")
         file.write("</div>\n")
         # section contents
         for section in sections:
