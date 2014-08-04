@@ -1,49 +1,76 @@
 {
 "full_name": "Windows Server 2008 R2",
 "short_name": "win2008r2",
-"sections": [
-  ["Remote Assistance and Remote Desktop"],
-  ["Windows Firewall"],
+"section_groups": [
+  ["Remote Access", [
+    ["Remote Assistance and Remote Desktop"],
+    ["Windows Firewall"]
+    ]
+  ],
 
-  ["Local Users and Groups"],
-  ["Automatic Login"],
+  ["Users and Groups", [
+    ["Local Users and Groups"],
+    ["Automatic Login"]
+    ]
+  ],
 
-  ["Add/Remove Programs"],
-  ["Windows Features", "win2008r2"],
-  ["Windows Server Roles", "server"],
-  ["Startup Programs"],
-  ["Services"],
-  ["Internet Explorer"],
-  ["Disk Cleanup", "server"],
+  ["Installation Cleanup", [
+    ["Add/Remove Programs"],
+    ["Windows Features", "win2008r2"],
+    ["Windows Server Roles", "server"],
+    ["Startup Programs"],
+    ["Services"],
+    ["Internet Explorer"],
+    ["Disk Cleanup", "server"]
+    ]
+  ],
 
-  ["Internet Connection Sharing"],
-  ["Shared Folders"],
-  ["CrowdInspect"],
+  ["Network Resources", [
+    ["Internet Connection Sharing"],
+    ["Shared Folders"],
+    ["CrowdInspect"]
+    ]
+  ],
 
-  ["Account Lockout Policy"],
-  ["Password Policy"],
+  ["Policies", [
+    ["Account Lockout Policy"],
+    ["Password Policy"]
+    ]
+  ],
 
-  ["Microsoft Baseline Security Analyzer"],
-  ["Microsoft Security Essentials", "server"],
-  ["Microsoft Safety Scanner"],
-  ["Rootkit Scanners"],
+  ["Scans", [
+    ["Microsoft Baseline Security Analyzer"],
+    ["Microsoft Security Essentials", "server"],
+    ["Microsoft Safety Scanner"],
+    ["Rootkit Scanners"]
+    ]
+  ],
 
-  ["Show Hidden Files and Folders"],
-  ["Find Unauthorized Files"],
-  ["Users Folder"],
-  ["Program Files", "win2008r2"],
-  ["Program Files (x86)", "win2008r2"],
-  ["Hosts file"],
+  ["Installation Cleanup", [
+    ["Show Hidden Files and Folders"],
+    ["Find Unauthorized Files"],
+    ["Users Folder"],
+    ["Program Files", "win2008r2"],
+    ["Program Files (x86)", "win2008r2"],
+    ["Hosts file"]
+    ]
+  ],
 
-  ["Automatic Updates"],
-  ["Service Packs", "win2008r2"],
-  ["Windows Updates"],
+  ["Updates", [
+    ["Automatic Updates"],
+    ["Service Packs", "win2008r2"],
+    ["Windows Updates"]
+    ]
+  ],
 
-  ["Administrative Tools", "server"],
-  ["C:\\ Drive"],
-  ["Command Prompt"],
-  ["Control Panel"],
-  ["Processes", "win2008r2"],
-  ["Task Manager"]
+  ["References", [
+    ["Administrative Tools", "server"],
+    ["C:\\ Drive"],
+    ["Command Prompt"],
+    ["Control Panel"],
+    ["Processes", "win2008r2"],
+    ["Task Manager"]
+    ]
   ]
+]
 }

@@ -1,15 +1,30 @@
 {
 "full_name": "Ubuntu",
 "short_name": "ubuntu",
-"sections": [
-  ["Default Groups", "ubuntu"],
-  ["Default Users", "ubuntu"],
-  ["Firewall", "iptables"],
-  ["Groups", "linux"],
-  ["Network Connections", "linux"],
-  ["Services", "linux"],
-  ["Terminal", "ubuntu"],
-  ["Updates", "apt-get"],
-  ["Users", "linux"]
+"section_groups": [
+  ["Users and Groups", [
+    ["Groups", "linux"],
+    ["Users", "linux"],
+    ["Default Groups", "ubuntu"],
+    ["Default Users", "ubuntu"]
+    ]
+  ],
+
+  ["Networking", [
+    ["Firewall", "iptables"],
+    ["Network Connections", "linux"]
+    ]
+  ],
+
+  ["Configuration", [
+    ["Services", "linux"],
+    ["Updates", "apt-get"]
+    ]
+  ],
+
+  ["References", [
+    ["Terminal", "ubuntu"]
+    ]
   ]
+]
 }

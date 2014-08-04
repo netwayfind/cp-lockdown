@@ -96,7 +96,7 @@ def create_section(name, version, output_file):
     output_file.write("<a href=\"#toc\">Table of Contents</a>\n")
     output_file.write("</div>\n")
 
-def for_topic(full_name, short_name, sections):
+def for_topic(full_name, short_name, section_groups):
     filename = short_name + ".html"
     with open(filename, "w") as file:
         file.write("<!DOCTYPE html>\n")
@@ -108,27 +108,33 @@ def for_topic(full_name, short_name, sections):
         file.write("<h1>" + full_name + "</h1>\n")
         # table of contents
         file.write("<div id=\"toc\">\n")
-        file.write("<ul>\n")
-        for section in sections:
-             section_title = section[0]
-             file.write("<li>")
-             file.write("<a href=\"#")
-             file.write(standard_id(section_title))
-             file.write("\">")
-             file.write(section_title)
-             file.write("</a><br />")
-             file.write("</li>\n")
-        file.write("</ul>\n")
+        # handle section groups
+        for group in section_groups:
+            file.write(group[0])
+            file.write("<ul>\n")
+            for section in group[1]:
+                section_title = section[0]
+                file.write("<li>")
+                file.write("<a href=\"#")
+                file.write(standard_id(section_title))
+                file.write("\">")
+                file.write(section_title)
+                file.write("</a><br />")
+                file.write("</li>\n")
+            file.write("</ul>\n")
         file.write("</div>\n")
         # section contents
-        for section in sections:
-            # first item in list is section title
-            section_title = section[0]
-            version = None
-            # if there is a second item, use it as version
-            if len(section) > 1:
-                version = section[1]
-            create_section(section_title, version, file)
+        for group in section_groups:
+            file.write("<hr><hr>\n")
+            file.write("<h1>" + group[0] + "</h1>\n")
+            for section in group[1]:
+                # first item in list is section title
+                section_title = section[0]
+                version = None
+                # if there is a second item, use it as version
+                if len(section) > 1:
+                    version = section[1]
+                create_section(section_title, version, file)
         file.write("</body>\n")
         file.write("</html>")
 
@@ -137,9 +143,9 @@ def topic_json_file(file_path):
     topic = json.loads(file_contents)
     full_name = topic["full_name"]
     short_name = topic["short_name"]
-    sections = topic["sections"]
+    section_groups = topic["section_groups"]
 
-    for_topic(full_name, short_name, sections)
+    for_topic(full_name, short_name, section_groups)
 
 # get topics from toc directory
 toc_dir = 'toc'

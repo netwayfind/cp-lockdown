@@ -7,17 +7,53 @@
 <body>
 <h1>Ubuntu</h1>
 <div id="toc">
-<ul>
+Users and Groups<ul>
+<li><a href="#groups">Groups</a><br /></li>
+<li><a href="#users">Users</a><br /></li>
 <li><a href="#default-groups">Default Groups</a><br /></li>
 <li><a href="#default-users">Default Users</a><br /></li>
-<li><a href="#firewall">Firewall</a><br /></li>
-<li><a href="#groups">Groups</a><br /></li>
-<li><a href="#network-connections">Network Connections</a><br /></li>
-<li><a href="#services">Services</a><br /></li>
-<li><a href="#terminal">Terminal</a><br /></li>
-<li><a href="#updates">Updates</a><br /></li>
-<li><a href="#users">Users</a><br /></li>
 </ul>
+Networking<ul>
+<li><a href="#firewall">Firewall</a><br /></li>
+<li><a href="#network-connections">Network Connections</a><br /></li>
+</ul>
+Configuration<ul>
+<li><a href="#services">Services</a><br /></li>
+<li><a href="#updates">Updates</a><br /></li>
+</ul>
+References<ul>
+<li><a href="#terminal">Terminal</a><br /></li>
+</ul>
+</div>
+<hr><hr>
+<h1>Users and Groups</h1>
+<hr>
+<div id="groups">
+<h2>Groups</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#terminal">terminal</a></li>
+    <li>cat /etc/group</li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Check <a href="#default-groups">Default Groups</a></li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="users">
+<h2>Users</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#terminal">terminal</a></li>
+    <li>cat /etc/passwd</li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Check <a href="#default-users">Default Users</a></li>
+</ul>
+<a href="#toc">Table of Contents</a>
 </div>
 <hr>
 <div id="default-groups">
@@ -132,6 +168,8 @@
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
+<hr><hr>
+<h1>Networking</h1>
 <hr>
 <div id="firewall">
 <h2>Firewall</h2>
@@ -154,20 +192,6 @@ For example, add rule for TCP 22 for remote access
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
-<div id="groups">
-<h2>Groups</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#terminal">terminal</a></li>
-    <li>cat /etc/group</li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>Check <a href="#default-groups">Default Groups</a></li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
 <div id="network-connections">
 <h2>Network Connections</h2>
 <h3>View listening network connections</h3>
@@ -176,6 +200,8 @@ For example, add rule for TCP 22 for remote access
 <p>netstat -ntup</p>
 <a href="#toc">Table of Contents</a>
 </div>
+<hr><hr>
+<h1>Configuration</h1>
 <hr>
 <div id="services">
 <h2>Services</h2>
@@ -261,6 +287,18 @@ For example, add rule for TCP 22 for remote access
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
+<div id="updates">
+<h2>Updates</h2>
+<ol>
+    <li>Open <a href="#terminal">terminal</a></li>
+    <li>apt-get update</li>
+    <li>apt-get upgrade</li>
+</ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr><hr>
+<h1>References</h1>
+<hr>
 <div id="terminal">
 <h2>Terminal</h2>
 Option 1
@@ -274,30 +312,6 @@ Option 2
     <li>Go to <strong>Accessories</strong></li>
     <li>Click on <strong>Terminal</strong></li>
 </ol>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="updates">
-<h2>Updates</h2>
-<ol>
-    <li>Open <a href="#terminal">terminal</a></li>
-    <li>apt-get update</li>
-    <li>apt-get upgrade</li>
-</ol>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="users">
-<h2>Users</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#terminal">terminal</a></li>
-    <li>cat /etc/passwd</li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>Check <a href="#default-users">Default Users</a></li>
-</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 </body>
