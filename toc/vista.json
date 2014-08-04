@@ -2,8 +2,7 @@
 "full_name": "Windows Vista",
 "short_name": "vista",
 "sections": [
-  ["Remote Assistance", "win2008"],
-  ["Remote Desktop", "win2008"],
+  ["Remote Assistance and Remote Desktop", "win2008"],
   ["Windows Firewall", "win2008"],
 
   ["User Accounts"],

@@ -2,8 +2,7 @@
 "full_name": "Windows 7",
 "short_name": "win7",
 "sections": [
-  ["Remote Assistance"],
-  ["Remote Desktop"],
+  ["Remote Assistance and Remote Desktop"],
   ["Windows Firewall"],
 
   ["User Accounts"],

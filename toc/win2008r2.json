@@ -2,8 +2,7 @@
 "full_name": "Windows Server 2008 R2",
 "short_name": "win2008r2",
 "sections": [
-  ["Remote Assistance"],
-  ["Remote Desktop"],
+  ["Remote Assistance and Remote Desktop"],
   ["Windows Firewall"],
 
   ["User Accounts"],

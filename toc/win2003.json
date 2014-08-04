@@ -2,8 +2,7 @@
 "full_name": "Windows Server 2003",
 "short_name": "win2003",
 "sections": [
-  ["Remote Assistance", "win2003"],
-  ["Remote Desktop", "win2003"],
+  ["Remote Assistance and Remote Desktop", "win2003"],
   ["Windows Firewall", "win2003"],
 
   ["User Accounts"],
