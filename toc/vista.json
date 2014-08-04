@@ -2,40 +2,49 @@
 "full_name": "Windows Vista",
 "short_name": "vista",
 "sections": [
-  ["Account Lockout Policy"],
-  ["Add/Remove Programs"],
-  ["Administrative Tools", "vista"],
+  ["Remote Assistance", "win2008"],
+  ["Remote Desktop", "win2008"],
+  ["Windows Firewall", "win2008"],
+
+  ["User Accounts"],
+  ["Groups"],
   ["Automatic Login"],
+
+  ["Add/Remove Programs"],
+  ["Windows Features", "vista"],
+  ["Startup Programs"],
+  ["Services"],
+  ["Internet Explorer"],
+  ["Disk Cleanup", "vista"],
+
+
+  ["Internet Connection Sharing", "win2008"],
+  ["Shared Folders"],
+  ["CrowdInspect"],
+
+  ["Account Lockout Policy"],
+  ["Password Policy"],
+
+  ["Microsoft Baseline Security Analyzer"],
+  ["Microsoft Security Essentials"],
+  ["Rootkit Scanners"],
+
+  ["Show Hidden Files and Folders"],
+  ["Find Unauthorized Files"],
+  ["Users Folder"],
+  ["Program Files", "vista"],
+  ["Program Files (x86)", "vista"],
+  ["Hosts file", "win2008"],
+
   ["Automatic Updates", "win2008"],
+  ["Service Packs", "vista"],
+  ["Windows Updates", "win2008"],
+
+  ["Administrative Tools", "vista"],
   ["C:\\ Drive", "win2008"],
   ["Command Prompt"],
   ["Control Panel"],
-  ["CrowdInspect"],
-  ["Disk Cleanup", "vista"],
-  ["Find Unauthorized Files"],
-  ["Groups"],
-  ["Hosts file", "win2008"],
-  ["Internet Connection Sharing", "win2008"],
-  ["Internet Explorer"],
-  ["Microsoft Baseline Security Analyzer"],
-  ["Microsoft Security Essentials"],
-  ["Password Policy"],
   ["Processes", "vista"],
-  ["Program Files", "vista"],
-  ["Program Files (x86)", "vista"],
-  ["Remote Assistance", "win2008"],
-  ["Remote Desktop", "win2008"],
-  ["Rootkit Scanners"],
-  ["Service Packs", "vista"],
-  ["Services"],
-  ["Shared Folders"],
-  ["Show Hidden Files and Folders"],
-  ["Startup Programs"],
-  ["Task Manager"],
-  ["User Accounts"],
-  ["Users Folder"],
-  ["Windows Features", "vista"],
-  ["Windows Firewall", "win2008"],
-  ["Windows Updates", "win2008"]
+  ["Task Manager"]
   ]
 }

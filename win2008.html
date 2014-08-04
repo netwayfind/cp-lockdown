@@ -7,86 +7,171 @@
 <body>
 <h1>Windows Server 2008</h1>
 <div id="toc">
-<a href="#account-lockout-policy">Account Lockout Policy</a><br />
-<a href="#add-remove-programs">Add/Remove Programs</a><br />
-<a href="#administrative-tools">Administrative Tools</a><br />
+<a href="#remote-assistance">Remote Assistance</a><br />
+<a href="#remote-desktop">Remote Desktop</a><br />
+<a href="#windows-firewall">Windows Firewall</a><br />
+<a href="#user-accounts">User Accounts</a><br />
+<a href="#groups">Groups</a><br />
 <a href="#automatic-login">Automatic Login</a><br />
+<a href="#add-remove-programs">Add/Remove Programs</a><br />
+<a href="#windows-features">Windows Features</a><br />
+<a href="#windows-server-roles">Windows Server Roles</a><br />
+<a href="#startup-programs">Startup Programs</a><br />
+<a href="#services">Services</a><br />
+<a href="#internet-explorer">Internet Explorer</a><br />
+<a href="#disk-cleanup">Disk Cleanup</a><br />
+<a href="#internet-connection-sharing">Internet Connection Sharing</a><br />
+<a href="#shared-folders">Shared Folders</a><br />
+<a href="#crowdinspect">CrowdInspect</a><br />
+<a href="#account-lockout-policy">Account Lockout Policy</a><br />
+<a href="#password-policy">Password Policy</a><br />
+<a href="#microsoft-baseline-security-analyzer">Microsoft Baseline Security Analyzer</a><br />
+<a href="#microsoft-security-essentials">Microsoft Security Essentials</a><br />
+<a href="#microsoft-safety-scanner">Microsoft Safety Scanner</a><br />
+<a href="#rootkit-scanners">Rootkit Scanners</a><br />
+<a href="#show-hidden-files-and-folders">Show Hidden Files and Folders</a><br />
+<a href="#find-unauthorized-files">Find Unauthorized Files</a><br />
+<a href="#users-folder">Users Folder</a><br />
+<a href="#program-files">Program Files</a><br />
+<a href="#program-files-x86-">Program Files (x86)</a><br />
+<a href="#hosts-file">Hosts file</a><br />
 <a href="#automatic-updates">Automatic Updates</a><br />
+<a href="#service-packs">Service Packs</a><br />
+<a href="#windows-updates">Windows Updates</a><br />
+<a href="#administrative-tools">Administrative Tools</a><br />
 <a href="#c-drive">C:\ Drive</a><br />
 <a href="#command-prompt">Command Prompt</a><br />
 <a href="#control-panel">Control Panel</a><br />
-<a href="#crowdinspect">CrowdInspect</a><br />
-<a href="#disk-cleanup">Disk Cleanup</a><br />
-<a href="#find-unauthorized-files">Find Unauthorized Files</a><br />
-<a href="#groups">Groups</a><br />
-<a href="#hosts-file">Hosts file</a><br />
-<a href="#internet-connection-sharing">Internet Connection Sharing</a><br />
-<a href="#internet-explorer">Internet Explorer</a><br />
-<a href="#microsoft-baseline-security-analyzer">Microsoft Baseline Security Analyzer</a><br />
-<a href="#microsoft-safety-scanner">Microsoft Safety Scanner</a><br />
-<a href="#microsoft-security-essentials">Microsoft Security Essentials</a><br />
-<a href="#password-policy">Password Policy</a><br />
 <a href="#processes">Processes</a><br />
-<a href="#program-files">Program Files</a><br />
-<a href="#program-files-x86-">Program Files (x86)</a><br />
-<a href="#remote-assistance">Remote Assistance</a><br />
-<a href="#remote-desktop">Remote Desktop</a><br />
-<a href="#rootkit-scanners">Rootkit Scanners</a><br />
-<a href="#service-packs">Service Packs</a><br />
-<a href="#services">Services</a><br />
-<a href="#shared-folders">Shared Folders</a><br />
-<a href="#show-hidden-files-and-folders">Show Hidden Files and Folders</a><br />
-<a href="#startup-programs">Startup Programs</a><br />
 <a href="#task-manager">Task Manager</a><br />
-<a href="#user-accounts">User Accounts</a><br />
-<a href="#users-folder">Users Folder</a><br />
-<a href="#windows-features">Windows Features</a><br />
-<a href="#windows-firewall">Windows Firewall</a><br />
-<a href="#windows-server-roles">Windows Server Roles</a><br />
-<a href="#windows-updates">Windows Updates</a><br />
 </div>
 <hr>
-<div id="account-lockout-policy">
-<h2>Account Lockout Policy</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#administrative-tools">Administrative Tools</a></li>
-    <li>Find and click on <strong>Local Security Policy</strong></li>
-    <li>Find and double click on <strong>Account Policies</strong></li>
-    <li>Find and double click on <strong>Account Lockout Policy</strong></li>
-</ol>
-<h3>Settings</h3>
-<ul>
-     <li>Account lockout duration - 30 minutes</li>
-     <li>Account lockout threshold - 5</li>
-     <li>Reset account lockout counter after - 30 minutes</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="add-remove-programs">
-<h2>Add/Remove Programs</h2>
+<div id="remote-assistance">
+<h2>Remote Assistance</h2>
 <h3>Location</h3>
 <ol>
     <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find <strong>Programs</strong></li>
-    <li>Find and click on <strong>Uninstall a Program</strong></li>
+    <li>Find and click on <strong>System and Maintenance</strong></li>
+    <li>Find and click on <strong>System</strong></li>
+    <li>Find and click on <strong>Remote settings</strong></li>
 </ol>
 <h3>Settings</h3>
+Under Remote Assistance
 <ul>
-    <li>Do not remove any necessary programs (e.g. Microsoft, Windows, CyberPatriot, any required by readme)</li>
-    <li>Uninstall all other programs</li>
+    <li>[ ] Allow Remote Assistance connections to this computer</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
-<div id="administrative-tools">
-<h2>Administrative Tools</h2>
+<div id="remote-desktop">
+<h2>Remote Desktop</h2>
 <h3>Location</h3>
 <ol>
-    <li>Press Start or Windows button</li>
-    <li>Move mouse over <strong>Administrative Tools</strong></li>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find and click on <strong>System and Maintenance</strong></li>
+    <li>Find and click on <strong>System</strong></li>
+    <li>Find and click on <strong>Remote settings</strong></li>
 </ol>
+<h3>Settings</h3>
+Under Remote Desktop
+<ul>
+    <li>[x] Don't allow connections to this computer</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="windows-firewall">
+<h2>Windows Firewall</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find and click on <strong>Security</strong></li>
+    <li>Find and click on <strong>Windows Firewall</strong></li>
+    <li>Find and click on <strong>Turn Windows Firewall on or off</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Under the General tab
+        <ul>
+            <li>[x] On (recommended)</li>
+            <li>[ ] Block all incoming connections</li>
+        </ul>
+    </li>
+    <li>Under the Exceptions tab
+        <ul>
+            <li>Only Core Networking and any required programs or services should have checkmarks</li>
+            <li>Uncheck all other programs and features</li>
+        </ul>
+    </li>
+    <li>Under the Advanced tab
+        <ul>
+            <li>Put a checkmark on all Network connections</li>
+        </ul>
+    </li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="user-accounts">
+<h2>User Accounts</h2>
+<h3>Location</h3>
+<ol>
+    <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and open <strong>Computer Management</strong></li>
+    <li>Find and open <strong>System Tools</strong></li>
+    <li>Find and open <strong>Local Users and Groups</strong></li>
+    <li>Find and open <strong>Users</strong></li>
+</ol>
+<h3>Settings</h3>
+For each user, right click on user, select <strong>Properties</strong>, and check the following:
+<p></p>
+Under <strong>General</strong> tab
+<ul>
+    <li>Disable all users not required by readme</li>
+    <li>Set passwords to expire for all users</li>
+</ul>
+Under <strong>Member Of</strong> tab
+<ul>
+    <li>Add user to necessary groups, e.g. Administrators</li>
+    <li>Remove user from unnecessary groups</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="groups">
+<h2>Groups</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and open <strong>Computer Management</strong></li>
+    <li>Find and open <strong>System Tools</strong></li>
+    <li>Find and open <strong>Local Users and Groups</strong></li>
+    <li>Find and open <strong>Groups</strong></li>
+</ol>
+<h3>Settings</h3>
+Check the following groups.
+<ul>
+    <li>Administrators
+        <ul>
+            <li>only the users suppose to be here</li>
+        </ul>
+    </li>
+    <li>Users
+        <ul>
+            <li>only the users suppose to be on the system</li>
+        </ul>
+    </li>
+    <li>Backup Operators, Guests, Power Users
+        <ul>
+            <li>no users</li>
+        </ul>
+    </li>
+    <li>Other groups
+        <ul>
+            <li>check as needed</li>
+        </ul>
+    </li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -108,6 +193,401 @@
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
+<div id="add-remove-programs">
+<h2>Add/Remove Programs</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find <strong>Programs</strong></li>
+    <li>Find and click on <strong>Uninstall a Program</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Do not remove any necessary programs (e.g. Microsoft, Windows, CyberPatriot, any required by readme)</li>
+    <li>Uninstall all other programs</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="windows-features">
+<h2>Windows Features</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find and click on <strong>Programs</strong></li>
+    <li>Find <strong>Programs and Features</strong></li>
+    <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
+    <li>Under <strong>Server Manager</strong>, find and open <strong>Features</strong></li>
+</ol>
+<h3>Settings</h3>
+By default, no features (0 of 41) are installed
+<ol>
+    <li>Check the readme for which features or services should be installed
+        <ul>
+            <li>.NET Framework</li>
+            <li>Group Policy Management</li>
+            <li>SMTP Server</li>
+            <li>SNMP Services</li>
+            <li>Telnet Client</li>
+            <li>Telnet Server</li>
+            <li>TFTP Client</li>
+            <li>WINS Server</li>
+        </ul>
+    </li>
+    <li>Use <strong>Add Features</strong> to add necessary features</li>
+    <li>Use <strong>Remove Features</strong> to remove unnecessary features</li>
+</ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="windows-server-roles">
+<h2>Windows Server Roles</h2>
+By default, no roles (0 or 17) are installed
+<ol>
+    <li>Open <strong>Server Manager</strong></li>
+    <li>Find and double click on <strong>Roles</strong></li>
+    <li>Check the readme for which roles should be installed
+        <ul>
+            <li>Active Directory</li>
+            <li>DHCP Server</li>
+            <li>DNS Server</li>
+            <li>Web Server (IIS)</li>
+        </ul>
+    </li>
+    <li>Use <strong>Add Roles</strong> to add necessary server roles</li>
+    <li>Use <strong>Remove Roles</strong> to remove unnecessary server roles</li>
+</ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="startup-programs">
+<h2>Startup Programs</h2>
+<h3>Location</h3>
+<ol>
+    <li>Press the Start or Windows button</li>
+    <li>Type <strong>msconfig</strong>, press Enter</li>
+    <li>Go to the <strong>Startup</strong> tab</li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Keep checkmarks on required programs and services</li>
+    <li>Remove checkmarks on all other items</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="services">
+<h2>Services</h2>
+<h3>Location</h3>
+<ol>
+    <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and open <strong>Services</strong></li>
+</ol>
+<h3>Settings</h3>
+Make sure all CyberPatriot services have Started as Status and Automatic as Startup Type.
+<p></p>
+Unless required by readme, stop each of the following services and change Startup Type as Disabled
+<ul>
+    <li>DHCP Server</li>
+    <li>DNS Server</li>
+    <li>FTP Server</li>
+    <li>HTTP Server</li>
+    <li>Internet Information Services (IIS)</li>
+    <li>Telnet Server</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="internet-explorer">
+<h2>Internet Explorer</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <strong>Internet Explorer</strong></li>
+    <li>Find and click on <strong>Tools</strong></li>
+    <li>Find and click on <strong>Internet Options</strong></li>
+</ol>
+<h3>Settings</h3>
+Under the Security tab, security zone settings should be:
+<ul>
+    <li>Internet - High</li>
+    <li>Local Intranet - Medium-low</li>
+    <li>Trusted Sites - Medium</li>
+    <li>Restricted Sites - High</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="disk-cleanup">
+<h2>Disk Cleanup</h2>
+Disk cleanup is not installed by default.
+<p></p>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="internet-connection-sharing">
+<h2>Internet Connection Sharing</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find and click on <strong>Network and Internet</strong></li>
+    <li>Find and click on <strong>Network and Sharing Center</strong></li>
+    <li>Find and click on <strong>Manage network connections</strong></li>
+</ol>
+<h3>Settings</h3>
+For each Local Area Connection or Wireless Network Connection
+<ol>
+    <li>Right click and select <strong>Properties</strong></li>
+    <li>Go to the <strong>Sharing</strong> tab, if any</li>
+    <li>[ ] Allow other network users to connect through this computer's Internet connection</li>
+</ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="shared-folders">
+<h2>Shared Folders</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and double click on <strong>Computer Management</strong></li>
+    <li>Find and double click on <strong>Shared Folders</strong></li>
+    <li>Find and double click on <strong>Shares</strong></li>
+</ol>
+<h3>Settings</h3>
+Stop sharing all shares.
+<p></p>
+The following are the mininum required shares. Other shares may be deleted, unless required by readme.
+<ul>
+    <li>ADMIN$ - C:\Windows - Windows</li>
+    <li>C$ - C:\ - Windows
+        <ul>
+            <li>other letters may appear for each Local Disk in Computer</li>
+        </ul>
+    </li>
+    <li>IPC$ - [blank] - Windows</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="crowdinspect">
+<h2>CrowdInspect</h2>
+<h3>Download</h3>
+<ul>
+    <li><a target="_blank" href="http://www.crowdstrike.com/crowdinspect/index.html">http://www.crowdstrike.com/crowdinspect/index.html</a></li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="account-lockout-policy">
+<h2>Account Lockout Policy</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and click on <strong>Local Security Policy</strong></li>
+    <li>Find and double click on <strong>Account Policies</strong></li>
+    <li>Find and double click on <strong>Account Lockout Policy</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+     <li>Account lockout duration - 30 minutes</li>
+     <li>Account lockout threshold - 5</li>
+     <li>Reset account lockout counter after - 30 minutes</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="password-policy">
+<h2>Password Policy</h2>
+<h3>Location</h3>
+<ol>
+    <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
+    <li>Find and click on <strong>Local Security Policy</strong></li>
+    <li>Open <strong>Account Policies</strong></li>
+    <li>Open <strong>Password Policy</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Enforce password history - 5 passwords remembered</li>
+    <li>Maximum password age - 30 days</li>
+    <li>Minimum password age - 5 days</li>
+    <li>Minimum password length - 8 characters</li>
+    <li>Password must meet complexity requirements - Enabled</li>
+    <li>Store passwords using reversible encryption - Disabled</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="microsoft-baseline-security-analyzer">
+<h2>Microsoft Baseline Security Analyzer</h2>
+<h3>Download</h3>
+<ul>
+    <li><a target="_blank" href="http://www.microsoft.com/en-us/download/details.aspx?id=7558">http://www.microsoft.com/en-us/download/details.aspx?id=7558</a></li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="microsoft-security-essentials">
+<h2>Microsoft Security Essentials</h2>
+<p>Not supported for Windows Server.</p>
+<p>Use <a href="#microsoft-safety-scanner">Microsoft Safety Scanner</a> instead.</p>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="microsoft-safety-scanner">
+<h2>Microsoft Safety Scanner</h2>
+<h3>Download</h3>
+<ul>
+    <li><a target="_blank" href="http://www.microsoft.com/security/scanner/en-us/default.aspx">http://www.microsoft.com/security/scanner/en-us/default.aspx</a></li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="rootkit-scanners">
+<h2>Rootkit Scanners</h2>
+Do not remove any CyberPatriot resource if these tools bring it up. Remove and fix all other issues.
+<ul>
+    <li>Avast aswMBR
+        <ul>
+            <li><a target="_blank" href="http://public.avast.com/~gmerek/aswMBR.htm">http://public.avast.com/~gmerek/aswMBR.htm</a></li>
+        </ul>
+    </li>
+    <li>MalwareBytes Anti-Rootkit
+        <ul>
+            <li><a target="_blank" href="http://www.bleepingcomputer.com/download/malwarebytes-anti-rootkit/">http://www.bleepingcomputer.com/download/malwarebytes-anti-rootkit/</a></li>
+        </ul>
+    </li>
+    <li>McAfee Rootkit Remover
+        <ul>
+            <li><a target="_blank" href="http://www.mcafee.com/us/downloads/free-tools/rootkitremover.aspx">http://www.mcafee.com/us/downloads/free-tools/rootkitremover.aspx</a></li>
+        </ul>
+    </li>
+    <li>Norton Power Eraser
+        <ul>
+            <li><a target="_blank" href="http://security.symantec.com/nbrt/npe.aspx">http://security.symantec.com/nbrt/npe.aspx</a></li>
+        </ul>
+    </li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="show-hidden-files-and-folders">
+<h2>Show Hidden Files and Folders</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find and click on <strong>Appearance and Personalization</strong></li>
+    <li>Find <strong>Folder Options</strong></li>
+    <li>Find and click on <strong>Show hidden files and folders</strong></li>
+</ol>
+<h3>Settings</h3>
+Under <strong>Files and Folders</strong>, under <strong>Hidden files and folders</strong>
+<ul>
+    <li>[x] Show hidden files, folders, and drives</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="find-unauthorized-files">
+<h2>Find Unauthorized Files</h2>
+<ol>
+    <li>Open <a href="#command-prompt">Command Prompt</a></li>
+    <li>dir C:\Users /s /b /a | find /i ".mp3"
+        <ul>
+            <li>this will search for .mp3 files in C:\Users</li>
+        </ul>
+    </li>
+    <li>If there are any results, inspect the files and remove as necessary</li>
+    <li>Repeat from step 2 for the following file extensions
+        <ul>
+            <li>(music) - .mp3, .wav, .wma, .aac</li>
+            <li>(movie/video) - .mp4, .mov, .avi, .avi</li>
+            <li>(pictures) - .gif, .jpg, .jpeg, ,.png, .bmp</li>
+            <li>(executable files) - .exe, .msi, .bat, .sh</li>
+        </ul>
+    </li>
+</ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="users-folder">
+<h2>Users Folder</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#c-drive">C:\ drive</a></li>
+    <li>Open <strong>Users</strong></li>
+</ol>
+<h3>Settings</h3>
+The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+<ul>
+    <li>Default</li>
+    <li>Public</li>
+    <li>any user allowed by readme</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="program-files">
+<h2>Program Files</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#c-drive">C:\ drive</a></li>
+    <li>Find and open <strong>Program Files</strong></li>
+</ol>
+<h3>Settings</h3>
+The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+<ul>
+    <li>Common Files</li>
+    <li>Internet Explorer</li>
+    <li>Packaged Programs</li>
+    <li>Uninstall Information (hidden)</li>
+    <li>Windows Mail</li>
+    <li>Windows NT</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="program-files-x86-">
+<h2>Program Files (x86)</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#c-drive">C:\ drive</a></li>
+    <li>Find and open <strong>Program Files (x86)</strong></li>
+</ol>
+<h3>Settings</h3>
+The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list. 
+<ul>
+    <li>Common Files</li>
+    <li>Internet Explorer</li>
+    <li>Uninstall Information (hidden)</li>
+    <li>Windows Mail</li>
+    <li>Windows NT</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="hosts-file">
+<h2>Hosts file</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open Notepad under an administrator account
+        <ul>
+            <li>Right click, select <strong>Run as Administrator</strong></li>
+        </ul>
+    </li>
+    <li>Open file: C:\windows\system32\drivers\etc\hosts</li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>Disable any entry lines by adding a # to the start of the line</li>
+    <li>Default file entries:
+        <ul>
+            <li>127.0.0.1 localhost</li>
+            <li>::1 localhost</li>
+        </ul>
+    </li> 
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
 <div id="automatic-updates">
 <h2>Automatic Updates</h2>
 <h3>Location</h3>
@@ -122,6 +602,54 @@
     <li>Install updates automatically (recommended)</li>
     <li>Install new updates [ Every day ] at [ 3:00 AM ]</li>
 </ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="service-packs">
+<h2>Service Packs</h2>
+<h3>Location</h3>
+<ol>
+    <li>Press Start or Windows button</li>
+    <li>Find and right click <strong>Computer</strong> or <strong>My Computer</strong></li>
+    <li>Select <strong>Properties</strong></li>
+    <li>Find the words <strong>Service Pack</strong>
+        <ul>
+            <li>if there is none, no service pack is installed</li>
+        </ul>
+    </li>
+</ol>
+<h3>Settings</h3>
+<ul>
+    <li>For Windows Server 2008, the latest is Service Pack 2</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="windows-updates">
+<h2>Windows Updates</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#control-panel">Control Panel</a></li>
+    <li>Find and click on <strong>Security</strong></li>
+    <li>Find <strong>Windows Update</strong></li>
+</ol>
+<h3>Settings</h3>
+<ol>
+    <li>Find and click on <strong>Check for Updates</strong></li>
+    <li>If there are any critical or important updates, click on <strong>Install Updates</strong></li>
+    <li>Wait for updates to finish</li>
+    <li>Repeat until no remaining critical and important updates</li>
+</ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="administrative-tools">
+<h2>Administrative Tools</h2>
+<h3>Location</h3>
+<ol>
+    <li>Press Start or Windows button</li>
+    <li>Move mouse over <strong>Administrative Tools</strong></li>
+</ol>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
@@ -167,189 +695,6 @@ These are the default files and folders. Carefully inspect all other folders and
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
-<div id="crowdinspect">
-<h2>CrowdInspect</h2>
-<h3>Download</h3>
-<ul>
-    <li><a target="_blank" href="http://www.crowdstrike.com/crowdinspect/index.html">http://www.crowdstrike.com/crowdinspect/index.html</a></li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="disk-cleanup">
-<h2>Disk Cleanup</h2>
-Disk cleanup is not installed by default.
-<p></p>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="find-unauthorized-files">
-<h2>Find Unauthorized Files</h2>
-<ol>
-    <li>Open <a href="#command-prompt">Command Prompt</a></li>
-    <li>dir C:\Users /s /b /a | find /i ".mp3"
-        <ul>
-            <li>this will search for .mp3 files in C:\Users</li>
-        </ul>
-    </li>
-    <li>If there are any results, inspect the files and remove as necessary</li>
-    <li>Repeat from step 2 for the following file extensions
-        <ul>
-            <li>(music) - .mp3, .wav, .wma, .aac</li>
-            <li>(movie/video) - .mp4, .mov, .avi, .avi</li>
-            <li>(pictures) - .gif, .jpg, .jpeg, ,.png, .bmp</li>
-            <li>(executable files) - .exe, .msi, .bat, .sh</li>
-        </ul>
-    </li>
-</ol>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="groups">
-<h2>Groups</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#administrative-tools">Administrative Tools</a></li>
-    <li>Find and open <strong>Computer Management</strong></li>
-    <li>Find and open <strong>System Tools</strong></li>
-    <li>Find and open <strong>Local Users and Groups</strong></li>
-    <li>Find and open <strong>Groups</strong></li>
-</ol>
-<h3>Settings</h3>
-Check the following groups.
-<ul>
-    <li>Administrators
-        <ul>
-            <li>only the users suppose to be here</li>
-        </ul>
-    </li>
-    <li>Users
-        <ul>
-            <li>only the users suppose to be on the system</li>
-        </ul>
-    </li>
-    <li>Backup Operators, Guests, Power Users
-        <ul>
-            <li>no users</li>
-        </ul>
-    </li>
-    <li>Other groups
-        <ul>
-            <li>check as needed</li>
-        </ul>
-    </li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="hosts-file">
-<h2>Hosts file</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open Notepad under an administrator account
-        <ul>
-            <li>Right click, select <strong>Run as Administrator</strong></li>
-        </ul>
-    </li>
-    <li>Open file: C:\windows\system32\drivers\etc\hosts</li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>Disable any entry lines by adding a # to the start of the line</li>
-    <li>Default file entries:
-        <ul>
-            <li>127.0.0.1 localhost</li>
-            <li>::1 localhost</li>
-        </ul>
-    </li> 
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="internet-connection-sharing">
-<h2>Internet Connection Sharing</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>Network and Internet</strong></li>
-    <li>Find and click on <strong>Network and Sharing Center</strong></li>
-    <li>Find and click on <strong>Manage network connections</strong></li>
-</ol>
-<h3>Settings</h3>
-For each Local Area Connection or Wireless Network Connection
-<ol>
-    <li>Right click and select <strong>Properties</strong></li>
-    <li>Go to the <strong>Sharing</strong> tab, if any</li>
-    <li>[ ] Allow other network users to connect through this computer's Internet connection</li>
-</ol>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="internet-explorer">
-<h2>Internet Explorer</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <strong>Internet Explorer</strong></li>
-    <li>Find and click on <strong>Tools</strong></li>
-    <li>Find and click on <strong>Internet Options</strong></li>
-</ol>
-<h3>Settings</h3>
-Under the Security tab, security zone settings should be:
-<ul>
-    <li>Internet - High</li>
-    <li>Local Intranet - Medium-low</li>
-    <li>Trusted Sites - Medium</li>
-    <li>Restricted Sites - High</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="microsoft-baseline-security-analyzer">
-<h2>Microsoft Baseline Security Analyzer</h2>
-<h3>Download</h3>
-<ul>
-    <li><a target="_blank" href="http://www.microsoft.com/en-us/download/details.aspx?id=7558">http://www.microsoft.com/en-us/download/details.aspx?id=7558</a></li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="microsoft-safety-scanner">
-<h2>Microsoft Safety Scanner</h2>
-<h3>Download</h3>
-<ul>
-    <li><a target="_blank" href="http://www.microsoft.com/security/scanner/en-us/default.aspx">http://www.microsoft.com/security/scanner/en-us/default.aspx</a></li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="microsoft-security-essentials">
-<h2>Microsoft Security Essentials</h2>
-<p>Not supported for Windows Server.</p>
-<p>Use <a href="#microsoft-safety-scanner">Microsoft Safety Scanner</a> instead.</p>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="password-policy">
-<h2>Password Policy</h2>
-<h3>Location</h3>
-<ol>
-    <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
-    <li>Find and click on <strong>Local Security Policy</strong></li>
-    <li>Open <strong>Account Policies</strong></li>
-    <li>Open <strong>Password Policy</strong></li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>Enforce password history - 5 passwords remembered</li>
-    <li>Maximum password age - 30 days</li>
-    <li>Minimum password age - 5 days</li>
-    <li>Minimum password length - 8 characters</li>
-    <li>Password must meet complexity requirements - Enabled</li>
-    <li>Store passwords using reversible encryption - Disabled</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
 <div id="processes">
 <h2>Processes</h2>
 <h3>Location</h3>
@@ -381,207 +726,6 @@ The following are Windows processes that should not be stopped.
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
-<div id="program-files">
-<h2>Program Files</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#c-drive">C:\ drive</a></li>
-    <li>Find and open <strong>Program Files</strong></li>
-</ol>
-<h3>Settings</h3>
-The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
-<ul>
-    <li>Common Files</li>
-    <li>Internet Explorer</li>
-    <li>Packaged Programs</li>
-    <li>Uninstall Information (hidden)</li>
-    <li>Windows Mail</li>
-    <li>Windows NT</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="program-files-x86-">
-<h2>Program Files (x86)</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#c-drive">C:\ drive</a></li>
-    <li>Find and open <strong>Program Files (x86)</strong></li>
-</ol>
-<h3>Settings</h3>
-The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list. 
-<ul>
-    <li>Common Files</li>
-    <li>Internet Explorer</li>
-    <li>Uninstall Information (hidden)</li>
-    <li>Windows Mail</li>
-    <li>Windows NT</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="remote-assistance">
-<h2>Remote Assistance</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>System and Maintenance</strong></li>
-    <li>Find and click on <strong>System</strong></li>
-    <li>Find and click on <strong>Remote settings</strong></li>
-</ol>
-<h3>Settings</h3>
-Under Remote Assistance
-<ul>
-    <li>[ ] Allow Remote Assistance connections to this computer</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="remote-desktop">
-<h2>Remote Desktop</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>System and Maintenance</strong></li>
-    <li>Find and click on <strong>System</strong></li>
-    <li>Find and click on <strong>Remote settings</strong></li>
-</ol>
-<h3>Settings</h3>
-Under Remote Desktop
-<ul>
-    <li>[x] Don't allow connections to this computer</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="rootkit-scanners">
-<h2>Rootkit Scanners</h2>
-Do not remove any CyberPatriot resource if these tools bring it up. Remove and fix all other issues.
-<ul>
-    <li>Avast aswMBR
-        <ul>
-            <li><a target="_blank" href="http://public.avast.com/~gmerek/aswMBR.htm">http://public.avast.com/~gmerek/aswMBR.htm</a></li>
-        </ul>
-    </li>
-    <li>MalwareBytes Anti-Rootkit
-        <ul>
-            <li><a target="_blank" href="http://www.bleepingcomputer.com/download/malwarebytes-anti-rootkit/">http://www.bleepingcomputer.com/download/malwarebytes-anti-rootkit/</a></li>
-        </ul>
-    </li>
-    <li>McAfee Rootkit Remover
-        <ul>
-            <li><a target="_blank" href="http://www.mcafee.com/us/downloads/free-tools/rootkitremover.aspx">http://www.mcafee.com/us/downloads/free-tools/rootkitremover.aspx</a></li>
-        </ul>
-    </li>
-    <li>Norton Power Eraser
-        <ul>
-            <li><a target="_blank" href="http://security.symantec.com/nbrt/npe.aspx">http://security.symantec.com/nbrt/npe.aspx</a></li>
-        </ul>
-    </li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="service-packs">
-<h2>Service Packs</h2>
-<h3>Location</h3>
-<ol>
-    <li>Press Start or Windows button</li>
-    <li>Find and right click <strong>Computer</strong> or <strong>My Computer</strong></li>
-    <li>Select <strong>Properties</strong></li>
-    <li>Find the words <strong>Service Pack</strong>
-        <ul>
-            <li>if there is none, no service pack is installed</li>
-        </ul>
-    </li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>For Windows Server 2008, the latest is Service Pack 2</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="services">
-<h2>Services</h2>
-<h3>Location</h3>
-<ol>
-    <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
-    <li>Find and open <strong>Services</strong></li>
-</ol>
-<h3>Settings</h3>
-Make sure all CyberPatriot services have Started as Status and Automatic as Startup Type.
-<p></p>
-Unless required by readme, stop each of the following services and change Startup Type as Disabled
-<ul>
-    <li>DHCP Server</li>
-    <li>DNS Server</li>
-    <li>FTP Server</li>
-    <li>HTTP Server</li>
-    <li>Internet Information Services (IIS)</li>
-    <li>Telnet Server</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="shared-folders">
-<h2>Shared Folders</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#administrative-tools">Administrative Tools</a></li>
-    <li>Find and double click on <strong>Computer Management</strong></li>
-    <li>Find and double click on <strong>Shared Folders</strong></li>
-    <li>Find and double click on <strong>Shares</strong></li>
-</ol>
-<h3>Settings</h3>
-Stop sharing all shares.
-<p></p>
-The following are the mininum required shares. Other shares may be deleted, unless required by readme.
-<ul>
-    <li>ADMIN$ - C:\Windows - Windows</li>
-    <li>C$ - C:\ - Windows
-        <ul>
-            <li>other letters may appear for each Local Disk in Computer</li>
-        </ul>
-    </li>
-    <li>IPC$ - [blank] - Windows</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="show-hidden-files-and-folders">
-<h2>Show Hidden Files and Folders</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>Appearance and Personalization</strong></li>
-    <li>Find <strong>Folder Options</strong></li>
-    <li>Find and click on <strong>Show hidden files and folders</strong></li>
-</ol>
-<h3>Settings</h3>
-Under <strong>Files and Folders</strong>, under <strong>Hidden files and folders</strong>
-<ul>
-    <li>[x] Show hidden files, folders, and drives</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="startup-programs">
-<h2>Startup Programs</h2>
-<h3>Location</h3>
-<ol>
-    <li>Press the Start or Windows button</li>
-    <li>Type <strong>msconfig</strong>, press Enter</li>
-    <li>Go to the <strong>Startup</strong> tab</li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>Keep checkmarks on required programs and services</li>
-    <li>Remove checkmarks on all other items</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
 <div id="task-manager">
 <h2>Task Manager</h2>
 <h3>Location</h3>
@@ -594,150 +738,6 @@ Option 2
 <ol>
     <li>Press <strong>CTRL + ALT + DEL</strong></li>
     <li>Select <strong>Start Task Manager</strong></li>
-</ol>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="user-accounts">
-<h2>User Accounts</h2>
-<h3>Location</h3>
-<ol>
-    <li>Go to <a href="#administrative-tools">Administrative Tools</a></li>
-    <li>Find and open <strong>Computer Management</strong></li>
-    <li>Find and open <strong>System Tools</strong></li>
-    <li>Find and open <strong>Local Users and Groups</strong></li>
-    <li>Find and open <strong>Users</strong></li>
-</ol>
-<h3>Settings</h3>
-For each user, right click on user, select <strong>Properties</strong>, and check the following:
-<p></p>
-Under <strong>General</strong> tab
-<ul>
-    <li>Disable all users not required by readme</li>
-    <li>Set passwords to expire for all users</li>
-</ul>
-Under <strong>Member Of</strong> tab
-<ul>
-    <li>Add user to necessary groups, e.g. Administrators</li>
-    <li>Remove user from unnecessary groups</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="users-folder">
-<h2>Users Folder</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#c-drive">C:\ drive</a></li>
-    <li>Open <strong>Users</strong></li>
-</ol>
-<h3>Settings</h3>
-The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
-<ul>
-    <li>Default</li>
-    <li>Public</li>
-    <li>any user allowed by readme</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="windows-features">
-<h2>Windows Features</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>Programs</strong></li>
-    <li>Find <strong>Programs and Features</strong></li>
-    <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
-    <li>Under <strong>Server Manager</strong>, find and open <strong>Features</strong></li>
-</ol>
-<h3>Settings</h3>
-By default, no features (0 of 41) are installed
-<ol>
-    <li>Check the readme for which features or services should be installed
-        <ul>
-            <li>.NET Framework</li>
-            <li>Group Policy Management</li>
-            <li>SMTP Server</li>
-            <li>SNMP Services</li>
-            <li>Telnet Client</li>
-            <li>Telnet Server</li>
-            <li>TFTP Client</li>
-            <li>WINS Server</li>
-        </ul>
-    </li>
-    <li>Use <strong>Add Features</strong> to add necessary features</li>
-    <li>Use <strong>Remove Features</strong> to remove unnecessary features</li>
-</ol>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="windows-firewall">
-<h2>Windows Firewall</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>Security</strong></li>
-    <li>Find and click on <strong>Windows Firewall</strong></li>
-    <li>Find and click on <strong>Turn Windows Firewall on or off</strong></li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>Under the General tab
-        <ul>
-            <li>[x] On (recommended)</li>
-            <li>[ ] Block all incoming connections</li>
-        </ul>
-    </li>
-    <li>Under the Exceptions tab
-        <ul>
-            <li>Only Core Networking and any required programs or services should have checkmarks</li>
-            <li>Uncheck all other programs and features</li>
-        </ul>
-    </li>
-    <li>Under the Advanced tab
-        <ul>
-            <li>Put a checkmark on all Network connections</li>
-        </ul>
-    </li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="windows-server-roles">
-<h2>Windows Server Roles</h2>
-By default, no roles (0 or 17) are installed
-<ol>
-    <li>Open <strong>Server Manager</strong></li>
-    <li>Find and double click on <strong>Roles</strong></li>
-    <li>Check the readme for which roles should be installed
-        <ul>
-            <li>Active Directory</li>
-            <li>DHCP Server</li>
-            <li>DNS Server</li>
-            <li>Web Server (IIS)</li>
-        </ul>
-    </li>
-    <li>Use <strong>Add Roles</strong> to add necessary server roles</li>
-    <li>Use <strong>Remove Roles</strong> to remove unnecessary server roles</li>
-</ol>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="windows-updates">
-<h2>Windows Updates</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#control-panel">Control Panel</a></li>
-    <li>Find and click on <strong>Security</strong></li>
-    <li>Find <strong>Windows Update</strong></li>
-</ol>
-<h3>Settings</h3>
-<ol>
-    <li>Find and click on <strong>Check for Updates</strong></li>
-    <li>If there are any critical or important updates, click on <strong>Install Updates</strong></li>
-    <li>Wait for updates to finish</li>
-    <li>Repeat until no remaining critical and important updates</li>
 </ol>
 <a href="#toc">Table of Contents</a>
 </div>
