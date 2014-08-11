@@ -195,9 +195,9 @@ For example, add rule for TCP 22 for remote access
 <div id="network-connections">
 <h2>Network Connections</h2>
 <h3>View listening network connections</h3>
-<p>netstat -ntulp</p>
+<p>netstat -tulpn</p>
 <h3>View established network connections</h3>
-<p>netstat -ntup</p>
+<p>netstat -tupn</p>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr><hr>
@@ -258,10 +258,10 @@ For example, add rule for TCP 22 for remote access
     <li>avahi-daemon</li>
     <li>bind</li>
     <li>dnsmasq</li>
+    <li>xinetd</li>
     <li>inetd</li>
     <li>sshd</li>
     <li>telnet</li>
-    <li>xinetd</li>
 </ul>
 <p>Printing, Scanning</p>
 <ul>
@@ -290,9 +290,10 @@ For example, add rule for TCP 22 for remote access
 <div id="updates">
 <h2>Updates</h2>
 <ol>
+    <li>Check /etc/apt/sources.list to make sure all necessary repos, especially security, are there and correct.</li>
+    <li>Check for packages daily via the Ubuntu update manager.</li>
     <li>Open <a href="#terminal">terminal</a></li>
-    <li>apt-get update</li>
-    <li>apt-get upgrade</li>
+    <li>sudo apt-get update && sudo apt-get upgrade -y</li>
 </ol>
 <a href="#toc">Table of Contents</a>
 </div>
