@@ -23,7 +23,8 @@
   ],
 
   ["References", [
-    ["Terminal", "ubuntu"]
+    ["Terminal", "ubuntu"],
+    ["System Settings", "ubuntu"]
     ]
   ]
 ]
