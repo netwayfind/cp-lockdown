@@ -1,6 +1,26 @@
 <ol>
-    <li>Check /etc/apt/sources.list to make sure all necessary repos, especially security, are there and correct.</li>
-    <li>Check for packages daily via the Ubuntu update manager.</li>
+    <li>Open <a href="#system-settings">System Settings</a></li>
+    <li>Under <b>System</b> section, find and click on <b>Software & Updates</b></li>
+    <li>Press <b>Revert</b> for default settings</li>
+    <li>For Ubuntu Software tab
+        <ol>
+            <li>[x] Canonical-supported free and open-source software (main)</li>
+            <li>[Optional] Community-maintained free and open-source software (universe)</li>
+            <li>[Optional] Proprietary drivers for devices (restricted)</li>
+            <li>[Optional] Software restricted by copyright or legal issues (multiverse)</li>
+            <li>Download from: [Server near you]</li>
+        </ol>
+    </li>
+    <li>For Updates tab
+        <ol>
+            <li>[x] Important security updates (*-security)</li>
+            <li>[x] Recommended updates (*-updates)</li>
+            <li>[Optional] Pre-release updates (*-proposed)</li>
+            <li>[Optional] Unsupported updates (*-backports)</li>
+            <li>Automatic check for updates: Daily</li>
+            <li>When there are security updates: Display immediately</li>
+        </ol>
+    </li>
     <li>Open <a href="#terminal">terminal</a></li>
     <li>sudo apt-get update && sudo apt-get upgrade -y</li>
 </ol>
