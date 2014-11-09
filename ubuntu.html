@@ -65,9 +65,27 @@ References<ul>
     <li>cat /etc/passwd</li>
 </ol>
 <h3>Settings</h3>
-<ul>
+<ol>
     <li>Check <a href="#default-users">Default Users</a></li>
-</ul>
+    <ul>
+        <li>Check that the users specified in the readme exist. Double check the default users. Look out for unmentioned users.</li>
+        <li>Line reference = [user]:x:[user id]:[group id]:[description]:[home directory]:[default shell]
+        <li>User ID number less than 1000 are hidden users</li>
+        <li>only user root should have User ID of 0</li>
+    </ul>
+    <li>To disable a user (unable to log in, keep files):</li>
+    <ul>
+        <li>sudo passwd -l [user]</li>
+    </ul>
+    <li>To remove a user and their files:</li>
+    <ul>
+        <li>sudo userdel -r [user]</li>
+    </ul>
+    <li>To add a user:</li>
+    <ul>
+        <li>sudo useradd -D [user]</li>
+    </ul>
+</ol>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
