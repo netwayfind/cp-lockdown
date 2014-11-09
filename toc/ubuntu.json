@@ -3,10 +3,8 @@
 "short_name": "ubuntu",
 "section_groups": [
   ["Users and Groups", [
-    ["Groups", "linux"],
     ["Users", "linux"],
-    ["Default Groups", "ubuntu"],
-    ["Default Users", "ubuntu"]
+    ["Groups", "linux"]
     ]
   ],
 
@@ -24,7 +22,9 @@
 
   ["References", [
     ["Terminal", "ubuntu"],
-    ["System Settings", "ubuntu"]
+    ["System Settings", "ubuntu"],
+    ["Default Groups", "ubuntu"],
+    ["Default Users", "ubuntu"]
     ]
   ]
 ]
