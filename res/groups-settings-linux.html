@@ -1,3 +1,17 @@
-<ul>
+<ol>
     <li>Check <a href="#default-groups">Default Groups</a></li>
-</ul>
+    <ul>
+        <li>root group should be empty</li>
+        <li>sudo group should only have administrator users</li>
+        <li>users group should only have users specified in the readme</li>
+        <li>each user may have a corresponding group</li>
+    </ul>
+    <li>To add a user to a group:</li>
+    <ul>
+        <li>sudo gpasswd -a [user] [group]</li>
+    </ul>
+    </li>To remove a user from a group:</li>
+    <ul>
+        <li>sudo gpasswd -d [user] [group]</li>
+    </ul>
+</ol>
