@@ -8,10 +8,8 @@
 <h1>Ubuntu</h1>
 <div id="toc">
 Users and Groups<ul>
-<li><a href="#groups">Groups</a><br /></li>
 <li><a href="#users">Users</a><br /></li>
-<li><a href="#default-groups">Default Groups</a><br /></li>
-<li><a href="#default-users">Default Users</a><br /></li>
+<li><a href="#groups">Groups</a><br /></li>
 </ul>
 Networking<ul>
 <li><a href="#firewall">Firewall</a><br /></li>
@@ -23,24 +21,13 @@ Configuration<ul>
 </ul>
 References<ul>
 <li><a href="#terminal">Terminal</a><br /></li>
+<li><a href="#system-settings">System Settings</a><br /></li>
+<li><a href="#default-groups">Default Groups</a><br /></li>
+<li><a href="#default-users">Default Users</a><br /></li>
 </ul>
 </div>
 <hr><hr>
 <h1>Users and Groups</h1>
-<hr>
-<div id="groups">
-<h2>Groups</h2>
-<h3>Location</h3>
-<ol>
-    <li>Open <a href="#terminal">terminal</a></li>
-    <li>cat /etc/group</li>
-</ol>
-<h3>Settings</h3>
-<ul>
-    <li>Check <a href="#default-groups">Default Groups</a></li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
 <hr>
 <div id="users">
 <h2>Users</h2>
@@ -50,122 +37,55 @@ References<ul>
     <li>cat /etc/passwd</li>
 </ol>
 <h3>Settings</h3>
-<ul>
+<ol>
     <li>Check <a href="#default-users">Default Users</a></li>
-</ul>
+    <ul>
+        <li>Check that the users specified in the readme exist. Double check the default users. Look out for unmentioned users.</li>
+        <li>Line reference = [user]:x:[user id]:[group id]:[description]:[home directory]:[default shell]
+        <li>User ID number less than 1000 are hidden users</li>
+        <li>only user root should have User ID of 0</li>
+    </ul>
+    <li>To disable a user (unable to log in, keep files):</li>
+    <ul>
+        <li>sudo passwd -l [user]</li>
+    </ul>
+    <li>To remove a user and their files:</li>
+    <ul>
+        <li>sudo userdel -r [user]</li>
+    </ul>
+    <li>To add a user:</li>
+    <ul>
+        <li>sudo useradd -D [user]</li>
+    </ul>
+</ol>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr>
-<div id="default-groups">
-<h2>Default Groups</h2>
-<ul>
-    <li>root</li>
-    <li>daemon</li>
-    <li>bin</li>
-    <li>sys</li>
-    <li>adm</li>
-    <li>tty</li>
-    <li>disk</li>
-    <li>lp</li>
-    <li>mail</li>
-    <li>news</li>
-    <li>uucp</li>
-    <li>man</li>
-    <li>proxy</li>
-    <li>kmem</li>
-    <li>dialout</li>
-    <li>fax</li>
-    <li>voice</li>
-    <li>cdrom</li>
-    <li>floppy</li>
-    <li>tape</li>
-    <li>sudo</li>
-    <li>audio</li>
-    <li>dip</li>
-    <li>www-data</li>
-    <li>backup</li>
-    <li>operator</li>
-    <li>list</li>
-    <li>irc</li>
-    <li>src</li>
-    <li>gnats</li>
-    <li>shadow</li>
-    <li>utmp</li>
-    <li>video</li>
-    <li>sasl</li>
-    <li>plugdev</li>
-    <li>staff</li>
-    <li>games</li>
-    <li>users</li>
-    <li>nogroup</li>
-    <li>libuuid</li>
-    <li>crontab</li>
-    <li>syslog</li>
-    <li>fuse</li>
-    <li>messagebus</li>
-    <li>bluetooth</li>
-    <li>scanner</li>
-    <li>colord</li>
-    <li>lpadmin</li>
-    <li>ssl-cert</li>
-    <li>lightdm</li>
-    <li>nopasswdlogin</li>
-    <li>netdev</li>
-    <li>whoopsie</li>
-    <li>mlocate</li>
-    <li>ssh</li>
-    <li>avahi-autoipd</li>
-    <li>avahi</li>
-    <li>pulse</li>
-    <li>pulse-access</li>
-    <li>utempter</li>
-    <li>rtkit</li>
-    <li>saned</li>
-    <li>ubuntu</li>
-    <li>sambashare</li>
-</ul>
-<a href="#toc">Table of Contents</a>
-</div>
-<hr>
-<div id="default-users">
-<h2>Default Users</h2>
-<ul>
-    <li>root</li>
-    <li>daemon</li>
-    <li>bin</li>
-    <li>sys</li>
-    <li>sync</li>
-    <li>games</li>
-    <li>man</li>
-    <li>lp</li>
-    <li>mail</li>
-    <li>news</li>
-    <li>uucp</li>
-    <li>proxy</li>
-    <li>www-data</li>
-    <li>backup</li>
-    <li>list</li>
-    <li>irc</li>
-    <li>gnats</li>
-    <li>nobody</li>
-    <li>libuuid</li>
-    <li>syslog</li>
-    <li>messagebus</li>
-    <li>colord</li>
-    <li>lightdm</li>
-    <li>whoopsie</li>
-    <li>avahi-autoipd</li>
-    <li>avahi</li>
-    <li>usbmux</li>
-    <li>kernoops</li>
-    <li>pulse</li>
-    <li>rtkit</li>
-    <li>speech-dispatcher</li>
-    <li>dispatcher</li>
-    <li>hplip</li>
-    <li>saned</li>
-    <li>ubuntu</li>
-</ul>
+<div id="groups">
+<h2>Groups</h2>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#terminal">terminal</a></li>
+    <li>cat /etc/group</li>
+</ol>
+<h3>Settings</h3>
+<ol>
+    <li>Check <a href="#default-groups">Default Groups</a></li>
+    <ul>
+        <li>root group should be empty</li>
+        <li>sudo group should only have administrator users</li>
+        <li>users group should only have users specified in the readme</li>
+        <li>each user may have a corresponding group</li>
+    </ul>
+    <li>To add a user to a group:</li>
+    <ul>
+        <li>sudo gpasswd -a [user] [group]</li>
+    </ul>
+    </li>To remove a user from a group:</li>
+    <ul>
+        <li>sudo gpasswd -d [user] [group]</li>
+    </ul>
+</ol>
 <a href="#toc">Table of Contents</a>
 </div>
 <hr><hr>
@@ -290,8 +210,28 @@ For example, add rule for TCP 22 for remote access
 <div id="updates">
 <h2>Updates</h2>
 <ol>
-    <li>Check /etc/apt/sources.list to make sure all necessary repos, especially security, are there and correct.</li>
-    <li>Check for packages daily via the Ubuntu update manager.</li>
+    <li>Open <a href="#system-settings">System Settings</a></li>
+    <li>Under <b>System</b> section, find and click on <b>Software & Updates</b></li>
+    <li>Press <b>Revert</b> for default settings</li>
+    <li>For Ubuntu Software tab
+        <ol>
+            <li>[x] Canonical-supported free and open-source software (main)</li>
+            <li>[Optional] Community-maintained free and open-source software (universe)</li>
+            <li>[Optional] Proprietary drivers for devices (restricted)</li>
+            <li>[Optional] Software restricted by copyright or legal issues (multiverse)</li>
+            <li>Download from: [Server near you]</li>
+        </ol>
+    </li>
+    <li>For Updates tab
+        <ol>
+            <li>[x] Important security updates (*-security)</li>
+            <li>[x] Recommended updates (*-updates)</li>
+            <li>[Optional] Pre-release updates (*-proposed)</li>
+            <li>[Optional] Unsupported updates (*-backports)</li>
+            <li>Automatic check for updates: Daily</li>
+            <li>When there are security updates: Display immediately</li>
+        </ol>
+    </li>
     <li>Open <a href="#terminal">terminal</a></li>
     <li>sudo apt-get update && sudo apt-get upgrade -y</li>
 </ol>
@@ -313,6 +253,128 @@ Option 2
     <li>Go to <strong>Accessories</strong></li>
     <li>Click on <strong>Terminal</strong></li>
 </ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="system-settings">
+<h2>System Settings</h2>
+<ol>
+    <li>Press the gear-like icon at the top right of the screen. (Next to the current time)</li>
+    <li>Click on <b>System Settings</b></li>
+</ol>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="default-groups">
+<h2>Default Groups</h2>
+<ul>
+    <li>root</li>
+    <li>daemon</li>
+    <li>bin</li>
+    <li>sys</li>
+    <li>adm</li>
+    <li>tty</li>
+    <li>disk</li>
+    <li>lp</li>
+    <li>mail</li>
+    <li>news</li>
+    <li>uucp</li>
+    <li>man</li>
+    <li>proxy</li>
+    <li>kmem</li>
+    <li>dialout</li>
+    <li>fax</li>
+    <li>voice</li>
+    <li>cdrom</li>
+    <li>floppy</li>
+    <li>tape</li>
+    <li>sudo</li>
+    <li>audio</li>
+    <li>dip</li>
+    <li>www-data</li>
+    <li>backup</li>
+    <li>operator</li>
+    <li>list</li>
+    <li>irc</li>
+    <li>src</li>
+    <li>gnats</li>
+    <li>shadow</li>
+    <li>utmp</li>
+    <li>video</li>
+    <li>sasl</li>
+    <li>plugdev</li>
+    <li>staff</li>
+    <li>games</li>
+    <li>users</li>
+    <li>nogroup</li>
+    <li>libuuid</li>
+    <li>crontab</li>
+    <li>syslog</li>
+    <li>fuse</li>
+    <li>messagebus</li>
+    <li>bluetooth</li>
+    <li>scanner</li>
+    <li>colord</li>
+    <li>lpadmin</li>
+    <li>ssl-cert</li>
+    <li>lightdm</li>
+    <li>nopasswdlogin</li>
+    <li>netdev</li>
+    <li>whoopsie</li>
+    <li>mlocate</li>
+    <li>ssh</li>
+    <li>avahi-autoipd</li>
+    <li>avahi</li>
+    <li>pulse</li>
+    <li>pulse-access</li>
+    <li>utempter</li>
+    <li>rtkit</li>
+    <li>saned</li>
+    <li>ubuntu</li>
+    <li>sambashare</li>
+</ul>
+<a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="default-users">
+<h2>Default Users</h2>
+<ul>
+    <li>root</li>
+    <li>daemon</li>
+    <li>bin</li>
+    <li>sys</li>
+    <li>sync</li>
+    <li>games</li>
+    <li>man</li>
+    <li>lp</li>
+    <li>mail</li>
+    <li>news</li>
+    <li>uucp</li>
+    <li>proxy</li>
+    <li>www-data</li>
+    <li>backup</li>
+    <li>list</li>
+    <li>irc</li>
+    <li>gnats</li>
+    <li>nobody</li>
+    <li>libuuid</li>
+    <li>syslog</li>
+    <li>messagebus</li>
+    <li>colord</li>
+    <li>lightdm</li>
+    <li>whoopsie</li>
+    <li>avahi-autoipd</li>
+    <li>avahi</li>
+    <li>usbmux</li>
+    <li>kernoops</li>
+    <li>pulse</li>
+    <li>rtkit</li>
+    <li>speech-dispatcher</li>
+    <li>dispatcher</li>
+    <li>hplip</li>
+    <li>saned</li>
+    <li>ubuntu</li>
+</ul>
 <a href="#toc">Table of Contents</a>
 </div>
 </body>
