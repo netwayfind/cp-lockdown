@@ -131,11 +131,23 @@ References<ul>
 <hr>
 <div id="network-connections">
 <h2>Network Connections</h2>
-<h3>View listening network connections</h3>
-<p>netstat -ntulp</p>
-<h3>View established network connections</h3>
-<p>netstat -tupn</p>
-<a href="#toc">Table of Contents</a>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#terminal">Terminal</a></li>
+    <li>sudo netstat [options]</li>
+</ol>
+<h3>Settings</h3>
+<ol>
+    <li>Check listening network connections</li>
+    <ol>
+        <li>netstat -ntulp</li>
+        <li>Make sure only necessary services have listening connections on the correct ports</li>
+    </ol>
+    <li>Check established network connections</li>
+    <ol>
+        <li>netstat -tupn</li>
+    </ol>
+</ol><a href="#toc">Table of Contents</a>
 </div>
 <hr><hr>
 <h1>Configuration</h1>
