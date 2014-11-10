@@ -20,6 +20,10 @@
     ]
   ],
 
+  ["Scans", [
+    ]
+  ],
+
   ["References", [
     ["Terminal", "ubuntu"],
     ["System Settings", "ubuntu"],
