@@ -93,23 +93,40 @@ References<ul>
 <hr>
 <div id="firewall">
 <h2>Firewall</h2>
-<h3>Check rules</h3>
-<p>iptables -nL</p>
-<h3>Reset firewall rules</h3>
-<p>iptables -F</p>
-<p>iptables -X</p>
-<h3>Set default rules</h3>
-<p>iptables -P INPUT DROP</p>
-<p>iptables -A INPUT -i lo -j ACCEPT</p>
-<p>iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</p>
-<h3>Add rules</h3>
-For example, add rule for TCP 22 for remote access
-<p>iptables -A INPUT -p tcp --dport 22 -j ACCEPT</p>
-<h3>Set default actions</h3>
-<p>iptables -P INPUT DROP</p>
-<p>iptables -P FORWARD DROP</p>
-<p>iptables -P OUTPUT ACCEPT</p>
-<a href="#toc">Table of Contents</a>
+<h3>Location</h3>
+<ol>
+    <li>Open <a href="#terminal">Terminal</a></li>
+    <li>sudo iptables [options]</li>
+</ol><h3>Settings</h3>
+<ol>
+    <li>Check rules</a></li>
+    <ol>
+        <li>sudo iptables -nvL</li>
+    </ol>
+    <li>Reset rules</li>
+    <ol>
+        <li>sudo iptables -F</li>
+        <li>sudo iptables -X</li>
+    </ol>
+    <li>Set default rules</li>
+    <ol>
+        <li>sudo iptables -A INPUT -m state --state INVALID -j DROP</li>
+        <li>sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</li>
+        <li>sudo iptables -A INPUT -i lo -j ACCEPT</li>
+    </ol>
+    <li>Add allowed INPUT rule</li>
+    <ol>
+        <li>sudo iptables -A INPUT -p [protocol] --dport [port] -j ACCEPT</li>
+        <li>Check Readme for required services. Research any required ports that need to be opened on firewall.</li>
+        <li>Example for SSH: sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT</li>
+    </ol>
+    <li>Set default policy</li>
+    <ol>
+        <li>sudo iptables -P INPUT DROP</li>
+        <li>sudo iptables -P FORWARD DROP</li>
+        <li>sudo iptables -P OUTPUT ACCEPT</li>
+    </ol>
+</ol><a href="#toc">Table of Contents</a>
 </div>
 <hr>
 <div id="network-connections">
