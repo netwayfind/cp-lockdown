@@ -4,7 +4,8 @@
 "section_groups": [
   ["Users and Groups", [
     ["Users", "linux"],
-    ["Groups", "linux"]
+    ["Groups", "linux"],
+    ["Guest access", "ubuntu"]
     ]
   ],
 
