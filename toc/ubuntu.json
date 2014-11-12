@@ -22,7 +22,8 @@
 
   ["Scans", [
     ["chkrootkit"],
-    ["rkhunter"]
+    ["rkhunter"],
+    ["lynis"]
     ]
   ],
 
