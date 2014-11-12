@@ -34,6 +34,11 @@
     ]
   ],
 
+  ["Configuration", [
+    ["auditd"]
+    ]
+  ],
+
   ["References", [
     ["Terminal", "ubuntu"],
     ["System Settings", "ubuntu"],
