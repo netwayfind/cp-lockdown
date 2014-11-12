@@ -14,7 +14,7 @@
     ]
   ],
 
-  ["Configuration", [
+  ["Installation Check", [
     ["Applications", "ubuntu"],
     ["Services", "linux"],
     ["Updates", "apt-get"]
