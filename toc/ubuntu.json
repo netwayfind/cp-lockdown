@@ -37,6 +37,7 @@
   ["References", [
     ["Terminal", "ubuntu"],
     ["System Settings", "ubuntu"],
+    ["Edit a file", "ubuntu"],
     ["Default Groups", "ubuntu"],
     ["Default Users", "ubuntu"]
     ]
