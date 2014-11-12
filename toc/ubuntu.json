@@ -5,7 +5,8 @@
   ["Users and Groups", [
     ["Users", "linux"],
     ["Groups", "linux"],
-    ["Guest access", "ubuntu"]
+    ["Guest access", "ubuntu"],
+    ["sudo", "ubuntu"]
     ]
   ],
 
