@@ -29,7 +29,8 @@
   ],
 
   ["Filesystem", [
-    ["Find Unauthorized Files", "linux"]
+    ["Find Unauthorized Files", "linux"],
+    ["Hosts file", "ubuntu"]
     ]
   ],
 
