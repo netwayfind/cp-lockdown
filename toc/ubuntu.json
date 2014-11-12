@@ -36,7 +36,9 @@
   ],
 
   ["Configuration", [
-    ["auditd"]
+    ["auditd"],
+    ["libpam-cracklib"],
+    ["Password Policy", "ubuntu"]
     ]
   ],
 
