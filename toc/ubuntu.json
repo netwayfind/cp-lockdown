@@ -27,6 +27,11 @@
     ]
   ],
 
+  ["Filesystem", [
+    ["Find Unauthorized Files", "linux"]
+    ]
+  ],
+
   ["References", [
     ["Terminal", "ubuntu"],
     ["System Settings", "ubuntu"],

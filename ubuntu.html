@@ -24,6 +24,9 @@ Scans<ul>
 <li><a href="#rkhunter">rkhunter</a><br /></li>
 <li><a href="#lynis">lynis</a><br /></li>
 </ul>
+Filesystem<ul>
+<li><a href="#find-unauthorized-files">Find Unauthorized Files</a><br /></li>
+</ul>
 References<ul>
 <li><a href="#terminal">Terminal</a><br /></li>
 <li><a href="#system-settings">System Settings</a><br /></li>
@@ -312,6 +315,30 @@ References<ul>
     <li>sudo lynis -Q</li>
     <li>After scan completes, review findings.</li>
 </ol><a href="#toc">Table of Contents</a>
+</div>
+<hr><hr>
+<h1>Filesystem</h1>
+<hr>
+<div id="find-unauthorized-files">
+<h2>Find Unauthorized Files</h2>
+<ol>
+    <li>Open <a href="#Terminal">Terminal</a></li>
+    <li>find /home -name "*.mp3*"
+        <ul>
+            <li>this will search for .mp3 files in /home</li>
+        </ul>
+    </li>
+    <li>If there are any results, inspect the files and remove as necessary</li>
+    <li>Repeat from step 2 for the following file extensions
+        <ul>
+            <li>(music) - .mp3, .wav, .wma, .aac</li>
+            <li>(movie/video) - .mp4, .mov, .avi, .avi</li>
+            <li>(pictures) - .gif, .jpg, .jpeg, ,.png, .bmp</li>
+            <li>(executable files) - .exe, .msi, .bat, .sh</li>
+        </ul>
+    </li>
+</ol>
+<a href="#toc">Table of Contents</a>
 </div>
 <hr><hr>
 <h1>References</h1>
