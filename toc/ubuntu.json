@@ -38,7 +38,8 @@
   ["Configuration", [
     ["auditd"],
     ["libpam-cracklib"],
-    ["Password Policy", "ubuntu"]
+    ["Password Policy", "ubuntu"],
+    ["Account Lockout Policy", "ubuntu"]
     ]
   ],
 

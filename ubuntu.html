@@ -34,6 +34,7 @@ Configuration<ul>
 <li><a href="#auditd">auditd</a><br /></li>
 <li><a href="#libpam-cracklib">libpam-cracklib</a><br /></li>
 <li><a href="#password-policy">Password Policy</a><br /></li>
+<li><a href="#account-lockout-policy">Account Lockout Policy</a><br /></li>
 </ul>
 References<ul>
 <li><a href="#terminal">Terminal</a><br /></li>
@@ -478,6 +479,24 @@ For /etc/login.defs
      <li>Find PASS_MIN_DAYS, set to 10</li>
      <li>Find PASS_WARN_AGE, set to 7</li>
 </ol><a href="#toc">Table of Contents</a>
+</div>
+<hr>
+<div id="account-lockout-policy">
+<h2>Account Lockout Policy</h2>
+<h3>Location</h3>
+<ol>
+    <li><a href="#edit-a-file">Edit</a> /etc/pam.d/common-auth</li>
+</ol>
+<h3>Settings</h3>
+<ol>
+     <li>Add the following to the end of the file:
+         <ul>
+             <li>auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800</li>
+             <li>this will set lockout to 5 attempts and lock out for 1800 seconds (15 minutes)</li>
+         </ul>
+     </li>
+</ol>
+<a href="#toc">Table of Contents</a>
 </div>
 <hr><hr>
 <h1>References</h1>
