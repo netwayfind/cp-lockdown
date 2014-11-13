@@ -34,7 +34,8 @@
 
   ["Policies", [
     ["Account Lockout Policy"],
-    ["Password Policy"]
+    ["Password Policy"],
+    ["Audit Policy"]
     ]
   ],
 
