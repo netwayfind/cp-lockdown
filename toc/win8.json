@@ -49,8 +49,8 @@
     ["Show Hidden Files and Folders"],
     ["Find Unauthorized Files"],
     ["Users Folder"],
-    ["Program Files"],
-    ["Program Files (x86)"],
+    ["Program Files", "win8"],
+    ["Program Files (x86)", "win8"],
     ["Hosts file"]
     ]
   ],
