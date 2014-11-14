@@ -10,7 +10,7 @@
 
   ["Users and Groups", [
     ["Local Users and Groups"],
-    ["Automatic Login"]
+    ["Automatic Login", "win8"]
     ]
   ],
 
@@ -20,7 +20,7 @@
     ["Startup Programs", "win8"],
     ["Services"],
     ["Internet Explorer"],
-    ["Disk Cleanup"]
+    ["Disk Cleanup", "win8"]
     ]
   ],
 
@@ -65,7 +65,7 @@
   ["Reference", [
     ["Administrative Tools"],
     ["C:\\ Drive", "win8"],
-    ["Command Prompt"],
+    ["Command Prompt", "win8"],
     ["Control Panel", "win8"],
     ["Processes"],
     ["Task Manager"]
