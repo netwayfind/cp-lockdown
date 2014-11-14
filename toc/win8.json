@@ -56,7 +56,7 @@
   ],
 
   ["Updates", [
-    ["Automatic Updates"],
+    ["Automatic Updates", "win8"],
     ["Service Packs", "win7"],
     ["Windows Updates"]
     ]
