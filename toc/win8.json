@@ -40,7 +40,7 @@
 
   ["Scans", [
     ["Microsoft Baseline Security Analyzer"],
-    ["Microsoft Security Essentials"],
+    ["Microsoft Security Essentials", "win8"],
     ["Rootkit Scanners"]
     ]
   ],
