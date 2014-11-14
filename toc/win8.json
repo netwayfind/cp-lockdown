@@ -64,7 +64,7 @@
 
   ["Reference", [
     ["Administrative Tools"],
-    ["C:\\ Drive"],
+    ["C:\\ Drive", "win8"],
     ["Command Prompt"],
     ["Control Panel", "win8"],
     ["Processes"],
