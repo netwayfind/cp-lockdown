@@ -8,6 +8,7 @@ function getJSON(path) {
 }
 
 function getSection(path) {
+  path = "ref/" + path
   console.log("  " + path);
   var req = new XMLHttpRequest();
   req.overrideMimeType("text/html");
