@@ -1,0 +1,183 @@
+[
+  {
+    "group": "Users and Groups",
+    "sections": [
+      {
+        "section": "Local Users and Groups",
+        "path": "win8/local-users-and-groups.html"
+      },
+      {
+        "section": "Automatic Login",
+        "path": "win8/automatic-login.html"
+      }
+    ]
+  },
+  {
+    "group": "Installation Cleanup",
+    "sections": [
+      {
+        "section": "Add/Remove Programs",
+        "path": "win8/add-remove-programs.html"
+      },
+      {
+        "section": "Windows Features",
+        "path": "win8/windows-features.html"
+      },
+      {
+        "section": "Startup Programs",
+        "path": "win8/startup-programs.html"
+      },
+      {
+        "section": "Services",
+        "path": "win8/services.html"
+      },
+      {
+        "section": "Internet Explorer",
+        "path": "win8/internet-explorer.html"
+      },
+      {
+        "section": "Disk Cleanup",
+        "path": "win8/disk-cleanup.html"
+      }
+    ]
+  },
+  {
+    "group": "Network Resources",
+    "sections": [
+      {
+        "section": "Internet Connection Sharing",
+        "path": "win8/internet-connection-sharing.html"
+      },
+      {
+        "section": "Shared Folders",
+        "path": "win8/shared-folders.html"
+      },
+      {
+        "section": "CrowdInspect",
+        "path": "win8/crowdinspect.html"
+      }
+    ]
+  },
+  {
+    "group": "Remote Access",
+    "sections": [
+      {
+        "section": "Remote Assistance and Remote Desktop",
+        "path": "win8/remote-assistance-and-remote-desktop.html"
+      },
+      {
+        "section": "Windows Firewall",
+        "path": "win8/windows-firewall.html"
+      }
+    ]
+  },
+  {
+    "group": "Policies",
+    "sections": [
+      {
+        "section": "Account Lockout Policy",
+        "path": "win8/account-lockout-policy.html"
+      },
+      {
+        "section": "Password Policy",
+        "path": "win8/password-policy.html"
+      },
+      {
+        "section": "Audit Policy",
+        "path": "win8/audit-policy.html"
+      }
+    ]
+  },
+  {
+    "group": "Scans",
+    "sections": [
+      {
+        "section": "Microsoft Baseline Security Analyzer",
+        "path": "win8/microsoft-baseline-security-analyzer.html"
+      },
+      {
+        "section": "Microsoft Security Essentials",
+        "path": "win8/microsoft-security-essentials.html"
+      },
+      {
+        "section": "Rootkit Scanners",
+        "path": "win8/rootkit-scanners.html"
+      }
+    ]
+  },
+  {
+    "group": "Filesystem",
+    "sections": [
+      {
+        "section": "Show Hidden Files and Folders",
+        "path": "win8/show-hidden-files-and-folders.html"
+      },
+      {
+        "section": "Find Unauthorized Files",
+        "path": "win8/find-unauthorized-files.html"
+      },
+      {
+        "section": "Users Folder",
+        "path": "win8/users-folder.html"
+      },
+      {
+        "section": "Program Files",
+        "path": "win8/program-files.html"
+      },
+      {
+        "section": "Program Files (x86)",
+        "path": "win8/program-files-x86.html"
+      },
+      {
+        "section": "Hosts File",
+        "path": "win8/hosts-file.html"
+      }
+    ]
+  },
+  {
+    "group": "Updates",
+    "sections": [
+      {
+        "section": "Automatic Updates",
+        "path": "win8/automatic-updates.html"
+      },
+      {
+        "section": "Service Packs",
+        "path": "win8/service-packs.html"
+      },
+      {
+        "section": "Windows Updates",
+        "path": "win8/windows-updates.html"
+      }
+    ]
+  },
+  {
+    "group": "Reference",
+    "sections": [
+      {
+        "section": "Administrative Tools",
+        "path": "win8/administrative-tools.html"
+      },
+      {
+        "section": "C:\\ Drive",
+        "path": "win8/c-drive.html"
+      },
+      {
+        "section": "Command Prompt",
+        "path": "win8/command-prompt.html"
+      },
+      {
+        "section": "Control Panel",
+        "path": "win8/control-panel.html"
+      },
+      {
+        "section": "Processes",
+        "path": "win8/processes.html"
+      },
+      {
+        "section": "Task Manager",
+        "path": "win8/task-manager.html"
+      }
+    ]
+  }
+]
