@@ -1,0 +1,183 @@
+[
+  {
+    "group": "Users and Groups",
+    "sections": [
+      {
+        "section": "Local Users and Groups",
+        "path": "win7/local-users-and-groups.html"
+      },
+      {
+        "section": "Automatic Login",
+        "path": "win7/automatic-login.html"
+      }
+    ]
+  },
+  {
+    "group": "Installation Cleanup",
+    "sections": [
+      {
+        "section": "Add/Remove Programs",
+        "path": "win7/add-remove-programs.html"
+      },
+      {
+        "section": "Windows Features",
+        "path": "win7/windows-features.html"
+      },
+      {
+        "section": "Startup Programs",
+        "path": "win7/startup-programs.html"
+      },
+      {
+        "section": "Services",
+        "path": "win7/services.html"
+      },
+      {
+        "section": "Internet Explorer",
+        "path": "win7/internet-explorer.html"
+      },
+      {
+        "section": "Disk Cleanup",
+        "path": "win7/disk-cleanup.html"
+      }
+    ]
+  },
+  {
+    "group": "Network Resources",
+    "sections": [
+      {
+        "section": "Internet Connection Sharing",
+        "path": "win7/internet-connection-sharing.html"
+      },
+      {
+        "section": "Shared Folders",
+        "path": "win7/shared-folders.html"
+      },
+      {
+        "section": "CrowdInspect",
+        "path": "win7/crowdinspect.html"
+      }
+    ]
+  },
+  {
+    "group": "Remote Access",
+    "sections": [
+      {
+        "section": "Remote Assistance and Remote Desktop",
+        "path": "win7/remote-assistance-and-remote-desktop.html"
+      },
+      {
+        "section": "Windows Firewall",
+        "path": "win7/windows-firewall.html"
+      }
+    ]
+  },
+  {
+    "group": "Policies",
+    "sections": [
+      {
+        "section": "Account Lockout Policy",
+        "path": "win7/account-lockout-policy.html"
+      },
+      {
+        "section": "Password Policy",
+        "path": "win7/password-policy.html"
+      },
+      {
+        "section": "Audit Policy",
+        "path": "win7/audit-policy.html"
+      }
+    ]
+  },
+  {
+    "group": "Scans",
+    "sections": [
+      {
+        "section": "Microsoft Baseline Security Analyzer",
+        "path": "win7/microsoft-baseline-security-analyzer.html"
+      },
+      {
+        "section": "Microsoft Security Essentials",
+        "path": "win7/microsoft-security-essentials.html"
+      },
+      {
+        "section": "Rootkit Scanners",
+        "path": "win7/rootkit-scanners.html"
+      }
+    ]
+  },
+  {
+    "group": "Filesystem",
+    "sections": [
+      {
+        "section": "Show Hidden Files and Folders",
+        "path": "win7/show-hidden-files-and-folders.html"
+      },
+      {
+        "section": "Find Unauthorized Files",
+        "path": "win7/find-unauthorized-files.html"
+      },
+      {
+        "section": "Users Folder",
+        "path": "win7/users-folder.html"
+      },
+      {
+        "section": "Program Files",
+        "path": "win7/program-files.html"
+      },
+      {
+        "section": "Program Files (x86)",
+        "path": "win7/program-files-x86.html"
+      },
+      {
+        "section": "Hosts file",
+        "path": "win7/hosts-file.html"
+      }
+    ]
+  },
+  {
+    "group": "Updates",
+    "sections": [
+      {
+        "section": "Automatic Updates",
+        "path": "win7/automatic-updates.html"
+      },
+      {
+        "section": "Service Packs",
+        "path": "win7/service-packs.html"
+      },
+      {
+        "section": "Windows Update",
+        "path": "win7/windows-update.html"
+      }
+    ]
+  },
+  {
+    "group": "Reference",
+    "sections": [
+      {
+        "section": "Administrative Tools",
+        "path": "win7/administrative-tools.html"
+      },
+      {
+        "section": "C:\\ Drive",
+        "path": "win7/c-drive.html"
+      },
+      {
+        "section": "Command Prompt",
+        "path": "win7/command-prompt.html"
+      },
+      {
+        "section": "Control Panel",
+        "path": "win7/control-panel.html"
+      },
+      {
+        "section": "Processes",
+        "path": "win7/processes.html"
+      },
+      {
+        "section": "Task Manager",
+        "path": "win7/task-manager.html"
+      }
+    ]
+  }
+]
