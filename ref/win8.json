@@ -146,8 +146,8 @@
         "path": "win8/service-packs.html"
       },
       {
-        "section": "Windows Updates",
-        "path": "win8/windows-updates.html"
+        "section": "Windows Update",
+        "path": "win8/windows-update.html"
       }
     ]
   },
