@@ -1,0 +1,187 @@
+[
+  {
+    "group": "Users and Groups",
+    "sections": [
+      {
+        "section": "Local Users and Groups",
+        "path": "win10/local-users-and-groups.html"
+      },
+      {
+        "section": "Automatic Login",
+        "path": "win10/automatic-login.html"
+      }
+    ]
+  },
+  {
+    "group": "Installation Cleanup",
+    "sections": [
+      {
+        "section": "Add/Remove Programs",
+        "path": "win10/add-remove-programs.html"
+      },
+      {
+        "section": "Windows Features",
+        "path": "win10/windows-features.html"
+      },
+      {
+        "section": "Startup Programs",
+        "path": "win10/startup-programs.html"
+      },
+      {
+        "section": "Services",
+        "path": "win10/services.html"
+      },
+      {
+        "section": "Internet Explorer",
+        "path": "win10/internet-explorer.html"
+      },
+      {
+        "section": "Disk Cleanup",
+        "path": "win10/disk-cleanup.html"
+      }
+    ]
+  },
+  {
+    "group": "Network Resources",
+    "sections": [
+      {
+        "section": "Internet Connection Sharing",
+        "path": "win10/internet-connection-sharing.html"
+      },
+      {
+        "section": "Shared Folders",
+        "path": "win10/shared-folders.html"
+      },
+      {
+        "section": "CrowdInspect",
+        "path": "win10/crowdinspect.html"
+      }
+    ]
+  },
+  {
+    "group": "Remote Access",
+    "sections": [
+      {
+        "section": "Remote Assistance and Remote Desktop",
+        "path": "win10/remote-assistance-and-remote-desktop.html"
+      },
+      {
+        "section": "Windows Firewall",
+        "path": "win10/windows-firewall.html"
+      }
+    ]
+  },
+  {
+    "group": "Policies",
+    "sections": [
+      {
+        "section": "Password Policy",
+        "path": "win10/password-policy.html"
+      },
+      {
+        "section": "Account Lockout Policy",
+        "path": "win10/account-lockout-policy.html"
+      },
+      {
+        "section": "Audit Policy",
+        "path": "win10/audit-policy.html"
+      }
+    ]
+  },
+  {
+    "group": "Scans",
+    "sections": [
+      {
+        "section": "Microsoft Baseline Security Analyzer",
+        "path": "win10/microsoft-baseline-security-analyzer.html"
+      },
+      {
+        "section": "Microsoft Security Essentials",
+        "path": "win10/microsoft-security-essentials.html"
+      },
+      {
+        "section": "Rootkit Scanners",
+        "path": "win10/rootkit-scanners.html"
+      }
+    ]
+  },
+  {
+    "group": "Filesystem",
+    "sections": [
+      {
+        "section": "Show Hidden Files and Folders",
+        "path": "win10/show-hidden-files-and-folders.html"
+      },
+      {
+        "section": "Find Unauthorized Files",
+        "path": "win10/find-unauthorized-files.html"
+      },
+      {
+        "section": "Users Folder",
+        "path": "win10/users-folder.html"
+      },
+      {
+        "section": "Program Files",
+        "path": "win10/program-files.html"
+      },
+      {
+        "section": "Program Files (x86)",
+        "path": "win10/program-files-x86.html"
+      },
+      {
+        "section": "Hosts File",
+        "path": "win10/hosts-file.html"
+      }
+    ]
+  },
+  {
+    "group": "Updates",
+    "sections": [
+      {
+        "section": "Automatic Updates",
+        "path": "win10/automatic-updates.html"
+      },
+      {
+        "section": "Service Packs",
+        "path": "win10/service-packs.html"
+      },
+      {
+        "section": "Windows Update",
+        "path": "win10/windows-update.html"
+      }
+    ]
+  },
+  {
+    "group": "Reference",
+    "sections": [
+      {
+        "section": "Administrative Tools",
+        "path": "win10/administrative-tools.html"
+      },
+      {
+        "section": "C:\\ Drive",
+        "path": "win10/c-drive.html"
+      },
+      {
+        "section": "Command Prompt",
+        "path": "win10/command-prompt.html"
+      },
+      {
+        "section": "Control Panel",
+        "path": "win10/control-panel.html"
+      },
+      {
+        "section": "Processes",
+        "path": "win10/processes.html"
+      },
+      {
+        "section": "Task Manager",
+        "path": "win10/task-manager.html"
+      },
+      {
+        "section": "Windows Settings",
+        "path": "win10/windows-settings.html"
+      }
+    ]
+  }
+]
