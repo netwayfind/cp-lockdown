@@ -88,6 +88,10 @@
         "path": "ubuntu/auditd.html"
       },
       {
+        "section": "boot-up manager",
+        "path": "ubuntu/boot-up-manager.html"
+      },
+      {
         "section": "libpam-cracklib",
         "path": "ubuntu/libpam-cracklib.html"
       },
