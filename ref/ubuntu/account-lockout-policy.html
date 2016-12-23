@@ -1,0 +1,14 @@
+<h2>Account Lockout Policy</h2>
+<h3>Location</h3>
+<ol>
+  <li><a href="#Edit a File">Edit</a> /etc/pam.d/common-auth</li>
+</ol>
+<h3>Settings</h3>
+<ol>
+  <li>Add the following to the end of the file:
+    <ul>
+      <li>auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800</li>
+      <li>this will set lockout to 5 attempts and lock out for 1800 seconds (15 minutes)</li>
+    </ul>
+  </li>
+</ol>
