@@ -1,0 +1,104 @@
+<h2>Advanced Audit Policy Configuration</h2>
+<h3>Location</h3>
+<ol>
+  <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+  <li>Find and click on <strong>Local Security Policy</strong></li>
+  <li>Find and double click on <strong>Advanced Audit Policy Configuration</strong></li>
+  <li>Find and double click on <strong>System Audit Policies - Local Group Policy Object</strong></li>
+</ol>
+<h3>Settings</h3>
+<ul>
+  <li>
+    Account Logon
+    <ul>
+      <li>Audit Credential Validation - Success, Failure</li>
+    </ul>
+  </li>
+  <li>
+    Account Management
+    <ul>
+      <li>Audit Computer Account Management - Success, Failure</li>
+      <li>Audit Other Account Management Events - Success, Failure </li>
+      <li>Audit System Group Management - Success, Failure</li>
+      <li>Audit User Account Management - Success, Failure</li>
+    </ul>
+  </li>
+  <li>
+    Detailed Tracking
+    <ul>
+      <li>Audit Process Creation - Success</li>
+    </ul>
+  </li>
+  <li>
+    Logon/Logoff
+    <ul>
+      <li>Audit Logoff - Success</li>
+      <li>Audit Logon - Success, Failure</li>
+      <li>Audit Special Logon - Success</li>
+    </ul>
+  </li>
+  <li>
+    Object Access
+    <ul>
+      <li>Audit File System - Failure</li>
+      <li>Audit Registry - Failure</li>
+      <li>Audit Handle Manipulation - Failure</li>
+    </ul>
+  </li>
+  <li>
+    Policy Change
+    <ul>
+      <li>Audit Audit Policy Change - Success, Failure</li>
+      <li>Audit Authentication Policy Change - Success</li>
+    </ul>
+  </li>
+  <li>
+    Privilege Use
+    <ul>
+      <li>Audit Sensitive Privilege Use - Success, Failure</li>
+    </ul>
+  </li>
+  <li>
+    System
+    <ul>
+      <li>Audit IPSec Driver - Success, Failure</li>
+      <li>Audit Security State Change - Success, Failure</li>
+      <li>Audit Security System Extension - Success, Failure</li>
+      <li>Audit System Integrity - Success, Failure</li>
+    </ul>
+  </li>
+  <li>
+    Global Object Access Auditing
+    <ul>
+      <li>
+        File system
+        <ol>
+          <li>[x] Define this policy setting</li>
+          <li>Find and click on <strong>Configure</strong></li>
+          <li>Find and click on <strong>Add</strong></li>
+          <li>Find and click on <strong>Select a principle</strong></li>
+          <li>Under <strong>Enter the object name to select</strong>, enter <strong>Everyone</strong></li>
+          <li>Press <strong>OK</strong></li>
+          <li>Set <strong>Type</strong> to <strong>Failure</strong></li>
+          <li>Make sure all <strong>Permissions</strong> are checked</li>
+          <li>Press <strong>OK</strong> to close the windows</li>
+        </ol>
+      </li>
+      <li>
+        Registry
+        <ul>
+          <li>[x] Define this policy setting</li>
+          <li>Find and click on <strong>Configure</strong></li>
+          <li>Find and click on <strong>Add</strong></li>
+          <li>Find and click on <strong>Select a principle</strong></li>
+          <li>Under <strong>Enter the object name to select</strong>, enter <strong>Everyone</strong></li>
+          <li>Press <strong>OK</strong></li>
+          <li>Set <strong>Type</strong> to <strong>Fail</strong></li>
+          <li>Make sure all <strong>Permissions</strong> are checked</li>
+          <li>Press <strong>OK</strong> to close the windows</li>
+        </ol>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>

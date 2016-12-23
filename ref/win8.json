@@ -85,6 +85,10 @@
       {
         "section": "Audit Policy",
         "path": "common/audit-policy.html"
+      },
+      {
+        "section": "Advanced Audit Policy Configuration",
+        "path": "common/advanced-audit-policy-configuration.html"
       }
     ]
   },
