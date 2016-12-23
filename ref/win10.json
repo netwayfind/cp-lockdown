@@ -4,7 +4,7 @@
     "sections": [
       {
         "section": "Local Users and Groups",
-        "path": "win10/local-users-and-groups.html"
+        "path": "common/local-users-and-groups.html"
       },
       {
         "section": "Automatic Login",
@@ -17,7 +17,7 @@
     "sections": [
       {
         "section": "Add/Remove Programs",
-        "path": "win10/add-remove-programs.html"
+        "path": "common/add-remove-programs.html"
       },
       {
         "section": "Windows Features",
@@ -46,15 +46,15 @@
     "sections": [
       {
         "section": "Internet Connection Sharing",
-        "path": "win10/internet-connection-sharing.html"
+        "path": "common/internet-connection-sharing.html"
       },
       {
         "section": "Shared Folders",
-        "path": "win10/shared-folders.html"
+        "path": "common/shared-folders.html"
       },
       {
         "section": "CrowdInspect",
-        "path": "win10/crowdinspect.html"
+        "path": "common/crowdinspect.html"
       }
     ]
   },
@@ -63,7 +63,7 @@
     "sections": [
       {
         "section": "Remote Assistance and Remote Desktop",
-        "path": "win10/remote-assistance-and-remote-desktop.html"
+        "path": "common/remote-assistance-and-remote-desktop.html"
       },
       {
         "section": "Windows Firewall",
@@ -76,15 +76,15 @@
     "sections": [
       {
         "section": "Password Policy",
-        "path": "win10/password-policy.html"
+        "path": "common/password-policy.html"
       },
       {
         "section": "Account Lockout Policy",
-        "path": "win10/account-lockout-policy.html"
+        "path": "common/account-lockout-policy.html"
       },
       {
         "section": "Audit Policy",
-        "path": "win10/audit-policy.html"
+        "path": "common/audit-policy.html"
       }
     ]
   },
@@ -101,7 +101,7 @@
       },
       {
         "section": "Rootkit Scanners",
-        "path": "win10/rootkit-scanners.html"
+        "path": "common/rootkit-scanners.html"
       }
     ]
   },
@@ -114,7 +114,7 @@
       },
       {
         "section": "Find Unauthorized Files",
-        "path": "win10/find-unauthorized-files.html"
+        "path": "common/find-unauthorized-files.html"
       },
       {
         "section": "Users Folder",
@@ -130,7 +130,7 @@
       },
       {
         "section": "Hosts File",
-        "path": "win10/hosts-file.html"
+        "path": "common/hosts-file.html"
       }
     ]
   },
@@ -156,7 +156,7 @@
     "sections": [
       {
         "section": "Administrative Tools",
-        "path": "win10/administrative-tools.html"
+        "path": "common/administrative-tools.html"
       },
       {
         "section": "C:\\ Drive",

@@ -4,7 +4,7 @@
     "sections": [
       {
         "section": "Local Users and Groups",
-        "path": "win7/local-users-and-groups.html"
+        "path": "common/local-users-and-groups.html"
       },
       {
         "section": "Automatic Login",
@@ -17,7 +17,7 @@
     "sections": [
       {
         "section": "Add/Remove Programs",
-        "path": "win7/add-remove-programs.html"
+        "path": "common/add-remove-programs.html"
       },
       {
         "section": "Windows Features",
@@ -46,15 +46,15 @@
     "sections": [
       {
         "section": "Internet Connection Sharing",
-        "path": "win7/internet-connection-sharing.html"
+        "path": "common/internet-connection-sharing.html"
       },
       {
         "section": "Shared Folders",
-        "path": "win7/shared-folders.html"
+        "path": "common/shared-folders.html"
       },
       {
         "section": "CrowdInspect",
-        "path": "win7/crowdinspect.html"
+        "path": "common/crowdinspect.html"
       }
     ]
   },
@@ -63,7 +63,7 @@
     "sections": [
       {
         "section": "Remote Assistance and Remote Desktop",
-        "path": "win7/remote-assistance-and-remote-desktop.html"
+        "path": "common/remote-assistance-and-remote-desktop.html"
       },
       {
         "section": "Windows Firewall",
@@ -75,16 +75,16 @@
     "group": "Policies",
     "sections": [
       {
-        "section": "Account Lockout Policy",
-        "path": "win7/account-lockout-policy.html"
+        "section": "Password Policy",
+        "path": "common/password-policy.html"
       },
       {
-        "section": "Password Policy",
-        "path": "win7/password-policy.html"
+        "section": "Account Lockout Policy",
+        "path": "common/account-lockout-policy.html"
       },
       {
         "section": "Audit Policy",
-        "path": "win7/audit-policy.html"
+        "path": "common/audit-policy.html"
       }
     ]
   },
@@ -93,7 +93,7 @@
     "sections": [
       {
         "section": "Microsoft Baseline Security Analyzer",
-        "path": "win7/microsoft-baseline-security-analyzer.html"
+        "path": "common/microsoft-baseline-security-analyzer.html"
       },
       {
         "section": "Microsoft Security Essentials",
@@ -101,7 +101,7 @@
       },
       {
         "section": "Rootkit Scanners",
-        "path": "win7/rootkit-scanners.html"
+        "path": "common/rootkit-scanners.html"
       }
     ]
   },
@@ -110,11 +110,11 @@
     "sections": [
       {
         "section": "Show Hidden Files and Folders",
-        "path": "win7/show-hidden-files-and-folders.html"
+        "path": "common/show-hidden-files-and-folders.html"
       },
       {
         "section": "Find Unauthorized Files",
-        "path": "win7/find-unauthorized-files.html"
+        "path": "common/find-unauthorized-files.html"
       },
       {
         "section": "Users Folder",
@@ -130,7 +130,7 @@
       },
       {
         "section": "Hosts file",
-        "path": "win7/hosts-file.html"
+        "path": "common/hosts-file.html"
       }
     ]
   },
@@ -156,7 +156,7 @@
     "sections": [
       {
         "section": "Administrative Tools",
-        "path": "win7/administrative-tools.html"
+        "path": "common/administrative-tools.html"
       },
       {
         "section": "C:\\ Drive",
