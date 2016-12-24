@@ -92,6 +92,10 @@
         "path": "ubuntu/boot-up-manager.html"
       },
       {
+        "section": "cron",
+        "path": "ubuntu/cron.html"
+      },
+      {
         "section": "libpam-cracklib",
         "path": "ubuntu/libpam-cracklib.html"
       },
