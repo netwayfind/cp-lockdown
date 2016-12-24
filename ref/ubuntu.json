@@ -110,6 +110,15 @@
     ]
   },
   {
+    "group": "Logs",
+    "sections": [
+      {
+        "section": "System Log",
+        "path": "ubuntu/system-log.html"
+      }
+    ]
+  },
+  {
     "group": "References",
     "sections": [
       {
