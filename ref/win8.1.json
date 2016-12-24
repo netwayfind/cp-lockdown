@@ -32,6 +32,10 @@
         "path": "win8.1/services.html"
       },
       {
+        "section": "Task Scheduler",
+        "path": "common/task-scheduler.html"
+      },
+      {
         "section": "Internet Explorer",
         "path": "win8.1/internet-explorer.html"
       },

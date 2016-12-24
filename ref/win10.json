@@ -32,6 +32,10 @@
         "path": "win10/services.html"
       },
       {
+        "section": "Task Scheduler",
+        "path": "common/task-scheduler.html"
+      },
+      {
         "section": "Internet Explorer",
         "path": "win10/internet-explorer.html"
       },
