@@ -77,6 +77,10 @@
       {
         "section": "Hosts File",
         "path": "ubuntu/hosts-file.html"
+      },
+      {
+        "section": "Filesystem Permissions",
+        "path": "ubuntu/filesystem-permissions.html"
       }
     ]
   },
