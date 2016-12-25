@@ -27,7 +27,7 @@ function load(path) {
     console.log(groupName);
     toc += groupName;
     toc += "<ul>\n";
-    content += "<h1>";
+    content += "<hr><h1>";
     content += groupName;
     content += "</h1>\n<hr>\n";
     var sections = group.sections;
