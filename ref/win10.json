@@ -95,6 +95,10 @@
         "path": "common/user-rights-assignment.html"
       },
       {
+        "section": "Security Options",
+        "path": "common/security-options.html"
+      },
+      {
         "section": "Advanced Audit Policy Configuration",
         "path": "common/advanced-audit-policy-configuration.html"
       },
