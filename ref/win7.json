@@ -97,6 +97,10 @@
       {
         "section": "Advanced Audit Policy Configuration",
         "path": "common/advanced-audit-policy-configuration.html"
+      },
+      {
+        "section": "Local Group Policy Editor",
+        "path": "common/local-group-policy-editor.html"
       }
     ]
   },
