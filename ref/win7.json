@@ -172,6 +172,15 @@
     ]
   },
   {
+    "group": "Logs",
+    "sections": [
+      {
+        "section": "Event Viewer",
+        "path": "common/event-viewer.html"
+      }
+    ]
+  },
+  {
     "group": "Reference",
     "sections": [
       {
