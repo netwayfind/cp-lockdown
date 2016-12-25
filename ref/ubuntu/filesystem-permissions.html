@@ -1,0 +1,33 @@
+<h2>Filesystem Permissions</h2>
+<ol>
+  <li>Open <a href="#Terminal">Terminal</a></li>
+  <li>ls -la /<br>
+    Default permissions:
+    <ul>
+      <li>drwxr-xr-x root root home</li>
+      <li>drwx------ root root root</li>
+    </ul>
+    To fix:
+    <ul>
+      <li>sudo chown root:root /home</li>
+      <li>sudo chmod 755 /home</li>
+      <li>sudo chown root:root /root</li>
+      <li>sudo chown 700 /root</li>
+    </ul>
+  </li>
+  <li>cd /home</li>
+  <li>ls -la<br>
+    Default permissions for every user:
+    <ul>
+      <li>drwxr-xr-x &lt;user&gt; &lt;user group&gt; &lt;user&gt;</li>
+      <li>For example: drwxr-xr-x ubuntu ubuntu ubuntu</li>
+    </ul>
+    To fix:
+    <ul>
+      <li>sudo chown &lt;user&gt;:&lt;user group&gt; &lt;user folder&gt;</li>
+      <li>For example: sudo chown ubuntu:ubuntu ubuntu</li>
+      <li>sudo chmod 755 &lt;user folder&gt;</li>
+      <li>For example: sudo chmod 755 ubuntu</li>
+    </ul>
+  </li>
+</ol>

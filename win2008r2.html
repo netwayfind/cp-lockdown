@@ -104,7 +104,7 @@ Under Remote Desktop
         </ul>
     </li>
     <li>Press OK</li>
-    <li>Find and click on <strong>Allow a program or feature through Windows Firewall</strong></li> 
+    <li>Find and click on <strong>Allow a program or feature through Windows Firewall</strong></li>
     <li>Check that only Core Networking and required programs or services have checkmarks</li>
     <li>Uncheck all other programs and features for both Home/Work (Private) and Public</li>
     <li>Press OK</li>
@@ -223,8 +223,8 @@ Check the following groups.
 </ol>
 <h3>Settings</h3>
 <ul>
-    <li>Do not remove any necessary programs (e.g. Microsoft, Windows, CyberPatriot, any required by readme)</li>
-    <li>Uninstall all other programs</li>
+  <li>Do not remove any programs required by readme (e.g. web browser, work tools)</li>
+  <li>Remove all programs prohibited by readme (e.g. games, non-work tools)</li>
 </ul>
 <a href="#toc">Table of Contents</a>
 </div>
@@ -303,8 +303,11 @@ By default, no roles (0 or 17) are installed
     <li>Find and open <strong>Services</strong></li>
 </ol>
 <h3>Settings</h3>
-Make sure all CyberPatriot services have Started as Status and Automatic as Startup Type.
-<p></p>
+Make sure the following services are running and have automatic start up:
+<ul>
+  <li>DHCP Client</li>
+  <li>DNS Client</li>
+</ul>
 Unless required by readme, stop each of the following services and change Startup Type as Disabled
 <ul>
     <li>DHCP Server</li>
@@ -492,7 +495,7 @@ The following are the mininum required shares. Other shares may be deleted, unle
 <hr>
 <div id="rootkit-scanners">
 <h2>Rootkit Scanners</h2>
-Do not remove any CyberPatriot resource if these tools bring it up. Remove and fix all other issues.
+When running these tools, review any findings and avoid removing any required software.
 <ul>
     <li>Avast aswMBR
         <ul>
@@ -605,7 +608,7 @@ The following folders are safe to leave alone. Carefully inspect all other folde
     <li>Find and open <strong>Program Files (x86)</strong></li>
 </ol>
 <h3>Settings</h3>
-The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list. 
+The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
 <ul>
     <li>Common Files</li>
     <li>Internet Explorer</li>
@@ -631,7 +634,7 @@ The following folders are safe to leave alone. Carefully inspect all other folde
 </ol>
 <h3>Settings</h3>
 <ul>
-    <li>Default file has no entries, only has lines that are blank or start with #</li> 
+    <li>Default file has no entries, only has lines that are blank or start with #</li>
     <li>Disable any entry lines by adding a # to the start of the line</li>
 </ul>
 <a href="#toc">Table of Contents</a>
@@ -760,7 +763,7 @@ These are the default folders. Carefully inspect all other folders and files not
     <li>Find and click on <strong>Show processes from all users</strong></li>
 </ol>
 <h3>Settings</h3>
-The following are Windows processes that should not be stopped.
+The following are Windows processes that should not be stopped. Avoid stopping any required software.
 <ul>
     <li>conhost.exe</li>
     <li>csrss.exe</li>
