@@ -104,8 +104,8 @@
         "path": "common/microsoft-security-essentials.html"
       },
       {
-        "section": "Rootkit Scanners",
-        "path": "common/rootkit-scanners.html"
+        "section": "Anti-Malware Tools",
+        "path": "common/anti-malware-tools.html"
       }
     ]
   },
