@@ -7,20 +7,23 @@ function getJSON(path) {
   return JSON.parse(req.responseText);
 }
 
-function getSection(path) {
+function getSection(path, name) {
   path = "ref/" + path
   console.log("  " + path);
   var req = new XMLHttpRequest();
   req.overrideMimeType("text/html");
+  req.onload = function() {
+    document.getElementById(name).innerHTML = req.responseText;
+  };
   req.open("GET", path, false);
   req.send(null);
-  return req.responseText;
 }
 
 function load(path) {
   var config = getJSON(path);
   var toc = "";
   var content = "";
+  var requestQueue = [];
   for (i = 0; i < config.length; i++) {
     var group = config[i];
     var groupName = group.group;
@@ -43,12 +46,20 @@ function load(path) {
       content += "<div id=\"";
       content += sectionName;
       content += "\">\n"
-      content += getSection(section.path);
-      content += "\n<a href=\"#toc\">Table of Contents</a>\n";
-      content += "</div>\n<hr>\n";
+      content += "</div>\n<a href=\"#toc\">Table of Contents</a>\n<hr>\n";
+      requestQueue.push([section.path, sectionName]);
     }
     toc += "</ul>\n";
   }
   document.getElementById("toc").innerHTML = toc;
   document.getElementById("content").innerHTML = content;
+
+  // asynchronously retrive the section content
+  console.log("async retrieval of sections");
+  while (requestQueue.length > 0) {
+    var request = requestQueue.shift();
+    var sectionPath = request[0];
+    var sectionName = request[1];
+    getSection(sectionPath, sectionName);
+  }
 }
