@@ -35,5 +35,4 @@ github (account required).
 ## Process
 * New changes (content or fixes) are committed in the 'dev' branch
 * Approved commits are merged into the 'master' branch
-* Offline version uses 'master' branch
-* Online version uses 'gh-pages' branch (based on 'master' branch)
+* Offline and offline version uses 'master' branch
