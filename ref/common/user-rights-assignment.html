@@ -6,6 +6,7 @@
   <li>Find and double click on <strong>User Rights Assignment</strong></li>
 </ol>
 <h3>Settings</h3>
+These are the default settings
 <ul>
   <li>
     Access Credential Manager as a trusted caller
@@ -17,7 +18,9 @@
     Access this computer from the network
     <ul>
       <li>Administrators</li>
-      <li>Authenticated Users</li>
+      <li>Backup Operators</li>
+      <li>Everyone</li>
+      <li>Users</li>
     </ul>
   </li>
   <li>
@@ -26,6 +29,11 @@
       <li>No entries</li>
     </ul>
   </li>
+  <li>
+    Add workstations to domain
+    <ul>
+      <li>No entries</li>
+    </ul>
   <li>
     Adjust memory quotas for a process
     <ul>
@@ -38,27 +46,34 @@
     Allow log on locally
     <ul>
       <li>Administrators</li>
+      <li>Backup Operators</li>
+      <li>Guest</li>
+      <li>Users</li>
     </ul>
   </li>
   <li>
     Allow log on through Remote Desktop Services
     <ul>
       <li>Administrators</li>
+      <li>Remote Desktop Users</li>
     </ul>
   </li>
   <li>
     Back up files and directories
     <ul>
       <li>Administrators</li>
+      <li>Backup Operators</li>
     </ul>
   </li>
   <li>
     Bypass traverse checking
     <ul>
       <li>Administrators</li>
-      <li>Authenticated Users</li>
+      <li>Backup Operators</li>
+      <li>Everyone</li>
       <li>Local Service</li>
       <li>Network Service</li>
+      <li>Users</li>
     </ul>
   </li>
   <li>
@@ -73,6 +88,7 @@
     <ul>
       <li>Administrators</li>
       <li>Local Service</li>
+      <li>Users</li>
     </ul>
   </li>
   <li>
@@ -91,9 +107,9 @@
     Create global objects
     <ul>
       <li>Administrators</li>
-      <li>Service</li>
       <li>Local Service</li>
       <li>Network Service</li>
+      <li>Service</li>
     </ul>
   </li>
   <li>
@@ -103,9 +119,9 @@
     </ul>
   </li>
   <li>
-    Deny access to this computer from the network
+    Create symbolic links
     <ul>
-      <li>Guests</li>
+      <li>Administrators</li>
     </ul>
   </li>
   <li>
@@ -115,9 +131,15 @@
     </ul>
   </li>
   <li>
+    Deny access to this computer from the network
+    <ul>
+      <li>Guest</li>
+    </ul>
+  </li>
+  <li>
     Deny log on as a batch job
     <ul>
-      <li>Guests</li>
+      <li>No entries</li>
     </ul>
   </li>
   <li>
@@ -129,19 +151,19 @@
   <li>
     Deny log on locally
     <ul>
-      <li>Guests</li>
+      <li>Guest</li>
     </ul>
   </li>
   <li>
     Deny log on through Remote Desktop/Terminal Services
     <ul>
-      <li>Guests</li>
+      <li>No entries</li>
     </ul>
   </li>
   <li>
     Enable computer and user accounts to be trusted for delegation
     <ul>
-      <li>Administrators</li>
+      <li>No entries</li>
     </ul>
   </li>
   <li>
@@ -161,16 +183,15 @@
     Impersonate a client after authentication
     <ul>
       <li>Adminstrators</li>
-      <li>Service</li>
       <li>Local Service</li>
       <li>Network Service</li>
+      <li>Service</li>
     </ul>
   </li>
   <li>
     Increase a process working set
     <ul>
-      <li>Administrators</li>
-      <li>Local Service</li>
+      <li>Users</li>
     </ul>
   </li>
   <li>
@@ -193,6 +214,20 @@
   </li>
   <li>
     Log on as a batch job
+    <ul>
+      <li>Administrators</li>
+      <li>Backup Operators</li>
+      <li>Performance Log Users</li>
+    </ul>
+  </li>
+  <li>
+    Log on as a service
+    <ul>
+      <li>NT SERVICE\ALL SERVICES</li>
+    </ul>
+  </li>
+  <li>
+    Manage auditing and security log
     <ul>
       <li>Administrators</li>
     </ul>
@@ -232,6 +267,7 @@
     Remove computer from docking station
     <ul>
       <li>Administrators</li>
+      <li>Users</li>
     </ul>
   </li>
   <li>
@@ -245,12 +281,21 @@
     Restore files and directories
     <ul>
       <li>Administrators</li>
+      <li>Backup Operators</li>
     </ul>
   </li>
   <li>
     Shut down the system
     <ul>
       <li>Administrators</li>
+      <li>Backup Operators</li>
+      <li>Users</li>
+    </ul>
+  </li>
+  <li>
+    Synchronize directory service data
+    <ul>
+      <li>No entries</li>
     </ul>
   </li>
   <li>
