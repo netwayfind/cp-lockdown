@@ -21,11 +21,11 @@
       },
       {
         "section": "Windows Features",
-        "path": "win8.1/windows-features.html"
+        "path": "win2012/windows-features.html"
       },
       {
         "section": "Startup Programs",
-        "path": "win8.1/startup-programs.html"
+        "path": "win2012/startup-programs.html"
       },
       {
         "section": "Services",
@@ -41,7 +41,7 @@
       },
       {
         "section": "Disk Cleanup",
-        "path": "win8.1/disk-cleanup.html"
+        "path": "win2012/disk-cleanup.html"
       }
     ]
   },
@@ -117,7 +117,7 @@
       },
       {
         "section": "Microsoft Security Essentials",
-        "path": "win8.1/microsoft-security-essentials.html"
+        "path": "win2012/microsoft-security-essentials.html"
       },
       {
         "section": "Anti-Malware Tools",
@@ -142,11 +142,11 @@
       },
       {
         "section": "Program Files",
-        "path": "win8.1/program-files.html"
+        "path": "win2012/program-files.html"
       },
       {
         "section": "Program Files (x86)",
-        "path": "win8.1/program-files-x86.html"
+        "path": "win2012/program-files-x86.html"
       },
       {
         "section": "Hosts File",
