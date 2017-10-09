@@ -4,7 +4,7 @@
     "sections": [
       {
         "section": "Local Users and Groups",
-        "path": "common/local-users-and-groups.html"
+        "path": "win2012/local-users-and-groups.html"
       },
       {
         "section": "Automatic Login",
