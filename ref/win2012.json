@@ -8,7 +8,7 @@
       },
       {
         "section": "Automatic Login",
-        "path": "win8.1/automatic-login.html"
+        "path": "win2012/automatic-login.html"
       }
     ]
   },
@@ -29,7 +29,7 @@
       },
       {
         "section": "Services",
-        "path": "win8.1/services.html"
+        "path": "win2012/services.html"
       },
       {
         "section": "Task Scheduler",
@@ -37,7 +37,7 @@
       },
       {
         "section": "Internet Explorer",
-        "path": "win8.1/internet-explorer.html"
+        "path": "win2012/internet-explorer.html"
       },
       {
         "section": "Disk Cleanup",
@@ -71,7 +71,7 @@
       },
       {
         "section": "Windows Firewall",
-        "path": "win8.1/windows-firewall.html"
+        "path": "win2012/windows-firewall.html"
       }
     ]
   },
@@ -138,7 +138,7 @@
       },
       {
         "section": "Users Folder",
-        "path": "win8.1/users-folder.html"
+        "path": "win2012/users-folder.html"
       },
       {
         "section": "Program Files",
@@ -159,15 +159,15 @@
     "sections": [
       {
         "section": "Automatic Updates",
-        "path": "win8.1/automatic-updates.html"
+        "path": "win2012/automatic-updates.html"
       },
       {
         "section": "Service Packs",
-        "path": "win8.1/service-packs.html"
+        "path": "win2012/service-packs.html"
       },
       {
         "section": "Windows Update",
-        "path": "win8.1/windows-update.html"
+        "path": "win2012/windows-update.html"
       }
     ]
   },
@@ -189,23 +189,23 @@
       },
       {
         "section": "C:\\ Drive",
-        "path": "win8.1/c-drive.html"
+        "path": "win2012/c-drive.html"
       },
       {
         "section": "Command Prompt",
-        "path": "win8.1/command-prompt.html"
+        "path": "win2012/command-prompt.html"
       },
       {
         "section": "Control Panel",
-        "path": "win8.1/control-panel.html"
+        "path": "win2012/control-panel.html"
       },
       {
         "section": "Processes",
-        "path": "win8.1/processes.html"
+        "path": "win2012/processes.html"
       },
       {
         "section": "Task Manager",
-        "path": "win8.1/task-manager.html"
+        "path": "win2012/task-manager.html"
       }
     ]
   }
