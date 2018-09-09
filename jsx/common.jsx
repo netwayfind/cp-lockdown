@@ -7,16 +7,16 @@ class Template extends React.Component {
         }
 
         return (
-          <div>
-              <div className="heading">
-                <h1>{name}</h1>
-              </div>
-              <div className="toc" id="toc">
-                {children}
-              </div>
-              <div className="content" id="content">
-              </div>
-          </div>  
+            <React.Fragment>
+                <div className="heading">
+                    <h1>{name}</h1>
+                </div>
+                <div className="toc" id="toc">
+                    {children}
+                </div>
+                <div className="content" id="content">
+                </div>
+            </React.Fragment>
         );
     }
 }
@@ -37,12 +37,12 @@ class Group extends React.Component {
         }
 
         return (
-          <div>
-              {name}
-              <ul>
-                {children}
-              </ul>
-          </div>  
+            <React.Fragment>
+                {name}
+                <ul>
+                    {children}
+                </ul>
+            </React.Fragment>
         );
     }
 }
@@ -60,7 +60,7 @@ class Section extends React.Component {
         this.state = {
             name: name
         }
-        
+
         this.showContent = this.showContent.bind(this);
         this.getContent = this.getContent.bind(this);
     }
@@ -71,15 +71,15 @@ class Section extends React.Component {
 
     showContent() {
         let content = (
-            <div>
+            <React.Fragment>
                 <h2>{this.state.name}</h2>
                 {this.getContent()}
-            </div>
+            </React.Fragment>
         )
         ReactDOM.render(content, document.getElementById("content"));
     }
 
-    render () {
+    render() {
         return (
             <a href="#" onClick={this.showContent} >{this.state.name}</a>
         )

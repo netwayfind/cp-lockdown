@@ -6,7 +6,7 @@ class LocalUsersAndGroups extends Section {
 
     getContent() {
         return (
-            <div>
+            <React.Fragment>
                 <h3>Location</h3>
                 <ol>
                     <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
@@ -121,7 +121,7 @@ class LocalUsersAndGroups extends Section {
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </React.Fragment>
         );
     }
 }
@@ -133,7 +133,7 @@ class AutomaticLogin extends Section {
     }
     getContent() {
         return (
-            <div>
+            <React.Fragment>
                 <h3>Location</h3>
                 <ol>
                     <li>Press Start or Windows button</li>
@@ -147,7 +147,7 @@ class AutomaticLogin extends Section {
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </React.Fragment>
         );
     }
 }

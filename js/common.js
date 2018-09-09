@@ -25,7 +25,7 @@ var Template = function (_React$Component) {
             }
 
             return React.createElement(
-                "div",
+                React.Fragment,
                 null,
                 React.createElement(
                     "div",
@@ -80,7 +80,7 @@ var Group = function (_React$Component2) {
             }
 
             return React.createElement(
-                "div",
+                React.Fragment,
                 null,
                 name,
                 React.createElement(
@@ -127,7 +127,7 @@ var Section = function (_React$Component3) {
         key: "showContent",
         value: function showContent() {
             var content = React.createElement(
-                "div",
+                React.Fragment,
                 null,
                 React.createElement(
                     "h2",

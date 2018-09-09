@@ -22,7 +22,7 @@ var LocalUsersAndGroups = function (_Section) {
         key: "getContent",
         value: function getContent() {
             return React.createElement(
-                "div",
+                React.Fragment,
                 null,
                 React.createElement(
                     "h3",
@@ -464,7 +464,7 @@ var AutomaticLogin = function (_Section2) {
         key: "getContent",
         value: function getContent() {
             return React.createElement(
-                "div",
+                React.Fragment,
                 null,
                 React.createElement(
                     "h3",
