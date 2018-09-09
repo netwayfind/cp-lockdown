@@ -41,65 +41,65 @@ var Windows7 = function (_React$Component) {
                 React.createElement(
                     Group,
                     { name: "Network Resources" },
-                    React.createElement(Section, { name: "Internet Connection Sharing" }),
-                    React.createElement(Section, { name: "Shared Folders" }),
-                    React.createElement(Section, { name: "CrowdInspect" })
+                    React.createElement(InternetConnectionSharing, null),
+                    React.createElement(SharedFolders, null),
+                    React.createElement(CrowdInspect, null)
                 ),
                 React.createElement(
                     Group,
                     { name: "Remote Access" },
-                    React.createElement(Section, { name: "Remote Assistance and Remote Desktop" }),
-                    React.createElement(Section, { name: "Windows Firewall" })
+                    React.createElement(RemoteAssistanceAndRemoteDesktop, null),
+                    React.createElement(WindowsFirewall, null)
                 ),
                 React.createElement(
                     Group,
                     { name: "Policies" },
-                    React.createElement(Section, { name: "Password Policy" }),
-                    React.createElement(Section, { name: "Account Lockout Policy" }),
-                    React.createElement(Section, { name: "Audit Policy" }),
-                    React.createElement(Section, { name: "User Rights Assignment" }),
-                    React.createElement(Section, { name: "Security Options" }),
-                    React.createElement(Section, { name: "Advanced Audit Policy Configuration" }),
-                    React.createElement(Section, { name: "Local Group Policy Editor" })
+                    React.createElement(PasswordPolicy, null),
+                    React.createElement(AccountLockoutPolicy, null),
+                    React.createElement(AuditPolicy, null),
+                    React.createElement(UserRightsAssignment, null),
+                    React.createElement(SecurityOptions, null),
+                    React.createElement(AdvancedAuditPolicyConfiguration, null),
+                    React.createElement(LocalGroupPolicyEditor, null)
                 ),
                 React.createElement(
                     Group,
                     { name: "Scans" },
-                    React.createElement(Section, { name: "Microsoft Baseline Security Analyzer" }),
-                    React.createElement(Section, { name: "Microsoft Security Essentials" }),
-                    React.createElement(Section, { name: "Anti-Malware Tools" })
+                    React.createElement(MicrosoftBaselineSecurityAnalyzer, null),
+                    React.createElement(MicrosoftSecurityEssentials, null),
+                    React.createElement(AntiMalwareTools, null)
                 ),
                 React.createElement(
                     Group,
                     { name: "Filesystem" },
-                    React.createElement(Section, { name: "Show Hidden Files and Folders" }),
-                    React.createElement(Section, { name: "Find Unauthorized Files" }),
-                    React.createElement(Section, { name: "Users Folder" }),
-                    React.createElement(Section, { name: "Program Files" }),
-                    React.createElement(Section, { name: "Program Files (x86)" }),
-                    React.createElement(Section, { name: "Hosts file" })
+                    React.createElement(ShowHiddenFilesAndFolders, null),
+                    React.createElement(FindUnauthorizedFiles, null),
+                    React.createElement(UsersFolder, null),
+                    React.createElement(ProgramFiles, null),
+                    React.createElement(ProgramFilesx86, null),
+                    React.createElement(HostsFile, null)
                 ),
                 React.createElement(
                     Group,
                     { name: "Updates" },
-                    React.createElement(Section, { name: "Automatic Updates" }),
-                    React.createElement(Section, { name: "Service Packs" }),
-                    React.createElement(Section, { name: "Windows Update" })
+                    React.createElement(AutomaticUpdates, null),
+                    React.createElement(ServicePacks, null),
+                    React.createElement(WindowsUpdate, null)
                 ),
                 React.createElement(
                     Group,
                     { name: "Logs" },
-                    React.createElement(Section, { name: "Event Viewer" })
+                    React.createElement(EventViewer, null)
                 ),
                 React.createElement(
                     Group,
                     { name: "Reference" },
-                    React.createElement(Section, { name: "Administrative Tools" }),
-                    React.createElement(Section, { name: "C:\\ Drive" }),
-                    React.createElement(Section, { name: "Command Prompt" }),
-                    React.createElement(Section, { name: "Control Panel" }),
-                    React.createElement(Section, { name: "Processes" }),
-                    React.createElement(Section, { name: "Task Manager" })
+                    React.createElement(AdministrativeTools, null),
+                    React.createElement(CDrive, null),
+                    React.createElement(CommandPrompt, null),
+                    React.createElement(ControlPanel, null),
+                    React.createElement(Processes, null),
+                    React.createElement(TaskManager, null)
                 )
             );
         }

@@ -16,51 +16,51 @@ class Windows7 extends React.Component {
                     <DiskCleanup />
                 </Group>
                 <Group name="Network Resources">
-                    <Section name="Internet Connection Sharing" />
-                    <Section name="Shared Folders" />
-                    <Section name="CrowdInspect" />
+                    <InternetConnectionSharing />
+                    <SharedFolders />
+                    <CrowdInspect />
                 </Group>
                 <Group name="Remote Access">
-                    <Section name="Remote Assistance and Remote Desktop" />
-                    <Section name="Windows Firewall" />
+                    <RemoteAssistanceAndRemoteDesktop />
+                    <WindowsFirewall />
                 </Group>
                 <Group name="Policies">
-                    <Section name="Password Policy" />
-                    <Section name="Account Lockout Policy" />
-                    <Section name="Audit Policy" />
-                    <Section name="User Rights Assignment" />
-                    <Section name="Security Options" />
-                    <Section name="Advanced Audit Policy Configuration" />
-                    <Section name="Local Group Policy Editor" />
+                    <PasswordPolicy />
+                    <AccountLockoutPolicy />
+                    <AuditPolicy />
+                    <UserRightsAssignment />
+                    <SecurityOptions />
+                    <AdvancedAuditPolicyConfiguration />
+                    <LocalGroupPolicyEditor />
                 </Group>
                 <Group name="Scans">
-                    <Section name="Microsoft Baseline Security Analyzer" />
-                    <Section name="Microsoft Security Essentials" />
-                    <Section name="Anti-Malware Tools" />
+                    <MicrosoftBaselineSecurityAnalyzer />
+                    <MicrosoftSecurityEssentials />
+                    <AntiMalwareTools />
                 </Group>
                 <Group name="Filesystem">
-                    <Section name="Show Hidden Files and Folders" />
-                    <Section name="Find Unauthorized Files" />
-                    <Section name="Users Folder" />
-                    <Section name="Program Files" />
-                    <Section name="Program Files (x86)" />
-                    <Section name="Hosts file" />
+                    <ShowHiddenFilesAndFolders />
+                    <FindUnauthorizedFiles />
+                    <UsersFolder />
+                    <ProgramFiles />
+                    <ProgramFilesx86 />
+                    <HostsFile/>
                 </Group>
                 <Group name="Updates">
-                    <Section name="Automatic Updates" />
-                    <Section name="Service Packs" />
-                    <Section name="Windows Update" />
+                    <AutomaticUpdates />
+                    <ServicePacks />
+                    <WindowsUpdate />
                 </Group>
                 <Group name="Logs">
-                    <Section name="Event Viewer" />
+                    <EventViewer />
                 </Group>
                 <Group name="Reference">
-                    <Section name="Administrative Tools" />
-                    <Section name="C:\ Drive" />
-                    <Section name="Command Prompt" />
-                    <Section name="Control Panel" />
-                    <Section name="Processes" />
-                    <Section name="Task Manager" />
+                    <AdministrativeTools />
+                    <CDrive />
+                    <CommandPrompt />
+                    <ControlPanel />
+                    <Processes />
+                    <TaskManager />
                 </Group>
             </Template>
         )
