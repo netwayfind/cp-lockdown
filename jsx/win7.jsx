@@ -7,13 +7,13 @@ class Windows7 extends React.Component {
                     <AutomaticLogin />
                 </Group>
                 <Group name="Installation Cleanup">
-                    <Section name="Add/Remove Programs" />
-                    <Section name="Windows Features" />
-                    <Section name="Startup Programs" />
-                    <Section name="Services" />
-                    <Section name="Task Scheduler" />
-                    <Section name="Internet Explorer" />
-                    <Section name="Disk Cleanup" />
+                    <AddRemovePrograms />
+                    <WindowsFeatures />
+                    <StartupPrograms />
+                    <Services />
+                    <TaskScheduler/>
+                    <InternetExplorer />
+                    <DiskCleanup />
                 </Group>
                 <Group name="Network Resources">
                     <Section name="Internet Connection Sharing" />

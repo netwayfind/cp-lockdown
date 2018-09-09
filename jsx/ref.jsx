@@ -151,3 +151,204 @@ class AutomaticLogin extends Section {
         );
     }
 }
+
+class AddRemovePrograms extends Section {
+    constructor() {
+        super();
+        this.state.name = "Add/Remove Programs";
+    }
+
+    getContent() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Find <strong>Programs</strong></li>
+                    <li>Find and click on <strong>Uninstall a Program</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Do not remove any programs required by readme (e.g. web browser, work tools)</li>
+                    <li>Remove all programs prohibited by readme (e.g. games, non-work tools)</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+}
+
+class WindowsFeatures extends Section {
+    constructor() {
+        super();
+        this.state.name = "Windows Features";
+    }
+
+    getContent() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Find and click on <strong>Programs</strong></li>
+                    <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                Uncheck all not mentioned in the following:
+                <p></p>
+                Minimum required
+                <ul>
+                    <li>Internet Explorer</li>
+                    <li>Windows Search</li>
+                </ul>
+                May be required
+                <ul>
+                    <li>Microsoft .NET Framework</li>
+                </ul>
+                Only enable these if required by readme
+                <ul>
+                    <li>Simple Network Management Protocol (SNMP)</li>
+                    <li>Telnet Client</li>
+                    <li>Telnet Server</li>
+                    <li>TFTP Client</li>
+                </ul>
+            </React.Fragment>
+        )
+    }
+}
+
+class StartupPrograms extends Section {
+    constructor() {
+        super();
+        this.state.name = "Startup Programs";
+    }
+
+    getContent() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press the Start or Windows button</li>
+                    <li>Type <strong>msconfig</strong>, press Enter</li>
+                    <li>Go to the <strong>Startup</strong> tab</li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Keep checkmarks on required programs and services</li>
+                    <li>Remove checkmarks on all other items</li>
+                </ul>
+            </React.Fragment>
+        )
+    }
+}
+
+class Services extends Section {
+    constructor() {
+        super();
+        this.state.name = "Services";
+    }
+
+    getContent() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Find and open <strong>Services</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                Make sure the following services are running and have automatic start up:
+                <ul>
+                    <li>DHCP Client</li>
+                    <li>DNS Client</li>
+                </ul>
+                Unless required by readme, stop each of the following services and change Startup Type as Disabled
+                <ul>
+                    <li>DHCP Server</li>
+                    <li>DNS Server</li>
+                    <li>FTP Server</li>
+                    <li>HTTP Server</li>
+                    <li>Internet Information Services (IIS)</li>
+                    <li>Telnet Server</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+}
+
+class TaskScheduler extends Section {
+    constructor() {
+        super();
+        this.state.name = "Task Scheduler";
+    }
+
+    getContent() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Find and click on <strong>Task Scheduler</strong></li>
+                    <li>Under <strong>Task Scheduler (Local)</strong>, open <strong>Task Scheduler Library</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Review list of scheduled tasks</li>
+                    <li>Add any required tasks</li>
+                    <li>Disable or delete any unnecessary or prohibited tasks</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+}
+
+class InternetExplorer extends Section {
+    constructor() {
+        super();
+        this.state.name = "Internet Explorer";
+    }
+
+    getContent() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <strong>Internet Explorer</strong></li>
+                    <li>Find and click on <strong>Tools</strong></li>
+                    <li>Find and click on <strong>Internet Options</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                Under the Security tab, security zone settings should be:
+                <ul>
+                    <li>Internet - High</li>
+                    <li>Local Intranet - Medium-low</li>
+                    <li>Trusted Sites - Medium</li>
+                    <li>Restricted Sites - High</li>
+                </ul>
+            </React.Fragment>
+        )
+    }
+}
+
+class DiskCleanup extends Section {
+    constructor() {
+        super();
+        this.state.name = "Disk Cleanup";
+    }
+
+    getContent() {
+        return (
+            <React.Fragment>
+                <ol>
+                    <li>Press Start or Windows button</li>
+                    <li>Find and click on <strong>Computer</strong></li>
+                    <li>Right click on <strong>Local Disk (C:)</strong></li>
+                    <li>Select <strong>Properties</strong></li>
+                    <li>Find and click on <strong>Disk Cleanup</strong></li>
+                    <li>Find and click on <strong>Clean up system files</strong></li>
+                    <li>Put checkmarks for all items under Files to delete</li>
+                    <li>Press <strong>OK</strong></li>
+                </ol>
+            </React.Fragment>
+        );
+    }
+}

@@ -30,13 +30,13 @@ var Windows7 = function (_React$Component) {
                 React.createElement(
                     Group,
                     { name: "Installation Cleanup" },
-                    React.createElement(Section, { name: "Add/Remove Programs" }),
-                    React.createElement(Section, { name: "Windows Features" }),
-                    React.createElement(Section, { name: "Startup Programs" }),
-                    React.createElement(Section, { name: "Services" }),
-                    React.createElement(Section, { name: "Task Scheduler" }),
-                    React.createElement(Section, { name: "Internet Explorer" }),
-                    React.createElement(Section, { name: "Disk Cleanup" })
+                    React.createElement(AddRemovePrograms, null),
+                    React.createElement(WindowsFeatures, null),
+                    React.createElement(StartupPrograms, null),
+                    React.createElement(Services, null),
+                    React.createElement(TaskScheduler, null),
+                    React.createElement(InternetExplorer, null),
+                    React.createElement(DiskCleanup, null)
                 ),
                 React.createElement(
                     Group,
