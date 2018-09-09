@@ -267,7 +267,15 @@ class AutomaticLogin extends Section {
         super();
         this.state.name = "Automatic Login";
     }
+
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -295,6 +303,13 @@ class AutomaticUpdates extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -325,6 +340,13 @@ class CDrive extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -355,6 +377,13 @@ class CommandPrompt extends Section {
     }
 
     getContent() {
+        if (this.props.version == "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -374,6 +403,13 @@ class ControlPanel extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -411,6 +447,13 @@ class DiskCleanup extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <ol>
@@ -547,6 +590,13 @@ class InternetExplorer extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();    
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -780,6 +830,13 @@ class MicrosoftSecurityEssentials extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Download</h3>
@@ -828,6 +885,13 @@ class Processes extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.win7();
+        }
+        return "unknown";
+    }
+
+    win7() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -871,6 +935,13 @@ class ProgramFiles extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.win7();
+        }
+        return "unknown";
+    }
+
+    win7() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -906,6 +977,13 @@ class ProgramFilesx86 extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.win7();
+        }
+        return "unknown";
+    }
+
+    win7() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -998,6 +1076,13 @@ class ServicePacks extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.win7();
+        }
+        return "unknown";
+    }
+
+    win7() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1027,6 +1112,13 @@ class Services extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1122,6 +1214,13 @@ class StartupPrograms extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1147,6 +1246,13 @@ class TaskManager extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.win7();
+        }
+        return "unknown";
+    }
+
+    win7() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1519,6 +1625,13 @@ class UsersFolder extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.win7();
+        }
+        return "unknown";
+    }
+
+    win7() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1545,6 +1658,13 @@ class WindowsFeatures extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1584,6 +1704,13 @@ class WindowsFirewall extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1632,6 +1759,13 @@ class WindowsUpdate extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>

@@ -989,6 +989,14 @@ var AutomaticLogin = function (_Section7) {
     _createClass(AutomaticLogin, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -1068,6 +1076,14 @@ var AutomaticUpdates = function (_Section8) {
     _createClass(AutomaticUpdates, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -1170,6 +1186,14 @@ var CDrive = function (_Section9) {
     _createClass(CDrive, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -1281,6 +1305,14 @@ var CommandPrompt = function (_Section10) {
     _createClass(CommandPrompt, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version == "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -1331,6 +1363,14 @@ var ControlPanel = function (_Section11) {
     _createClass(ControlPanel, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -1423,6 +1463,14 @@ var DiskCleanup = function (_Section13) {
     _createClass(DiskCleanup, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -1879,6 +1927,14 @@ var InternetExplorer = function (_Section18) {
     _createClass(InternetExplorer, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2610,6 +2666,14 @@ var MicrosoftSecurityEssentials = function (_Section22) {
     _createClass(MicrosoftSecurityEssentials, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2766,6 +2830,14 @@ var Processes = function (_Section24) {
     _createClass(Processes, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.win7();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "win7",
+        value: function win7() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2936,6 +3008,14 @@ var ProgramFiles = function (_Section25) {
     _createClass(ProgramFiles, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.win7();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "win7",
+        value: function win7() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -3060,6 +3140,14 @@ var ProgramFilesx86 = function (_Section26) {
     _createClass(ProgramFilesx86, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.win7();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "win7",
+        value: function win7() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -3381,6 +3469,14 @@ var ServicePacks = function (_Section29) {
     _createClass(ServicePacks, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.win7();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "win7",
+        value: function win7() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -3479,6 +3575,14 @@ var Services = function (_Section30) {
     _createClass(Services, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -3798,6 +3902,14 @@ var StartupPrograms = function (_Section33) {
     _createClass(StartupPrograms, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -3878,6 +3990,14 @@ var TaskManager = function (_Section34) {
     _createClass(TaskManager, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.win7();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "win7",
+        value: function win7() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -4902,6 +5022,14 @@ var UsersFolder = function (_Section37) {
     _createClass(UsersFolder, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.win7();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "win7",
+        value: function win7() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -4981,6 +5109,14 @@ var WindowsFeatures = function (_Section38) {
     _createClass(WindowsFeatures, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -5102,6 +5238,14 @@ var WindowsFirewall = function (_Section39) {
     _createClass(WindowsFirewall, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -5309,6 +5453,14 @@ var WindowsUpdate = function (_Section40) {
     _createClass(WindowsUpdate, [{
         key: "getContent",
         value: function getContent() {
+            if (this.props.version === "win7") {
+                return this.option1();
+            }
+            return "unknown";
+        }
+    }, {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
