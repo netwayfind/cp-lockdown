@@ -1,0 +1,23 @@
+.heading {
+    height: 40px;
+    width: 100%;
+    float: top;
+    position: sticky;
+    border-bottom: 1px solid;
+}
+
+.toc {
+    height: 90vh;
+    width: 25%;
+    float: left;
+    overflow: auto;
+    position: sticky;
+    border-right: 1px solid;
+}
+
+.content {
+    height: 90vh;
+    margin-left: 30%;
+    overflow: auto;
+    position: sticky;
+}
