@@ -25,7 +25,7 @@ var Windows7 = function (_React$Component) {
                     Group,
                     { name: "Users and Groups" },
                     React.createElement(LocalUsersAndGroups, null),
-                    React.createElement(Section, { name: "Automatic Login" })
+                    React.createElement(AutomaticLogin, null)
                 ),
                 React.createElement(
                     Group,

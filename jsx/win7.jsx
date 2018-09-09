@@ -4,7 +4,7 @@ class Windows7 extends React.Component {
             <Template name="Windows 7">
                 <Group name="Users and Groups">
                     <LocalUsersAndGroups />
-                    <Section name="Automatic Login" />
+                    <AutomaticLogin />
                 </Group>
                 <Group name="Installation Cleanup">
                     <Section name="Add/Remove Programs" />

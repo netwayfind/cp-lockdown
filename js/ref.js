@@ -454,13 +454,73 @@ var AutomaticLogin = function (_Section2) {
     function AutomaticLogin() {
         _classCallCheck(this, AutomaticLogin);
 
-        return _possibleConstructorReturn(this, (AutomaticLogin.__proto__ || Object.getPrototypeOf(AutomaticLogin)).apply(this, arguments));
+        var _this2 = _possibleConstructorReturn(this, (AutomaticLogin.__proto__ || Object.getPrototypeOf(AutomaticLogin)).call(this));
+
+        _this2.state.name = "Automatic Login";
+        return _this2;
     }
 
     _createClass(AutomaticLogin, [{
         key: "getContent",
         value: function getContent() {
-            return "999";
+            return React.createElement(
+                "div",
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press Start or Windows button"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Type ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "netplwiz"
+                        ),
+                        ", press Enter key"
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Under ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Users"
+                        ),
+                        " tab",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "[x] Users must enter a user name and password to use this computer"
+                            )
+                        )
+                    )
+                )
+            );
         }
     }]);
 

@@ -127,7 +127,27 @@ class LocalUsersAndGroups extends Section {
 }
 
 class AutomaticLogin extends Section {
+    constructor() {
+        super();
+        this.state.name = "Automatic Login";
+    }
     getContent() {
-        return "999";
+        return (
+            <div>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Start or Windows button</li>
+                    <li>Type <strong>netplwiz</strong>, press Enter key</li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Under <strong>Users</strong> tab
+                    <ul>
+                            <li>[x] Users must enter a user name and password to use this computer</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        );
     }
 }
