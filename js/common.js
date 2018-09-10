@@ -33,6 +33,12 @@ var Template = function (_React$Component) {
                     React.createElement(
                         "h1",
                         null,
+                        React.createElement(
+                            "a",
+                            { href: "./index.html" },
+                            "cp-lockdown"
+                        ),
+                        " > ",
                         name
                     )
                 ),

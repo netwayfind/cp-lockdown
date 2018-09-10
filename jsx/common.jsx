@@ -9,7 +9,7 @@ class Template extends React.Component {
         return (
             <React.Fragment>
                 <div className="heading">
-                    <h1>{name}</h1>
+                    <h1><a href="./index.html">cp-lockdown</a> > {name}</h1>
                 </div>
                 <div className="toc" id="toc">
                     {children}
