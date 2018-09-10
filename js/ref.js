@@ -36,11 +36,7 @@ var AccountLockoutPolicy = function (_Section) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -134,11 +130,7 @@ var AddRemovePrograms = function (_Section2) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -217,11 +209,7 @@ var AdministrativeTools = function (_Section3) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -281,11 +269,7 @@ var AdvancedAuditPolicyConfiguration = function (_Section4) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -876,11 +860,7 @@ var AuditPolicy = function (_Section6) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1243,11 +1223,7 @@ var AutomaticUpdates = function (_Section8) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1328,11 +1304,7 @@ var AutomaticUpdates = function (_Section8) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1502,20 +1474,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files" },
-                            "Program Files"
-                        )
+                        React.createElement(ProgramFiles, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files (x86)" },
-                            "Program Files (x86)"
-                        )
+                        React.createElement(ProgramFilesx86, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1525,11 +1489,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Users Folder" },
-                            "Users"
-                        )
+                        React.createElement(UsersFolder, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1602,20 +1562,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files" },
-                            "Program Files"
-                        )
+                        React.createElement(ProgramFiles, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files (x86)" },
-                            "Program Files (x86)"
-                        )
+                        React.createElement(ProgramFilesx86, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1625,11 +1577,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Users Folder" },
-                            "Users"
-                        )
+                        React.createElement(UsersFolder, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1692,20 +1640,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files" },
-                            "Program Files"
-                        )
+                        React.createElement(ProgramFiles, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files (x86)" },
-                            "Program Files (x86)"
-                        )
+                        React.createElement(ProgramFilesx86, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1715,11 +1655,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Users Folder" },
-                            "Users"
-                        )
+                        React.createElement(UsersFolder, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1792,20 +1728,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files" },
-                            "Program Files"
-                        )
+                        React.createElement(ProgramFiles, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Program Files (x86)" },
-                            "Program Files (x86)"
-                        )
+                        React.createElement(ProgramFilesx86, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -1815,11 +1743,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(
-                            "a",
-                            { href: "#Users Folder" },
-                            "Users"
-                        )
+                        React.createElement(UsersFolder, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -2465,11 +2389,7 @@ var EventViewer = function (_Section14) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -2543,11 +2463,7 @@ var FindUnauthorizedFiles = function (_Section15) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Command Prompt" },
-                            "Command Prompt"
-                        )
+                        React.createElement(CommandPrompt, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -2712,11 +2628,7 @@ var InternetConnectionSharing = function (_Section17) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -3172,11 +3084,7 @@ var LocalUsersAndGroups = function (_Section20) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -3296,11 +3204,7 @@ var LocalUsersAndGroups = function (_Section20) {
                             "li",
                             null,
                             "Make sure password meets the ",
-                            React.createElement(
-                                "a",
-                                { href: "#Password Policy" },
-                                "Password Policy"
-                            )
+                            React.createElement(PasswordPolicy, { version: this.props.version })
                         ),
                         React.createElement(
                             "li",
@@ -3597,11 +3501,7 @@ var LocalUsersAndGroups = function (_Section20) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -3717,11 +3617,7 @@ var LocalUsersAndGroups = function (_Section20) {
                             "li",
                             null,
                             "Make sure password meets the ",
-                            React.createElement(
-                                "a",
-                                { href: "#Password Policy" },
-                                "Password Policy"
-                            )
+                            React.createElement(PasswordPolicy, { version: this.props.version })
                         ),
                         React.createElement(
                             "li",
@@ -4132,11 +4028,7 @@ var LocalUsersAndGroups = function (_Section20) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -4252,11 +4144,7 @@ var LocalUsersAndGroups = function (_Section20) {
                             "li",
                             null,
                             "Make sure password meets the ",
-                            React.createElement(
-                                "a",
-                                { href: "#Password Policy" },
-                                "Password Policy"
-                            )
+                            React.createElement(PasswordPolicy, { version: this.props.version })
                         ),
                         React.createElement(
                             "li",
@@ -4887,11 +4775,7 @@ var PasswordPolicy = function (_Section23) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -5018,11 +4902,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Task Manager" },
-                            "Task Manager"
-                        )
+                        React.createElement(TaskManager, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -5171,11 +5051,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Task Manager" },
-                            "Task Manager"
-                        )
+                        React.createElement(TaskManager, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -5336,11 +5212,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Task Manager" },
-                            "Task Manager"
-                        )
+                        React.createElement(TaskManager, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -5552,11 +5424,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Task Manager" },
-                            "Task Manager"
-                        )
+                        React.createElement(TaskManager, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -5798,11 +5666,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -5905,11 +5769,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6012,11 +5872,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6124,11 +5980,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6236,11 +6088,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6343,11 +6191,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6440,11 +6284,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6532,11 +6372,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6634,11 +6470,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6736,11 +6568,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6825,11 +6653,7 @@ var RemoteAssistanceAndRemoteDesktop = function (_Section27) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -6924,11 +6748,7 @@ var SecurityOptions = function (_Section28) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -7171,11 +6991,7 @@ var Services = function (_Section30) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -7280,11 +7096,7 @@ var SharedFolders = function (_Section31) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -7408,11 +7220,7 @@ var ShowHiddenFilesAndFolders = function (_Section32) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -7491,11 +7299,7 @@ var ShowHiddenFilesAndFolders = function (_Section32) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -7673,11 +7477,7 @@ var StartupPrograms = function (_Section33) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Task Manager" },
-                            "Task Manager"
-                        )
+                        React.createElement(TaskManager, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -7725,11 +7525,7 @@ var StartupPrograms = function (_Section33) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Task Manager" },
-                            "Task Manager"
-                        )
+                        React.createElement(TaskManager, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -8019,11 +7815,7 @@ var TaskScheduler = function (_Section35) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -8113,11 +7905,7 @@ var UserRightsAssignment = function (_Section36) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Administrative Tools" },
-                            "Administrative Tools"
-                        )
+                        React.createElement(AdministrativeTools, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -8986,11 +8774,7 @@ var UsersFolder = function (_Section37) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#C:\\ Drive" },
-                            "C:\\ drive"
-                        )
+                        React.createElement(CDrive, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -9083,11 +8867,7 @@ var WindowsFeatures = function (_Section38) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -9187,11 +8967,7 @@ var WindowsFeatures = function (_Section38) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -9286,11 +9062,7 @@ var WindowsFeatures = function (_Section38) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -9446,11 +9218,7 @@ var WindowsFirewall = function (_Section39) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -9636,11 +9404,7 @@ var WindowsFirewall = function (_Section39) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -9911,11 +9675,7 @@ var WindowsUpdate = function (_Section41) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Control Panel" },
-                            "Control Panel"
-                        )
+                        React.createElement(ControlPanel, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",
@@ -9997,11 +9757,7 @@ var WindowsUpdate = function (_Section41) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(
-                            "a",
-                            { href: "#Windows Settings" },
-                            "Windows Settings"
-                        )
+                        React.createElement(WindowsSettings, { version: this.props.version })
                     ),
                     React.createElement(
                         "li",

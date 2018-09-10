@@ -9,7 +9,7 @@ class AccountLockoutPolicy extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Open <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>Account Policies</strong></li>
                     <li>Find and double click on <strong>Account Lockout Policy</strong></li>
@@ -36,7 +36,7 @@ class AddRemovePrograms extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find <strong>Programs</strong></li>
                     <li>Find and click on <strong>Uninstall a Program</strong></li>
                 </ol>
@@ -61,7 +61,7 @@ class AdministrativeTools extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>Administrative Tools</strong></li>
                 </ol>
@@ -82,7 +82,7 @@ class AdvancedAuditPolicyConfiguration extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Open <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>Advanced Audit Policy Configuration</strong></li>
                     <li>Find and double click on <strong>System Audit Policies - Local Group Policy Object</strong></li>
@@ -240,7 +240,7 @@ class AuditPolicy extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Open <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>Local Policies</strong></li>
                     <li>Find and double click on <strong>Audit Policy</strong></li>
@@ -384,7 +384,7 @@ class AutomaticUpdates extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                     <li>Find and click on <strong>Turn automatic updating on or off</strong></li>
@@ -407,7 +407,7 @@ class AutomaticUpdates extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                     <li>Find <strong>Change settings</strong></li>
@@ -473,10 +473,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><a href="#Program Files">Program Files</a></li>
-                    <li><a href="#Program Files (x86)">Program Files (x86)</a></li>
+                    <li><ProgramFiles version={this.props.version} /></li>
+                    <li><ProgramFilesx86 version={this.props.version} /></li>
                     <li>ProgramData (hidden)</li>
-                    <li><a href="#Users Folder">Users</a></li>
+                    <li><UsersFolder version={this.props.version} /></li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -496,10 +496,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><a href="#Program Files">Program Files</a></li>
-                    <li><a href="#Program Files (x86)">Program Files (x86)</a></li>
+                    <li><ProgramFiles version={this.props.version} /></li>
+                    <li><ProgramFilesx86 version={this.props.version} /></li>
                     <li>ProgramData (hidden)</li>
-                    <li><a href="#Users Folder">Users</a></li>
+                    <li><UsersFolder version={this.props.version} /></li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -518,10 +518,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><a href="#Program Files">Program Files</a></li>
-                    <li><a href="#Program Files (x86)">Program Files (x86)</a></li>
+                    <li><ProgramFiles version={this.props.version} /></li>
+                    <li><ProgramFilesx86 version={this.props.version} /></li>
                     <li>ProgramData (hidden)</li>
-                    <li><a href="#Users Folder">Users</a></li>
+                    <li><UsersFolder version={this.props.version} /></li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -541,10 +541,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><a href="#Program Files">Program Files</a></li>
-                    <li><a href="#Program Files (x86)">Program Files (x86)</a></li>
+                    <li><ProgramFiles version={this.props.version} /></li>
+                    <li><ProgramFilesx86 version={this.props.version} /></li>
                     <li>ProgramData (hidden)</li>
-                    <li><a href="#Users Folder">Users</a></li>
+                    <li><UsersFolder version={this.props.version} /></li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -796,7 +796,7 @@ class EventViewer extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
                     <li>Open <strong>Event Viewer</strong></li>
                 </ol>
                 <ul>
@@ -819,7 +819,7 @@ class FindUnauthorizedFiles extends Section {
         return (
             <React.Fragment>
                 <ol>
-                    <li>Open <a href="#Command Prompt">Command Prompt</a></li>
+                    <li>Open <CommandPrompt version={this.props.version} /></li>
                     <li>dir C:\Users /s /b /a | find /i ".mp3"
                         <ul>
                             <li>This will search for .mp3 files in C:\Users</li>
@@ -879,7 +879,7 @@ class InternetConnectionSharing extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>Network and Internet</strong></li>
                     <li>Find and click on <strong>Network and Sharing Center</strong></li>
                     <li>Find and click on <strong>Change adapter settings</strong></li>
@@ -1059,7 +1059,7 @@ class LocalUsersAndGroups extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and open <strong>Computer Management</strong></li>
                     <li>Find and open <strong>System Tools</strong></li>
                     <li>Find and open <strong>Local Users and Groups</strong></li>
@@ -1081,7 +1081,7 @@ class LocalUsersAndGroups extends Section {
                     </ul>
                     <li>Right click on user, select <b>Set Password</b></li>
                     <ul>
-                        <li>Make sure password meets the <a href="#Password Policy">Password Policy</a></li>
+                        <li>Make sure password meets the <PasswordPolicy version={this.props.version} /></li>
                         <li>Write down user and password for reference</li>
                     </ul>
                 </ol>
@@ -1180,7 +1180,7 @@ class LocalUsersAndGroups extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and open <strong>Computer Management</strong></li>
                     <li>Find and open <strong>System Tools</strong></li>
                     <li>Find and open <strong>Local Users and Groups</strong></li>
@@ -1202,7 +1202,7 @@ class LocalUsersAndGroups extends Section {
                     </ul>
                     <li>Right click on user, select <b>Set Password</b></li>
                     <ul>
-                        <li>Make sure password meets the <a href="#Password Policy">Password Policy</a></li>
+                        <li>Make sure password meets the <PasswordPolicy version={this.props.version} /></li>
                         <li>Write down user and password for reference</li>
                     </ul>
                 </ol>
@@ -1346,7 +1346,7 @@ class LocalUsersAndGroups extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and open <strong>Computer Management</strong></li>
                     <li>Find and open <strong>System Tools</strong></li>
                     <li>Find and open <strong>Local Users and Groups</strong></li>
@@ -1368,7 +1368,7 @@ class LocalUsersAndGroups extends Section {
                     </ul>
                     <li>Right click on user, select <b>Set Password</b></li>
                     <ul>
-                        <li>Make sure password meets the <a href="#Password Policy">Password Policy</a></li>
+                        <li>Make sure password meets the <PasswordPolicy version={this.props.version} /></li>
                         <li>Write down user and password for reference</li>
                     </ul>
                 </ol>
@@ -1634,7 +1634,7 @@ class PasswordPolicy extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Open <strong>Account Policies</strong></li>
                     <li>Open <strong>Password Policy</strong></li>
@@ -1686,7 +1686,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Open <TaskManager version={this.props.version} /></li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
                 </ol>
@@ -1722,7 +1722,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Open <TaskManager version={this.props.version} /></li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
                 </ol>
@@ -1766,7 +1766,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Open <TaskManager version={this.props.version} /></li>
                     <li>Click <strong>More details</strong>, if necessary</li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
@@ -1819,7 +1819,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Open <TaskManager version={this.props.version} /></li>
                     <li>Click <strong>More details</strong>, if necessary</li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
@@ -1900,7 +1900,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -1928,7 +1928,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -1957,7 +1957,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -1986,7 +1986,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2015,7 +2015,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2065,7 +2065,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2091,7 +2091,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2116,7 +2116,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2143,7 +2143,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2170,7 +2170,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2198,7 +2198,7 @@ class RemoteAssistanceAndRemoteDesktop extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>System</strong></li>
                     <li>Find and click on <strong>Remote settings</strong></li>
@@ -2228,7 +2228,7 @@ class SecurityOptions extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Open <strong>Local Policies</strong></li>
                     <li>Open <strong>Security Options</strong></li>
@@ -2334,7 +2334,7 @@ class Services extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and open <strong>Services</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2368,7 +2368,7 @@ class SharedFolders extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Open <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and double click on <strong>Computer Management</strong></li>
                     <li>Find and double click on <strong>Shared Folders</strong></li>
                     <li>Find and double click on <strong>Shares</strong></li>
@@ -2424,7 +2424,7 @@ class ShowHiddenFilesAndFolders extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>Appearance and Personalization</strong></li>
                     <li>Find <strong>Folder Options</strong></li>
                     <li>Find and click on <strong>Show hidden files and folders</strong></li>
@@ -2444,7 +2444,7 @@ class ShowHiddenFilesAndFolders extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>Appearance and Personalization</strong></li>
                     <li>Find <strong>File Explorer Options</strong></li>
                     <li>Find and click on the <strong>View</strong> tab</li>
@@ -2510,7 +2510,7 @@ class StartupPrograms extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Open <TaskManager version={this.props.version} /></li>
                     <li>Go to the <strong>Startup</strong> tab</li>
                 </ol>
                 <h3>Settings</h3>
@@ -2526,7 +2526,7 @@ class StartupPrograms extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Open <TaskManager version={this.props.version} /></li>
                     <li>Click on <strong>More details</strong>, if necessary</li>
                     <li>Go to the <strong>Startup</strong> tab</li>
                 </ol>
@@ -2633,7 +2633,7 @@ class TaskScheduler extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Open <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and click on <strong>Task Scheduler</strong></li>
                     <li>Under <strong>Task Scheduler (Local)</strong>, open <strong>Task Scheduler Library</strong></li>
                 </ol>
@@ -2659,7 +2659,7 @@ class UserRightsAssignment extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Open <AdministrativeTools version={this.props.version} /></li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>User Rights Assignment</strong></li>
                 </ol>
@@ -3002,7 +3002,7 @@ class UsersFolder extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Open <CDrive version={this.props.version} /></li>
                     <li>Open <strong>Users</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -3050,7 +3050,7 @@ class WindowsFeatures extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>Programs</strong></li>
                     <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
                 </ol>
@@ -3082,7 +3082,7 @@ class WindowsFeatures extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>Programs</strong></li>
                     <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
                 </ol>
@@ -3113,7 +3113,7 @@ class WindowsFeatures extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>Programs</strong></li>
                     <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
                     <li>Follow <strong>Add Roles and Features Wizard</strong> until <strong>Features</strong></li>
@@ -3174,7 +3174,7 @@ class WindowsFirewall extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>Windows Firewall</strong></li>
                 </ol>
@@ -3215,7 +3215,7 @@ class WindowsFirewall extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>Windows Firewall</strong></li>
                 </ol>
@@ -3304,7 +3304,7 @@ class WindowsUpdate extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Open <ControlPanel version={this.props.version} /></li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                 </ol>
@@ -3324,7 +3324,7 @@ class WindowsUpdate extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <a href="#Windows Settings">Windows Settings</a></li>
+                    <li>Open <WindowsSettings version={this.props.version} /></li>
                     <li>Find <strong>Update &amp; Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                 </ol>
