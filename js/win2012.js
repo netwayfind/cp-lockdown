@@ -1,0 +1,111 @@
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var WindowsServer2012 = function (_React$Component) {
+    _inherits(WindowsServer2012, _React$Component);
+
+    function WindowsServer2012() {
+        _classCallCheck(this, WindowsServer2012);
+
+        return _possibleConstructorReturn(this, (WindowsServer2012.__proto__ || Object.getPrototypeOf(WindowsServer2012)).apply(this, arguments));
+    }
+
+    _createClass(WindowsServer2012, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                Template,
+                { name: "Windows Server 2012" },
+                React.createElement(
+                    Group,
+                    { name: "Users and Groups" },
+                    React.createElement(LocalUsersAndGroups, { version: "win2012" }),
+                    React.createElement(AutomaticLogin, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Installation Cleanup" },
+                    React.createElement(AddRemovePrograms, { version: "win2012" }),
+                    React.createElement(WindowsFeatures, { version: "win2012" }),
+                    React.createElement(StartupPrograms, { version: "win2012" }),
+                    React.createElement(Services, { version: "win2012" }),
+                    React.createElement(TaskScheduler, { version: "win2012" }),
+                    React.createElement(InternetExplorer, { version: "win2012" }),
+                    React.createElement(DiskCleanup, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Network Resources" },
+                    React.createElement(InternetConnectionSharing, { version: "win2012" }),
+                    React.createElement(SharedFolders, { version: "win2012" }),
+                    React.createElement(CrowdInspect, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Remote Access" },
+                    React.createElement(RemoteAssistanceAndRemoteDesktop, { version: "win2012" }),
+                    React.createElement(WindowsFirewall, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Policies" },
+                    React.createElement(PasswordPolicy, { version: "win2012" }),
+                    React.createElement(AccountLockoutPolicy, { version: "win2012" }),
+                    React.createElement(AuditPolicy, { version: "win2012" }),
+                    React.createElement(UserRightsAssignment, { version: "win2012" }),
+                    React.createElement(SecurityOptions, { version: "win2012" }),
+                    React.createElement(AdvancedAuditPolicyConfiguration, { version: "win2012" }),
+                    React.createElement(LocalGroupPolicyEditor, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Scans" },
+                    React.createElement(MicrosoftBaselineSecurityAnalyzer, { version: "win2012" }),
+                    React.createElement(MicrosoftSecurityEssentials, { version: "win2012" }),
+                    React.createElement(AntiMalwareTools, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Filesystem" },
+                    React.createElement(ShowHiddenFilesAndFolders, { version: "win2012" }),
+                    React.createElement(FindUnauthorizedFiles, { version: "win2012" }),
+                    React.createElement(UsersFolder, { version: "win2012" }),
+                    React.createElement(ProgramFiles, { version: "win2012" }),
+                    React.createElement(ProgramFilesx86, { version: "win2012" }),
+                    React.createElement(HostsFile, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Updates" },
+                    React.createElement(AutomaticUpdates, { version: "win2012" }),
+                    React.createElement(ServicePacks, { version: "win2012" }),
+                    React.createElement(WindowsUpdate, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Logs" },
+                    React.createElement(EventViewer, { version: "win2012" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Reference" },
+                    React.createElement(AdministrativeTools, { version: "win2012" }),
+                    React.createElement(CDrive, { version: "win2012" }),
+                    React.createElement(CommandPrompt, { version: "win2012" }),
+                    React.createElement(ControlPanel, { version: "win2012" }),
+                    React.createElement(Processes, { version: "win2012" }),
+                    React.createElement(TaskManager, { version: "win2012" })
+                )
+            );
+        }
+    }]);
+
+    return WindowsServer2012;
+}(React.Component);
+
+ReactDOM.render(React.createElement(WindowsServer2012, null), document.getElementById("app"));

@@ -281,6 +281,9 @@ class AutomaticLogin extends Section {
         else if (this.props.version === "win10") {
             return this.option3();
         }
+        else if (this.props.version === "win2012") {
+            return this.option3();
+        }
         return "unknown";
     }
 
@@ -364,6 +367,9 @@ class AutomaticUpdates extends Section {
         else if (this.props.version === "win10") {
             return this.option3();
         }
+        else if (this.props.version === "win2012") {
+            return this.option2();
+        }
         return "unknown";
     }
 
@@ -438,6 +444,9 @@ class CDrive extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option4();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option3();
         }
         return "unknown";
     }
@@ -553,6 +562,9 @@ class CommandPrompt extends Section {
         else if (this.props.version === "win10") {
             return this.option3();
         }
+        else if (this.props.version === "win2012") {
+            return this.option3();
+        }
         return "unknown";
     }
 
@@ -610,6 +622,9 @@ class ControlPanel extends Section {
             return this.option3();
         }
         else if (this.props.version === "win10") {
+            return this.option3();
+        }
+        else if (this.props.version === "win2012") {
             return this.option3();
         }
         return "unknown";
@@ -690,6 +705,9 @@ class DiskCleanup extends Section {
         else if (this.props.version === "win10") {
             return this.option3();
         }
+        else if (this.props.version === "win2012") {
+            return this.option4();
+        }
         return "unknown";
     }
 
@@ -742,6 +760,10 @@ class DiskCleanup extends Section {
 
             </React.Fragment>
         );
+    }
+
+    option4() {
+        return "Disk cleanup is not installed by default.";
     }
 }
 
@@ -876,6 +898,9 @@ class InternetExplorer extends Section {
         else if (this.props.version === "win10") {
             return this.option2();
         }
+        else if (this.props.version === "win2012") {
+            return this.option2();
+        }
         return "unknown";
     }
 
@@ -987,6 +1012,25 @@ class LocalUsersAndGroups extends Section {
     }
 
     getContent() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option1();
+        }
+        else if (this.props.version === "win10") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option2();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1106,6 +1150,172 @@ class LocalUsersAndGroups extends Section {
             </React.Fragment>
         );
     }
+
+    option2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Go to <a href="#Administrative Tools">Administrative Tools</a></li>
+                    <li>Find and open <strong>Computer Management</strong></li>
+                    <li>Find and open <strong>System Tools</strong></li>
+                    <li>Find and open <strong>Local Users and Groups</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                <h4>Users</h4>
+                For each user:
+                <ol>
+                    <li>Right click on user, select <strong>Properties</strong></li>
+                    Under <strong>General</strong> tab
+                    <ul>
+                        <li>Disable all users not required by readme</li>
+                        <li>Set passwords to expire for all users</li>
+                    </ul>
+                    Under <strong>Member Of</strong> tab
+                    <ul>
+                        <li>Add user to necessary groups, e.g. Administrators</li>
+                        <li>Remove user from unnecessary groups</li>
+                    </ul>
+                    <li>Right click on user, select <b>Set Password</b></li>
+                    <ul>
+                        <li>Make sure password meets the <a href="#Password Policy">Password Policy</a></li>
+                        <li>Write down user and password for reference</li>
+                    </ul>
+                </ol>
+                For the Administrator user:
+                <ol>
+                    <li>Right click on Adminstrator user, select <strong>Rename</strong></li>
+                    <li>Change name to something else</li>
+                </ol>
+                For the Guest user:
+                <ol>
+                    <li>Right click on Guest user, select <strong>Properties</strong></li>
+                    <li>[x] Account is disabled</li>
+                </ol>
+                <h4>Groups</h4>
+                Check the users in all of the groups. These are the default entries.
+                <ul>
+                    <li>Access Control Assistance Operators
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Administrators
+                        <ul>
+                            <li>only the users required</li>
+                        </ul>
+                    </li>
+                    <li>Backup Operators
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Certificate Service DCOM Access
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Cryptographic Operators
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Distributed COM Users
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Event Log Readers
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Guests
+                        <ul>
+                            <li>Guest</li>
+                        </ul>
+                    </li>
+                    <li>Hyper-V Administrators
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>IIS_IUSRS
+                        <ul>
+                            <li>NT AUTHORITY\IUSR (S-1-5-17)</li>
+                        </ul>
+                    </li>
+                    <li>Network Configuration Operators
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Performance Log Users
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Performance Monitor Users
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Power Users
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Print Operators
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>RDS Endpoint Servers
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>RDS Management Servers
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>RDS Remote Access Servers
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Remote Desktop Users
+                        <ul>
+                            <li>No entries; unless required by readme</li>
+                        </ul>
+                    </li>
+                    <li>Remote Management Users
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Replicator
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                    <li>Users
+                        <ul>
+                            <li>NT AUTHORITY\Authenticated Users(S-1-5-11)</li>
+                            <li>NT AUTHORITY\INTERACTIVE (S-1-5-4)</li>
+                            <li>only the users necessary on the system</li>
+                        </ul>
+                    </li>
+                    <li>WinRMRemoteWMIUsers__
+                        <ul>
+                            <li>No entries</li>
+                        </ul>
+                    </li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class MicrosoftBaselineSecurityAnalyzer extends Section {
@@ -1126,6 +1336,9 @@ class MicrosoftBaselineSecurityAnalyzer extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option1();
         }
         return "unknown";
     }
@@ -1166,6 +1379,9 @@ class MicrosoftSecurityEssentials extends Section {
         else if (this.props.version === "win10") {
             return this.option2();
         }
+        else if (this.props.version === "win2012") {
+            return this.option3();
+        }
         return "unknown";
     }
 
@@ -1188,6 +1404,19 @@ class MicrosoftSecurityEssentials extends Section {
                     <li>Press Start button</li>
                     <li>Type <strong>Windows Defender</strong></li>
                 </ol>
+            </React.Fragment>
+        );
+    }
+
+    option3() {
+        return (
+            <React.Fragment>
+                Not supported for Windows Server.
+                <p></p>
+                Use Microsoft Safety Scanner instead:
+                <ul>
+                    <li><a target="_blank" href="http://www.microsoft.com/security/scanner/en-us/default.aspx">http://www.microsoft.com/security/scanner/en-us/default.aspx</a></li>
+                </ul>
             </React.Fragment>
         );
     }
@@ -1241,6 +1470,9 @@ class Processes extends Section {
         }
         else if (this.props.version === "win10") {
             return this.win10();
+        }
+        else if (this.props.version === "win2012") {
+            return this.win8dot1();
         }
         return "unknown";
     }
@@ -1450,6 +1682,9 @@ class ProgramFiles extends Section {
         else if (this.props.version === "win10") {
             return this.win10();
         }
+        else if (this.props.version === "win2012") {
+            return this.win2012();
+        }
         return "unknown";
     }
 
@@ -1567,6 +1802,27 @@ class ProgramFiles extends Section {
             </React.Fragment>
         );
     }
+
+    win2012() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Find and open <strong>Program Files</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Uninstall Information (hidden)</li>
+                    <li>Windows Mail</li>
+                    <li>Windows NT</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class ProgramFilesx86 extends Section {
@@ -1587,6 +1843,9 @@ class ProgramFilesx86 extends Section {
         }
         else if (this.props.version === "win10") {
             return this.win10();
+        }
+        else if (this.props.version === "win2012") {
+            return this.win2012();
         }
         return "unknown";
     }
@@ -1695,6 +1954,27 @@ class ProgramFilesx86 extends Section {
             </React.Fragment>
         );
     }
+
+    win2012() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Find and open <strong>Program Files (x86)</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Microsoft.NET</li>
+                    <li>Windows Mail</li>
+                    <li>Windows NT</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class RemoteAssistanceAndRemoteDesktop extends Section {
@@ -1775,6 +2055,9 @@ class ServicePacks extends Section {
         else if (this.props.version === "win10") {
             return this.none();
         }
+        else if (this.props.version === "win2012") {
+            return this.none();
+        }
         return "unknown";
     }
 
@@ -1822,6 +2105,9 @@ class Services extends Section {
             return this.option1();
         }
         else if (this.props.version === "win10") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2012") {
             return this.option1();
         }
         return "unknown";
@@ -1908,6 +2194,9 @@ class ShowHiddenFilesAndFolders extends Section {
         else if (this.props.version === "win10") {
             return this.option2();
         }
+        else if (this.props.version === "win2012") {
+            return this.option1();
+        }
         return "unknown";
     }
 
@@ -1965,10 +2254,13 @@ class StartupPrograms extends Section {
             return this.option2();
         }
         else if (this.props.version === "win8.1") {
-            return this.option2();
+            return this.option3();
         }
         else if (this.props.version === "win10") {
-            return this.option2();
+            return this.option3();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option4();
         }
         return "unknown";
     }
@@ -2023,6 +2315,24 @@ class StartupPrograms extends Section {
             </React.Fragment>
         );
     }
+
+    option4() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press the Start or Windows button</li>
+                    <li>Type <strong>msconfig</strong>, press Enter</li>
+                    <li>Go to the <strong>Startup</strong> tab</li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Keep checkmarks on required programs and services</li>
+                    <li>Remove checkmarks on all other items</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class TaskManager extends Section {
@@ -2042,6 +2352,9 @@ class TaskManager extends Section {
             return this.option2();
         }
         else if (this.props.version === "win10") {
+            return this.option2();
+        }
+        else if (this.props.version === "win2012") {
             return this.option2();
         }
         return "unknown";
@@ -2450,6 +2763,9 @@ class UsersFolder extends Section {
         else if (this.props.version === "win10") {
             return this.option1();
         }
+        else if (this.props.version === "win2012") {
+            return this.option1();
+        }
         return "unknown";
     }
 
@@ -2491,6 +2807,9 @@ class WindowsFeatures extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option3();
         }
         return "unknown";
     }
@@ -2557,6 +2876,38 @@ class WindowsFeatures extends Section {
             </React.Fragment>
         );
     }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#Control Panel">Control Panel</a></li>
+                    <li>Find and click on <strong>Programs</strong></li>
+                    <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
+                    <li>Follow <strong>Add Roles and Features Wizard</strong> until <strong>Features</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                Uncheck all not mentioned in the following:
+                <p></p>
+                May be required
+                <ul>
+                    <li>Microsoft .NET Framework</li>
+                </ul>
+                Only enable these if required by readme
+                <ul>
+                    <li>Group Policy Management</li>
+                    <li>Remote Assistance</li>
+                    <li>Remote Server Administration Tools</li>
+                    <li>SMTP Server</li>
+                    <li>SNMP Server</li>
+                    <li>Telnet Client</li>
+                    <li>Telnet Server</li>
+                    <li>TFTP Client</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class WindowsFirewall extends Section {
@@ -2576,6 +2927,9 @@ class WindowsFirewall extends Section {
             return this.option2();
         }
         else if (this.props.version === "win10") {
+            return this.option2();
+        }
+        else if (this.props.version === "win2012") {
             return this.option2();
         }
         return "unknown";
@@ -2701,6 +3055,9 @@ class WindowsUpdate extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option1();
         }
         return "unknown";
     }
