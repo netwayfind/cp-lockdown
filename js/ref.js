@@ -999,6 +999,8 @@ var AutomaticLogin = function (_Section7) {
                 return this.option3();
             } else if (this.props.version === "win2012") {
                 return this.option3();
+            } else if (this.props.version === "win2016") {
+                return this.option3();
             }
             return "unknown";
         }
@@ -1218,6 +1220,8 @@ var AutomaticUpdates = function (_Section8) {
                 return this.option3();
             } else if (this.props.version === "win2012") {
                 return this.option2();
+            } else if (this.props.version === "win2016") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -1435,6 +1439,8 @@ var CDrive = function (_Section9) {
             } else if (this.props.version === "win10") {
                 return this.option4();
             } else if (this.props.version === "win2012") {
+                return this.option3();
+            } else if (this.props.version === "win2016") {
                 return this.option3();
             }
             return "unknown";
@@ -1853,6 +1859,8 @@ var CommandPrompt = function (_Section10) {
                 return this.option3();
             } else if (this.props.version === "win2012") {
                 return this.option3();
+            } else if (this.props.version === "win2016") {
+                return this.option3();
             }
             return "unknown";
         }
@@ -1984,6 +1992,8 @@ var ControlPanel = function (_Section11) {
             } else if (this.props.version === "win10") {
                 return this.option3();
             } else if (this.props.version === "win2012") {
+                return this.option3();
+            } else if (this.props.version === "win2016") {
                 return this.option3();
             }
             return "unknown";
@@ -2168,6 +2178,8 @@ var DiskCleanup = function (_Section13) {
                 return this.option3();
             } else if (this.props.version === "win2012") {
                 return this.option4();
+            } else if (this.props.version === "win2016") {
+                return this.option1();
             }
             return "unknown";
         }
@@ -2805,6 +2817,8 @@ var InternetExplorer = function (_Section18) {
                 return this.option2();
             } else if (this.props.version === "win2012") {
                 return this.option2();
+            } else if (this.props.version === "win2016") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -3135,6 +3149,8 @@ var LocalUsersAndGroups = function (_Section20) {
                 return this.option1();
             } else if (this.props.version === "win2012") {
                 return this.option2();
+            } else if (this.props.version === "win2016") {
+                return this.option3();
             }
             return "unknown";
         }
@@ -4098,6 +4114,555 @@ var LocalUsersAndGroups = function (_Section20) {
                 )
             );
         }
+    }, {
+        key: "option3",
+        value: function option3() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Go to ",
+                        React.createElement(
+                            "a",
+                            { href: "#Administrative Tools" },
+                            "Administrative Tools"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and open ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Computer Management"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and open ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "System Tools"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and open ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Local Users and Groups"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                React.createElement(
+                    "h4",
+                    null,
+                    "Users"
+                ),
+                "For each user:",
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Right click on user, select ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Properties"
+                        )
+                    ),
+                    "Under ",
+                    React.createElement(
+                        "strong",
+                        null,
+                        "General"
+                    ),
+                    " tab",
+                    React.createElement(
+                        "ul",
+                        null,
+                        React.createElement(
+                            "li",
+                            null,
+                            "Disable all users not required by readme"
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            "Set passwords to expire for all users"
+                        )
+                    ),
+                    "Under ",
+                    React.createElement(
+                        "strong",
+                        null,
+                        "Member Of"
+                    ),
+                    " tab",
+                    React.createElement(
+                        "ul",
+                        null,
+                        React.createElement(
+                            "li",
+                            null,
+                            "Add user to necessary groups, e.g. Administrators"
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            "Remove user from unnecessary groups"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Right click on user, select ",
+                        React.createElement(
+                            "b",
+                            null,
+                            "Set Password"
+                        )
+                    ),
+                    React.createElement(
+                        "ul",
+                        null,
+                        React.createElement(
+                            "li",
+                            null,
+                            "Make sure password meets the ",
+                            React.createElement(
+                                "a",
+                                { href: "#Password Policy" },
+                                "Password Policy"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            "Write down user and password for reference"
+                        )
+                    )
+                ),
+                "For the Administrator user:",
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Right click on Adminstrator user, select ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Rename"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Change name to something else"
+                    )
+                ),
+                "For the Guest user:",
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Right click on Guest user, select ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Properties"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "[x] Account is disabled"
+                    )
+                ),
+                React.createElement(
+                    "h4",
+                    null,
+                    "Groups"
+                ),
+                "Check the users in all of the groups. These are the default entries.",
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Access Control Assistance Operators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Administrators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "only the users required"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Backup Operators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Certificate Service DCOM Access",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Cryptographic Operators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Distributed COM Users",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Event Log Readers",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Guests",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "Guest"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Hyper-V Administrators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "IIS_IUSRS",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "NT AUTHORITY\\IUSR (S-1-5-17)"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Network Configuration Operators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Performance Log Users",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Performance Monitor Users",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Power Users",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Print Operators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "RDS Endpoint Servers",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "RDS Management Servers",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "RDS Remote Access Servers",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Remote Desktop Users",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries; unless required by readme"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Remote Management Users",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Replicator",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Storage Replica Administrators",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "No entries"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "System Managed Accounts Group",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "DefaultAccount"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Users",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "NT AUTHORITY\\Authenticated Users(S-1-5-11)"
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "NT AUTHORITY\\INTERACTIVE (S-1-5-4)"
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "only the users necessary on the system"
+                            )
+                        )
+                    )
+                )
+            );
+        }
     }]);
 
     return LocalUsersAndGroups;
@@ -4127,6 +4692,8 @@ var MicrosoftBaselineSecurityAnalyzer = function (_Section21) {
             } else if (this.props.version === "win10") {
                 return this.option2();
             } else if (this.props.version === "win2012") {
+                return this.option1();
+            } else if (this.props.version === "win2016") {
                 return this.option1();
             }
             return "unknown";
@@ -4201,6 +4768,8 @@ var MicrosoftSecurityEssentials = function (_Section22) {
             } else if (this.props.version === "win10") {
                 return this.option2();
             } else if (this.props.version === "win2012") {
+                return this.option3();
+            } else if (this.props.version === "win2016") {
                 return this.option3();
             }
             return "unknown";
@@ -4425,6 +4994,8 @@ var Processes = function (_Section24) {
             } else if (this.props.version === "win10") {
                 return this.win10();
             } else if (this.props.version === "win2012") {
+                return this.win8dot1();
+            } else if (this.props.version === "win2016") {
                 return this.win8dot1();
             }
             return "unknown";
@@ -5204,6 +5775,8 @@ var ProgramFiles = function (_Section25) {
                 return this.win10();
             } else if (this.props.version === "win2012") {
                 return this.win2012();
+            } else if (this.props.version === "win2016") {
+                return this.win2012();
             }
             return "unknown";
         }
@@ -5746,6 +6319,8 @@ var ProgramFilesx86 = function (_Section26) {
             } else if (this.props.version === "win10") {
                 return this.win10();
             } else if (this.props.version === "win2012") {
+                return this.win2012();
+            } else if (this.props.version === "win2016") {
                 return this.win2012();
             }
             return "unknown";
@@ -6452,6 +7027,8 @@ var ServicePacks = function (_Section29) {
                 return this.none();
             } else if (this.props.version === "win2012") {
                 return this.none();
+            } else if (this.props.version === "win2016") {
+                return this.none();
             }
             return "unknown";
         }
@@ -6570,6 +7147,8 @@ var Services = function (_Section30) {
             } else if (this.props.version === "win10") {
                 return this.option1();
             } else if (this.props.version === "win2012") {
+                return this.option1();
+            } else if (this.props.version === "win2016") {
                 return this.option1();
             }
             return "unknown";
@@ -6806,6 +7385,8 @@ var ShowHiddenFilesAndFolders = function (_Section32) {
                 return this.option2();
             } else if (this.props.version === "win2012") {
                 return this.option1();
+            } else if (this.props.version === "win2016") {
+                return this.option1();
             }
             return "unknown";
         }
@@ -7005,6 +7586,8 @@ var StartupPrograms = function (_Section33) {
             } else if (this.props.version === "win10") {
                 return this.option3();
             } else if (this.props.version === "win2012") {
+                return this.option4();
+            } else if (this.props.version === "win2016") {
                 return this.option4();
             }
             return "unknown";
@@ -7279,6 +7862,8 @@ var TaskManager = function (_Section34) {
             } else if (this.props.version === "win10") {
                 return this.option2();
             } else if (this.props.version === "win2012") {
+                return this.option2();
+            } else if (this.props.version === "win2016") {
                 return this.option2();
             }
             return "unknown";
@@ -8378,6 +8963,8 @@ var UsersFolder = function (_Section37) {
                 return this.option1();
             } else if (this.props.version === "win2012") {
                 return this.option1();
+            } else if (this.props.version === "win2016") {
+                return this.option1();
             }
             return "unknown";
         }
@@ -8472,6 +9059,8 @@ var WindowsFeatures = function (_Section38) {
             } else if (this.props.version === "win10") {
                 return this.option2();
             } else if (this.props.version === "win2012") {
+                return this.option3();
+            } else if (this.props.version === "win2016") {
                 return this.option3();
             }
             return "unknown";
@@ -8833,6 +9422,8 @@ var WindowsFirewall = function (_Section39) {
             } else if (this.props.version === "win10") {
                 return this.option2();
             } else if (this.props.version === "win2012") {
+                return this.option2();
+            } else if (this.props.version === "win2016") {
                 return this.option2();
             }
             return "unknown";
@@ -9296,6 +9887,8 @@ var WindowsUpdate = function (_Section41) {
             } else if (this.props.version === "win10") {
                 return this.option2();
             } else if (this.props.version === "win2012") {
+                return this.option1();
+            } else if (this.props.version === "win2016") {
                 return this.option1();
             }
             return "unknown";
