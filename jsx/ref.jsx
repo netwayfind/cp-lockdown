@@ -275,6 +275,9 @@ class AutomaticLogin extends Section {
         else if (this.props.version === "win8") {
             return this.option2();
         }
+        else if (this.props.version === "win8.1") {
+            return this.option3();
+        }
         return "unknown";
     }
 
@@ -317,6 +320,26 @@ class AutomaticLogin extends Section {
             </React.Fragment>
         );
     }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Windows button</li>
+                    <li>Type <strong>netplwiz</strong>, press Enter key</li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Under <strong>Users</strong> tab
+                        <ul>
+                            <li>[x] Users must enter a user name and password to use this computer</li>
+                        </ul>
+                    </li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class AutomaticUpdates extends Section {
@@ -329,7 +352,10 @@ class AutomaticUpdates extends Section {
         if (this.props.version === "win7") {
             return this.option1();
         }
-        if (this.props.version === "win8") {
+        else if (this.props.version === "win8") {
+            return this.option2();
+        }
+        else if (this.props.version === "win8.1") {
             return this.option2();
         }
         return "unknown";
@@ -394,8 +420,11 @@ class CDrive extends Section {
         if (this.props.version === "win7") {
             return this.option1();
         }
-        if (this.props.version === "win8") {
-            return this.option1();
+        else if (this.props.version === "win8") {
+            return this.option2();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option3();
         }
         return "unknown";
     }
@@ -445,6 +474,28 @@ class CDrive extends Section {
             </React.Fragment>
         );
     }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press <strong>File Explorer</strong> icon on Taskbar (folder icon)</li>
+                    <li>Find and double click on <strong>Local Disk (C:)</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                These are the default folders. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>PerfLogs</li>
+                    <li><a href="#Program Files">Program Files</a></li>
+                    <li><a href="#Program Files (x86)">Program Files (x86)</a></li>
+                    <li>ProgramData (hidden)</li>
+                    <li><a href="#Users Folder">Users</a></li>
+                    <li>Windows</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class CommandPrompt extends Section {
@@ -459,6 +510,9 @@ class CommandPrompt extends Section {
         }
         else if (this.props.version === "win8") {
             return this.option2();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option3();
         }
         return "unknown";
     }
@@ -486,6 +540,18 @@ class CommandPrompt extends Section {
             </React.Fragment>
         );
     }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Windows button</li>
+                    <li>Type <strong>cmd</strong>, press Enter key</li>
+                </ol>
+            </React.Fragment>
+        );
+    }
 }
 
 class ControlPanel extends Section {
@@ -500,6 +566,9 @@ class ControlPanel extends Section {
         }
         else if (this.props.version === "win8") {
             return this.option2();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option3();
         }
         return "unknown";
     }
@@ -524,6 +593,18 @@ class ControlPanel extends Section {
                     <li>Move mouse to bottom right corner of screen</li>
                     <li>Click on <strong>Settings</strong></li>
                     <li>Click on <strong>Control Panel</strong></li>
+                </ol>
+            </React.Fragment>
+        );
+    }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Windows button</li>
+                    <li>Type <strong>Control Panel</strong>, press Enter key</li>
                 </ol>
             </React.Fragment>
         );
@@ -559,7 +640,10 @@ class DiskCleanup extends Section {
             return this.option1();
         }
         else if (this.props.version === "win8") {
-            return this.option1();
+            return this.option2();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option3();
         }
         return "unknown";
     }
@@ -594,6 +678,23 @@ class DiskCleanup extends Section {
                     <li>Put checkmarks for all items under Files to delete</li>
                     <li>Press <strong>OK</strong></li>
                 </ol>
+            </React.Fragment>
+        );
+    }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <ol>
+                    <li>Press <strong>File Explorer</strong> icon on Taskbar (folder icon)</li>
+                    <li>Right click on <strong>Local Disk (C:)</strong></li>
+                    <li>Select <strong>Properties</strong></li>
+                    <li>Find and click on <strong>Disk Cleanup</strong></li>
+                    <li>Find and click on <strong>Clean up system files</strong></li>
+                    <li>Put checkmarks for all items under Files to delete</li>
+                    <li>Press <strong>OK</strong></li>
+                </ol>
+
             </React.Fragment>
         );
     }
@@ -724,6 +825,9 @@ class InternetExplorer extends Section {
         else if (this.props.version === "win8") {
             return this.option1();
         }
+        else if (this.props.version === "win8.1") {
+            return this.option2();
+        }
         return "unknown";
     }
 
@@ -734,6 +838,27 @@ class InternetExplorer extends Section {
                 <ol>
                     <li>Open <strong>Internet Explorer</strong></li>
                     <li>Find and click on <strong>Tools</strong></li>
+                    <li>Find and click on <strong>Internet Options</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                Under the Security tab, security zone settings should be:
+                <ul>
+                    <li>Internet - High</li>
+                    <li>Local Intranet - Medium-low</li>
+                    <li>Trusted Sites - Medium</li>
+                    <li>Restricted Sites - High</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
+    option2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <strong>Internet Explorer</strong></li>
+                    <li>Find and click on <strong>Tools</strong> (gear icon near top right)</li>
                     <li>Find and click on <strong>Internet Options</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -967,6 +1092,9 @@ class MicrosoftSecurityEssentials extends Section {
         else if (this.props.version === "win8") {
             return this.option2();
         }
+        else if (this.props.version === "win8.1") {
+            return this.option2();
+        }
         return "unknown";
     }
 
@@ -1036,6 +1164,9 @@ class Processes extends Section {
         }
         else if (this.props.version === "win8") {
             return this.win8();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.win8dot1();
         }
         return "unknown";
     }
@@ -1119,6 +1250,59 @@ class Processes extends Section {
             </React.Fragment>
         );
     }
+
+    win8dot1() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Click <strong>More details</strong>, if necessary</li>
+                    <li>Go to <strong>Processes</strong> tab</li>
+                    <li>Find and click on <strong>Show processes from all users</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following are Windows processes that should not be stopped. Avoid stopping any required software.
+                <p />
+                Apps
+                <ul>
+                    <li>Task Manager</li>
+                    <li>Windows Explorer</li>
+                </ul>
+                Background processes
+                <ul>
+                    <li>COM Surrogate</li>
+                    <li>Host Process for Windows Tasks</li>
+                    <li>Microsoft Distributed Transaction Coordinator Service</li>
+                    <li>Microsoft Windows Search Indexer</li>
+                    <li>Runtime Broker</li>
+                    <li>Spooler SubSystem App</li>
+                    <li>Store</li>
+                    <li>Store Broker</li>
+                    <li>ThinPrint AutoConnect component</li>
+                    <li>ThinPrint AutoConnect printer creation service</li>
+                    <li>Windows Driver Foundation</li>
+                    <li>WMI Provider Host</li>
+                </ul>
+                Windows processes
+                <ul>
+                    <li>Antimalware Service Executable</li>
+                    <li>Client Server Runtime Process</li>
+                    <li>Console Window Host</li>
+                    <li>Desktop Window Manager</li>
+                    <li>Local Security Authority Process</li>
+                    <li>Microsoft Network Realtime Inspection Service</li>
+                    <li>Service Host</li>
+                    <li>Services and Controller app</li>
+                    <li>System</li>
+                    <li>System interrupts</li>
+                    <li>Windows Logon Application</li>
+                    <li>Windows Session Manager</li>
+                    <li>Windows Start-Up Application</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class ProgramFiles extends Section {
@@ -1133,6 +1317,9 @@ class ProgramFiles extends Section {
         }
         else if (this.props.version === "win8") {
             return this.win8();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.win8dot1();
         }
         return "unknown";
     }
@@ -1193,6 +1380,35 @@ class ProgramFiles extends Section {
             </React.Fragment>
         );
     }
+
+    win8dot1() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Find and open <strong>Program Files</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Uninstall Information (hidden)</li>
+                    <li>Windows Defender</li>
+                    <li>Windows Journal</li>
+                    <li>Windows Mail</li>
+                    <li>Windows Media Player</li>
+                    <li>Windows Multimedia Platform</li>
+                    <li>Windows NT</li>
+                    <li>Windows Photo Viewer</li>
+                    <li>Windows Portable Devices</li>
+                    <li>Windows Apps (hidden)</li>
+                    <li>WindowsPowerShell</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class ProgramFilesx86 extends Section {
@@ -1207,6 +1423,9 @@ class ProgramFilesx86 extends Section {
         }
         else if (this.props.version === "win8") {
             return this.win8();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.win8dot1();
         }
         return "unknown";
     }
@@ -1257,6 +1476,33 @@ class ProgramFilesx86 extends Section {
                     <li>Windows NT</li>
                     <li>Windows Photo Viewer</li>
                     <li>Windows Portable Devices</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
+    win8dot1() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#C:\ Drive">C:\ drive</a></li>
+                    <li>Find and open <strong>Program Files (x86)</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Microsoft.NET</li>
+                    <li>Windows Defender</li>
+                    <li>Windows Mail</li>
+                    <li>Windows Media Player</li>
+                    <li>Windows Multimedia Platform</li>
+                    <li>Windows NT</li>
+                    <li>Windows Photo Viewer</li>
+                    <li>Windows Portable Devices</li>
+                    <li>WindowsPowerShell</li>
                 </ul>
             </React.Fragment>
         );
@@ -1335,6 +1581,9 @@ class ServicePacks extends Section {
         else if (this.props.version === "win8") {
             return this.none();
         }
+        else if (this.props.version === "win8.1") {
+            return this.none();
+        }
         return "unknown";
     }
 
@@ -1376,6 +1625,9 @@ class Services extends Section {
             return this.option1();
         }
         else if (this.props.version === "win8") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8.1") {
             return this.option1();
         }
         return "unknown";
@@ -1483,6 +1735,9 @@ class StartupPrograms extends Section {
         else if (this.props.version === "win8") {
             return this.option2();
         }
+        else if (this.props.version === "win8.1") {
+            return this.option2();
+        }
         return "unknown";
     }
 
@@ -1519,6 +1774,23 @@ class StartupPrograms extends Section {
             </React.Fragment>
         );
     }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open <a href="#Task Manager">Task Manager</a></li>
+                    <li>Click on <strong>More details</strong>, if necessary</li>
+                    <li>Go to the <strong>Startup</strong> tab</li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Disable programs that are not required by readme</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class TaskManager extends Section {
@@ -1533,6 +1805,9 @@ class TaskManager extends Section {
         }
         else if (this.props.version === "win8") {
             return this.option1();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option2();
         }
         return "unknown";
     }
@@ -1550,6 +1825,24 @@ class TaskManager extends Section {
                 <ol>
                     <li>Press <strong>CTRL + ALT + DEL</strong></li>
                     <li>Select <strong>Start Task Manager</strong></li>
+                </ol>
+            </React.Fragment>
+        );
+    }
+
+    option2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                Option 1
+                <ol>
+                    <li>Right click Taskbar (bottom of screen)</li>
+                    <li>Select <strong>Task Manager</strong></li>
+                </ol>
+                Option 2
+                <ol>
+                    <li>Press <strong>CTRL + ALT + DEL</strong></li>
+                    <li>Select <strong>Task Manager</strong></li>
                 </ol>
             </React.Fragment>
         );
@@ -1916,6 +2209,9 @@ class UsersFolder extends Section {
         else if (this.props.version === "win8") {
             return this.option1();
         }
+        else if (this.props.version === "win8.1") {
+            return this.option1();
+        }
         return "unknown";
     }
 
@@ -1949,7 +2245,10 @@ class WindowsFeatures extends Section {
         if (this.props.version === "win7") {
             return this.option1();
         }
-        if (this.props.version === "win8") {
+        else if (this.props.version === "win8") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8.1") {
             return this.option1();
         }
         return "unknown";
@@ -1999,6 +2298,9 @@ class WindowsFirewall extends Section {
             return this.option1();
         }
         else if (this.props.version === "win8") {
+            return this.option2();
+        }
+        else if (this.props.version === "win8.1") {
             return this.option2();
         }
         return "unknown";
@@ -2098,6 +2400,9 @@ class WindowsUpdate extends Section {
             return this.option1();
         }
         else if (this.props.version === "win8") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8.1") {
             return this.option1();
         }
         return "unknown";
