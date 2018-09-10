@@ -991,6 +991,8 @@ var AutomaticLogin = function (_Section7) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -1012,6 +1014,68 @@ var AutomaticLogin = function (_Section7) {
                         "li",
                         null,
                         "Press Start or Windows button"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Type ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "netplwiz"
+                        ),
+                        ", press Enter key"
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Under ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Users"
+                        ),
+                        " tab",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "[x] Users must enter a user name and password to use this computer"
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press Windows key + R key"
                     ),
                     React.createElement(
                         "li",
@@ -1078,6 +1142,9 @@ var AutomaticUpdates = function (_Section8) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.option1();
+            }
+            if (this.props.version === "win8") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -1166,6 +1233,101 @@ var AutomaticUpdates = function (_Section8) {
                 )
             );
         }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Open ",
+                        React.createElement(
+                            "a",
+                            { href: "#Control Panel" },
+                            "Control Panel"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "System and Security"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Windows Update"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Change settings"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Under Important Updates",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "Install updates automatically (recommended)"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Click ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Updates will be automatically installed during the maintenance window"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Set Run maintenance tasks daily at [3:00 AM]"
+                    )
+                )
+            );
+        }
     }]);
 
     return AutomaticUpdates;
@@ -1187,6 +1349,9 @@ var CDrive = function (_Section9) {
         key: "getContent",
         value: function getContent() {
             if (this.props.version === "win7") {
+                return this.option1();
+            }
+            if (this.props.version === "win8") {
                 return this.option1();
             }
             return "unknown";
@@ -1285,6 +1450,106 @@ var CDrive = function (_Section9) {
                 )
             );
         }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "File Explorer"
+                        ),
+                        " icon on Taskbar (folder icon)"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Computer"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and double click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Local Disk (C:)"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                "These are the default folders. Carefully inspect all other folders and files not in the following list.",
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "PerfLogs"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        React.createElement(
+                            "a",
+                            { href: "#Program Files" },
+                            "Program Files"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        React.createElement(
+                            "a",
+                            { href: "#Program Files (x86)" },
+                            "Program Files (x86)"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "ProgramData (hidden)"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        React.createElement(
+                            "a",
+                            { href: "#Users Folder" },
+                            "Users"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows"
+                    )
+                )
+            );
+        }
     }]);
 
     return CDrive;
@@ -1305,8 +1570,10 @@ var CommandPrompt = function (_Section10) {
     _createClass(CommandPrompt, [{
         key: "getContent",
         value: function getContent() {
-            if (this.props.version == "win7") {
+            if (this.props.version === "win7") {
                 return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -1328,6 +1595,39 @@ var CommandPrompt = function (_Section10) {
                         "li",
                         null,
                         "Press Start or Windows button"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Type ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "cmd"
+                        ),
+                        ", press Enter key"
+                    )
+                )
+            );
+        }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press Windows key + R key"
                     ),
                     React.createElement(
                         "li",
@@ -1365,6 +1665,8 @@ var ControlPanel = function (_Section11) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -1391,6 +1693,48 @@ var ControlPanel = function (_Section11) {
                         "li",
                         null,
                         "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Control Panel"
+                        )
+                    )
+                )
+            );
+        }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Move mouse to bottom right corner of screen"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Settings"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Click on ",
                         React.createElement(
                             "strong",
                             null,
@@ -1465,6 +1809,8 @@ var DiskCleanup = function (_Section13) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option1();
             }
             return "unknown";
         }
@@ -1481,6 +1827,88 @@ var DiskCleanup = function (_Section13) {
                         "li",
                         null,
                         "Press Start or Windows button"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Computer"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Right click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Local Disk (C:)"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Select ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Properties"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Disk Cleanup"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Clean up system files"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Put checkmarks for all items under Files to delete"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "OK"
+                        )
+                    )
+                )
+            );
+        }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press Windows key + R key"
                     ),
                     React.createElement(
                         "li",
@@ -1928,6 +2356,8 @@ var InternetExplorer = function (_Section18) {
         key: "getContent",
         value: function getContent() {
             if (this.props.version === "win7") {
+                return this.option1();
+            } else if (this.props.version === "win8") {
                 return this.option1();
             }
             return "unknown";
@@ -2668,6 +3098,8 @@ var MicrosoftSecurityEssentials = function (_Section22) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -2692,6 +3124,34 @@ var MicrosoftSecurityEssentials = function (_Section22) {
                             "a",
                             { target: "_blank", href: "http://www.microsoft.com/en-us/download/details.aspx?id=5201" },
                             "http://www.microsoft.com/en-us/download/details.aspx?id=5201"
+                        )
+                    )
+                )
+            );
+        }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                "Windows Defender replaces Microsoft Security Essentials.",
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press Start button"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Type ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Windows Defender"
                         )
                     )
                 )
@@ -2832,6 +3292,8 @@ var Processes = function (_Section24) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.win7();
+            } else if (this.props.version === "win8") {
+                return this.win8();
             }
             return "unknown";
         }
@@ -2988,6 +3450,171 @@ var Processes = function (_Section24) {
                 )
             );
         }
+    }, {
+        key: "win8",
+        value: function win8() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Open ",
+                        React.createElement(
+                            "a",
+                            { href: "#Task Manager" },
+                            "Task Manager"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Go to ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Processes"
+                        ),
+                        " tab"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Show processes from all users"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                "The following are Windows processes that should not be stopped. Avoid stopping any required software.",
+                React.createElement("p", null),
+                "Apps",
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Task Manager"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Explorer"
+                    )
+                ),
+                "Background processes",
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "COM Surrogate"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Host Process for Windows Tasks"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Microsoft Windows Search Indexer"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Spooler SubSystem App"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Touch Keyboard and Handwriting Panel"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Driver Foundation"
+                    )
+                ),
+                "Windows processes",
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Antimalware Service Executable"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Client Server Runtime Process"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Desktop Window Manager"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Local Security Authority Process"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Service Host"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Services and Controller app"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "System"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "System interrupts"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Login Application"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Session Manager"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Start-Up Application"
+                    )
+                )
+            );
+        }
     }]);
 
     return Processes;
@@ -3010,6 +3637,8 @@ var ProgramFiles = function (_Section25) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.win7();
+            } else if (this.props.version === "win8") {
+                return this.win8();
             }
             return "unknown";
         }
@@ -3120,6 +3749,113 @@ var ProgramFiles = function (_Section25) {
                 )
             );
         }
+    }, {
+        key: "win8",
+        value: function win8() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Open ",
+                        React.createElement(
+                            "a",
+                            { href: "#C:\\ Drive" },
+                            "C:\\ drive"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and open ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Program Files"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                "The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.",
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Common Files"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Internet Explorer"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Uninstall Information (hidden)"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Defender"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Journal"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Mail"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Media Player"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Multimedia Platform"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows NT"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Photo Viewer"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Portable Devices"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Apps (hidden)"
+                    )
+                )
+            );
+        }
     }]);
 
     return ProgramFiles;
@@ -3142,6 +3878,8 @@ var ProgramFilesx86 = function (_Section26) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.win7();
+            } else if (this.props.version === "win8") {
+                return this.win8();
             }
             return "unknown";
         }
@@ -3223,6 +3961,98 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Windows Mail"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows NT"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Photo Viewer"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Portable Devices"
+                    )
+                )
+            );
+        }
+    }, {
+        key: "win8",
+        value: function win8() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Open ",
+                        React.createElement(
+                            "a",
+                            { href: "#C:\\ Drive" },
+                            "C:\\ drive"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and open ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Program Files (x86)"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                "The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.",
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Common Files"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Internet Explorer"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Defender"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Mail"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Media Player"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Windows Multimedia Platform"
                     ),
                     React.createElement(
                         "li",
@@ -3471,6 +4301,8 @@ var ServicePacks = function (_Section29) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.win7();
+            } else if (this.props.version === "win8") {
+                return this.none();
             }
             return "unknown";
         }
@@ -3555,6 +4387,11 @@ var ServicePacks = function (_Section29) {
                 )
             );
         }
+    }, {
+        key: "none",
+        value: function none() {
+            return "None";
+        }
     }]);
 
     return ServicePacks;
@@ -3576,6 +4413,8 @@ var Services = function (_Section30) {
         key: "getContent",
         value: function getContent() {
             if (this.props.version === "win7") {
+                return this.option1();
+            } else if (this.props.version === "win8") {
                 return this.option1();
             }
             return "unknown";
@@ -3904,6 +4743,8 @@ var StartupPrograms = function (_Section33) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -3970,6 +4811,58 @@ var StartupPrograms = function (_Section33) {
                 )
             );
         }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Open ",
+                        React.createElement(
+                            "a",
+                            { href: "#Task Manager" },
+                            "Task Manager"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Go to the ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Startup"
+                        ),
+                        " tab"
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Disable programs that are not required by readme"
+                    )
+                )
+            );
+        }
     }]);
 
     return StartupPrograms;
@@ -3991,13 +4884,15 @@ var TaskManager = function (_Section34) {
         key: "getContent",
         value: function getContent() {
             if (this.props.version === "win7") {
-                return this.win7();
+                return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option1();
             }
             return "unknown";
         }
     }, {
-        key: "win7",
-        value: function win7() {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -5023,13 +5918,15 @@ var UsersFolder = function (_Section37) {
         key: "getContent",
         value: function getContent() {
             if (this.props.version === "win7") {
-                return this.win7();
+                return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option1();
             }
             return "unknown";
         }
     }, {
-        key: "win7",
-        value: function win7() {
+        key: "option1",
+        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -5110,6 +6007,9 @@ var WindowsFeatures = function (_Section38) {
         key: "getContent",
         value: function getContent() {
             if (this.props.version === "win7") {
+                return this.option1();
+            }
+            if (this.props.version === "win8") {
                 return this.option1();
             }
             return "unknown";
@@ -5240,6 +6140,8 @@ var WindowsFirewall = function (_Section39) {
         value: function getContent() {
             if (this.props.version === "win7") {
                 return this.option1();
+            } else if (this.props.version === "win8") {
+                return this.option2();
             }
             return "unknown";
         }
@@ -5433,6 +6335,196 @@ var WindowsFirewall = function (_Section39) {
                 )
             );
         }
+    }, {
+        key: "option2",
+        value: function option2() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Location"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Open ",
+                        React.createElement(
+                            "a",
+                            { href: "#Control Panel" },
+                            "Control Panel"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "System and Security"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Windows Firewall"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h3",
+                    null,
+                    "Settings"
+                ),
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Turn Windows Firewall on or off"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "For Private and Public network location settings:",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "[x] Turn on Windows Firewall"
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "[ ] Block all incoming connections, including those in the list of allowed programs"
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "[x] Notify me when Windows Firewall blocks a new program"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press OK"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Allow a program or feature through Windows Firewall"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Check that only Core Networking and required programs or services have checkmarks"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Uncheck all other programs and features for both Private and Public"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press OK"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Advanced settings"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "For Domain Profile, Private Profile, and Public Profile",
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                "Windows Firewall is on"
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "Inbound connections that do not match a rule are blocked"
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "Outbound connections that do not match a rule are not blocked"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Inbound Rules"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Enable the ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Core Networking"
+                        ),
+                        " group and any required programs or services"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Disable all other rules"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Repeat the same for ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Outbound Rules"
+                        )
+                    )
+                )
+            );
+        }
     }]);
 
     return WindowsFirewall;
@@ -5454,6 +6546,8 @@ var WindowsUpdate = function (_Section40) {
         key: "getContent",
         value: function getContent() {
             if (this.props.version === "win7") {
+                return this.option1();
+            } else if (this.props.version === "win8") {
                 return this.option1();
             }
             return "unknown";
