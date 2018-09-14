@@ -12,15 +12,22 @@ var AccountLockoutPolicy = function (_Section) {
     function AccountLockoutPolicy() {
         _classCallCheck(this, AccountLockoutPolicy);
 
-        var _this = _possibleConstructorReturn(this, (AccountLockoutPolicy.__proto__ || Object.getPrototypeOf(AccountLockoutPolicy)).call(this));
-
-        _this.state.name = "Account Lockout Policy";
-        return _this;
+        return _possibleConstructorReturn(this, (AccountLockoutPolicy.__proto__ || Object.getPrototypeOf(AccountLockoutPolicy)).apply(this, arguments));
     }
 
     _createClass(AccountLockoutPolicy, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Account Lockout Policy";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -36,7 +43,7 @@ var AccountLockoutPolicy = function (_Section) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -106,15 +113,22 @@ var AddRemovePrograms = function (_Section2) {
     function AddRemovePrograms() {
         _classCallCheck(this, AddRemovePrograms);
 
-        var _this2 = _possibleConstructorReturn(this, (AddRemovePrograms.__proto__ || Object.getPrototypeOf(AddRemovePrograms)).call(this));
-
-        _this2.state.name = "Add/Remove Programs";
-        return _this2;
+        return _possibleConstructorReturn(this, (AddRemovePrograms.__proto__ || Object.getPrototypeOf(AddRemovePrograms)).apply(this, arguments));
     }
 
     _createClass(AddRemovePrograms, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Add/Remove Programs";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -130,7 +144,7 @@ var AddRemovePrograms = function (_Section2) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -185,15 +199,22 @@ var AdministrativeTools = function (_Section3) {
     function AdministrativeTools() {
         _classCallCheck(this, AdministrativeTools);
 
-        var _this3 = _possibleConstructorReturn(this, (AdministrativeTools.__proto__ || Object.getPrototypeOf(AdministrativeTools)).call(this));
-
-        _this3.state.name = "Administrative Tools";
-        return _this3;
+        return _possibleConstructorReturn(this, (AdministrativeTools.__proto__ || Object.getPrototypeOf(AdministrativeTools)).apply(this, arguments));
     }
 
     _createClass(AdministrativeTools, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Administrative Tools";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -209,7 +230,7 @@ var AdministrativeTools = function (_Section3) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -245,15 +266,22 @@ var AdvancedAuditPolicyConfiguration = function (_Section4) {
     function AdvancedAuditPolicyConfiguration() {
         _classCallCheck(this, AdvancedAuditPolicyConfiguration);
 
-        var _this4 = _possibleConstructorReturn(this, (AdvancedAuditPolicyConfiguration.__proto__ || Object.getPrototypeOf(AdvancedAuditPolicyConfiguration)).call(this));
-
-        _this4.state.name = "Advanced Audit Policy Configuration";
-        return _this4;
+        return _possibleConstructorReturn(this, (AdvancedAuditPolicyConfiguration.__proto__ || Object.getPrototypeOf(AdvancedAuditPolicyConfiguration)).apply(this, arguments));
     }
 
     _createClass(AdvancedAuditPolicyConfiguration, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Advanced Audit Policy Configuration";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -269,7 +297,7 @@ var AdvancedAuditPolicyConfiguration = function (_Section4) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -716,15 +744,22 @@ var AntiMalwareTools = function (_Section5) {
     function AntiMalwareTools() {
         _classCallCheck(this, AntiMalwareTools);
 
-        var _this5 = _possibleConstructorReturn(this, (AntiMalwareTools.__proto__ || Object.getPrototypeOf(AntiMalwareTools)).call(this));
-
-        _this5.state.name = "Anti-Malware Tools";
-        return _this5;
+        return _possibleConstructorReturn(this, (AntiMalwareTools.__proto__ || Object.getPrototypeOf(AntiMalwareTools)).apply(this, arguments));
     }
 
     _createClass(AntiMalwareTools, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Anti-Malware Tools";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -836,15 +871,22 @@ var AuditPolicy = function (_Section6) {
     function AuditPolicy() {
         _classCallCheck(this, AuditPolicy);
 
-        var _this6 = _possibleConstructorReturn(this, (AuditPolicy.__proto__ || Object.getPrototypeOf(AuditPolicy)).call(this));
-
-        _this6.state.name = "Audit Policy";
-        return _this6;
+        return _possibleConstructorReturn(this, (AuditPolicy.__proto__ || Object.getPrototypeOf(AuditPolicy)).apply(this, arguments));
     }
 
     _createClass(AuditPolicy, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Audit Policy";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -860,7 +902,7 @@ var AuditPolicy = function (_Section6) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -960,15 +1002,22 @@ var AutomaticLogin = function (_Section7) {
     function AutomaticLogin() {
         _classCallCheck(this, AutomaticLogin);
 
-        var _this7 = _possibleConstructorReturn(this, (AutomaticLogin.__proto__ || Object.getPrototypeOf(AutomaticLogin)).call(this));
-
-        _this7.state.name = "Automatic Login";
-        return _this7;
+        return _possibleConstructorReturn(this, (AutomaticLogin.__proto__ || Object.getPrototypeOf(AutomaticLogin)).apply(this, arguments));
     }
 
     _createClass(AutomaticLogin, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Automatic Login";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -1181,15 +1230,22 @@ var AutomaticUpdates = function (_Section8) {
     function AutomaticUpdates() {
         _classCallCheck(this, AutomaticUpdates);
 
-        var _this8 = _possibleConstructorReturn(this, (AutomaticUpdates.__proto__ || Object.getPrototypeOf(AutomaticUpdates)).call(this));
-
-        _this8.state.name = "Automatic Updates";
-        return _this8;
+        return _possibleConstructorReturn(this, (AutomaticUpdates.__proto__ || Object.getPrototypeOf(AutomaticUpdates)).apply(this, arguments));
     }
 
     _createClass(AutomaticUpdates, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Automatic Updates";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -1223,7 +1279,7 @@ var AutomaticUpdates = function (_Section8) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1304,7 +1360,7 @@ var AutomaticUpdates = function (_Section8) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1393,15 +1449,22 @@ var CDrive = function (_Section9) {
     function CDrive() {
         _classCallCheck(this, CDrive);
 
-        var _this9 = _possibleConstructorReturn(this, (CDrive.__proto__ || Object.getPrototypeOf(CDrive)).call(this));
-
-        _this9.state.name = "C:\\ Drive";
-        return _this9;
+        return _possibleConstructorReturn(this, (CDrive.__proto__ || Object.getPrototypeOf(CDrive)).apply(this, arguments));
     }
 
     _createClass(CDrive, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "C:\\ Drive";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -1474,12 +1537,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFiles, { version: this.props.version })
+                        React.createElement(ProgramFiles).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFilesx86, { version: this.props.version })
+                        React.createElement(ProgramFilesx86).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1489,7 +1552,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(UsersFolder, { version: this.props.version })
+                        React.createElement(UsersFolder).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1562,12 +1625,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFiles, { version: this.props.version })
+                        React.createElement(ProgramFiles).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFilesx86, { version: this.props.version })
+                        React.createElement(ProgramFilesx86).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1577,7 +1640,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(UsersFolder, { version: this.props.version })
+                        React.createElement(UsersFolder).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1640,12 +1703,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFiles, { version: this.props.version })
+                        React.createElement(ProgramFiles).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFilesx86, { version: this.props.version })
+                        React.createElement(ProgramFilesx86).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1655,7 +1718,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(UsersFolder, { version: this.props.version })
+                        React.createElement(UsersFolder).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1728,12 +1791,12 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFiles, { version: this.props.version })
+                        React.createElement(ProgramFiles).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(ProgramFilesx86, { version: this.props.version })
+                        React.createElement(ProgramFilesx86).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1743,7 +1806,7 @@ var CDrive = function (_Section9) {
                     React.createElement(
                         "li",
                         null,
-                        React.createElement(UsersFolder, { version: this.props.version })
+                        React.createElement(UsersFolder).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -1764,15 +1827,22 @@ var CommandPrompt = function (_Section10) {
     function CommandPrompt() {
         _classCallCheck(this, CommandPrompt);
 
-        var _this10 = _possibleConstructorReturn(this, (CommandPrompt.__proto__ || Object.getPrototypeOf(CommandPrompt)).call(this));
-
-        _this10.state.name = "Command Prompt";
-        return _this10;
+        return _possibleConstructorReturn(this, (CommandPrompt.__proto__ || Object.getPrototypeOf(CommandPrompt)).apply(this, arguments));
     }
 
     _createClass(CommandPrompt, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Command Prompt";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -1898,15 +1968,22 @@ var ControlPanel = function (_Section11) {
     function ControlPanel() {
         _classCallCheck(this, ControlPanel);
 
-        var _this11 = _possibleConstructorReturn(this, (ControlPanel.__proto__ || Object.getPrototypeOf(ControlPanel)).call(this));
-
-        _this11.state.name = "Control Panel";
-        return _this11;
+        return _possibleConstructorReturn(this, (ControlPanel.__proto__ || Object.getPrototypeOf(ControlPanel)).apply(this, arguments));
     }
 
     _createClass(ControlPanel, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Control Panel";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -2040,15 +2117,22 @@ var CrowdInspect = function (_Section12) {
     function CrowdInspect() {
         _classCallCheck(this, CrowdInspect);
 
-        var _this12 = _possibleConstructorReturn(this, (CrowdInspect.__proto__ || Object.getPrototypeOf(CrowdInspect)).call(this));
-
-        _this12.state.name = "CrowdInspect";
-        return _this12;
+        return _possibleConstructorReturn(this, (CrowdInspect.__proto__ || Object.getPrototypeOf(CrowdInspect)).apply(this, arguments));
     }
 
     _createClass(CrowdInspect, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "CrowdInspect";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2083,15 +2167,22 @@ var DiskCleanup = function (_Section13) {
     function DiskCleanup() {
         _classCallCheck(this, DiskCleanup);
 
-        var _this13 = _possibleConstructorReturn(this, (DiskCleanup.__proto__ || Object.getPrototypeOf(DiskCleanup)).call(this));
-
-        _this13.state.name = "Disk Cleanup";
-        return _this13;
+        return _possibleConstructorReturn(this, (DiskCleanup.__proto__ || Object.getPrototypeOf(DiskCleanup)).apply(this, arguments));
     }
 
     _createClass(DiskCleanup, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Disk Cleanup";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -2365,15 +2456,22 @@ var EventViewer = function (_Section14) {
     function EventViewer() {
         _classCallCheck(this, EventViewer);
 
-        var _this14 = _possibleConstructorReturn(this, (EventViewer.__proto__ || Object.getPrototypeOf(EventViewer)).call(this));
-
-        _this14.state.name = "Event Viewer";
-        return _this14;
+        return _possibleConstructorReturn(this, (EventViewer.__proto__ || Object.getPrototypeOf(EventViewer)).apply(this, arguments));
     }
 
     _createClass(EventViewer, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Event Viewer";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2389,7 +2487,7 @@ var EventViewer = function (_Section14) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -2444,15 +2542,22 @@ var FindUnauthorizedFiles = function (_Section15) {
     function FindUnauthorizedFiles() {
         _classCallCheck(this, FindUnauthorizedFiles);
 
-        var _this15 = _possibleConstructorReturn(this, (FindUnauthorizedFiles.__proto__ || Object.getPrototypeOf(FindUnauthorizedFiles)).call(this));
-
-        _this15.state.name = "Find Unauthorized Files";
-        return _this15;
+        return _possibleConstructorReturn(this, (FindUnauthorizedFiles.__proto__ || Object.getPrototypeOf(FindUnauthorizedFiles)).apply(this, arguments));
     }
 
     _createClass(FindUnauthorizedFiles, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Find Unauthorized Files";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2463,7 +2568,7 @@ var FindUnauthorizedFiles = function (_Section15) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CommandPrompt, { version: this.props.version })
+                        React.createElement(CommandPrompt).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -2527,15 +2632,22 @@ var HostsFile = function (_Section16) {
     function HostsFile() {
         _classCallCheck(this, HostsFile);
 
-        var _this16 = _possibleConstructorReturn(this, (HostsFile.__proto__ || Object.getPrototypeOf(HostsFile)).call(this));
-
-        _this16.state.name = "Hosts File";
-        return _this16;
+        return _possibleConstructorReturn(this, (HostsFile.__proto__ || Object.getPrototypeOf(HostsFile)).apply(this, arguments));
     }
 
     _createClass(HostsFile, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Hosts File";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2604,15 +2716,22 @@ var InternetConnectionSharing = function (_Section17) {
     function InternetConnectionSharing() {
         _classCallCheck(this, InternetConnectionSharing);
 
-        var _this17 = _possibleConstructorReturn(this, (InternetConnectionSharing.__proto__ || Object.getPrototypeOf(InternetConnectionSharing)).call(this));
-
-        _this17.state.name = "Internet Connection Sharing";
-        return _this17;
+        return _possibleConstructorReturn(this, (InternetConnectionSharing.__proto__ || Object.getPrototypeOf(InternetConnectionSharing)).apply(this, arguments));
     }
 
     _createClass(InternetConnectionSharing, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Internet Connection Sharing";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -2628,7 +2747,7 @@ var InternetConnectionSharing = function (_Section17) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -2710,15 +2829,22 @@ var InternetExplorer = function (_Section18) {
     function InternetExplorer() {
         _classCallCheck(this, InternetExplorer);
 
-        var _this18 = _possibleConstructorReturn(this, (InternetExplorer.__proto__ || Object.getPrototypeOf(InternetExplorer)).call(this));
-
-        _this18.state.name = "Internet Explorer";
-        return _this18;
+        return _possibleConstructorReturn(this, (InternetExplorer.__proto__ || Object.getPrototypeOf(InternetExplorer)).apply(this, arguments));
     }
 
     _createClass(InternetExplorer, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Internet Explorer";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -2900,15 +3026,22 @@ var LocalGroupPolicyEditor = function (_Section19) {
     function LocalGroupPolicyEditor() {
         _classCallCheck(this, LocalGroupPolicyEditor);
 
-        var _this19 = _possibleConstructorReturn(this, (LocalGroupPolicyEditor.__proto__ || Object.getPrototypeOf(LocalGroupPolicyEditor)).call(this));
-
-        _this19.state.name = "Local Group Policy Editor";
-        return _this19;
+        return _possibleConstructorReturn(this, (LocalGroupPolicyEditor.__proto__ || Object.getPrototypeOf(LocalGroupPolicyEditor)).apply(this, arguments));
     }
 
     _createClass(LocalGroupPolicyEditor, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Local Group Policy Editor";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -3042,15 +3175,22 @@ var LocalUsersAndGroups = function (_Section20) {
     function LocalUsersAndGroups() {
         _classCallCheck(this, LocalUsersAndGroups);
 
-        var _this20 = _possibleConstructorReturn(this, (LocalUsersAndGroups.__proto__ || Object.getPrototypeOf(LocalUsersAndGroups)).call(this));
-
-        _this20.state.name = "Local Users and Groups";
-        return _this20;
+        return _possibleConstructorReturn(this, (LocalUsersAndGroups.__proto__ || Object.getPrototypeOf(LocalUsersAndGroups)).apply(this, arguments));
     }
 
     _createClass(LocalUsersAndGroups, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Local Users and Groups";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -3084,7 +3224,7 @@ var LocalUsersAndGroups = function (_Section20) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -3204,7 +3344,7 @@ var LocalUsersAndGroups = function (_Section20) {
                             "li",
                             null,
                             "Make sure password meets the ",
-                            React.createElement(PasswordPolicy, { version: this.props.version })
+                            React.createElement(PasswordPolicy).type.prototype.getLink()
                         ),
                         React.createElement(
                             "li",
@@ -3501,7 +3641,7 @@ var LocalUsersAndGroups = function (_Section20) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -3617,7 +3757,7 @@ var LocalUsersAndGroups = function (_Section20) {
                             "li",
                             null,
                             "Make sure password meets the ",
-                            React.createElement(PasswordPolicy, { version: this.props.version })
+                            React.createElement(PasswordPolicy).type.prototype.getLink()
                         ),
                         React.createElement(
                             "li",
@@ -4028,7 +4168,7 @@ var LocalUsersAndGroups = function (_Section20) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -4144,7 +4284,7 @@ var LocalUsersAndGroups = function (_Section20) {
                             "li",
                             null,
                             "Make sure password meets the ",
-                            React.createElement(PasswordPolicy, { version: this.props.version })
+                            React.createElement(PasswordPolicy).type.prototype.getLink()
                         ),
                         React.createElement(
                             "li",
@@ -4562,15 +4702,22 @@ var MicrosoftBaselineSecurityAnalyzer = function (_Section21) {
     function MicrosoftBaselineSecurityAnalyzer() {
         _classCallCheck(this, MicrosoftBaselineSecurityAnalyzer);
 
-        var _this21 = _possibleConstructorReturn(this, (MicrosoftBaselineSecurityAnalyzer.__proto__ || Object.getPrototypeOf(MicrosoftBaselineSecurityAnalyzer)).call(this));
-
-        _this21.state.name = "Microsoft Baseline Security Analyzer";
-        return _this21;
+        return _possibleConstructorReturn(this, (MicrosoftBaselineSecurityAnalyzer.__proto__ || Object.getPrototypeOf(MicrosoftBaselineSecurityAnalyzer)).apply(this, arguments));
     }
 
     _createClass(MicrosoftBaselineSecurityAnalyzer, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Microsoft Baseline Security Analyzer";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -4638,15 +4785,22 @@ var MicrosoftSecurityEssentials = function (_Section22) {
     function MicrosoftSecurityEssentials() {
         _classCallCheck(this, MicrosoftSecurityEssentials);
 
-        var _this22 = _possibleConstructorReturn(this, (MicrosoftSecurityEssentials.__proto__ || Object.getPrototypeOf(MicrosoftSecurityEssentials)).call(this));
-
-        _this22.state.name = "Microsoft Security Essentials";
-        return _this22;
+        return _possibleConstructorReturn(this, (MicrosoftSecurityEssentials.__proto__ || Object.getPrototypeOf(MicrosoftSecurityEssentials)).apply(this, arguments));
     }
 
     _createClass(MicrosoftSecurityEssentials, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Microsoft Security Essentials";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -4751,15 +4905,22 @@ var PasswordPolicy = function (_Section23) {
     function PasswordPolicy() {
         _classCallCheck(this, PasswordPolicy);
 
-        var _this23 = _possibleConstructorReturn(this, (PasswordPolicy.__proto__ || Object.getPrototypeOf(PasswordPolicy)).call(this));
-
-        _this23.state.name = "Password Policy";
-        return _this23;
+        return _possibleConstructorReturn(this, (PasswordPolicy.__proto__ || Object.getPrototypeOf(PasswordPolicy)).apply(this, arguments));
     }
 
     _createClass(PasswordPolicy, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Password Policy";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -4775,7 +4936,7 @@ var PasswordPolicy = function (_Section23) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -4860,15 +5021,22 @@ var Processes = function (_Section24) {
     function Processes() {
         _classCallCheck(this, Processes);
 
-        var _this24 = _possibleConstructorReturn(this, (Processes.__proto__ || Object.getPrototypeOf(Processes)).call(this));
-
-        _this24.state.name = "Processes";
-        return _this24;
+        return _possibleConstructorReturn(this, (Processes.__proto__ || Object.getPrototypeOf(Processes)).apply(this, arguments));
     }
 
     _createClass(Processes, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Processes";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.win7();
             } else if (this.props.version === "win8") {
@@ -4902,7 +5070,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(TaskManager, { version: this.props.version })
+                        React.createElement(TaskManager).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -5051,7 +5219,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(TaskManager, { version: this.props.version })
+                        React.createElement(TaskManager).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -5212,7 +5380,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(TaskManager, { version: this.props.version })
+                        React.createElement(TaskManager).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -5424,7 +5592,7 @@ var Processes = function (_Section24) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(TaskManager, { version: this.props.version })
+                        React.createElement(TaskManager).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -5624,15 +5792,22 @@ var ProgramFiles = function (_Section25) {
     function ProgramFiles() {
         _classCallCheck(this, ProgramFiles);
 
-        var _this25 = _possibleConstructorReturn(this, (ProgramFiles.__proto__ || Object.getPrototypeOf(ProgramFiles)).call(this));
-
-        _this25.state.name = "Program Files";
-        return _this25;
+        return _possibleConstructorReturn(this, (ProgramFiles.__proto__ || Object.getPrototypeOf(ProgramFiles)).apply(this, arguments));
     }
 
     _createClass(ProgramFiles, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Program Files";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.win7();
             } else if (this.props.version === "win8") {
@@ -5666,7 +5841,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -5769,7 +5944,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -5872,7 +6047,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -5980,7 +6155,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6088,7 +6263,7 @@ var ProgramFiles = function (_Section25) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6149,15 +6324,22 @@ var ProgramFilesx86 = function (_Section26) {
     function ProgramFilesx86() {
         _classCallCheck(this, ProgramFilesx86);
 
-        var _this26 = _possibleConstructorReturn(this, (ProgramFilesx86.__proto__ || Object.getPrototypeOf(ProgramFilesx86)).call(this));
-
-        _this26.state.name = "Program Files (x86)";
-        return _this26;
+        return _possibleConstructorReturn(this, (ProgramFilesx86.__proto__ || Object.getPrototypeOf(ProgramFilesx86)).apply(this, arguments));
     }
 
     _createClass(ProgramFilesx86, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Program Files (x86)";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.win7();
             } else if (this.props.version === "win8") {
@@ -6191,7 +6373,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6284,7 +6466,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6372,7 +6554,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6470,7 +6652,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6568,7 +6750,7 @@ var ProgramFilesx86 = function (_Section26) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6629,15 +6811,22 @@ var RemoteAssistanceAndRemoteDesktop = function (_Section27) {
     function RemoteAssistanceAndRemoteDesktop() {
         _classCallCheck(this, RemoteAssistanceAndRemoteDesktop);
 
-        var _this27 = _possibleConstructorReturn(this, (RemoteAssistanceAndRemoteDesktop.__proto__ || Object.getPrototypeOf(RemoteAssistanceAndRemoteDesktop)).call(this));
-
-        _this27.state.name = "Remote Assistance and Remote Desktop";
-        return _this27;
+        return _possibleConstructorReturn(this, (RemoteAssistanceAndRemoteDesktop.__proto__ || Object.getPrototypeOf(RemoteAssistanceAndRemoteDesktop)).apply(this, arguments));
     }
 
     _createClass(RemoteAssistanceAndRemoteDesktop, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Remote Assistance and Remote Desktop";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -6653,7 +6842,7 @@ var RemoteAssistanceAndRemoteDesktop = function (_Section27) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6724,15 +6913,22 @@ var SecurityOptions = function (_Section28) {
     function SecurityOptions() {
         _classCallCheck(this, SecurityOptions);
 
-        var _this28 = _possibleConstructorReturn(this, (SecurityOptions.__proto__ || Object.getPrototypeOf(SecurityOptions)).call(this));
-
-        _this28.state.name = "Security Options";
-        return _this28;
+        return _possibleConstructorReturn(this, (SecurityOptions.__proto__ || Object.getPrototypeOf(SecurityOptions)).apply(this, arguments));
     }
 
     _createClass(SecurityOptions, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Security Options";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -6748,7 +6944,7 @@ var SecurityOptions = function (_Section28) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -6828,15 +7024,22 @@ var ServicePacks = function (_Section29) {
     function ServicePacks() {
         _classCallCheck(this, ServicePacks);
 
-        var _this29 = _possibleConstructorReturn(this, (ServicePacks.__proto__ || Object.getPrototypeOf(ServicePacks)).call(this));
-
-        _this29.state.name = "Service Packs";
-        return _this29;
+        return _possibleConstructorReturn(this, (ServicePacks.__proto__ || Object.getPrototypeOf(ServicePacks)).apply(this, arguments));
     }
 
     _createClass(ServicePacks, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Service Packs";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.win7();
             } else if (this.props.version === "win8") {
@@ -6949,15 +7152,22 @@ var Services = function (_Section30) {
     function Services() {
         _classCallCheck(this, Services);
 
-        var _this30 = _possibleConstructorReturn(this, (Services.__proto__ || Object.getPrototypeOf(Services)).call(this));
-
-        _this30.state.name = "Services";
-        return _this30;
+        return _possibleConstructorReturn(this, (Services.__proto__ || Object.getPrototypeOf(Services)).apply(this, arguments));
     }
 
     _createClass(Services, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Services";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -6991,7 +7201,7 @@ var Services = function (_Section30) {
                         "li",
                         null,
                         "Go to ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -7072,15 +7282,22 @@ var SharedFolders = function (_Section31) {
     function SharedFolders() {
         _classCallCheck(this, SharedFolders);
 
-        var _this31 = _possibleConstructorReturn(this, (SharedFolders.__proto__ || Object.getPrototypeOf(SharedFolders)).call(this));
-
-        _this31.state.name = "Shared Folders";
-        return _this31;
+        return _possibleConstructorReturn(this, (SharedFolders.__proto__ || Object.getPrototypeOf(SharedFolders)).apply(this, arguments));
     }
 
     _createClass(SharedFolders, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Shared Folders";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -7096,7 +7313,7 @@ var SharedFolders = function (_Section31) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -7178,15 +7395,22 @@ var ShowHiddenFilesAndFolders = function (_Section32) {
     function ShowHiddenFilesAndFolders() {
         _classCallCheck(this, ShowHiddenFilesAndFolders);
 
-        var _this32 = _possibleConstructorReturn(this, (ShowHiddenFilesAndFolders.__proto__ || Object.getPrototypeOf(ShowHiddenFilesAndFolders)).call(this));
-
-        _this32.state.name = "Show Hidden Files and Folders";
-        return _this32;
+        return _possibleConstructorReturn(this, (ShowHiddenFilesAndFolders.__proto__ || Object.getPrototypeOf(ShowHiddenFilesAndFolders)).apply(this, arguments));
     }
 
     _createClass(ShowHiddenFilesAndFolders, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Show Hidden Files and Folders";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -7220,7 +7444,7 @@ var ShowHiddenFilesAndFolders = function (_Section32) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -7299,7 +7523,7 @@ var ShowHiddenFilesAndFolders = function (_Section32) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -7372,15 +7596,22 @@ var StartupPrograms = function (_Section33) {
     function StartupPrograms() {
         _classCallCheck(this, StartupPrograms);
 
-        var _this33 = _possibleConstructorReturn(this, (StartupPrograms.__proto__ || Object.getPrototypeOf(StartupPrograms)).call(this));
-
-        _this33.state.name = "Startup Programs";
-        return _this33;
+        return _possibleConstructorReturn(this, (StartupPrograms.__proto__ || Object.getPrototypeOf(StartupPrograms)).apply(this, arguments));
     }
 
     _createClass(StartupPrograms, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Startup Programs";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -7477,7 +7708,7 @@ var StartupPrograms = function (_Section33) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(TaskManager, { version: this.props.version })
+                        React.createElement(TaskManager).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -7525,7 +7756,7 @@ var StartupPrograms = function (_Section33) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(TaskManager, { version: this.props.version })
+                        React.createElement(TaskManager).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -7640,15 +7871,22 @@ var TaskManager = function (_Section34) {
     function TaskManager() {
         _classCallCheck(this, TaskManager);
 
-        var _this34 = _possibleConstructorReturn(this, (TaskManager.__proto__ || Object.getPrototypeOf(TaskManager)).call(this));
-
-        _this34.state.name = "Task Manager";
-        return _this34;
+        return _possibleConstructorReturn(this, (TaskManager.__proto__ || Object.getPrototypeOf(TaskManager)).apply(this, arguments));
     }
 
     _createClass(TaskManager, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Task Manager";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -7791,15 +8029,22 @@ var TaskScheduler = function (_Section35) {
     function TaskScheduler() {
         _classCallCheck(this, TaskScheduler);
 
-        var _this35 = _possibleConstructorReturn(this, (TaskScheduler.__proto__ || Object.getPrototypeOf(TaskScheduler)).call(this));
-
-        _this35.state.name = "Task Scheduler";
-        return _this35;
+        return _possibleConstructorReturn(this, (TaskScheduler.__proto__ || Object.getPrototypeOf(TaskScheduler)).apply(this, arguments));
     }
 
     _createClass(TaskScheduler, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Task Scheduler";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -7815,7 +8060,7 @@ var TaskScheduler = function (_Section35) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -7881,15 +8126,22 @@ var UserRightsAssignment = function (_Section36) {
     function UserRightsAssignment() {
         _classCallCheck(this, UserRightsAssignment);
 
-        var _this36 = _possibleConstructorReturn(this, (UserRightsAssignment.__proto__ || Object.getPrototypeOf(UserRightsAssignment)).call(this));
-
-        _this36.state.name = "User Rights Assignment";
-        return _this36;
+        return _possibleConstructorReturn(this, (UserRightsAssignment.__proto__ || Object.getPrototypeOf(UserRightsAssignment)).apply(this, arguments));
     }
 
     _createClass(UserRightsAssignment, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "User Rights Assignment";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -7905,7 +8157,7 @@ var UserRightsAssignment = function (_Section36) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(AdministrativeTools, { version: this.props.version })
+                        React.createElement(AdministrativeTools).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -8732,15 +8984,22 @@ var UsersFolder = function (_Section37) {
     function UsersFolder() {
         _classCallCheck(this, UsersFolder);
 
-        var _this37 = _possibleConstructorReturn(this, (UsersFolder.__proto__ || Object.getPrototypeOf(UsersFolder)).call(this));
-
-        _this37.state.name = "Users Folder";
-        return _this37;
+        return _possibleConstructorReturn(this, (UsersFolder.__proto__ || Object.getPrototypeOf(UsersFolder)).apply(this, arguments));
     }
 
     _createClass(UsersFolder, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Users Folder";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -8774,7 +9033,7 @@ var UsersFolder = function (_Section37) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(CDrive, { version: this.props.version })
+                        React.createElement(CDrive).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -8825,15 +9084,22 @@ var WindowsFeatures = function (_Section38) {
     function WindowsFeatures() {
         _classCallCheck(this, WindowsFeatures);
 
-        var _this38 = _possibleConstructorReturn(this, (WindowsFeatures.__proto__ || Object.getPrototypeOf(WindowsFeatures)).call(this));
-
-        _this38.state.name = "Windows Features";
-        return _this38;
+        return _possibleConstructorReturn(this, (WindowsFeatures.__proto__ || Object.getPrototypeOf(WindowsFeatures)).apply(this, arguments));
     }
 
     _createClass(WindowsFeatures, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Windows Features";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -8867,7 +9133,7 @@ var WindowsFeatures = function (_Section38) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -8967,7 +9233,7 @@ var WindowsFeatures = function (_Section38) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -9062,7 +9328,7 @@ var WindowsFeatures = function (_Section38) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -9176,15 +9442,22 @@ var WindowsFirewall = function (_Section39) {
     function WindowsFirewall() {
         _classCallCheck(this, WindowsFirewall);
 
-        var _this39 = _possibleConstructorReturn(this, (WindowsFirewall.__proto__ || Object.getPrototypeOf(WindowsFirewall)).call(this));
-
-        _this39.state.name = "Windows Firewall";
-        return _this39;
+        return _possibleConstructorReturn(this, (WindowsFirewall.__proto__ || Object.getPrototypeOf(WindowsFirewall)).apply(this, arguments));
     }
 
     _createClass(WindowsFirewall, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Windows Firewall";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -9218,7 +9491,7 @@ var WindowsFirewall = function (_Section39) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -9404,7 +9677,7 @@ var WindowsFirewall = function (_Section39) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -9583,15 +9856,22 @@ var WindowsSettings = function (_Section40) {
     function WindowsSettings() {
         _classCallCheck(this, WindowsSettings);
 
-        var _this40 = _possibleConstructorReturn(this, (WindowsSettings.__proto__ || Object.getPrototypeOf(WindowsSettings)).call(this));
-
-        _this40.state.name = "Windows Settings";
-        return _this40;
+        return _possibleConstructorReturn(this, (WindowsSettings.__proto__ || Object.getPrototypeOf(WindowsSettings)).apply(this, arguments));
     }
 
     _createClass(WindowsSettings, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Windows Settings";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -9633,15 +9913,22 @@ var WindowsUpdate = function (_Section41) {
     function WindowsUpdate() {
         _classCallCheck(this, WindowsUpdate);
 
-        var _this41 = _possibleConstructorReturn(this, (WindowsUpdate.__proto__ || Object.getPrototypeOf(WindowsUpdate)).call(this));
-
-        _this41.state.name = "Windows Update";
-        return _this41;
+        return _possibleConstructorReturn(this, (WindowsUpdate.__proto__ || Object.getPrototypeOf(WindowsUpdate)).apply(this, arguments));
     }
 
     _createClass(WindowsUpdate, [{
-        key: "getContent",
-        value: function getContent() {
+        key: "displayName",
+        value: function displayName() {
+            return "Windows Update";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
             if (this.props.version === "win7") {
                 return this.option1();
             } else if (this.props.version === "win8") {
@@ -9675,7 +9962,7 @@ var WindowsUpdate = function (_Section41) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(ControlPanel, { version: this.props.version })
+                        React.createElement(ControlPanel).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",
@@ -9757,7 +10044,7 @@ var WindowsUpdate = function (_Section41) {
                         "li",
                         null,
                         "Open ",
-                        React.createElement(WindowsSettings, { version: this.props.version })
+                        React.createElement(WindowsSettings).type.prototype.getLink()
                     ),
                     React.createElement(
                         "li",

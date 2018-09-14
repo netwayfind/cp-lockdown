@@ -1,15 +1,18 @@
 class AccountLockoutPolicy extends Section {
-    constructor() {
-        super();
-        this.state.name = "Account Lockout Policy";
+    displayName() {
+        return "Account Lockout Policy";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <AdministrativeTools version={this.props.version} /></li>
+                    <li>Open {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>Account Policies</strong></li>
                     <li>Find and double click on <strong>Account Lockout Policy</strong></li>
@@ -26,17 +29,20 @@ class AccountLockoutPolicy extends Section {
 }
 
 class AddRemovePrograms extends Section {
-    constructor() {
-        super();
-        this.state.name = "Add/Remove Programs";
+    displayName() {
+        return "Add/Remove Programs";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find <strong>Programs</strong></li>
                     <li>Find and click on <strong>Uninstall a Program</strong></li>
                 </ol>
@@ -51,17 +57,20 @@ class AddRemovePrograms extends Section {
 }
 
 class AdministrativeTools extends Section {
-    constructor() {
-        super();
-        this.state.name = "Administrative Tools";
+    displayName() {
+        return "Administrative Tools";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>Administrative Tools</strong></li>
                 </ol>
@@ -72,17 +81,20 @@ class AdministrativeTools extends Section {
 }
 
 class AdvancedAuditPolicyConfiguration extends Section {
-    constructor() {
-        super();
-        this.state.name = "Advanced Audit Policy Configuration";
+    displayName() {
+        return "Advanced Audit Policy Configuration";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <AdministrativeTools version={this.props.version} /></li>
+                    <li>Open {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>Advanced Audit Policy Configuration</strong></li>
                     <li>Find and double click on <strong>System Audit Policies - Local Group Policy Object</strong></li>
@@ -188,12 +200,15 @@ class AdvancedAuditPolicyConfiguration extends Section {
 }
 
 class AntiMalwareTools extends Section {
-    constructor() {
-        super();
-        this.state.name = "Anti-Malware Tools";
+    displayName() {
+        return "Anti-Malware Tools";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 When running these tools, review any findings and avoid removing any required software.
@@ -230,17 +245,20 @@ class AntiMalwareTools extends Section {
 }
 
 class AuditPolicy extends Section {
-    constructor() {
-        super();
-        this.state.name = "Audit Policy";
+    displayName() {
+        return "Audit Policy";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <AdministrativeTools version={this.props.version} /></li>
+                    <li>Open {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>Local Policies</strong></li>
                     <li>Find and double click on <strong>Audit Policy</strong></li>
@@ -263,12 +281,15 @@ class AuditPolicy extends Section {
 }
 
 class AutomaticLogin extends Section {
-    constructor() {
-        super();
-        this.state.name = "Automatic Login";
+    displayName() {
+        return "Automatic Login";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -352,12 +373,15 @@ class AutomaticLogin extends Section {
 }
 
 class AutomaticUpdates extends Section {
-    constructor() {
-        super();
-        this.state.name = "Automatic Updates";
+    displayName() {
+        return "Automatic Updates";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -384,7 +408,7 @@ class AutomaticUpdates extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                     <li>Find and click on <strong>Turn automatic updating on or off</strong></li>
@@ -407,7 +431,7 @@ class AutomaticUpdates extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                     <li>Find <strong>Change settings</strong></li>
@@ -433,12 +457,15 @@ class AutomaticUpdates extends Section {
 }
 
 class CDrive extends Section {
-    constructor() {
-        super();
-        this.state.name = "C:\\ Drive";
+    displayName() {
+        return "C:\\ Drive";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -473,10 +500,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><ProgramFiles version={this.props.version} /></li>
-                    <li><ProgramFilesx86 version={this.props.version} /></li>
+                    <li>{React.createElement(ProgramFiles).type.prototype.getLink()}</li>
+                    <li>{React.createElement(ProgramFilesx86).type.prototype.getLink()}</li>
                     <li>ProgramData (hidden)</li>
-                    <li><UsersFolder version={this.props.version} /></li>
+                    <li>{React.createElement(UsersFolder).type.prototype.getLink()}</li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -496,10 +523,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><ProgramFiles version={this.props.version} /></li>
-                    <li><ProgramFilesx86 version={this.props.version} /></li>
+                    <li>{React.createElement(ProgramFiles).type.prototype.getLink()}</li>
+                    <li>{React.createElement(ProgramFilesx86).type.prototype.getLink()}</li>
                     <li>ProgramData (hidden)</li>
-                    <li><UsersFolder version={this.props.version} /></li>
+                    <li>{React.createElement(UsersFolder).type.prototype.getLink()}</li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -518,10 +545,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><ProgramFiles version={this.props.version} /></li>
-                    <li><ProgramFilesx86 version={this.props.version} /></li>
+                    <li>{React.createElement(ProgramFiles).type.prototype.getLink()}</li>
+                    <li>{React.createElement(ProgramFilesx86).type.prototype.getLink()}</li>
                     <li>ProgramData (hidden)</li>
-                    <li><UsersFolder version={this.props.version} /></li>
+                    <li>{React.createElement(UsersFolder).type.prototype.getLink()}</li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -541,10 +568,10 @@ class CDrive extends Section {
                 These are the default folders. Carefully inspect all other folders and files not in the following list.
                 <ul>
                     <li>PerfLogs</li>
-                    <li><ProgramFiles version={this.props.version} /></li>
-                    <li><ProgramFilesx86 version={this.props.version} /></li>
+                    <li>{React.createElement(ProgramFiles).type.prototype.getLink()}</li>
+                    <li>{React.createElement(ProgramFilesx86).type.prototype.getLink()}</li>
                     <li>ProgramData (hidden)</li>
-                    <li><UsersFolder version={this.props.version} /></li>
+                    <li>{React.createElement(UsersFolder).type.prototype.getLink()}</li>
                     <li>Windows</li>
                 </ul>
             </React.Fragment>
@@ -553,12 +580,15 @@ class CDrive extends Section {
 }
 
 class CommandPrompt extends Section {
-    constructor() {
-        super();
-        this.state.name = "Command Prompt";
+    displayName() {
+        return "Command Prompt";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -618,12 +648,15 @@ class CommandPrompt extends Section {
 }
 
 class ControlPanel extends Section {
-    constructor() {
-        super();
-        this.state.name = "Control Panel";
+    displayName() {
+        return "Control Panel";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -684,12 +717,15 @@ class ControlPanel extends Section {
 }
 
 class CrowdInspect extends Section {
-    constructor() {
-        super();
-        this.state.name = "CrowdInspect";
+    displayName() {
+        return "CrowdInspect";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Download</h3>
@@ -702,12 +738,15 @@ class CrowdInspect extends Section {
 }
 
 class DiskCleanup extends Section {
-    constructor() {
-        super();
-        this.state.name = "Disk Cleanup";
+    displayName() {
+        return "Disk Cleanup";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -786,17 +825,20 @@ class DiskCleanup extends Section {
 }
 
 class EventViewer extends Section {
-    constructor() {
-        super();
-        this.state.name = "Event Viewer";
+    displayName() {
+        return "Event Viewer";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
+                    <li>Go to {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Open <strong>Event Viewer</strong></li>
                 </ol>
                 <ul>
@@ -810,16 +852,19 @@ class EventViewer extends Section {
 }
 
 class FindUnauthorizedFiles extends Section {
-    constructor() {
-        super();
-        this.state.name = "Find Unauthorized Files";
+    displayName() {
+        return "Find Unauthorized Files";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <ol>
-                    <li>Open <CommandPrompt version={this.props.version} /></li>
+                    <li>Open {React.createElement(CommandPrompt).type.prototype.getLink()}</li>
                     <li>dir C:\Users /s /b /a | find /i ".mp3"
                         <ul>
                             <li>This will search for .mp3 files in C:\Users</li>
@@ -841,12 +886,15 @@ class FindUnauthorizedFiles extends Section {
 }
 
 class HostsFile extends Section {
-    constructor() {
-        super();
-        this.state.name = "Hosts File";
+    displayName() {
+        return "Hosts File";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -869,17 +917,20 @@ class HostsFile extends Section {
 }
 
 class InternetConnectionSharing extends Section {
-    constructor() {
-        super();
-        this.state.name = "Internet Connection Sharing";
+    displayName() {
+        return "Internet Connection Sharing";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Network and Internet</strong></li>
                     <li>Find and click on <strong>Network and Sharing Center</strong></li>
                     <li>Find and click on <strong>Change adapter settings</strong></li>
@@ -898,12 +949,15 @@ class InternetConnectionSharing extends Section {
 }
 
 class InternetExplorer extends Section {
-    constructor() {
-        super();
-        this.state.name = "Internet Explorer";
+    displayName() {
+        return "Internet Explorer";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -969,12 +1023,15 @@ class InternetExplorer extends Section {
 }
 
 class LocalGroupPolicyEditor extends Section {
-    constructor() {
-        super();
-        this.state.name = "Local Group Policy Editor";
+    displayName() {
+        return "Local Group Policy Editor";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1027,12 +1084,15 @@ class LocalGroupPolicyEditor extends Section {
 }
 
 class LocalUsersAndGroups extends Section {
-    constructor() {
-        super();
-        this.state.name = "Local Users and Groups";
+    displayName() {
+        return "Local Users and Groups";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -1059,7 +1119,7 @@ class LocalUsersAndGroups extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
+                    <li>Go to {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Computer Management</strong></li>
                     <li>Find and open <strong>System Tools</strong></li>
                     <li>Find and open <strong>Local Users and Groups</strong></li>
@@ -1081,7 +1141,7 @@ class LocalUsersAndGroups extends Section {
                     </ul>
                     <li>Right click on user, select <b>Set Password</b></li>
                     <ul>
-                        <li>Make sure password meets the <PasswordPolicy version={this.props.version} /></li>
+                        <li>Make sure password meets the {React.createElement(PasswordPolicy).type.prototype.getLink()}</li>
                         <li>Write down user and password for reference</li>
                     </ul>
                 </ol>
@@ -1180,7 +1240,7 @@ class LocalUsersAndGroups extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
+                    <li>Go to {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Computer Management</strong></li>
                     <li>Find and open <strong>System Tools</strong></li>
                     <li>Find and open <strong>Local Users and Groups</strong></li>
@@ -1202,7 +1262,7 @@ class LocalUsersAndGroups extends Section {
                     </ul>
                     <li>Right click on user, select <b>Set Password</b></li>
                     <ul>
-                        <li>Make sure password meets the <PasswordPolicy version={this.props.version} /></li>
+                        <li>Make sure password meets the {React.createElement(PasswordPolicy).type.prototype.getLink()}</li>
                         <li>Write down user and password for reference</li>
                     </ul>
                 </ol>
@@ -1346,7 +1406,7 @@ class LocalUsersAndGroups extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
+                    <li>Go to {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Computer Management</strong></li>
                     <li>Find and open <strong>System Tools</strong></li>
                     <li>Find and open <strong>Local Users and Groups</strong></li>
@@ -1368,7 +1428,7 @@ class LocalUsersAndGroups extends Section {
                     </ul>
                     <li>Right click on user, select <b>Set Password</b></li>
                     <ul>
-                        <li>Make sure password meets the <PasswordPolicy version={this.props.version} /></li>
+                        <li>Make sure password meets the {React.createElement(PasswordPolicy).type.prototype.getLink()}</li>
                         <li>Write down user and password for reference</li>
                     </ul>
                 </ol>
@@ -1514,12 +1574,15 @@ class LocalUsersAndGroups extends Section {
 }
 
 class MicrosoftBaselineSecurityAnalyzer extends Section {
-    constructor() {
-        super();
-        this.state.name = "Microsoft Baseline Security Analyzer";
+    displayName() {
+        return "Microsoft Baseline Security Analyzer";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -1559,12 +1622,15 @@ class MicrosoftBaselineSecurityAnalyzer extends Section {
 }
 
 class MicrosoftSecurityEssentials extends Section {
-    constructor() {
-        super();
-        this.state.name = "Microsoft Security Essentials";
+    displayName() {
+        return "Microsoft Security Essentials";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -1624,17 +1690,20 @@ class MicrosoftSecurityEssentials extends Section {
 }
 
 class PasswordPolicy extends Section {
-    constructor() {
-        super();
-        this.state.name = "Password Policy";
+    displayName() {
+        return "Password Policy";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
+                    <li>Go to {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Open <strong>Account Policies</strong></li>
                     <li>Open <strong>Password Policy</strong></li>
@@ -1654,12 +1723,15 @@ class PasswordPolicy extends Section {
 }
 
 class Processes extends Section {
-    constructor() {
-        super();
-        this.state.name = "Processes";
+    displayName() {
+        return "Processes";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.win7();
         }
@@ -1686,7 +1758,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <TaskManager version={this.props.version} /></li>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
                 </ol>
@@ -1722,7 +1794,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <TaskManager version={this.props.version} /></li>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
                 </ol>
@@ -1766,7 +1838,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <TaskManager version={this.props.version} /></li>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
                     <li>Click <strong>More details</strong>, if necessary</li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
@@ -1819,7 +1891,7 @@ class Processes extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <TaskManager version={this.props.version} /></li>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
                     <li>Click <strong>More details</strong>, if necessary</li>
                     <li>Go to <strong>Processes</strong> tab</li>
                     <li>Find and click on <strong>Show processes from all users</strong></li>
@@ -1868,12 +1940,15 @@ class Processes extends Section {
 }
 
 class ProgramFiles extends Section {
-    constructor() {
-        super();
-        this.state.name = "Program Files";
+    displayName() {
+        return "Program Files";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.win7();
         }
@@ -1900,7 +1975,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -1928,7 +2003,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -1957,7 +2032,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -1986,7 +2061,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2015,7 +2090,7 @@ class ProgramFiles extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2033,12 +2108,15 @@ class ProgramFiles extends Section {
 }
 
 class ProgramFilesx86 extends Section {
-    constructor() {
-        super();
-        this.state.name = "Program Files (x86)";
+    displayName() {
+        return "Program Files (x86)";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.win7();
         }
@@ -2065,7 +2143,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2091,7 +2169,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2116,7 +2194,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2143,7 +2221,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2170,7 +2248,7 @@ class ProgramFilesx86 extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Program Files (x86)</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2188,17 +2266,20 @@ class ProgramFilesx86 extends Section {
 }
 
 class RemoteAssistanceAndRemoteDesktop extends Section {
-    constructor() {
-        super();
-        this.state.name = "Remote Assistance and Remote Desktop";
+    displayName() {
+        return "Remote Assistance and Remote Desktop";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>System</strong></li>
                     <li>Find and click on <strong>Remote settings</strong></li>
@@ -2218,17 +2299,20 @@ class RemoteAssistanceAndRemoteDesktop extends Section {
 }
 
 class SecurityOptions extends Section {
-    constructor() {
-        super();
-        this.state.name = "Security Options";
+    displayName() {
+        return "Security Options";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
+                    <li>Go to {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Open <strong>Local Policies</strong></li>
                     <li>Open <strong>Security Options</strong></li>
@@ -2247,12 +2331,15 @@ class SecurityOptions extends Section {
 }
 
 class ServicePacks extends Section {
-    constructor() {
-        super();
-        this.state.name = "Service Packs";
+    displayName() {
+        return "Service Packs";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.win7();
         }
@@ -2302,12 +2389,15 @@ class ServicePacks extends Section {
 }
 
 class Services extends Section {
-    constructor() {
-        super();
-        this.state.name = "Services";
+    displayName() {
+        return "Services";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -2334,7 +2424,7 @@ class Services extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Go to <AdministrativeTools version={this.props.version} /></li>
+                    <li>Go to {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and open <strong>Services</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -2358,17 +2448,20 @@ class Services extends Section {
 }
 
 class SharedFolders extends Section {
-    constructor() {
-        super();
-        this.state.name = "Shared Folders";
+    displayName() {
+        return "Shared Folders";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <AdministrativeTools version={this.props.version} /></li>
+                    <li>Open {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and double click on <strong>Computer Management</strong></li>
                     <li>Find and double click on <strong>Shared Folders</strong></li>
                     <li>Find and double click on <strong>Shares</strong></li>
@@ -2392,12 +2485,15 @@ class SharedFolders extends Section {
 }
 
 class ShowHiddenFilesAndFolders extends Section {
-    constructor() {
-        super();
-        this.state.name = "Show Hidden Files and Folders";
+    displayName() {
+        return "Show Hidden Files and Folders";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -2424,7 +2520,7 @@ class ShowHiddenFilesAndFolders extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Appearance and Personalization</strong></li>
                     <li>Find <strong>Folder Options</strong></li>
                     <li>Find and click on <strong>Show hidden files and folders</strong></li>
@@ -2444,7 +2540,7 @@ class ShowHiddenFilesAndFolders extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Appearance and Personalization</strong></li>
                     <li>Find <strong>File Explorer Options</strong></li>
                     <li>Find and click on the <strong>View</strong> tab</li>
@@ -2460,12 +2556,15 @@ class ShowHiddenFilesAndFolders extends Section {
 }
 
 class StartupPrograms extends Section {
-    constructor() {
-        super();
-        this.state.name = "Startup Programs";
+    displayName() {
+        return "Startup Programs";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -2510,7 +2609,7 @@ class StartupPrograms extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <TaskManager version={this.props.version} /></li>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
                     <li>Go to the <strong>Startup</strong> tab</li>
                 </ol>
                 <h3>Settings</h3>
@@ -2526,7 +2625,7 @@ class StartupPrograms extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <TaskManager version={this.props.version} /></li>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
                     <li>Click on <strong>More details</strong>, if necessary</li>
                     <li>Go to the <strong>Startup</strong> tab</li>
                 </ol>
@@ -2558,12 +2657,15 @@ class StartupPrograms extends Section {
 }
 
 class TaskManager extends Section {
-    constructor() {
-        super();
-        this.state.name = "Task Manager";
+    displayName() {
+        return "Task Manager";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -2623,17 +2725,20 @@ class TaskManager extends Section {
 }
 
 class TaskScheduler extends Section {
-    constructor() {
-        super();
-        this.state.name = "Task Scheduler";
+    displayName() {
+        return "Task Scheduler";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <AdministrativeTools version={this.props.version} /></li>
+                    <li>Open {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Task Scheduler</strong></li>
                     <li>Under <strong>Task Scheduler (Local)</strong>, open <strong>Task Scheduler Library</strong></li>
                 </ol>
@@ -2649,17 +2754,20 @@ class TaskScheduler extends Section {
 }
 
 class UserRightsAssignment extends Section {
-    constructor() {
-        super();
-        this.state.name = "User Rights Assignment";
+    displayName() {
+        return "User Rights Assignment";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <AdministrativeTools version={this.props.version} /></li>
+                    <li>Open {React.createElement(AdministrativeTools).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Local Security Policy</strong></li>
                     <li>Find and double click on <strong>User Rights Assignment</strong></li>
                 </ol>
@@ -2970,12 +3078,15 @@ class UserRightsAssignment extends Section {
 }
 
 class UsersFolder extends Section {
-    constructor() {
-        super();
-        this.state.name = "Users Folder";
+    displayName() {
+        return "Users Folder";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -3002,7 +3113,7 @@ class UsersFolder extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <CDrive version={this.props.version} /></li>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
                     <li>Open <strong>Users</strong></li>
                 </ol>
                 <h3>Settings</h3>
@@ -3018,12 +3129,15 @@ class UsersFolder extends Section {
 }
 
 class WindowsFeatures extends Section {
-    constructor() {
-        super();
-        this.state.name = "Windows Features";
+    displayName() {
+        return "Windows Features";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -3050,7 +3164,7 @@ class WindowsFeatures extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Programs</strong></li>
                     <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
                 </ol>
@@ -3082,7 +3196,7 @@ class WindowsFeatures extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Programs</strong></li>
                     <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
                 </ol>
@@ -3113,7 +3227,7 @@ class WindowsFeatures extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>Programs</strong></li>
                     <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
                     <li>Follow <strong>Add Roles and Features Wizard</strong> until <strong>Features</strong></li>
@@ -3142,12 +3256,15 @@ class WindowsFeatures extends Section {
 }
 
 class WindowsFirewall extends Section {
-    constructor() {
-        super();
-        this.state.name = "Windows Firewall";
+    displayName() {
+        return "Windows Firewall";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -3174,7 +3291,7 @@ class WindowsFirewall extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>Windows Firewall</strong></li>
                 </ol>
@@ -3215,7 +3332,7 @@ class WindowsFirewall extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find and click on <strong>Windows Firewall</strong></li>
                 </ol>
@@ -3253,12 +3370,15 @@ class WindowsFirewall extends Section {
 }
 
 class WindowsSettings extends Section {
-    constructor() {
-        super();
-        this.state.name = "Windows Settings";
+    displayName() {
+        return "Windows Settings";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -3272,12 +3392,15 @@ class WindowsSettings extends Section {
 }
 
 class WindowsUpdate extends Section {
-    constructor() {
-        super();
-        this.state.name = "Windows Update";
+    displayName() {
+        return "Windows Update";
     }
 
-    getContent() {
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
         if (this.props.version === "win7") {
             return this.option1();
         }
@@ -3304,7 +3427,7 @@ class WindowsUpdate extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <ControlPanel version={this.props.version} /></li>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
                     <li>Find and click on <strong>System and Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                 </ol>
@@ -3324,7 +3447,7 @@ class WindowsUpdate extends Section {
             <React.Fragment>
                 <h3>Location</h3>
                 <ol>
-                    <li>Open <WindowsSettings version={this.props.version} /></li>
+                    <li>Open {React.createElement(WindowsSettings).type.prototype.getLink()}</li>
                     <li>Find <strong>Update &amp; Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                 </ol>

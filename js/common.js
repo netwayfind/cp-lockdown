@@ -9,14 +9,70 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Template = function (_React$Component) {
     _inherits(Template, _React$Component);
 
-    function Template() {
+    function Template(props) {
         _classCallCheck(this, Template);
 
-        return _possibleConstructorReturn(this, (Template.__proto__ || Object.getPrototypeOf(Template)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Template.__proto__ || Object.getPrototypeOf(Template)).call(this, props));
+
+        var sections = {};
+
+        for (var i in _this.props.children) {
+            var group = _this.props.children[i];
+            if (group.props.children.length === undefined) {
+                var section = group.props.children;
+                var name = section.type.name;
+                sections[name] = section;
+            } else {
+                for (var j in group.props.children) {
+                    var _section = group.props.children[j];
+                    var _name = _section.type.name;
+                    sections[_name] = _section;
+                }
+            }
+        }
+
+        _this.state = {
+            sections: sections
+        };
+        return _this;
     }
 
     _createClass(Template, [{
-        key: "render",
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            var i = window.location.hash.indexOf('#');
+            var hash = window.location.hash.slice(i + 1);
+            this.setContent(hash);
+            // handle browser back/forward
+            window.onhashchange = function (e) {
+                var i = e.newURL.indexOf('#');
+                var hash = e.newURL.slice(i + 1);
+                _this2.setContent(hash);
+            };
+        }
+    }, {
+        key: 'setContent',
+        value: function setContent(hash) {
+            var section = this.state.sections[hash];
+            if (section) {
+                var name = section.type.prototype.displayName();
+                var content = React.createElement(
+                    React.Fragment,
+                    null,
+                    React.createElement(
+                        'h2',
+                        null,
+                        name
+                    ),
+                    section
+                );
+                ReactDOM.render(content, document.getElementById("content"));
+            }
+        }
+    }, {
+        key: 'render',
         value: function render() {
             var name = this.props.name;
             var children = [];
@@ -28,26 +84,26 @@ var Template = function (_React$Component) {
                 React.Fragment,
                 null,
                 React.createElement(
-                    "div",
-                    { className: "heading" },
+                    'div',
+                    { className: 'heading' },
                     React.createElement(
-                        "h1",
+                        'h1',
                         null,
                         React.createElement(
-                            "a",
-                            { href: "./index.html" },
-                            "cp-lockdown"
+                            'a',
+                            { href: './index.html' },
+                            'cp-lockdown'
                         ),
-                        " > ",
+                        ' > ',
                         name
                     )
                 ),
                 React.createElement(
-                    "div",
-                    { className: "toc", id: "toc" },
+                    'div',
+                    { className: 'toc', id: 'toc' },
                     children
                 ),
-                React.createElement("div", { className: "content", id: "content" })
+                React.createElement('div', { className: 'content', id: 'content' })
             );
         }
     }]);
@@ -65,22 +121,24 @@ var Group = function (_React$Component2) {
     }
 
     _createClass(Group, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             var name = this.props.name;
             var children = [];
             if (this.props.children.length === undefined) {
+                var section = this.props.children;
                 children.push(React.createElement(
-                    "li",
-                    { key: "0" },
-                    this.props.children
+                    'li',
+                    { key: '0' },
+                    section.type.prototype.getLink()
                 ));
             } else {
                 for (var i in this.props.children) {
+                    var _section2 = this.props.children[i];
                     children.push(React.createElement(
-                        "li",
+                        'li',
                         { key: i },
-                        this.props.children[i]
+                        _section2.type.prototype.getLink()
                     ));
                 }
             }
@@ -90,7 +148,7 @@ var Group = function (_React$Component2) {
                 null,
                 name,
                 React.createElement(
-                    "ul",
+                    'ul',
                     null,
                     children
                 )
@@ -107,53 +165,35 @@ var Section = function (_React$Component3) {
     function Section(props) {
         _classCallCheck(this, Section);
 
-        var _this3 = _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).call(this, props));
-
-        var name = "Default";
-
-        if (props) {
-            name = props.name;
-        }
-
-        _this3.state = {
-            name: name
-        };
-
-        _this3.showContent = _this3.showContent.bind(_this3);
-        _this3.getContent = _this3.getContent.bind(_this3);
-        return _this3;
+        return _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).call(this, props));
     }
 
-    _createClass(Section, [{
-        key: "getContent",
-        value: function getContent() {
-            return "Not done";
-        }
-    }, {
-        key: "showContent",
-        value: function showContent() {
-            var content = React.createElement(
-                React.Fragment,
-                null,
-                React.createElement(
-                    "h2",
-                    null,
-                    this.state.name
-                ),
-                this.getContent()
-            );
-            ReactDOM.render(content, document.getElementById("content"));
-        }
-    }, {
-        key: "render",
+    return Section;
+}(React.Component);
+
+var SectionLink = function (_React$Component4) {
+    _inherits(SectionLink, _React$Component4);
+
+    function SectionLink(props) {
+        _classCallCheck(this, SectionLink);
+
+        return _possibleConstructorReturn(this, (SectionLink.__proto__ || Object.getPrototypeOf(SectionLink)).call(this, props));
+    }
+
+    _createClass(SectionLink, [{
+        key: 'render',
         value: function render() {
+            var section = this.props.section;
+            var label = section.displayName();
+            var link = "#" + section.constructor.name;
+
             return React.createElement(
-                "a",
-                { href: "#", onClick: this.showContent },
-                this.state.name
+                'a',
+                { href: link },
+                label
             );
         }
     }]);
 
-    return Section;
+    return SectionLink;
 }(React.Component);
