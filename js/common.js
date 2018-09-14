@@ -1,5 +1,7 @@
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -114,15 +116,42 @@ var Template = function (_React$Component) {
 var Group = function (_React$Component2) {
     _inherits(Group, _React$Component2);
 
-    function Group() {
+    function Group(props) {
         _classCallCheck(this, Group);
 
-        return _possibleConstructorReturn(this, (Group.__proto__ || Object.getPrototypeOf(Group)).apply(this, arguments));
+        var _this3 = _possibleConstructorReturn(this, (Group.__proto__ || Object.getPrototypeOf(Group)).call(this, props));
+
+        _this3.state = {};
+        if (props.children.length === undefined) {
+            _this3.state[0] = "__:__";
+        } else {
+            for (var i in props.children) {
+                _this3.state[i] = "__:__";
+            }
+        }
+
+        _this3.updateStatus = _this3.updateStatus.bind(_this3);
+        return _this3;
     }
 
     _createClass(Group, [{
+        key: 'updateStatus',
+        value: function updateStatus(event, i) {
+            event.preventDefault();
+            if (this.state[i] == "__:__") {
+                var date = new Date();
+                // pad numbers to have 2 digits
+                var timeStr = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2);
+                this.setState(_defineProperty({}, i, timeStr));
+            } else {
+                this.setState(_defineProperty({}, i, "__:__"));
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
+            var _this4 = this;
+
             var name = this.props.name;
             var children = [];
             if (this.props.children.length === undefined) {
@@ -130,16 +159,38 @@ var Group = function (_React$Component2) {
                 children.push(React.createElement(
                     'li',
                     { key: '0' },
+                    React.createElement('input', { type: 'checkbox', onClick: function onClick(e) {
+                            return _this4.updateStatus(e, 0);
+                        } }),
+                    React.createElement(
+                        'span',
+                        null,
+                        this.state[0]
+                    ),
+                    '\xA0',
                     section.type.prototype.getLink()
                 ));
             } else {
-                for (var i in this.props.children) {
-                    var _section2 = this.props.children[i];
+                var _loop = function _loop(i) {
+                    var section = _this4.props.children[i];
                     children.push(React.createElement(
                         'li',
                         { key: i },
-                        _section2.type.prototype.getLink()
+                        React.createElement('input', { type: 'checkbox', onClick: function onClick(e) {
+                                return _this4.updateStatus(e, i);
+                            } }),
+                        React.createElement(
+                            'span',
+                            null,
+                            _this4.state[i]
+                        ),
+                        '\xA0',
+                        section.type.prototype.getLink()
                     ));
+                };
+
+                for (var i in this.props.children) {
+                    _loop(i);
                 }
             }
 

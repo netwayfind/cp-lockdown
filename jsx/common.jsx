@@ -74,17 +74,60 @@ class Template extends React.Component {
 }
 
 class Group extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {};
+        if (props.children.length === undefined) {
+            this.state[0] = "__:__";
+        }
+        else {
+            for (let i in props.children) {
+                this.state[i] = "__:__";
+            }    
+        }
+
+        this.updateStatus = this.updateStatus.bind(this);
+    }
+
+    updateStatus(event, i) {
+        event.preventDefault();
+        if (this.state[i] == "__:__") {
+            let date = new Date();
+            // pad numbers to have 2 digits
+            let timeStr = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2);
+            this.setState({[i]: timeStr});
+        }
+        else {
+            this.setState({[i]: "__:__"});
+        }
+    }
+
     render() {
         let name = this.props.name;
         let children = [];
         if (this.props.children.length === undefined) {
             let section = this.props.children;
-            children.push(<li key="0">{section.type.prototype.getLink()}</li>);
+            children.push(
+                <li key="0">
+                    <input type="checkbox" onClick={e => this.updateStatus(e, 0)}></input>
+                    <span>{this.state[0]}</span>
+                    &nbsp;
+                    {section.type.prototype.getLink()}
+                </li>
+            );
         }
         else {
             for (let i in this.props.children) {
                 let section = this.props.children[i];
-                children.push(<li key={i}>{section.type.prototype.getLink()}</li>);
+                children.push(
+                    <li key={i}>
+                        <input type="checkbox" onClick={e => this.updateStatus(e, i)}></input>
+                        <span>{this.state[i]}</span>
+                        &nbsp;
+                        {section.type.prototype.getLink()}
+                    </li>
+                );
             }
         }
 
