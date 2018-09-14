@@ -21,3 +21,11 @@
     overflow: auto;
     position: sticky;
 }
+
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #0000EE;
+}
