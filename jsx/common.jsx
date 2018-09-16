@@ -49,6 +49,9 @@ class Template extends React.Component {
             );
             ReactDOM.render(content, document.getElementById("content"));
         }
+        else {
+            ReactDOM.render("", document.getElementById("content"));
+        }
     }
 
     render() {

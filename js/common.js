@@ -71,6 +71,8 @@ var Template = function (_React$Component) {
                     section
                 );
                 ReactDOM.render(content, document.getElementById("content"));
+            } else {
+                ReactDOM.render("", document.getElementById("content"));
             }
         }
     }, {
