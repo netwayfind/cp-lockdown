@@ -1,0 +1,26 @@
+{
+  "name": "cp-lockdown",
+  "version": "1.0.0",
+  "description": "cp-lockdown ===========",
+  "main": "function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumwonyuno/cp-lockdown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumwonyuno/cp-lockdown/issues"
+  },
+  "homepage": "https://github.com/sumwonyuno/cp-lockdown#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/preset-react": "^7.0.0"
+  }
+}

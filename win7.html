@@ -2,17 +2,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Windows 7 Lockdown</title>
-  <script type="text/javascript" src="function.js"></script>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Windows 7</h1>
-  <div id="toc">
-  </div>
-  <hr>
-  <div id="content">
-  </div>
-  <script type="text/javascript">
-    load("ref/win7.json");
-  </script>
+  <div id="app"></div>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@material-ui/core/umd/material-ui.production.min.js" crossorigin></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/ref_windows.js"></script>
+  <script type="text/javascript" src="js/win7.js"></script>
 </body>
 </html>
