@@ -21,8 +21,17 @@ git, you can clone the cp-lockdown repo and make edits.
 
 This project uses ReactJS + JSX
 [(info)](https://reactjs.org/docs/add-react-to-a-website.html#optional-try-react-with-jsx).
+
+## Initial Setup
+Download and the latest stable Node.js, and then do `npm install` in the
+cp-scoring directory to install the dev dependencies. This will install babel.
+
+## Compiling
 Use the JSX preprocessor to automatically compile JSX to JS when saving files.
-Follow the steps in the link to set this up.
+
+`npx babel --watch jsx --out-dir js`
+
+The .babelrc file contains additional configuration for this.
 
 ## Design
 This repository is a GitHub projects page. The code here backs the online
@@ -54,11 +63,9 @@ a respective checklist .html file. The styles.css file controls the style for
 all the .html files.
 
 ### ReactJS
-The package .json files are for Node.js. This is to just setup the JSX
-preprocessor. Download and the latest stable Node.js, and then do `npm install`
-in the cp-scoring directory to install the dependencies.
+The package .json files are for Node.js.
 
-The jsx directory has the source files and the js directory has the generate
+The jsx directory has the source files and the js directory has the generated
 JavaScript files.
 
 The common.jsx has the code for **Template**, **Group**, and **Section**. The

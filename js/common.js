@@ -1,252 +1,157 @@
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+class Template extends React.Component {
+  constructor(props) {
+    super(props);
+    let sections = {};
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+    for (let i in this.props.children) {
+      let group = this.props.children[i];
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Template = function (_React$Component) {
-    _inherits(Template, _React$Component);
-
-    function Template(props) {
-        _classCallCheck(this, Template);
-
-        var _this = _possibleConstructorReturn(this, (Template.__proto__ || Object.getPrototypeOf(Template)).call(this, props));
-
-        var sections = {};
-
-        for (var i in _this.props.children) {
-            var group = _this.props.children[i];
-            if (group.props.children.length === undefined) {
-                var section = group.props.children;
-                var name = section.type.name;
-                sections[name] = section;
-            } else {
-                for (var j in group.props.children) {
-                    var _section = group.props.children[j];
-                    var _name = _section.type.name;
-                    sections[_name] = _section;
-                }
-            }
+      if (group.props.children.length === undefined) {
+        let section = group.props.children;
+        let name = section.type.name;
+        sections[name] = section;
+      } else {
+        for (let j in group.props.children) {
+          let section = group.props.children[j];
+          let name = section.type.name;
+          sections[name] = section;
         }
-
-        _this.state = {
-            sections: sections
-        };
-        return _this;
+      }
     }
 
-    _createClass(Template, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            var _this2 = this;
+    this.state = {
+      sections: sections
+    };
+  }
 
-            var i = window.location.hash.indexOf('#');
-            var hash = window.location.hash.slice(i + 1);
-            this.setContent(hash);
-            // handle browser back/forward
-            window.onhashchange = function (e) {
-                var i = e.newURL.indexOf('#');
-                var hash = e.newURL.slice(i + 1);
-                _this2.setContent(hash);
-            };
-        }
-    }, {
-        key: 'setContent',
-        value: function setContent(hash) {
-            var section = this.state.sections[hash];
-            if (section) {
-                var name = section.type.prototype.displayName();
-                var content = React.createElement(
-                    React.Fragment,
-                    null,
-                    React.createElement(
-                        'h2',
-                        null,
-                        name
-                    ),
-                    section
-                );
-                ReactDOM.render(content, document.getElementById("content"));
-            } else {
-                ReactDOM.render("", document.getElementById("content"));
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var name = this.props.name;
-            var children = [];
-            for (var i in this.props.children) {
-                children.push(this.props.children[i]);
-            }
+  componentDidMount() {
+    let i = window.location.hash.indexOf('#');
+    let hash = window.location.hash.slice(i + 1);
+    this.setContent(hash); // handle browser back/forward
 
-            return React.createElement(
-                React.Fragment,
-                null,
-                React.createElement(
-                    'div',
-                    { className: 'heading' },
-                    React.createElement(
-                        'h1',
-                        null,
-                        React.createElement(
-                            'a',
-                            { href: './index.html' },
-                            'cp-lockdown'
-                        ),
-                        ' > ',
-                        name
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'toc', id: 'toc' },
-                    children
-                ),
-                React.createElement('div', { className: 'content', id: 'content' })
-            );
-        }
-    }]);
+    window.onhashchange = e => {
+      let i = e.newURL.indexOf('#');
+      let hash = e.newURL.slice(i + 1);
+      this.setContent(hash);
+    };
+  }
 
-    return Template;
-}(React.Component);
+  setContent(hash) {
+    let section = this.state.sections[hash];
 
-var Group = function (_React$Component2) {
-    _inherits(Group, _React$Component2);
+    if (section) {
+      let name = section.type.prototype.displayName();
+      let content = React.createElement(React.Fragment, null, React.createElement("h2", null, name), section);
+      ReactDOM.render(content, document.getElementById("content"));
+    } else {
+      ReactDOM.render("", document.getElementById("content"));
+    }
+  }
 
-    function Group(props) {
-        _classCallCheck(this, Group);
+  render() {
+    let name = this.props.name;
+    let children = [];
 
-        var _this3 = _possibleConstructorReturn(this, (Group.__proto__ || Object.getPrototypeOf(Group)).call(this, props));
-
-        _this3.state = {};
-        if (props.children.length === undefined) {
-            _this3.state[0] = "__:__";
-        } else {
-            for (var i in props.children) {
-                _this3.state[i] = "__:__";
-            }
-        }
-
-        _this3.updateStatus = _this3.updateStatus.bind(_this3);
-        return _this3;
+    for (let i in this.props.children) {
+      children.push(this.props.children[i]);
     }
 
-    _createClass(Group, [{
-        key: 'updateStatus',
-        value: function updateStatus(event, i) {
-            event.preventDefault();
-            if (this.state[i] == "__:__") {
-                var date = new Date();
-                // pad numbers to have 2 digits
-                var timeStr = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2);
-                this.setState(_defineProperty({}, i, timeStr));
-            } else {
-                this.setState(_defineProperty({}, i, "__:__"));
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this4 = this;
+    return React.createElement(React.Fragment, null, React.createElement("div", {
+      className: "heading"
+    }, React.createElement("h1", null, React.createElement("a", {
+      href: "./index.html"
+    }, "cp-lockdown"), " > ", name)), React.createElement("div", {
+      className: "toc",
+      id: "toc"
+    }, children), React.createElement("div", {
+      className: "content",
+      id: "content"
+    }));
+  }
 
-            var name = this.props.name;
-            var children = [];
-            if (this.props.children.length === undefined) {
-                var section = this.props.children;
-                children.push(React.createElement(
-                    'li',
-                    { key: '0' },
-                    React.createElement('input', { type: 'checkbox', onClick: function onClick(e) {
-                            return _this4.updateStatus(e, 0);
-                        } }),
-                    React.createElement(
-                        'span',
-                        null,
-                        this.state[0]
-                    ),
-                    '\xA0',
-                    section.type.prototype.getLink()
-                ));
-            } else {
-                var _loop = function _loop(i) {
-                    var section = _this4.props.children[i];
-                    children.push(React.createElement(
-                        'li',
-                        { key: i },
-                        React.createElement('input', { type: 'checkbox', onClick: function onClick(e) {
-                                return _this4.updateStatus(e, i);
-                            } }),
-                        React.createElement(
-                            'span',
-                            null,
-                            _this4.state[i]
-                        ),
-                        '\xA0',
-                        section.type.prototype.getLink()
-                    ));
-                };
+}
 
-                for (var i in this.props.children) {
-                    _loop(i);
-                }
-            }
+class Group extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
 
-            return React.createElement(
-                React.Fragment,
-                null,
-                name,
-                React.createElement(
-                    'ul',
-                    null,
-                    children
-                )
-            );
-        }
-    }]);
-
-    return Group;
-}(React.Component);
-
-var Section = function (_React$Component3) {
-    _inherits(Section, _React$Component3);
-
-    function Section(props) {
-        _classCallCheck(this, Section);
-
-        return _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).call(this, props));
+    if (props.children.length === undefined) {
+      this.state[0] = "__:__";
+    } else {
+      for (let i in props.children) {
+        this.state[i] = "__:__";
+      }
     }
 
-    return Section;
-}(React.Component);
+    this.updateStatus = this.updateStatus.bind(this);
+  }
 
-var SectionLink = function (_React$Component4) {
-    _inherits(SectionLink, _React$Component4);
+  updateStatus(event, i) {
+    event.preventDefault();
 
-    function SectionLink(props) {
-        _classCallCheck(this, SectionLink);
+    if (this.state[i] == "__:__") {
+      let date = new Date(); // pad numbers to have 2 digits
 
-        return _possibleConstructorReturn(this, (SectionLink.__proto__ || Object.getPrototypeOf(SectionLink)).call(this, props));
+      let timeStr = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2);
+      this.setState({
+        [i]: timeStr
+      });
+    } else {
+      this.setState({
+        [i]: "__:__"
+      });
+    }
+  }
+
+  render() {
+    let name = this.props.name;
+    let children = [];
+
+    if (this.props.children.length === undefined) {
+      let section = this.props.children;
+      children.push(React.createElement("li", {
+        key: "0"
+      }, React.createElement("input", {
+        type: "checkbox",
+        onClick: e => this.updateStatus(e, 0)
+      }), React.createElement("span", null, this.state[0]), "\xA0", section.type.prototype.getLink()));
+    } else {
+      for (let i in this.props.children) {
+        let section = this.props.children[i];
+        children.push(React.createElement("li", {
+          key: i
+        }, React.createElement("input", {
+          type: "checkbox",
+          onClick: e => this.updateStatus(e, i)
+        }), React.createElement("span", null, this.state[i]), "\xA0", section.type.prototype.getLink()));
+      }
     }
 
-    _createClass(SectionLink, [{
-        key: 'render',
-        value: function render() {
-            var section = this.props.section;
-            var label = section.displayName();
-            var link = "#" + section.constructor.name;
+    return React.createElement(React.Fragment, null, name, React.createElement("ul", null, children));
+  }
 
-            return React.createElement(
-                'a',
-                { href: link },
-                label
-            );
-        }
-    }]);
+}
 
-    return SectionLink;
-}(React.Component);
+class Section extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+}
+
+class SectionLink extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    let section = this.props.section;
+    let label = section.displayName();
+    let link = "#" + section.constructor.name;
+    return React.createElement("a", {
+      href: link
+    }, label);
+  }
+
+}
