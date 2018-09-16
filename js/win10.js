@@ -61,7 +61,7 @@ var Windows10 = function (_React$Component) {
                     Group,
                     { name: "Scans" },
                     React.createElement(MicrosoftBaselineSecurityAnalyzer, { version: "win10" }),
-                    React.createElement(MicrosoftSecurityEssentials, { version: "win10" }),
+                    React.createElement(WindowsDefender, { version: "win10" }),
                     React.createElement(AntiMalwareTools, { version: "win10" })
                 ),
                 React.createElement(

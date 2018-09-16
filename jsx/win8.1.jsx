@@ -32,7 +32,7 @@ class Windows8Dot1 extends React.Component {
                 </Group>
                 <Group name="Scans">
                     <MicrosoftBaselineSecurityAnalyzer version="win8.1" />
-                    <MicrosoftSecurityEssentials version="win8.1" />
+                    <WindowsDefender version="win8.1" />
                     <AntiMalwareTools version="win8.1" />
                 </Group>
                 <Group name="Filesystem">

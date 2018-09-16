@@ -61,7 +61,7 @@ var Windows8 = function (_React$Component) {
                     Group,
                     { name: "Scans" },
                     React.createElement(MicrosoftBaselineSecurityAnalyzer, { version: "win8" }),
-                    React.createElement(MicrosoftSecurityEssentials, { version: "win8" }),
+                    React.createElement(WindowsDefender, { version: "win8" }),
                     React.createElement(AntiMalwareTools, { version: "win8" })
                 ),
                 React.createElement(

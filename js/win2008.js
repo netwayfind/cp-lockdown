@@ -61,7 +61,7 @@ var WindowsServer2008 = function (_React$Component) {
                     Group,
                     { name: "Scans" },
                     React.createElement(MicrosoftBaselineSecurityAnalyzer, { version: "win2008" }),
-                    React.createElement(MicrosoftSecurityEssentials, { version: "win2008" }),
+                    React.createElement(MicrosoftSafetyScanner, { version: "win2008" }),
                     React.createElement(AntiMalwareTools, { version: "win2008" })
                 ),
                 React.createElement(

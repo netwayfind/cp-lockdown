@@ -1770,7 +1770,7 @@ class MicrosoftBaselineSecurityAnalyzer extends Section {
             return this.option1();
         }
         else if (this.props.version === "win10") {
-            return this.option2();
+            return this.notSupported();
         }
         else if (this.props.version === "win2008") {
             return this.option1();
@@ -1795,12 +1795,35 @@ class MicrosoftBaselineSecurityAnalyzer extends Section {
                     <li><a target="_blank" href="http://www.microsoft.com/en-us/download/details.aspx?id=7558">http://www.microsoft.com/en-us/download/details.aspx?id=7558</a></li>
                     <li>Choose <strong>MBSASetup-x64-EN.msi</strong></li>
                 </ul>
+                <p />
+                Run without security updates check
             </React.Fragment>
         );
     }
 
-    option2() {
+    notSupported() {
         return "Not supported. Program will run, but checks may be wrong.";
+    }
+}
+
+class MicrosoftSafetyScanner extends Section {
+    displayName() {
+        return "Microsoft Safety Scanner";
+    }
+
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                <h3>Download</h3>
+                <ul>
+                    <li><a target="_blank" href="http://www.microsoft.com/security/scanner/en-us/default.aspx">http://www.microsoft.com/security/scanner/en-us/default.aspx</a></li>
+                </ul>
+            </React.Fragment>
+        );
     }
 }
 
@@ -1814,65 +1837,14 @@ class MicrosoftSecurityEssentials extends Section {
     }
 
     render() {
-        if (this.props.version === "win7") {
-            return this.option1();
-        }
-        else if (this.props.version === "win8") {
-            return this.option2();
-        }
-        else if (this.props.version === "win8.1") {
-            return this.option2();
-        }
-        else if (this.props.version === "win10") {
-            return this.option2();
-        }
-        else if (this.props.version === "win2008") {
-            return this.option3();
-        }
-        else if (this.props.version === "win2008r2") {
-            return this.option3();
-        }
-        else if (this.props.version === "win2012") {
-            return this.option3();
-        }
-        else if (this.props.version === "win2016") {
-            return this.option3();
-        }
-        return "unknown";
-    }
-
-    option1() {
         return (
             <React.Fragment>
                 <h3>Download</h3>
                 <ul>
                     <li><a target="_blank" href="http://www.microsoft.com/en-us/download/details.aspx?id=5201">http://www.microsoft.com/en-us/download/details.aspx?id=5201</a></li>
                 </ul>
-            </React.Fragment>
-        );
-    }
-
-    option2() {
-        return (
-            <React.Fragment>
-                Windows Defender replaces Microsoft Security Essentials.
-                <ol>
-                    <li>Press Start button</li>
-                    <li>Type <strong>Windows Defender</strong></li>
-                </ol>
-            </React.Fragment>
-        );
-    }
-
-    option3() {
-        return (
-            <React.Fragment>
-                Not supported for Windows Server.
-                <p></p>
-                Use Microsoft Safety Scanner instead:
-                <ul>
-                    <li><a target="_blank" href="http://www.microsoft.com/security/scanner/en-us/default.aspx">http://www.microsoft.com/security/scanner/en-us/default.aspx</a></li>
-                </ul>
+                <p />
+                Run at least a quick scan, then a full scan.
             </React.Fragment>
         );
     }
@@ -3517,6 +3489,30 @@ class UsersFolder extends Section {
                     <li>Public</li>
                     <li>any user allowed by readme</li>
                 </ul>
+            </React.Fragment>
+        );
+    }
+}
+
+class WindowsDefender extends Section {
+    displayName() {
+        return "Windows Defender";
+    }
+
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                Windows Defender replaces Microsoft Security Essentials.
+                <ol>
+                    <li>Press Start button</li>
+                    <li>Type <strong>Windows Defender</strong></li>
+                </ol>
+                <p />
+                Run at least a quick scan, then a full scan.
             </React.Fragment>
         );
     }

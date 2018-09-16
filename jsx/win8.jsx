@@ -32,7 +32,7 @@ class Windows8 extends React.Component {
                 </Group>
                 <Group name="Scans">
                     <MicrosoftBaselineSecurityAnalyzer version="win8" />
-                    <MicrosoftSecurityEssentials version="win8" />
+                    <WindowsDefender version="win8" />
                     <AntiMalwareTools version="win8" />
                 </Group>
                 <Group name="Filesystem">

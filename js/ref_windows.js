@@ -5079,7 +5079,7 @@ var MicrosoftBaselineSecurityAnalyzer = function (_Section21) {
             } else if (this.props.version === "win8.1") {
                 return this.option1();
             } else if (this.props.version === "win10") {
-                return this.option2();
+                return this.notSupported();
             } else if (this.props.version === "win2008") {
                 return this.option1();
             } else if (this.props.version === "win2008r2") {
@@ -5124,12 +5124,14 @@ var MicrosoftBaselineSecurityAnalyzer = function (_Section21) {
                             "MBSASetup-x64-EN.msi"
                         )
                     )
-                )
+                ),
+                React.createElement("p", null),
+                "Run without security updates check"
             );
         }
     }, {
-        key: "option2",
-        value: function option2() {
+        key: "notSupported",
+        value: function notSupported() {
             return "Not supported. Program will run, but checks may be wrong.";
         }
     }]);
@@ -5137,8 +5139,58 @@ var MicrosoftBaselineSecurityAnalyzer = function (_Section21) {
     return MicrosoftBaselineSecurityAnalyzer;
 }(Section);
 
-var MicrosoftSecurityEssentials = function (_Section22) {
-    _inherits(MicrosoftSecurityEssentials, _Section22);
+var MicrosoftSafetyScanner = function (_Section22) {
+    _inherits(MicrosoftSafetyScanner, _Section22);
+
+    function MicrosoftSafetyScanner() {
+        _classCallCheck(this, MicrosoftSafetyScanner);
+
+        return _possibleConstructorReturn(this, (MicrosoftSafetyScanner.__proto__ || Object.getPrototypeOf(MicrosoftSafetyScanner)).apply(this, arguments));
+    }
+
+    _createClass(MicrosoftSafetyScanner, [{
+        key: "displayName",
+        value: function displayName() {
+            return "Microsoft Safety Scanner";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    "h3",
+                    null,
+                    "Download"
+                ),
+                React.createElement(
+                    "ul",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        React.createElement(
+                            "a",
+                            { target: "_blank", href: "http://www.microsoft.com/security/scanner/en-us/default.aspx" },
+                            "http://www.microsoft.com/security/scanner/en-us/default.aspx"
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return MicrosoftSafetyScanner;
+}(Section);
+
+var MicrosoftSecurityEssentials = function (_Section23) {
+    _inherits(MicrosoftSecurityEssentials, _Section23);
 
     function MicrosoftSecurityEssentials() {
         _classCallCheck(this, MicrosoftSecurityEssentials);
@@ -5159,28 +5211,6 @@ var MicrosoftSecurityEssentials = function (_Section22) {
     }, {
         key: "render",
         value: function render() {
-            if (this.props.version === "win7") {
-                return this.option1();
-            } else if (this.props.version === "win8") {
-                return this.option2();
-            } else if (this.props.version === "win8.1") {
-                return this.option2();
-            } else if (this.props.version === "win10") {
-                return this.option2();
-            } else if (this.props.version === "win2008") {
-                return this.option3();
-            } else if (this.props.version === "win2008r2") {
-                return this.option3();
-            } else if (this.props.version === "win2012") {
-                return this.option3();
-            } else if (this.props.version === "win2016") {
-                return this.option3();
-            }
-            return "unknown";
-        }
-    }, {
-        key: "option1",
-        value: function option1() {
             return React.createElement(
                 React.Fragment,
                 null,
@@ -5201,59 +5231,9 @@ var MicrosoftSecurityEssentials = function (_Section22) {
                             "http://www.microsoft.com/en-us/download/details.aspx?id=5201"
                         )
                     )
-                )
-            );
-        }
-    }, {
-        key: "option2",
-        value: function option2() {
-            return React.createElement(
-                React.Fragment,
-                null,
-                "Windows Defender replaces Microsoft Security Essentials.",
-                React.createElement(
-                    "ol",
-                    null,
-                    React.createElement(
-                        "li",
-                        null,
-                        "Press Start button"
-                    ),
-                    React.createElement(
-                        "li",
-                        null,
-                        "Type ",
-                        React.createElement(
-                            "strong",
-                            null,
-                            "Windows Defender"
-                        )
-                    )
-                )
-            );
-        }
-    }, {
-        key: "option3",
-        value: function option3() {
-            return React.createElement(
-                React.Fragment,
-                null,
-                "Not supported for Windows Server.",
+                ),
                 React.createElement("p", null),
-                "Use Microsoft Safety Scanner instead:",
-                React.createElement(
-                    "ul",
-                    null,
-                    React.createElement(
-                        "li",
-                        null,
-                        React.createElement(
-                            "a",
-                            { target: "_blank", href: "http://www.microsoft.com/security/scanner/en-us/default.aspx" },
-                            "http://www.microsoft.com/security/scanner/en-us/default.aspx"
-                        )
-                    )
-                )
+                "Run at least a quick scan, then a full scan."
             );
         }
     }]);
@@ -5261,8 +5241,8 @@ var MicrosoftSecurityEssentials = function (_Section22) {
     return MicrosoftSecurityEssentials;
 }(Section);
 
-var PasswordPolicy = function (_Section23) {
-    _inherits(PasswordPolicy, _Section23);
+var PasswordPolicy = function (_Section24) {
+    _inherits(PasswordPolicy, _Section24);
 
     function PasswordPolicy() {
         _classCallCheck(this, PasswordPolicy);
@@ -5377,8 +5357,8 @@ var PasswordPolicy = function (_Section23) {
     return PasswordPolicy;
 }(Section);
 
-var Processes = function (_Section24) {
-    _inherits(Processes, _Section24);
+var Processes = function (_Section25) {
+    _inherits(Processes, _Section25);
 
     function Processes() {
         _classCallCheck(this, Processes);
@@ -6460,8 +6440,8 @@ var Processes = function (_Section24) {
     return Processes;
 }(Section);
 
-var ProgramFiles = function (_Section25) {
-    _inherits(ProgramFiles, _Section25);
+var ProgramFiles = function (_Section26) {
+    _inherits(ProgramFiles, _Section26);
 
     function ProgramFiles() {
         _classCallCheck(this, ProgramFiles);
@@ -7147,8 +7127,8 @@ var ProgramFiles = function (_Section25) {
     return ProgramFiles;
 }(Section);
 
-var ProgramFilesx86 = function (_Section26) {
-    _inherits(ProgramFilesx86, _Section26);
+var ProgramFilesx86 = function (_Section27) {
+    _inherits(ProgramFilesx86, _Section27);
 
     function ProgramFilesx86() {
         _classCallCheck(this, ProgramFilesx86);
@@ -7784,8 +7764,8 @@ var ProgramFilesx86 = function (_Section26) {
     return ProgramFilesx86;
 }(Section);
 
-var RemoteAssistanceAndRemoteDesktop = function (_Section27) {
-    _inherits(RemoteAssistanceAndRemoteDesktop, _Section27);
+var RemoteAssistanceAndRemoteDesktop = function (_Section28) {
+    _inherits(RemoteAssistanceAndRemoteDesktop, _Section28);
 
     function RemoteAssistanceAndRemoteDesktop() {
         _classCallCheck(this, RemoteAssistanceAndRemoteDesktop);
@@ -7886,8 +7866,8 @@ var RemoteAssistanceAndRemoteDesktop = function (_Section27) {
     return RemoteAssistanceAndRemoteDesktop;
 }(Section);
 
-var SecurityOptions = function (_Section28) {
-    _inherits(SecurityOptions, _Section28);
+var SecurityOptions = function (_Section29) {
+    _inherits(SecurityOptions, _Section29);
 
     function SecurityOptions() {
         _classCallCheck(this, SecurityOptions);
@@ -7997,8 +7977,8 @@ var SecurityOptions = function (_Section28) {
     return SecurityOptions;
 }(Section);
 
-var ServicePacks = function (_Section29) {
-    _inherits(ServicePacks, _Section29);
+var ServicePacks = function (_Section30) {
+    _inherits(ServicePacks, _Section30);
 
     function ServicePacks() {
         _classCallCheck(this, ServicePacks);
@@ -8291,8 +8271,8 @@ var ServicePacks = function (_Section29) {
     return ServicePacks;
 }(Section);
 
-var Services = function (_Section30) {
-    _inherits(Services, _Section30);
+var Services = function (_Section31) {
+    _inherits(Services, _Section31);
 
     function Services() {
         _classCallCheck(this, Services);
@@ -8403,8 +8383,8 @@ var Services = function (_Section30) {
     return Services;
 }(Section);
 
-var SharedFolders = function (_Section31) {
-    _inherits(SharedFolders, _Section31);
+var SharedFolders = function (_Section32) {
+    _inherits(SharedFolders, _Section32);
 
     function SharedFolders() {
         _classCallCheck(this, SharedFolders);
@@ -8516,8 +8496,8 @@ var SharedFolders = function (_Section31) {
     return SharedFolders;
 }(Section);
 
-var ShowHiddenFilesAndFolders = function (_Section32) {
-    _inherits(ShowHiddenFilesAndFolders, _Section32);
+var ShowHiddenFilesAndFolders = function (_Section33) {
+    _inherits(ShowHiddenFilesAndFolders, _Section33);
 
     function ShowHiddenFilesAndFolders() {
         _classCallCheck(this, ShowHiddenFilesAndFolders);
@@ -8721,8 +8701,8 @@ var ShowHiddenFilesAndFolders = function (_Section32) {
     return ShowHiddenFilesAndFolders;
 }(Section);
 
-var StartupPrograms = function (_Section33) {
-    _inherits(StartupPrograms, _Section33);
+var StartupPrograms = function (_Section34) {
+    _inherits(StartupPrograms, _Section34);
 
     function StartupPrograms() {
         _classCallCheck(this, StartupPrograms);
@@ -9000,8 +8980,8 @@ var StartupPrograms = function (_Section33) {
     return StartupPrograms;
 }(Section);
 
-var TaskManager = function (_Section34) {
-    _inherits(TaskManager, _Section34);
+var TaskManager = function (_Section35) {
+    _inherits(TaskManager, _Section35);
 
     function TaskManager() {
         _classCallCheck(this, TaskManager);
@@ -9162,8 +9142,8 @@ var TaskManager = function (_Section34) {
     return TaskManager;
 }(Section);
 
-var TaskScheduler = function (_Section35) {
-    _inherits(TaskScheduler, _Section35);
+var TaskScheduler = function (_Section36) {
+    _inherits(TaskScheduler, _Section36);
 
     function TaskScheduler() {
         _classCallCheck(this, TaskScheduler);
@@ -9259,8 +9239,8 @@ var TaskScheduler = function (_Section35) {
     return TaskScheduler;
 }(Section);
 
-var UserRightsAssignment = function (_Section36) {
-    _inherits(UserRightsAssignment, _Section36);
+var UserRightsAssignment = function (_Section37) {
+    _inherits(UserRightsAssignment, _Section37);
 
     function UserRightsAssignment() {
         _classCallCheck(this, UserRightsAssignment);
@@ -10117,8 +10097,8 @@ var UserRightsAssignment = function (_Section36) {
     return UserRightsAssignment;
 }(Section);
 
-var UsersFolder = function (_Section37) {
-    _inherits(UsersFolder, _Section37);
+var UsersFolder = function (_Section38) {
+    _inherits(UsersFolder, _Section38);
 
     function UsersFolder() {
         _classCallCheck(this, UsersFolder);
@@ -10199,8 +10179,62 @@ var UsersFolder = function (_Section37) {
     return UsersFolder;
 }(Section);
 
-var WindowsFeatures = function (_Section38) {
-    _inherits(WindowsFeatures, _Section38);
+var WindowsDefender = function (_Section39) {
+    _inherits(WindowsDefender, _Section39);
+
+    function WindowsDefender() {
+        _classCallCheck(this, WindowsDefender);
+
+        return _possibleConstructorReturn(this, (WindowsDefender.__proto__ || Object.getPrototypeOf(WindowsDefender)).apply(this, arguments));
+    }
+
+    _createClass(WindowsDefender, [{
+        key: "displayName",
+        value: function displayName() {
+            return "Windows Defender";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                "Windows Defender replaces Microsoft Security Essentials.",
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Press Start button"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Type ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Windows Defender"
+                        )
+                    )
+                ),
+                React.createElement("p", null),
+                "Run at least a quick scan, then a full scan."
+            );
+        }
+    }]);
+
+    return WindowsDefender;
+}(Section);
+
+var WindowsFeatures = function (_Section40) {
+    _inherits(WindowsFeatures, _Section40);
 
     function WindowsFeatures() {
         _classCallCheck(this, WindowsFeatures);
@@ -10851,8 +10885,8 @@ var WindowsFeatures = function (_Section38) {
     return WindowsFeatures;
 }(Section);
 
-var WindowsFirewall = function (_Section39) {
-    _inherits(WindowsFirewall, _Section39);
+var WindowsFirewall = function (_Section41) {
+    _inherits(WindowsFirewall, _Section41);
 
     function WindowsFirewall() {
         _classCallCheck(this, WindowsFirewall);
@@ -11383,8 +11417,8 @@ var WindowsFirewall = function (_Section39) {
     return WindowsFirewall;
 }(Section);
 
-var WindowsServerRoles = function (_Section40) {
-    _inherits(WindowsServerRoles, _Section40);
+var WindowsServerRoles = function (_Section42) {
+    _inherits(WindowsServerRoles, _Section42);
 
     function WindowsServerRoles() {
         _classCallCheck(this, WindowsServerRoles);
@@ -11467,8 +11501,8 @@ var WindowsServerRoles = function (_Section40) {
     return WindowsServerRoles;
 }(Section);
 
-var WindowsSettings = function (_Section41) {
-    _inherits(WindowsSettings, _Section41);
+var WindowsSettings = function (_Section43) {
+    _inherits(WindowsSettings, _Section43);
 
     function WindowsSettings() {
         _classCallCheck(this, WindowsSettings);
@@ -11524,8 +11558,8 @@ var WindowsSettings = function (_Section41) {
     return WindowsSettings;
 }(Section);
 
-var WindowsUpdate = function (_Section42) {
-    _inherits(WindowsUpdate, _Section42);
+var WindowsUpdate = function (_Section44) {
+    _inherits(WindowsUpdate, _Section44);
 
     function WindowsUpdate() {
         _classCallCheck(this, WindowsUpdate);

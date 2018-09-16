@@ -32,7 +32,7 @@ class WindowsServer2008R2 extends React.Component {
                 </Group>
                 <Group name="Scans">
                     <MicrosoftBaselineSecurityAnalyzer version="win2008r2" />
-                    <MicrosoftSecurityEssentials version="win2008r2" />
+                    <MicrosoftSafetyScanner version="win2008r2" />
                     <AntiMalwareTools version="win2008r2" />
                 </Group>
                 <Group name="Filesystem">

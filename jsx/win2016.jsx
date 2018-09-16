@@ -32,7 +32,7 @@ class WindowsServer2016 extends React.Component {
                 </Group>
                 <Group name="Scans">
                     <MicrosoftBaselineSecurityAnalyzer version="win2016" />
-                    <MicrosoftSecurityEssentials version="win2016" />
+                    <MicrosoftSafetyScanner version="win2016" />
                     <AntiMalwareTools version="win2016" />
                 </Group>
                 <Group name="Filesystem">

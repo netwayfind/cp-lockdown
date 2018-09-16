@@ -32,7 +32,7 @@ class Windows10 extends React.Component {
                 </Group>
                 <Group name="Scans">
                     <MicrosoftBaselineSecurityAnalyzer version="win10" />
-                    <MicrosoftSecurityEssentials version="win10" />
+                    <WindowsDefender version="win10" />
                     <AntiMalwareTools version="win10" />
                 </Group>
                 <Group name="Filesystem">
