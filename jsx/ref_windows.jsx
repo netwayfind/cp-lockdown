@@ -81,6 +81,9 @@ class AdministrativeTools extends Section {
         else if (this.props.version === "win2008") {
             return this.option2();
         }
+        else if (this.props.version === "win2008r2") {
+            return this.option2();
+        }
         else if (this.props.version === "win2012") {
             return this.option1();
         }
@@ -342,6 +345,9 @@ class AutomaticLogin extends Section {
         else if (this.props.version === "win2008") {
             return this.option1();
         }
+        else if (this.props.version === "win2008r2") {
+            return this.option2();
+        }
         else if (this.props.version === "win2012") {
             return this.option3();
         }
@@ -436,6 +442,9 @@ class AutomaticUpdates extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.option4();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option2();
@@ -542,6 +551,9 @@ class CDrive extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.option5();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option3();
@@ -693,6 +705,9 @@ class CommandPrompt extends Section {
         else if (this.props.version === "win2008") {
             return this.option1();
         }
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
+        }
         else if (this.props.version === "win2012") {
             return this.option3();
         }
@@ -762,6 +777,9 @@ class ControlPanel extends Section {
             return this.option3();
         }
         else if (this.props.version === "win2008") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008r2") {
             return this.option1();
         }
         else if (this.props.version === "win2012") {
@@ -855,6 +873,9 @@ class DiskCleanup extends Section {
             return this.option3();
         }
         else if (this.props.version === "win2008") {
+            return this.option4();
+        }
+        else if (this.props.version === "win2008r2") {
             return this.option4();
         }
         else if (this.props.version === "win2012") {
@@ -1036,8 +1057,8 @@ class InternetConnectionSharing extends Section {
         else if (this.props.version === "win10") {
             return this.option1();
         }
-        else if (this.props.version === "win2008") {
-            return this.option2();
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option1();
@@ -1115,6 +1136,9 @@ class InternetExplorer extends Section {
             return this.option2();
         }
         else if (this.props.version === "win2008") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008r2") {
             return this.option1();
         }
         else if (this.props.version === "win2012") {
@@ -1253,6 +1277,9 @@ class LocalUsersAndGroups extends Section {
             return this.option1();
         }
         else if (this.props.version === "win2008") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008r2") {
             return this.option1();
         }
         else if (this.props.version === "win2012") {
@@ -1748,6 +1775,9 @@ class MicrosoftBaselineSecurityAnalyzer extends Section {
         else if (this.props.version === "win2008") {
             return this.option1();
         }
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
+        }
         else if (this.props.version === "win2012") {
             return this.option1();
         }
@@ -1797,6 +1827,9 @@ class MicrosoftSecurityEssentials extends Section {
             return this.option2();
         }
         else if (this.props.version === "win2008") {
+            return this.option3();
+        }
+        else if (this.props.version === "win2008r2") {
             return this.option3();
         }
         else if (this.props.version === "win2012") {
@@ -1902,6 +1935,9 @@ class Processes extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.win2008();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.win2008r2();
         }
         else if (this.props.version === "win2012") {
             return this.win8dot1();
@@ -2129,6 +2165,47 @@ class Processes extends Section {
             </React.Fragment>
         );
     }
+
+    win2008r2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
+                    <li>Go to <strong>Processes</strong> tab</li>
+                    <li>Find and click on <strong>Show processes from all users</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following are Windows processes that should not be stopped. Avoid stopping any required software.
+                <ul>
+                    <li>conhost.exe</li>
+                    <li>csrss.exe</li>
+                    <li>dllhost.exe</li>
+                    <li>dwm.exe</li>
+                    <li>explorer.exe</li>
+                    <li>lsass.exe</li>
+                    <li>lsm.exe</li>
+                    <li>mmc.exe</li>
+                    <li>msdtc.exe</li>
+                    <li>MsMpEng.exe</li>
+                    <li>msseces.exe</li>
+                    <li>MisSrv.exe</li>
+                    <li>services.exe</li>
+                    <li>smss.exe</li>
+                    <li>spoolsv.exe</li>
+                    <li>sppsvc.exe</li>
+                    <li>svchost.exe</li>
+                    <li>System</li>
+                    <li>taskhost.exe</li>
+                    <li>taskmgr.exe</li>
+                    <li>TrustedInstaller.exe</li>
+                    <li>wininit.exe</li>
+                    <li>winlogon.exe</li>
+                    <li>WmiPrvSE.exe</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class ProgramFiles extends Section {
@@ -2155,6 +2232,9 @@ class ProgramFiles extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.win2008();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.win2008r2();
         }
         else if (this.props.version === "win2012") {
             return this.win2012();
@@ -2302,6 +2382,29 @@ class ProgramFiles extends Section {
         );
     }
 
+    win2008r2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
+                    <li>Find and open <strong>Program Files</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Microsoft Baseline Security Analyzer</li>
+                    <li>Microsoft Security Client</li>
+                    <li>Uninstall Information (hidden)</li>
+                    <li>Windows Mail</li>
+                    <li>Windows NT</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
     win2012() {
         return (
             <React.Fragment>
@@ -2348,6 +2451,9 @@ class ProgramFilesx86 extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.win2008();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.win2008r2();
         }
         else if (this.props.version === "win2012") {
             return this.win2012();
@@ -2484,6 +2590,29 @@ class ProgramFilesx86 extends Section {
         );
     }
 
+    win2008r2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
+                    <li>Find and open <strong>Program Files (x86)</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Microsoft Security Client</li>
+                    <li>Microsoft .NET</li>
+                    <li>Uninstall Information (hidden)</li>
+                    <li>Windows Mail</li>
+                    <li>Windows NT</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
     win2012() {
         return (
             <React.Fragment>
@@ -2596,6 +2725,9 @@ class ServicePacks extends Section {
         else if (this.props.version === "win2008") {
             return this.win2008();
         }
+        else if (this.props.version === "win2008r2") {
+            return this.win2008r2();
+        }
         else if (this.props.version === "win2012") {
             return this.none();
         }
@@ -2649,6 +2781,28 @@ class ServicePacks extends Section {
         );
     }
 
+    win2008r2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Start or Windows button</li>
+                    <li>Find and right click <strong>Computer</strong> or <strong>My Computer</strong></li>
+                    <li>Select <strong>Properties</strong></li>
+                    <li>Find the words <strong>Service Pack</strong>
+                        <ul>
+                            <li>if there is none, no service pack is installed</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>For Windows Server 2008 R2, the latest is Service Pack 1</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
     none() {
         return "None";
     }
@@ -2664,31 +2818,6 @@ class Services extends Section {
     }
 
     render() {
-        if (this.props.version === "win7") {
-            return this.option1();
-        }
-        else if (this.props.version === "win8") {
-            return this.option1();
-        }
-        else if (this.props.version === "win8.1") {
-            return this.option1();
-        }
-        else if (this.props.version === "win10") {
-            return this.option1();
-        }
-        else if (this.props.version === "win2008") {
-            return this.option1();
-        }
-        else if (this.props.version === "win2012") {
-            return this.option1();
-        }
-        else if (this.props.version === "win2016") {
-            return this.option1();
-        }
-        return "unknown";
-    }
-
-    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -2778,6 +2907,9 @@ class ShowHiddenFilesAndFolders extends Section {
         else if (this.props.version === "win2008") {
             return this.option1();
         }
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
+        }
         else if (this.props.version === "win2012") {
             return this.option1();
         }
@@ -2850,6 +2982,9 @@ class StartupPrograms extends Section {
             return this.option3();
         }
         else if (this.props.version === "win2008") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008r2") {
             return this.option1();
         }
         else if (this.props.version === "win2012") {
@@ -2954,6 +3089,9 @@ class TaskManager extends Section {
             return this.option2();
         }
         else if (this.props.version === "win2008") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008r2") {
             return this.option1();
         }
         else if (this.props.version === "win2012") {
@@ -3365,31 +3503,6 @@ class UsersFolder extends Section {
     }
 
     render() {
-        if (this.props.version === "win7") {
-            return this.option1();
-        }
-        else if (this.props.version === "win8") {
-            return this.option1();
-        }
-        else if (this.props.version === "win8.1") {
-            return this.option1();
-        }
-        else if (this.props.version === "win10") {
-            return this.option1();
-        }
-        else if (this.props.version === "win2008") {
-            return this.option1();
-        }
-        else if (this.props.version === "win2012") {
-            return this.option1();
-        }
-        else if (this.props.version === "win2016") {
-            return this.option1();
-        }
-        return "unknown";
-    }
-
-    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -3433,6 +3546,9 @@ class WindowsFeatures extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.option4();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.option5();
         }
         else if (this.props.version === "win2012") {
             return this.option3();
@@ -3570,6 +3686,38 @@ class WindowsFeatures extends Section {
             </React.Fragment>
         );
     }
+
+    option5() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
+                    <li>Find and click on <strong>Programs</strong></li>
+                    <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
+                    <li>Under <strong>Server Manager</strong>, find and open <strong>Features</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                By default, no features (0 of 41) are installed
+                <ol>
+                    <li>Check the readme for which features or services should be installed
+                        <ul>
+                            <li>.NET Framework</li>
+                            <li>Group Policy Management</li>
+                            <li>SMTP Server</li>
+                            <li>SNMP Services</li>
+                            <li>Telnet Client</li>
+                            <li>Telnet Server</li>
+                            <li>TFTP Client</li>
+                            <li>Windows Server</li>
+                        </ul>
+                    </li>
+                    <li>Use <strong>Add Features</strong> to add necessary features</li>
+                    <li>Use <strong>Remove Features</strong> to remove unnecessary features</li>
+                </ol>
+            </React.Fragment>
+        );
+    }
 }
 
 class WindowsFirewall extends Section {
@@ -3596,6 +3744,9 @@ class WindowsFirewall extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.option3();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option2();
@@ -3769,6 +3920,9 @@ class WindowsUpdate extends Section {
         }
         else if (this.props.version === "win2008") {
             return this.option3();
+        }
+        else if (this.props.version === "win2008r2") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option1();
