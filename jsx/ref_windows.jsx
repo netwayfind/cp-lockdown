@@ -66,6 +66,31 @@ class AdministrativeTools extends Section {
     }
 
     render() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option1();
+        }
+        else if (this.props.version === "win10") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option2();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2016") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -75,6 +100,18 @@ class AdministrativeTools extends Section {
                     <li>Find and click on <strong>Administrative Tools</strong></li>
                 </ol>
 
+            </React.Fragment>
+        );
+    }
+
+    option2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Start or Windows button</li>
+                    <li>Move mouse over <strong>Administrative Tools</strong></li>
+                </ol>
             </React.Fragment>
         );
     }
@@ -302,6 +339,9 @@ class AutomaticLogin extends Section {
         else if (this.props.version === "win10") {
             return this.option3();
         }
+        else if (this.props.version === "win2008") {
+            return this.option1();
+        }
         else if (this.props.version === "win2012") {
             return this.option3();
         }
@@ -394,6 +434,9 @@ class AutomaticUpdates extends Section {
         else if (this.props.version === "win10") {
             return this.option3();
         }
+        else if (this.props.version === "win2008") {
+            return this.option4();
+        }
         else if (this.props.version === "win2012") {
             return this.option2();
         }
@@ -454,6 +497,25 @@ class AutomaticUpdates extends Section {
     option3() {
         return "Automatic updates are enabled by default";
     }
+
+    option4() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
+                    <li>Find and click on <strong>System</strong></li>
+                    <li>Find <strong>Windows Update</strong></li>
+                    <li>Find and click on <strong>Turn automatic updating on or off</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Install updates automatically (recommended)</li>
+                    <li>Install new updates [ Every day ] at [ 3:00 AM ]</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class CDrive extends Section {
@@ -477,6 +539,9 @@ class CDrive extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option4();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option5();
         }
         else if (this.props.version === "win2012") {
             return this.option3();
@@ -577,6 +642,30 @@ class CDrive extends Section {
             </React.Fragment>
         );
     }
+
+    option5() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Start or Windows button</li>
+                    <li>Find and click on <strong>Computer</strong></li>
+                    <li>Find and double click on <strong>Local Disk (C:)</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                These are the default files and folders. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>PerfLogs</li>
+                    <li>{React.createElement(ProgramFiles).type.prototype.getLink()}</li>
+                    <li>{React.createElement(ProgramFilesx86).type.prototype.getLink()}</li>
+                    <li>ProgramData (hidden)</li>
+                    <li>{React.createElement(UsersFolder).type.prototype.getLink()}</li>
+                    <li>Windows</li>
+                    <li>BOOTSECT.BAK</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class CommandPrompt extends Section {
@@ -600,6 +689,9 @@ class CommandPrompt extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option3();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option3();
@@ -668,6 +760,9 @@ class ControlPanel extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option3();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option3();
@@ -758,6 +853,9 @@ class DiskCleanup extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option3();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option4();
         }
         else if (this.props.version === "win2012") {
             return this.option4();
@@ -926,6 +1024,31 @@ class InternetConnectionSharing extends Section {
     }
 
     render() {
+        if (this.props.version === "win7") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8") {
+            return this.option1();
+        }
+        else if (this.props.version === "win8.1") {
+            return this.option1();
+        }
+        else if (this.props.version === "win10") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option2();
+        }
+        else if (this.props.version === "win2012") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2016") {
+            return this.option1();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -943,6 +1066,27 @@ class InternetConnectionSharing extends Section {
                     <li>[ ] Allow other network users to connect through this computer's Internet connection</li>
                 </ol>
 
+            </React.Fragment>
+        );
+    }
+
+    option2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
+                    <li>Find and click on <strong>Network and Internet</strong></li>
+                    <li>Find and click on <strong>Network and Sharing Center</strong></li>
+                    <li>Find and click on <strong>Manage network connections</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                For each Local Area Connection or Wireless Network Connection
+                <ol>
+                    <li>Right click and select <strong>Properties</strong></li>
+                    <li>Go to the <strong>Sharing</strong> tab, if any</li>
+                    <li>[ ] Allow other network users to connect through this computer's Internet connection</li>
+                </ol>
             </React.Fragment>
         );
     }
@@ -969,6 +1113,9 @@ class InternetExplorer extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option2();
@@ -1103,6 +1250,9 @@ class LocalUsersAndGroups extends Section {
             return this.option1();
         }
         else if (this.props.version === "win10") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008") {
             return this.option1();
         }
         else if (this.props.version === "win2012") {
@@ -1595,6 +1745,9 @@ class MicrosoftBaselineSecurityAnalyzer extends Section {
         else if (this.props.version === "win10") {
             return this.option2();
         }
+        else if (this.props.version === "win2008") {
+            return this.option1();
+        }
         else if (this.props.version === "win2012") {
             return this.option1();
         }
@@ -1642,6 +1795,9 @@ class MicrosoftSecurityEssentials extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option3();
         }
         else if (this.props.version === "win2012") {
             return this.option3();
@@ -1743,6 +1899,9 @@ class Processes extends Section {
         }
         else if (this.props.version === "win10") {
             return this.win10();
+        }
+        else if (this.props.version === "win2008") {
+            return this.win2008();
         }
         else if (this.props.version === "win2012") {
             return this.win8dot1();
@@ -1937,6 +2096,39 @@ class Processes extends Section {
             </React.Fragment>
         );
     }
+
+    win2008() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(TaskManager).type.prototype.getLink()}</li>
+                    <li>Go to <strong>Processes</strong> tab</li>
+                    <li>Find and click on <strong>Show processes from all users</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following are Windows processes that should not be stopped. Avoid stopping any required software.
+                <ul>
+                    <li>csrss.exe</li>
+                    <li>dwm.exe</li>
+                    <li>explorer.exe</li>
+                    <li>lsass.exe</li>
+                    <li>lsm.exe</li>
+                    <li>mmc.exe</li>
+                    <li>msdtc.exe</li>
+                    <li>services.exe</li>
+                    <li>smss.exe</li>
+                    <li>spoolsv.exe</li>
+                    <li>svchost.exe</li>
+                    <li>System</li>
+                    <li>taskeng.exe</li>
+                    <li>taskmgr.exe</li>
+                    <li>wininit.exe</li>
+                    <li>winlogon.exe</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class ProgramFiles extends Section {
@@ -1960,6 +2152,9 @@ class ProgramFiles extends Section {
         }
         else if (this.props.version === "win10") {
             return this.win10();
+        }
+        else if (this.props.version === "win2008") {
+            return this.win2008();
         }
         else if (this.props.version === "win2012") {
             return this.win2012();
@@ -2085,6 +2280,28 @@ class ProgramFiles extends Section {
         );
     }
 
+    win2008() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
+                    <li>Find and open <strong>Program Files</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Packaged Programs</li>
+                    <li>Uninstall Information (hidden)</li>
+                    <li>Windows Mail</li>
+                    <li>Windows NT</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
     win2012() {
         return (
             <React.Fragment>
@@ -2128,6 +2345,9 @@ class ProgramFilesx86 extends Section {
         }
         else if (this.props.version === "win10") {
             return this.win10();
+        }
+        else if (this.props.version === "win2008") {
+            return this.win2008();
         }
         else if (this.props.version === "win2012") {
             return this.win2012();
@@ -2243,6 +2463,27 @@ class ProgramFilesx86 extends Section {
         );
     }
 
+    win2008() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(CDrive).type.prototype.getLink()}</li>
+                    <li>Find and open <strong>Program Files (x86)</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                The following folders are safe to leave alone. Carefully inspect all other folders and files not in the following list.
+                <ul>
+                    <li>Common Files</li>
+                    <li>Internet Explorer</li>
+                    <li>Uninstall Information (hidden)</li>
+                    <li>Windows Mail</li>
+                    <li>Windows NT</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
     win2012() {
         return (
             <React.Fragment>
@@ -2352,6 +2593,9 @@ class ServicePacks extends Section {
         else if (this.props.version === "win10") {
             return this.none();
         }
+        else if (this.props.version === "win2008") {
+            return this.win2008();
+        }
         else if (this.props.version === "win2012") {
             return this.none();
         }
@@ -2383,6 +2627,28 @@ class ServicePacks extends Section {
         );
     }
 
+    win2008() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press Start or Windows button</li>
+                    <li>Find and right click <strong>Computer</strong> or <strong>My Computer</strong></li>
+                    <li>Select <strong>Properties</strong></li>
+                    <li>Find the words <strong>Service Pack</strong>
+                        <ul>
+                            <li>if there is none, no service pack is installed</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>For Windows Server 2008, the latest is Service Pack 2</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
     none() {
         return "None";
     }
@@ -2408,6 +2674,9 @@ class Services extends Section {
             return this.option1();
         }
         else if (this.props.version === "win10") {
+            return this.option1();
+        }
+        else if (this.props.version === "win2008") {
             return this.option1();
         }
         else if (this.props.version === "win2012") {
@@ -2506,6 +2775,9 @@ class ShowHiddenFilesAndFolders extends Section {
         else if (this.props.version === "win10") {
             return this.option2();
         }
+        else if (this.props.version === "win2008") {
+            return this.option1();
+        }
         else if (this.props.version === "win2012") {
             return this.option1();
         }
@@ -2576,6 +2848,9 @@ class StartupPrograms extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option3();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option4();
@@ -2677,6 +2952,9 @@ class TaskManager extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option1();
         }
         else if (this.props.version === "win2012") {
             return this.option2();
@@ -3099,6 +3377,9 @@ class UsersFolder extends Section {
         else if (this.props.version === "win10") {
             return this.option1();
         }
+        else if (this.props.version === "win2008") {
+            return this.option1();
+        }
         else if (this.props.version === "win2012") {
             return this.option1();
         }
@@ -3149,6 +3430,9 @@ class WindowsFeatures extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option4();
         }
         else if (this.props.version === "win2012") {
             return this.option3();
@@ -3253,6 +3537,39 @@ class WindowsFeatures extends Section {
             </React.Fragment>
         );
     }
+
+    option4() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
+                    <li>Find and click on <strong>Programs</strong></li>
+                    <li>Find <strong>Programs and Features</strong></li>
+                    <li>Find and click on <strong>Turn on Windows features on or off</strong></li>
+                    <li>Under <strong>Server Manager</strong>, find and open <strong>Features</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                By default, no features (0 of 41) are installed
+                <ol>
+                    <li>Check the readme for which features or services should be installed
+                        <ul>
+                            <li>.NET Framework</li>
+                            <li>Group Policy Management</li>
+                            <li>SMTP Server</li>
+                            <li>SNMP Services</li>
+                            <li>Telnet Client</li>
+                            <li>Telnet Server</li>
+                            <li>TFTP Client</li>
+                            <li>WINS Server</li>
+                        </ul>
+                    </li>
+                    <li>Use <strong>Add Features</strong> to add necessary features</li>
+                    <li>Use <strong>Remove Features</strong> to remove unnecessary features</li>
+                </ol>
+            </React.Fragment>
+        );
+    }
 }
 
 class WindowsFirewall extends Section {
@@ -3276,6 +3593,9 @@ class WindowsFirewall extends Section {
         }
         else if (this.props.version === "win10") {
             return this.option2();
+        }
+        else if (this.props.version === "win2008") {
+            return this.option3();
         }
         else if (this.props.version === "win2012") {
             return this.option2();
@@ -3367,6 +3687,40 @@ class WindowsFirewall extends Section {
             </React.Fragment>
         );
     }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
+                    <li>Find and click on <strong>Security</strong></li>
+                    <li>Find and click on <strong>Windows Firewall</strong></li>
+                    <li>Find and click on <strong>Turn Windows Firewall on or off</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                <ul>
+                    <li>Under the General tab
+                        <ul>
+                            <li>[x] On (recommended)</li>
+                            <li>[ ] Block all incoming connections</li>
+                        </ul>
+                    </li>
+                    <li>Under the Exceptions tab
+                        <ul>
+                            <li>Only Core Networking and any required programs or services should have checkmarks</li>
+                            <li>Uncheck all other programs and features</li>
+                        </ul>
+                    </li>
+                    <li>Under the Advanced tab
+                        <ul>
+                            <li>Put a checkmark on all Network connections</li>
+                        </ul>
+                    </li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class WindowsSettings extends Section {
@@ -3413,6 +3767,9 @@ class WindowsUpdate extends Section {
         else if (this.props.version === "win10") {
             return this.option2();
         }
+        else if (this.props.version === "win2008") {
+            return this.option3();
+        }
         else if (this.props.version === "win2012") {
             return this.option1();
         }
@@ -3449,6 +3806,26 @@ class WindowsUpdate extends Section {
                 <ol>
                     <li>Open {React.createElement(WindowsSettings).type.prototype.getLink()}</li>
                     <li>Find <strong>Update &amp; Security</strong></li>
+                    <li>Find <strong>Windows Update</strong></li>
+                </ol>
+                <h3>Settings</h3>
+                <ol>
+                    <li>Find and click on <strong>Check for Updates</strong></li>
+                    <li>If there are any critical or important updates, click on <strong>Install Updates</strong></li>
+                    <li>Wait for updates to finish</li>
+                    <li>Repeat until no remaining critical and important updates</li>
+                </ol>
+            </React.Fragment>
+        );
+    }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(ControlPanel).type.prototype.getLink()}</li>
+                    <li>Find and click on <strong>Security</strong></li>
                     <li>Find <strong>Windows Update</strong></li>
                 </ol>
                 <h3>Settings</h3>
