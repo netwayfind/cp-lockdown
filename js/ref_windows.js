@@ -11383,8 +11383,92 @@ var WindowsFirewall = function (_Section39) {
     return WindowsFirewall;
 }(Section);
 
-var WindowsSettings = function (_Section40) {
-    _inherits(WindowsSettings, _Section40);
+var WindowsServerRoles = function (_Section40) {
+    _inherits(WindowsServerRoles, _Section40);
+
+    function WindowsServerRoles() {
+        _classCallCheck(this, WindowsServerRoles);
+
+        return _possibleConstructorReturn(this, (WindowsServerRoles.__proto__ || Object.getPrototypeOf(WindowsServerRoles)).apply(this, arguments));
+    }
+
+    _createClass(WindowsServerRoles, [{
+        key: "displayName",
+        value: function displayName() {
+            return "Windows Server Roles";
+        }
+    }, {
+        key: "getLink",
+        value: function getLink() {
+            return React.createElement(SectionLink, { section: this });
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                "By default, no roles are installed",
+                React.createElement(
+                    "ol",
+                    null,
+                    React.createElement(
+                        "li",
+                        null,
+                        "Open ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Server Manager"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Find and double click on ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Roles"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Check the readme for which roles should be installed"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Use ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Add Roles"
+                        ),
+                        " to add necessary server roles"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Use ",
+                        React.createElement(
+                            "strong",
+                            null,
+                            "Remove Roles"
+                        ),
+                        " to remove unnecessary server roles"
+                    )
+                )
+            );
+        }
+    }]);
+
+    return WindowsServerRoles;
+}(Section);
+
+var WindowsSettings = function (_Section41) {
+    _inherits(WindowsSettings, _Section41);
 
     function WindowsSettings() {
         _classCallCheck(this, WindowsSettings);
@@ -11440,8 +11524,8 @@ var WindowsSettings = function (_Section40) {
     return WindowsSettings;
 }(Section);
 
-var WindowsUpdate = function (_Section41) {
-    _inherits(WindowsUpdate, _Section41);
+var WindowsUpdate = function (_Section42) {
+    _inherits(WindowsUpdate, _Section42);
 
     function WindowsUpdate() {
         _classCallCheck(this, WindowsUpdate);

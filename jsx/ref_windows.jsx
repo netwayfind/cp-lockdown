@@ -3874,6 +3874,31 @@ class WindowsFirewall extends Section {
     }
 }
 
+class WindowsServerRoles extends Section {
+    displayName() {
+        return "Windows Server Roles";
+    }
+
+    getLink() {
+        return <SectionLink section={this} />
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                By default, no roles are installed
+                <ol>
+                    <li>Open <strong>Server Manager</strong></li>
+                    <li>Find and double click on <strong>Roles</strong></li>
+                    <li>Check the readme for which roles should be installed</li>
+                    <li>Use <strong>Add Roles</strong> to add necessary server roles</li>
+                    <li>Use <strong>Remove Roles</strong> to remove unnecessary server roles</li>
+                </ol>
+            </React.Fragment>
+        );
+    }
+}
+
 class WindowsSettings extends Section {
     displayName() {
         return "Windows Settings";

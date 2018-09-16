@@ -84,7 +84,8 @@ var WindowsServer2012 = function (_React$Component) {
                 React.createElement(
                     Group,
                     { name: "Configuration" },
-                    React.createElement(InternetExplorer, { version: "win2012" })
+                    React.createElement(InternetExplorer, { version: "win2012" }),
+                    React.createElement(WindowsServerRoles, { version: "win2012" })
                 ),
                 React.createElement(
                     Group,

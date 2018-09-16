@@ -50,6 +50,7 @@ class WindowsServer2016 extends React.Component {
                 </Group>
                 <Group name="Configuration">
                     <InternetExplorer version="win2016" />
+                    <WindowsServerRoles version="win2016" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win2016" />

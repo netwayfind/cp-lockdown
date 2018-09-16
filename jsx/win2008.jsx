@@ -50,6 +50,7 @@ class WindowsServer2008 extends React.Component {
                 </Group>
                 <Group name="Configuration">
                     <InternetExplorer version="win2008" />
+                    <WindowsServerRoles version="win2008" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win2008" />
