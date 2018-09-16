@@ -12,17 +12,14 @@ class Windows8Dot1 extends React.Component {
                     <StartupPrograms version="win8.1" />
                     <Services version="win8.1" />
                     <TaskScheduler version="win8.1" />
-                    <InternetExplorer version="win8.1" />
                     <DiskCleanup version="win8.1" />
                 </Group>
-                <Group name="Network Resources">
+                <Group name="Networking">
                     <InternetConnectionSharing version="win8.1" />
-                    <SharedFolders version="win8.1" />
-                    <CrowdInspect version="win8.1" />
-                </Group>
-                <Group name="Remote Access">
                     <RemoteAssistanceAndRemoteDesktop version="win8.1" />
                     <WindowsFirewall version="win8.1" />
+                    <SharedFolders version="win8.1" />
+                    <CrowdInspect version="win8.1" />
                 </Group>
                 <Group name="Policies">
                     <PasswordPolicy version="win8.1" />
@@ -47,9 +44,12 @@ class Windows8Dot1 extends React.Component {
                     <HostsFile version="win8.1" />
                 </Group>
                 <Group name="Updates">
-                    <AutomaticUpdates version="win8.1" />
                     <ServicePacks version="win8.1" />
+                    <AutomaticUpdates version="win8.1" />
                     <WindowsUpdate version="win8.1" />
+                </Group>
+                <Group name="Configuration">
+                    <InternetExplorer version="win8.1" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win8.1" />

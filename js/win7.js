@@ -35,21 +35,16 @@ var Windows7 = function (_React$Component) {
                     React.createElement(StartupPrograms, { version: "win7" }),
                     React.createElement(Services, { version: "win7" }),
                     React.createElement(TaskScheduler, { version: "win7" }),
-                    React.createElement(InternetExplorer, { version: "win7" }),
                     React.createElement(DiskCleanup, { version: "win7" })
                 ),
                 React.createElement(
                     Group,
-                    { name: "Network Resources" },
+                    { name: "Networking" },
                     React.createElement(InternetConnectionSharing, { version: "win7" }),
+                    React.createElement(RemoteAssistanceAndRemoteDesktop, { version: "win7" }),
+                    React.createElement(WindowsFirewall, { version: "win7" }),
                     React.createElement(SharedFolders, { version: "win7" }),
                     React.createElement(CrowdInspect, { version: "win7" })
-                ),
-                React.createElement(
-                    Group,
-                    { name: "Remote Access" },
-                    React.createElement(RemoteAssistanceAndRemoteDesktop, { version: "win7" }),
-                    React.createElement(WindowsFirewall, { version: "win7" })
                 ),
                 React.createElement(
                     Group,
@@ -82,9 +77,14 @@ var Windows7 = function (_React$Component) {
                 React.createElement(
                     Group,
                     { name: "Updates" },
-                    React.createElement(AutomaticUpdates, { version: "win7" }),
                     React.createElement(ServicePacks, { version: "win7" }),
+                    React.createElement(AutomaticUpdates, { version: "win7" }),
                     React.createElement(WindowsUpdate, { version: "win7" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Configuration" },
+                    React.createElement(InternetExplorer, { version: "win7" })
                 ),
                 React.createElement(
                     Group,

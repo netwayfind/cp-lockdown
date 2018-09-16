@@ -12,17 +12,14 @@ class WindowsServer2016 extends React.Component {
                     <StartupPrograms version="win2016" />
                     <Services version="win2016" />
                     <TaskScheduler version="win2016" />
-                    <InternetExplorer version="win2016" />
                     <DiskCleanup version="win2016" />
                 </Group>
-                <Group name="Network Resources">
+                <Group name="Networking">
                     <InternetConnectionSharing version="win2016" />
-                    <SharedFolders version="win2016" />
-                    <CrowdInspect version="win2016" />
-                </Group>
-                <Group name="Remote Access">
                     <RemoteAssistanceAndRemoteDesktop version="win2016" />
                     <WindowsFirewall version="win2016" />
+                    <SharedFolders version="win2016" />
+                    <CrowdInspect version="win2016" />
                 </Group>
                 <Group name="Policies">
                     <PasswordPolicy version="win2016" />
@@ -47,9 +44,12 @@ class WindowsServer2016 extends React.Component {
                     <HostsFile version="win2016" />
                 </Group>
                 <Group name="Updates">
-                    <AutomaticUpdates version="win2016" />
                     <ServicePacks version="win2016" />
+                    <AutomaticUpdates version="win2016" />
                     <WindowsUpdate version="win2016" />
+                </Group>
+                <Group name="Configuration">
+                    <InternetExplorer version="win2016" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win2016" />

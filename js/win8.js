@@ -35,21 +35,16 @@ var Windows8 = function (_React$Component) {
                     React.createElement(StartupPrograms, { version: "win8" }),
                     React.createElement(Services, { version: "win8" }),
                     React.createElement(TaskScheduler, { version: "win8" }),
-                    React.createElement(InternetExplorer, { version: "win8" }),
                     React.createElement(DiskCleanup, { version: "win8" })
                 ),
                 React.createElement(
                     Group,
-                    { name: "Network Resources" },
+                    { name: "Networking" },
                     React.createElement(InternetConnectionSharing, { version: "win8" }),
+                    React.createElement(RemoteAssistanceAndRemoteDesktop, { version: "win8" }),
+                    React.createElement(WindowsFirewall, { version: "win8" }),
                     React.createElement(SharedFolders, { version: "win8" }),
                     React.createElement(CrowdInspect, { version: "win8" })
-                ),
-                React.createElement(
-                    Group,
-                    { name: "Remote Access" },
-                    React.createElement(RemoteAssistanceAndRemoteDesktop, { version: "win8" }),
-                    React.createElement(WindowsFirewall, { version: "win8" })
                 ),
                 React.createElement(
                     Group,
@@ -82,9 +77,14 @@ var Windows8 = function (_React$Component) {
                 React.createElement(
                     Group,
                     { name: "Updates" },
-                    React.createElement(AutomaticUpdates, { version: "win8" }),
                     React.createElement(ServicePacks, { version: "win8" }),
+                    React.createElement(AutomaticUpdates, { version: "win8" }),
                     React.createElement(WindowsUpdate, { version: "win8" })
+                ),
+                React.createElement(
+                    Group,
+                    { name: "Configuration" },
+                    React.createElement(InternetExplorer, { version: "win8" })
                 ),
                 React.createElement(
                     Group,

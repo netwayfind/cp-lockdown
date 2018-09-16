@@ -12,17 +12,14 @@ class Windows8 extends React.Component {
                     <StartupPrograms version="win8" />
                     <Services version="win8" />
                     <TaskScheduler version="win8" />
-                    <InternetExplorer version="win8" />
                     <DiskCleanup version="win8" />
                 </Group>
-                <Group name="Network Resources">
+                <Group name="Networking">
                     <InternetConnectionSharing version="win8" />
-                    <SharedFolders version="win8" />
-                    <CrowdInspect version="win8" />
-                </Group>
-                <Group name="Remote Access">
                     <RemoteAssistanceAndRemoteDesktop version="win8" />
                     <WindowsFirewall version="win8" />
+                    <SharedFolders version="win8" />
+                    <CrowdInspect version="win8" />
                 </Group>
                 <Group name="Policies">
                     <PasswordPolicy version="win8" />
@@ -47,9 +44,12 @@ class Windows8 extends React.Component {
                     <HostsFile version="win8" />
                 </Group>
                 <Group name="Updates">
-                    <AutomaticUpdates version="win8" />
                     <ServicePacks version="win8" />
+                    <AutomaticUpdates version="win8" />
                     <WindowsUpdate version="win8" />
+                </Group>
+                <Group name="Configuration">
+                    <InternetExplorer version="win8" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win8" />

@@ -12,17 +12,14 @@ class Windows10 extends React.Component {
                     <StartupPrograms version="win10" />
                     <Services version="win10" />
                     <TaskScheduler version="win10" />
-                    <InternetExplorer version="win10" />
                     <DiskCleanup version="win10" />
                 </Group>
-                <Group name="Network Resources">
+                <Group name="Networking">
                     <InternetConnectionSharing version="win10" />
-                    <SharedFolders version="win10" />
-                    <CrowdInspect version="win10" />
-                </Group>
-                <Group name="Remote Access">
                     <RemoteAssistanceAndRemoteDesktop version="win10" />
                     <WindowsFirewall version="win10" />
+                    <SharedFolders version="win10" />
+                    <CrowdInspect version="win10" />
                 </Group>
                 <Group name="Policies">
                     <PasswordPolicy version="win10" />
@@ -47,9 +44,12 @@ class Windows10 extends React.Component {
                     <HostsFile version="win10" />
                 </Group>
                 <Group name="Updates">
-                    <AutomaticUpdates version="win10" />
                     <ServicePacks version="win10" />
+                    <AutomaticUpdates version="win10" />
                     <WindowsUpdate version="win10" />
+                </Group>
+                <Group name="Configuration">
+                    <InternetExplorer version="win10" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win10" />

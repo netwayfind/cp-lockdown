@@ -12,17 +12,14 @@ class Windows7 extends React.Component {
                     <StartupPrograms version="win7" />
                     <Services version="win7" />
                     <TaskScheduler version="win7" />
-                    <InternetExplorer version="win7" />
                     <DiskCleanup version="win7" />
                 </Group>
-                <Group name="Network Resources">
+                <Group name="Networking">
                     <InternetConnectionSharing version="win7" />
-                    <SharedFolders version="win7" />
-                    <CrowdInspect version="win7" />
-                </Group>
-                <Group name="Remote Access">
                     <RemoteAssistanceAndRemoteDesktop version="win7" />
                     <WindowsFirewall version="win7" />
+                    <SharedFolders version="win7" />
+                    <CrowdInspect version="win7" />
                 </Group>
                 <Group name="Policies">
                     <PasswordPolicy version="win7" />
@@ -47,9 +44,12 @@ class Windows7 extends React.Component {
                     <HostsFile version="win7" />
                 </Group>
                 <Group name="Updates">
-                    <AutomaticUpdates version="win7" />
                     <ServicePacks version="win7" />
+                    <AutomaticUpdates version="win7" />
                     <WindowsUpdate version="win7" />
+                </Group>
+                <Group name="Configuration">
+                    <InternetExplorer version="win7" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win7" />

@@ -12,17 +12,14 @@ class WindowsServer2008R2 extends React.Component {
                     <StartupPrograms version="win2008r2" />
                     <Services version="win2008r2" />
                     <TaskScheduler version="win2008r2" />
-                    <InternetExplorer version="win2008r2" />
                     <DiskCleanup version="win2008r2" />
                 </Group>
-                <Group name="Network Resources">
+                <Group name="Networking">
                     <InternetConnectionSharing version="win2008r2" />
-                    <SharedFolders version="win2008r2" />
-                    <CrowdInspect version="win2008r2" />
-                </Group>
-                <Group name="Remote Access">
                     <RemoteAssistanceAndRemoteDesktop version="win2008r2" />
                     <WindowsFirewall version="win2008r2" />
+                    <SharedFolders version="win2008r2" />
+                    <CrowdInspect version="win2008r2" />
                 </Group>
                 <Group name="Policies">
                     <PasswordPolicy version="win2008r2" />
@@ -47,9 +44,12 @@ class WindowsServer2008R2 extends React.Component {
                     <HostsFile version="win2008r2" />
                 </Group>
                 <Group name="Updates">
-                    <AutomaticUpdates version="win2008r2" />
                     <ServicePacks version="win2008r2" />
+                    <AutomaticUpdates version="win2008r2" />
                     <WindowsUpdate version="win2008r2" />
+                </Group>
+                <Group name="Configuration">
+                    <InternetExplorer version="win2008r2" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win2008r2" />

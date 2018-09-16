@@ -12,17 +12,14 @@ class WindowsServer2012 extends React.Component {
                     <StartupPrograms version="win2012" />
                     <Services version="win2012" />
                     <TaskScheduler version="win2012" />
-                    <InternetExplorer version="win2012" />
                     <DiskCleanup version="win2012" />
                 </Group>
-                <Group name="Network Resources">
+                <Group name="Networking">
                     <InternetConnectionSharing version="win2012" />
-                    <SharedFolders version="win2012" />
-                    <CrowdInspect version="win2012" />
-                </Group>
-                <Group name="Remote Access">
                     <RemoteAssistanceAndRemoteDesktop version="win2012" />
                     <WindowsFirewall version="win2012" />
+                    <SharedFolders version="win2012" />
+                    <CrowdInspect version="win2012" />
                 </Group>
                 <Group name="Policies">
                     <PasswordPolicy version="win2012" />
@@ -47,9 +44,12 @@ class WindowsServer2012 extends React.Component {
                     <HostsFile version="win2012" />
                 </Group>
                 <Group name="Updates">
-                    <AutomaticUpdates version="win2012" />
                     <ServicePacks version="win2012" />
+                    <AutomaticUpdates version="win2012" />
                     <WindowsUpdate version="win2012" />
+                </Group>
+                <Group name="Configuration">
+                    <InternetExplorer version="win2012" />
                 </Group>
                 <Group name="Logs">
                     <EventViewer version="win2012" />
