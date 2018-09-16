@@ -46,8 +46,7 @@ var Ubuntu1604 = function (_React$Component) {
                     Group,
                     { name: "Scans" },
                     React.createElement(Chkrootkit, { version: "ubuntu16.04" }),
-                    React.createElement(Rkhunter, { version: "ubuntu16.04" }),
-                    React.createElement(Lynis, { version: "ubuntu16.04" })
+                    React.createElement(Rkhunter, { version: "ubuntu16.04" })
                 ),
                 React.createElement(
                     Group,

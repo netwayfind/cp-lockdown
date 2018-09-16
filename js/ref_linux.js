@@ -2007,66 +2007,8 @@ var LibpamCracklib = function (_Section16) {
     return LibpamCracklib;
 }(Section);
 
-var Lynis = function (_Section17) {
-    _inherits(Lynis, _Section17);
-
-    function Lynis() {
-        _classCallCheck(this, Lynis);
-
-        return _possibleConstructorReturn(this, (Lynis.__proto__ || Object.getPrototypeOf(Lynis)).apply(this, arguments));
-    }
-
-    _createClass(Lynis, [{
-        key: "displayName",
-        value: function displayName() {
-            return "lynis";
-        }
-    }, {
-        key: "getLink",
-        value: function getLink() {
-            return React.createElement(SectionLink, { section: this });
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "ol",
-                null,
-                React.createElement(
-                    "li",
-                    null,
-                    "Open ",
-                    React.createElement(Terminal).type.prototype.getLink()
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    "sudo apt-get install lynis"
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    "Follow installation instructions"
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    "sudo lynis -Q"
-                ),
-                React.createElement(
-                    "li",
-                    null,
-                    "After scan completes, review findings."
-                )
-            );
-        }
-    }]);
-
-    return Lynis;
-}(Section);
-
-var NetworkConnections = function (_Section18) {
-    _inherits(NetworkConnections, _Section18);
+var NetworkConnections = function (_Section17) {
+    _inherits(NetworkConnections, _Section17);
 
     function NetworkConnections() {
         _classCallCheck(this, NetworkConnections);
@@ -2159,8 +2101,8 @@ var NetworkConnections = function (_Section18) {
     return NetworkConnections;
 }(Section);
 
-var PasswordPolicy = function (_Section19) {
-    _inherits(PasswordPolicy, _Section19);
+var PasswordPolicy = function (_Section18) {
+    _inherits(PasswordPolicy, _Section18);
 
     function PasswordPolicy() {
         _classCallCheck(this, PasswordPolicy);
@@ -2345,8 +2287,8 @@ var PasswordPolicy = function (_Section19) {
     return PasswordPolicy;
 }(Section);
 
-var Rkhunter = function (_Section20) {
-    _inherits(Rkhunter, _Section20);
+var Rkhunter = function (_Section19) {
+    _inherits(Rkhunter, _Section19);
 
     function Rkhunter() {
         _classCallCheck(this, Rkhunter);
@@ -2417,8 +2359,8 @@ var Rkhunter = function (_Section20) {
     return Rkhunter;
 }(Section);
 
-var Services = function (_Section21) {
-    _inherits(Services, _Section21);
+var Services = function (_Section20) {
+    _inherits(Services, _Section20);
 
     function Services() {
         _classCallCheck(this, Services);
@@ -2839,8 +2781,8 @@ var Services = function (_Section21) {
     return Services;
 }(Section);
 
-var Sudo = function (_Section22) {
-    _inherits(Sudo, _Section22);
+var Sudo = function (_Section21) {
+    _inherits(Sudo, _Section21);
 
     function Sudo() {
         _classCallCheck(this, Sudo);
@@ -2955,8 +2897,8 @@ var Sudo = function (_Section22) {
     return Sudo;
 }(Section);
 
-var SystemLog = function (_Section23) {
-    _inherits(SystemLog, _Section23);
+var SystemLog = function (_Section22) {
+    _inherits(SystemLog, _Section22);
 
     function SystemLog() {
         _classCallCheck(this, SystemLog);
@@ -3036,8 +2978,8 @@ var SystemLog = function (_Section23) {
     return SystemLog;
 }(Section);
 
-var SystemSettings = function (_Section24) {
-    _inherits(SystemSettings, _Section24);
+var SystemSettings = function (_Section23) {
+    _inherits(SystemSettings, _Section23);
 
     function SystemSettings() {
         _classCallCheck(this, SystemSettings);
@@ -3087,8 +3029,8 @@ var SystemSettings = function (_Section24) {
     return SystemSettings;
 }(Section);
 
-var Terminal = function (_Section25) {
-    _inherits(Terminal, _Section25);
+var Terminal = function (_Section24) {
+    _inherits(Terminal, _Section24);
 
     function Terminal() {
         _classCallCheck(this, Terminal);
@@ -3176,8 +3118,8 @@ var Terminal = function (_Section25) {
     return Terminal;
 }(Section);
 
-var Updates = function (_Section26) {
-    _inherits(Updates, _Section26);
+var Updates = function (_Section25) {
+    _inherits(Updates, _Section25);
 
     function Updates() {
         _classCallCheck(this, Updates);
@@ -3566,8 +3508,8 @@ var Updates = function (_Section26) {
     return Updates;
 }(Section);
 
-var Users = function (_Section27) {
-    _inherits(Users, _Section27);
+var Users = function (_Section26) {
+    _inherits(Users, _Section26);
 
     function Users() {
         _classCallCheck(this, Users);

@@ -674,28 +674,6 @@ class LibpamCracklib extends Section {
     }
 }
 
-class Lynis extends Section {
-    displayName() {
-        return "lynis";
-    }
-
-    getLink() {
-        return <SectionLink section={this} />
-    }
-    
-    render() {
-        return (
-            <ol>
-                <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
-                <li>sudo apt-get install lynis</li>
-                <li>Follow installation instructions</li>
-                <li>sudo lynis -Q</li>
-                <li>After scan completes, review findings.</li>
-            </ol>
-        );
-    }
-}
-
 class NetworkConnections extends Section {
     displayName() {
         return "Network Connections";

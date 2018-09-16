@@ -20,7 +20,6 @@ class Ubuntu1604 extends React.Component {
                 <Group name="Scans">
                     <Chkrootkit version="ubuntu16.04" />
                     <Rkhunter version="ubuntu16.04" />
-                    <Lynis version="ubuntu16.04" />
                 </Group>
                 <Group name="Filesystem">
                     <FindUnauthorizedFiles version="ubuntu16.04" />
