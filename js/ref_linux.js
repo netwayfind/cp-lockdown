@@ -10,7 +10,7 @@ class AccountLockoutPolicy extends Section {
   }
 
   render() {
-    return React.createElement(React.Fragment, null, React.createElement("h3", null, "Location"), React.createElement("ol", null, React.createElement("li", null, React.createElement(OpenFile).type.prototype.getLink(), " /etc/pam.d/common-auth")), React.createElement("h3", null, "Settings"), React.createElement("ol", null, React.createElement("li", null, "Add the following to the end of the file:", React.createElement("ul", null, React.createElement("li", null, "auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800"), React.createElement("li", null, "this will set lockout to 5 attempts and lock out for 1800 seconds (15 minutes)")))));
+    return React.createElement(React.Fragment, null, React.createElement("h3", null, "Location"), React.createElement("ol", null, React.createElement("li", null, React.createElement(OpenFile).type.prototype.getLink(), " /etc/pam.d/common-auth")), React.createElement("h3", null, "Settings"), React.createElement("ol", null, React.createElement("li", null, "Add the following to the end of the file:", React.createElement("ul", null, React.createElement("li", null, "auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800"), React.createElement("li", null, "this will set lockout to 5 attempts and lock out for 1800 seconds (30 minutes)")))));
   }
 
 }
