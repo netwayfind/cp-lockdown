@@ -430,14 +430,37 @@ class Firewall extends Section {
     render() {
         return (
             <React.Fragment>
-                <h3>Location</h3>
+                <h3>Option 1: gufw</h3>
                 <ol>
                     <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
-                    <li>IPv4 firewall: sudo iptables [options]</li>
-                    <li>IPv6 firewall: sudo ip6tables [options]</li>
+                    <li>sudo apt-get update</li>
+                    <li>sudo apt-get install gufw</li>
+                    <li>sudo gufw</li>
+                    <li>Set to the following settings:
+                        <ul>
+                            <li>Profile: Office</li>
+                            <li>Status: ON</li>
+                            <li>Incoming: Deny</li>
+                            <li>Outgoing: Allow</li>
+                        </ul>
+                    </li>
+                    <li>For new inbound rules
+                        <ol>
+                            <li>Click on Rules</li>
+                            <li>Click on +</li>
+                            <li>Click on Simple</li>
+                            <li>Name: [set name here]</li>
+                            <li>Policy: Allow</li>
+                            <li>Direction: In</li>
+                            <li>Protocol: [protocol]</li>
+                            <li>Port: [port]</li>
+                            <li>Click on Add</li>
+                        </ol>
+                    </li>
                 </ol>
-                <h3>Settings</h3>
+                <h3>Option 2: iptables</h3>
                 <ol>
+                    <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
                     <li>Check IPv4 firewall rules
                         <ol>
                             <li>sudo iptables -nvL</li>
@@ -733,6 +756,11 @@ class PasswordPolicy extends Section {
                             <li>password&nbsp;&nbsp;&nbsp;&nbsp;requisite&nbsp;&nbsp;&nbsp;&nbsp;pam_cracklib.so retry=3 minlen=8 difok=3</li>
                         </ul>
                     </li>
+                    <li>To require at least 10 characters, change to the following:
+                        <ul>
+                            <li>minlen=10</li>
+                        </ul>
+                    </li>
                     <li>To require password complexity, add to the end of the line:
                         <ul>
                             <li>ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1</li>
@@ -740,7 +768,7 @@ class PasswordPolicy extends Section {
                     </li>
                     <li>The line should now look like the following
                         <ul>
-                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;requisite&nbsp;&nbsp;&nbsp;&nbsp;pam_cracklib.so retry=3 minlen=8 difok=3 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1</li>
+                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;requisite&nbsp;&nbsp;&nbsp;&nbsp;pam_cracklib.so retry=3 minlen=10 difok=3 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1</li>
                         </ul>
                     </li>
                     <li>Find the following line in the file:
@@ -753,14 +781,14 @@ class PasswordPolicy extends Section {
                             <li>remember=5</li>
                         </ul>
                     </li>
-                    <li>To require at least 8 characters, add to the end of the line:
+                    <li>To require at least 10 characters, add to the end of the line:
                         <ul>
-                            <li>minlen=8</li>
+                            <li>minlen=10</li>
                         </ul>
                     </li>
                     <li>The line should now look like the following
                         <ul>
-                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;[success=1 default=ignore]&nbsp;&nbsp;&nbsp;&nbsp;pam_unix.so obscure use_authtok try_first_pass sha512 remember=5 minlen=8</li>
+                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;[success=1 default=ignore]&nbsp;&nbsp;&nbsp;&nbsp;pam_unix.so obscure use_authtok try_first_pass sha512 remember=5 minlen=10</li>
                         </ul>
                     </li>
                     <li>Save the file</li>
