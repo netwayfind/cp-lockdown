@@ -733,6 +733,11 @@ class PasswordPolicy extends Section {
                             <li>password&nbsp;&nbsp;&nbsp;&nbsp;requisite&nbsp;&nbsp;&nbsp;&nbsp;pam_cracklib.so retry=3 minlen=8 difok=3</li>
                         </ul>
                     </li>
+                    <li>To require at least 10 characters, change to the following:
+                        <ul>
+                            <li>minlen=10</li>
+                        </ul>
+                    </li>
                     <li>To require password complexity, add to the end of the line:
                         <ul>
                             <li>ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1</li>
@@ -740,7 +745,7 @@ class PasswordPolicy extends Section {
                     </li>
                     <li>The line should now look like the following
                         <ul>
-                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;requisite&nbsp;&nbsp;&nbsp;&nbsp;pam_cracklib.so retry=3 minlen=8 difok=3 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1</li>
+                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;requisite&nbsp;&nbsp;&nbsp;&nbsp;pam_cracklib.so retry=3 minlen=10 difok=3 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1</li>
                         </ul>
                     </li>
                     <li>Find the following line in the file:
@@ -753,14 +758,14 @@ class PasswordPolicy extends Section {
                             <li>remember=5</li>
                         </ul>
                     </li>
-                    <li>To require at least 8 characters, add to the end of the line:
+                    <li>To require at least 10 characters, add to the end of the line:
                         <ul>
-                            <li>minlen=8</li>
+                            <li>minlen=10</li>
                         </ul>
                     </li>
                     <li>The line should now look like the following
                         <ul>
-                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;[success=1 default=ignore]&nbsp;&nbsp;&nbsp;&nbsp;pam_unix.so obscure use_authtok try_first_pass sha512 remember=5 minlen=8</li>
+                            <li>password&nbsp;&nbsp;&nbsp;&nbsp;[success=1 default=ignore]&nbsp;&nbsp;&nbsp;&nbsp;pam_unix.so obscure use_authtok try_first_pass sha512 remember=5 minlen=10</li>
                         </ul>
                     </li>
                     <li>Save the file</li>
