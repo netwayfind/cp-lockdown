@@ -1874,7 +1874,7 @@ class PasswordPolicy extends Section {
                     <li>Enforce password history - 5 passwords remembered</li>
                     <li>Maximum password age - 30 days</li>
                     <li>Minimum password age - 10 days</li>
-                    <li>Minimum password length - 8 characters</li>
+                    <li>Minimum password length - 10 characters</li>
                     <li>Password must meet complexity requirements - Enabled</li>
                     <li>Store passwords using reversible encryption - Disabled</li>
                 </ul>
