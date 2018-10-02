@@ -430,14 +430,37 @@ class Firewall extends Section {
     render() {
         return (
             <React.Fragment>
-                <h3>Location</h3>
+                <h3>Option 1: gufw</h3>
                 <ol>
                     <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
-                    <li>IPv4 firewall: sudo iptables [options]</li>
-                    <li>IPv6 firewall: sudo ip6tables [options]</li>
+                    <li>sudo apt-get update</li>
+                    <li>sudo apt-get install gufw</li>
+                    <li>sudo gufw</li>
+                    <li>Set to the following settings:
+                        <ul>
+                            <li>Profile: Office</li>
+                            <li>Status: ON</li>
+                            <li>Incoming: Deny</li>
+                            <li>Outgoing: Allow</li>
+                        </ul>
+                    </li>
+                    <li>For new inbound rules
+                        <ol>
+                            <li>Click on Rules</li>
+                            <li>Click on +</li>
+                            <li>Click on Simple</li>
+                            <li>Name: [set name here]</li>
+                            <li>Policy: Allow</li>
+                            <li>Direction: In</li>
+                            <li>Protocol: [protocol]</li>
+                            <li>Port: [port]</li>
+                            <li>Click on Add</li>
+                        </ol>
+                    </li>
                 </ol>
-                <h3>Settings</h3>
+                <h3>Option 2: iptables</h3>
                 <ol>
+                    <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
                     <li>Check IPv4 firewall rules
                         <ol>
                             <li>sudo iptables -nvL</li>
