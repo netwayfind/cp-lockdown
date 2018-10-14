@@ -982,6 +982,7 @@ class FindUnauthorizedFiles extends Section {
     render() {
         return (
             <React.Fragment>
+                <h3>Option 1</h3>
                 <ol>
                     <li>Open {React.createElement(CommandPrompt).type.prototype.getLink()}</li>
                     <li>dir C:\Users /s /b /a | find /i ".mp3"
@@ -994,11 +995,11 @@ class FindUnauthorizedFiles extends Section {
                         <ul>
                             <li>(music) - .mp3, .wav, .wma, .aac</li>
                             <li>(movie/video) - .mp4, .mov, .avi</li>
-                            <li>(pictures) - .gif, .jpg, .jpeg, , .png, .bmp</li>
-                            <li>(executable files) - .exe, .msi, .bat, .sh</li>
                         </ul>
                     </li>
                 </ol>
+                <h3>Option 2</h3>
+                Manually search for files in all user directories and remove unauthorized files.
             </React.Fragment>
         );
     }
