@@ -1189,11 +1189,7 @@ class Services extends Section {
                 <ul>
                     <li>ntpd</li>
                 </ul>
-                Scheduled tasks
-                <ul>
-                    <li>cron</li>
-                </ul>
-                Web Server
+                Web/Application Server
                 <ul>
                     <li>apache2</li>
                     <li>httpd</li>
