@@ -1549,13 +1549,23 @@ class Users extends Section {
     render() {
         return (
             <React.Fragment>
-                <h3>Location</h3>
+                <h3>Option 1 (GUI)</h3>
+                <ol>
+                    <li>Open {React.createElement(SystemSettings).type.prototype.getLink()}</li>
+                    <li>Click on <strong>Users</strong></li>
+                    <li>For each user:
+                        <ul>
+                            <li>Check the readme if the user is supposed to be on this computer</li>
+                            <li>Lock out or delete extra or prohibited users, keep their files</li>
+                            <li>Set Account Type to match user role</li>
+                            <li>Change and write down password for refence</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Option 2 (Command Line)</h3>
                 <ol>
                     <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
                     <li>cat /etc/passwd</li>
-                </ol>
-                <h3>Settings</h3>
-                <ol>
                     <li>Check {React.createElement(DefaultUsers).type.prototype.getLink()}</li>
                     <ul>
                         <li>Check that the users specified in the readme exist. Double check the default users. Look out for unmentioned users.</li>
@@ -1567,9 +1577,13 @@ class Users extends Section {
                     <ul>
                         <li>sudo passwd -l [user]</li>
                     </ul>
-                    <li>To remove a user and their files:</li>
+                    <li>To remove a user:</li>
                     <ul>
-                        <li>sudo userdel -r [user]</li>
+                        <li>sudo userdel [user]
+                            <ul>
+                                <li>use userdel -r [user] to remove user files</li>
+                            </ul>
+                        </li>
                     </ul>
                     <li>To add a user:</li>
                     <ul>
