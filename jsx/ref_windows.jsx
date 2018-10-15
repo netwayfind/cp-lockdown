@@ -2665,6 +2665,7 @@ class SecurityOptions extends Section {
                     <li>Accounts: Guest account status - Disabled</li>
                     <li>Accounts: Rename administrator account - not Administrator</li>
                     <li>Accounts: Rename guest account - not Guest</li>
+                    <li>Interactive logon: Do not require CTRL + ALT + DEL - Disabled</li>
                     <li>Network access: Let everyone permissions apply to anonymous users - Disabled</li>
                     <li>Recovery Console: Allow automatic administrative logon - Disabled</li>
                 </ul>
