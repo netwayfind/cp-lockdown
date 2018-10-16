@@ -39,6 +39,19 @@ class Applications extends Section {
     }
 
     render() {
+        if (this.props.version === "ubuntu") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "ubuntu16.04") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "debian8") {
+            return this.debian();
+        }
+        return "unknown";
+    }
+
+    ubuntu() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -59,7 +72,31 @@ class Applications extends Section {
                         </ul>
                     </li>
                 </ol>
+            </React.Fragment>
+        );
+    }
 
+    debian() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press <strong>Activities</strong></li>
+                    <li>Type <strong>Software</strong></li>
+                    <li>Click on icon</li>
+                </ol>
+                <h3>Settings</h3>
+                <ol>
+                    <li>Press <strong>Installed</strong> button</li>
+                    <li>Review readme for applications or categories that must be removed</li>
+                    <li>For each entry:
+                        <ul>
+                            <li>Check against readme if it should be removed</li>
+                            <li>It's safer to leave program alone than to remove it</li>
+                            <li>To remove application, click on <strong>Remove</strong> button</li>
+                        </ul>
+                    </li>
+                </ol>
             </React.Fragment>
         );
     }
@@ -176,6 +213,19 @@ class DefaultGroups extends Section {
     }
     
     render() {
+        if (this.props.version === "ubuntu") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "ubuntu16.04") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "debian8") {
+            return this.debian();
+        }
+        return "unknown";
+    }
+
+    ubuntu() {
         return (
             <React.Fragment>
                 <ul>
@@ -247,6 +297,76 @@ class DefaultGroups extends Section {
             </React.Fragment>
         );
     }
+
+    debian() {
+        return (
+            <React.Fragment>
+                <ul>
+                    <li>root</li>
+                    <li>daemon</li>
+                    <li>bin</li>
+                    <li>sys</li>
+                    <li>adm</li>
+                    <li>tty</li>
+                    <li>disk</li>
+                    <li>lp</li>
+                    <li>mail</li>
+                    <li>news</li>
+                    <li>uucp</li>
+                    <li>man</li>
+                    <li>proxy</li>
+                    <li>kmem</li>
+                    <li>dialout</li>
+                    <li>fax</li>
+                    <li>voice</li>
+                    <li>cdrom</li>
+                    <li>floppy</li>
+                    <li>tape</li>
+                    <li>sudo</li>
+                    <li>audio</li>
+                    <li>dip</li>
+                    <li>www-data</li>
+                    <li>backup</li>
+                    <li>operator</li>
+                    <li>list</li>
+                    <li>irc</li>
+                    <li>src</li>
+                    <li>gnats</li>
+                    <li>shadow</li>
+                    <li>utmp</li>
+                    <li>video</li>
+                    <li>sasl</li>
+                    <li>plugdev</li>
+                    <li>staff</li>
+                    <li>games</li>
+                    <li>users</li>
+                    <li>nogroup</li>
+                    <li>systemd-journal</li>
+                    <li>systemd-timesync</li>
+                    <li>systemd-network</li>
+                    <li>systemd-resolve</li>
+                    <li>systemd-bus-proxy</li>
+                    <li>input</li>
+                    <li>crontab</li>
+                    <li>netdev</li>
+                    <li>uuidd</li>
+                    <li>rtkit</li>
+                    <li>avahi-autoipd</li>
+                    <li>messagebus</li>
+                    <li>ssh</li>
+                    <li>bluetooth</li>
+                    <li>geoclue</li>
+                    <li>pulse</li>
+                    <li>pulse-access</li>
+                    <li>scanner</li>
+                    <li>avahi</li>
+                    <li>colord</li>
+                    <li>saned</li>
+                    <li>Debian-gdm</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class DefaultUsers extends Section {
@@ -259,6 +379,19 @@ class DefaultUsers extends Section {
     }
     
     render() {
+        if (this.props.version === "ubuntu") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "ubuntu16.04") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "debian8") {
+            return this.debian();
+        }
+        return "unknown";
+    }
+
+    ubuntu() {
         return (
             <React.Fragment>
                 <ul>
@@ -297,6 +430,51 @@ class DefaultUsers extends Section {
                     <li>hplip</li>
                     <li>saned</li>
                     <li>ubuntu</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
+
+    debian() {
+        return (
+            <React.Fragment>
+                <ul>
+                    <li>root</li>
+                    <li>daemon</li>
+                    <li>bin</li>
+                    <li>sys</li>
+                    <li>sync</li>
+                    <li>games</li>
+                    <li>man</li>
+                    <li>lp</li>
+                    <li>mail</li>
+                    <li>news</li>
+                    <li>uucp</li>
+                    <li>proxy</li>
+                    <li>www-data</li>
+                    <li>backup</li>
+                    <li>list</li>
+                    <li>irc</li>
+                    <li>gnats</li>
+                    <li>nobody</li>
+                    <li>systemd-timesync</li>
+                    <li>systemd-network</li>
+                    <li>systemd-resolve</li>
+                    <li>systemd-bus-proxy</li>
+                    <li>_apt</li>
+                    <li>uuidd</li>
+                    <li>rtkit</li>
+                    <li>dnsmasq</li>
+                    <li>avahi-autoipd</li>
+                    <li>messagebus</li>
+                    <li>usbmux</li>
+                    <li>geoclue</li>
+                    <li>speech-dispatcher</li>
+                    <li>pulse</li>
+                    <li>avahi</li>
+                    <li>colord</li>
+                    <li>saned</li>
+                    <li>Debian-gdm</li>
                 </ul>
             </React.Fragment>
         );
@@ -396,6 +574,7 @@ class FindUnauthorizedFiles extends Section {
     render() {
         return (
             <React.Fragment>
+                <h3>Option 1</h3>
                 <ol>
                     <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
                     <li>find /home -name "*.mp3*"
@@ -408,11 +587,11 @@ class FindUnauthorizedFiles extends Section {
                         <ul>
                             <li>(music) - .mp3, .wav, .wma, .aac</li>
                             <li>(movie/video) - .mp4, .mov, .avi</li>
-                            <li>(pictures) - .gif, .jpg, .jpeg, , .png, .bmp</li>
-                            <li>(executable files) - .exe, .msi, .bat, .sh</li>
                         </ul>
                     </li>
                 </ol>
+                <h3>Option 2</h3>
+                Manually search for files in all user directories and remove unauthorized files.
             </React.Fragment>
         );
     }
@@ -595,6 +774,9 @@ class GuestAccess extends Section {
         else if (this.props.version === "ubuntu16.04") {
             return this.option2();
         }
+        else if (this.props.version === "debian8") {
+            return this.option3();
+        }
         return "unknown";
     }
 
@@ -640,6 +822,10 @@ class GuestAccess extends Section {
                 </ol>
             </React.Fragment>
         );
+    }
+
+    option3() {
+        return "Not needed";
     }
 }
 
@@ -707,6 +893,19 @@ class NetworkConnections extends Section {
     }
     
     render() {
+        if (this.props.version === "ubuntu") {
+            return this.option1();
+        }
+        else if (this.props.version === "ubuntu16.04") {
+            return this.option1();
+        }
+        else if (this.props.version === "debian8") {
+            return this.option2();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -724,6 +923,30 @@ class NetworkConnections extends Section {
                     <li>Check established network connections</li>
                     <ol>
                         <li>netstat -ntup</li>
+                    </ol>
+                </ol>
+            </React.Fragment>
+        );
+    }
+
+    option2() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
+                    <li>sudo netstat [options]</li>
+                </ol>
+                <h3>Settings</h3>
+                <ol>
+                    <li>Check listening network connections</li>
+                    <ol>
+                        <li>ss -ntulp</li>
+                        <li>Make sure only necessary services have listening connections on the correct ports</li>
+                    </ol>
+                    <li>Check established network connections</li>
+                    <ol>
+                        <li>ss -ntup</li>
                     </ol>
                 </ol>
             </React.Fragment>
@@ -847,6 +1070,9 @@ class Services extends Section {
         else if (this.props.version === "ubuntu16.04") {
             return this.option2();
         }
+        else if (this.props.version === "debian8") {
+            return this.option2();
+        }
         return "unknown";
     }
 
@@ -963,11 +1189,7 @@ class Services extends Section {
                 <ul>
                     <li>ntpd</li>
                 </ul>
-                Scheduled tasks
-                <ul>
-                    <li>cron</li>
-                </ul>
-                Web Server
+                Web/Application Server
                 <ul>
                     <li>apache2</li>
                     <li>httpd</li>
@@ -1030,6 +1252,19 @@ class SystemLog extends Section {
     }
     
     render() {
+        if (this.props.version === "ubuntu") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "ubuntu16.04") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "debian8") {
+            return this.debian();
+        }
+        return "unknown";
+    }
+
+    ubuntu() {
         return (
             <React.Fragment>
                 <h3>Location</h3>
@@ -1046,6 +1281,23 @@ class SystemLog extends Section {
             </React.Fragment>
         );
     }
+
+    debian() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Press <strong>Activities</strong></li>
+                    <li>Type <strong>Logs</strong></li>
+                    <li>Click on icon</li>
+                </ol>
+                <ul>
+                    <li>Review logs prior to today for system changes</li>
+                    <li>Pay attention to user accounts, especially root/sudo</li>
+                </ul>
+            </React.Fragment>
+        );
+    }
 }
 
 class SystemSettings extends Section {
@@ -1058,11 +1310,35 @@ class SystemSettings extends Section {
     }
     
     render() {
+        if (this.props.version === "ubuntu") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "ubuntu16.04") {
+            return this.ubuntu();
+        }
+        else if (this.props.version === "debian8") {
+            return this.debian();
+        }
+        return "unknown";
+    }
+
+    ubuntu() {
         return (
             <React.Fragment>
                 <ol>
                     <li>Press the gear-like icon at the top right of the screen. (Next to the current time)</li>
                     <li>Click on <b>System Settings</b></li>
+                </ol>
+            </React.Fragment>
+        );
+    }
+
+    debian() {
+        return (
+            <React.Fragment>
+                <ol>
+                    <li>Press the Power icon at the top right of the screen.</li>
+                    <li>Click on Settings icon (diagonal cross of screwdriver and wrench)</li>
                 </ol>
             </React.Fragment>
         );
@@ -1079,6 +1355,19 @@ class Terminal extends Section {
     }
     
     render() {
+        if (this.props.version === "ubuntu") {
+            return this.option1();
+        }
+        else if (this.props.version === "ubuntu16.04") {
+            return this.option1();
+        }
+        else if (this.props.version === "debian8") {
+            return this.option2();
+        }
+        return "unknown";
+    }
+
+    option1() {
         return (
             <React.Fragment>
                 Option 1
@@ -1093,6 +1382,18 @@ class Terminal extends Section {
                     <li>Click on <strong>Terminal</strong></li>
                 </ol>
 
+            </React.Fragment>
+        );
+    }
+
+    option2() {
+        return (
+            <React.Fragment>
+                <ol>
+                    <li>Click on <strong>Applications</strong></li>
+                    <li>Go to <strong>Utilities</strong></li>
+                    <li>Click on <strong>Terminal</strong></li>
+                </ol>
             </React.Fragment>
         );
     }
@@ -1113,6 +1414,9 @@ class Updates extends Section {
         }
         else if (this.props.version === "ubuntu16.04") {
             return this.option2();
+        }
+        else if (this.props.version === "debian8") {
+            return this.option3();
         }
         return "unknown";
     }
@@ -1194,6 +1498,43 @@ class Updates extends Section {
             </React.Fragment>
         );
     }
+
+    option3() {
+        return (
+            <React.Fragment>
+                <h3>Location</h3>
+                <ol>
+                    <li>Click on <strong>Activities</strong></li>
+                    <li>Type <strong>Software &amp; Updates</strong></li>
+                    <li>Click on icon</li>
+                </ol>
+                <h3>Settings</h3>
+                <ol>
+                    <li>For Debian Software tab
+                        <ol>
+                            <li>[x] Officially supported (main)</li>
+                            <li>[Optional] DFSG-compatible Software with Non-Free Dependencies (contrib)</li>
+                            <li>[Optional] Non-DFSG-compatible Software (non-free)</li>
+                            <li>[ ] Source code</li>
+                            <li>Download from: <strong>Server for United States</strong></li>
+                        </ol>
+                    </li>
+                    <li>For Updates tab
+                        <ol>
+                            <li>[x] Security updates (*/updates)</li>
+                            <li>[x] Recommended updates (*-updates)</li>
+                            <li>Automatic check for updates: Daily</li>
+                            <li>When there are security updates: Download and install automatically</li>
+                        </ol>
+                    </li>
+                    <li>Click Close</li>
+                    <li>If pop-up for information about available software is out-of-date, click Close</li>
+                    <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
+                    <li>sudo apt-get update &amp;&amp; sudo apt-get upgrade -y</li>
+                </ol>
+            </React.Fragment>
+        );
+    }
 }
 
 class Users extends Section {
@@ -1208,13 +1549,23 @@ class Users extends Section {
     render() {
         return (
             <React.Fragment>
-                <h3>Location</h3>
+                <h3>Option 1 (GUI)</h3>
+                <ol>
+                    <li>Open {React.createElement(SystemSettings).type.prototype.getLink()}</li>
+                    <li>Click on <strong>Users</strong></li>
+                    <li>For each user:
+                        <ul>
+                            <li>Check the readme if the user is supposed to be on this computer</li>
+                            <li>Lock out or delete extra or prohibited users, keep their files</li>
+                            <li>Set Account Type to match user role</li>
+                            <li>Change and write down password for refence</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Option 2 (Command Line)</h3>
                 <ol>
                     <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
                     <li>cat /etc/passwd</li>
-                </ol>
-                <h3>Settings</h3>
-                <ol>
                     <li>Check {React.createElement(DefaultUsers).type.prototype.getLink()}</li>
                     <ul>
                         <li>Check that the users specified in the readme exist. Double check the default users. Look out for unmentioned users.</li>
@@ -1226,9 +1577,13 @@ class Users extends Section {
                     <ul>
                         <li>sudo passwd -l [user]</li>
                     </ul>
-                    <li>To remove a user and their files:</li>
+                    <li>To remove a user:</li>
                     <ul>
-                        <li>sudo userdel -r [user]</li>
+                        <li>sudo userdel [user]
+                            <ul>
+                                <li>use userdel -r [user] to remove user files</li>
+                            </ul>
+                        </li>
                     </ul>
                     <li>To add a user:</li>
                     <ul>

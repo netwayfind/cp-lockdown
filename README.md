@@ -8,7 +8,19 @@ Guides for locking down a computer
 Online version:
 * https://sumwonyuno.github.io/cp-lockdown
 
-Offline version not currently supported.
+Local copy version:
+
+(Internet access still required for JavaScript dependencies)
+1. Download the latest copy
+   * https://github.com/sumwonyuno/cp-lockdown/archive/master.zip
+1. Find 'cp-lockdown-master.zip' in the Downloads folder
+1. Unzip the 'cp-lockdown-master.zip' file
+   * Windows: Right click .zip file, Extract All
+   * Linux: Terminal > unzip cp-lockdown-master.zip
+   * Mac: Double click .zip file
+1. Open 'cp-lockdown-master' folder
+1. Open 'index.html' file
+1. Web browser should open to cp-lockdown index
   
 # Usage
 From the cp-lockdown index, click on the links to view guides and

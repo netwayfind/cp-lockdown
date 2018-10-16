@@ -112,34 +112,32 @@ class Group extends React.Component {
         if (this.props.children.length === undefined) {
             let section = this.props.children;
             children.push(
-                <li key="0">
+                <div>
                     <input type="checkbox" onClick={e => this.updateStatus(e, 0)}></input>
                     <span>{this.state[0]}</span>
                     &nbsp;
                     {section.type.prototype.getLink()}
-                </li>
+                </div>
             );
         }
         else {
             for (let i in this.props.children) {
                 let section = this.props.children[i];
                 children.push(
-                    <li key={i}>
+                    <div>
                         <input type="checkbox" onClick={e => this.updateStatus(e, i)}></input>
                         <span>{this.state[i]}</span>
                         &nbsp;
                         {section.type.prototype.getLink()}
-                    </li>
+                    </div>
                 );
             }
         }
 
         return (
             <React.Fragment>
-                {name}
-                <ul>
-                    {children}
-                </ul>
+                <h4>{name}</h4>
+                {children}
             </React.Fragment>
         );
     }
