@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WordPress</title>
+    </head>
+    <body>
+        <h1><a href="index.html">cp-lockdown</a> > WordPress</h1>
+        <hr>
+        The following are instructions to reset the passwords for a WordPress installation on a LAMP stack.
+        <p>
+        <b>MySQL root user</b>
+        <ol>
+            <li>Open Terminal</li>
+            <li>sudo mysql_secure_installation</li>
+            <li>Enter current root password</li>
+            <li>Validate password plugin: y</li>
+            <li>Change root password: y</li>
+            <li>Enter new root password</li>
+            <li>Remove anonymous users: y</li>
+            <li>Disallow root login remotely: y</li>
+            <li>Remove test database: y</li>
+            <li>Update privilege tables: y</li>
+        </ol>
+        <b>phpmyadmin</b>
+        <ol>
+            <li>Open web browser</li>
+            <li>Go to http://&lt;host&gt;/phpmyadmin</li>
+            <li>Log in as user phpmyadmin</li>
+            <li>Under General Settings, click on Change Password</li>
+            <li>Enter new password, Click Go</li>
+            <li>Log out and try with new password</li>                
+        </ol>
+        <b>MySQL wordpress user</b>
+        <ol>
+            <li>Open web browser</li>
+            <li>Go to http://&lt;host&gt;/phpmyadmin</li>
+            <li>Log in as user wordpress</li>
+            <li>Under General Settings, click on Change Password</li>
+            <li>Enter new password, Click Go</li>
+            <li>Log out and try with new password</li>
+            <li>Open Terminal</li>
+            <li>sudo gedit /var/www/html/wordpress/wp-config.php</li>
+            <li>Find /** MySQL database password */</li>
+            <li>Change define(‘DB_PASSWORD’, ‘&lt;password from step 5&gt;’);</li>
+            <li>Save file</li>
+        </ol>
+        <b>Wordpress users</b>
+        <ol>
+            <li>Open web browser</li>
+            <li>Go to http://&lt;host&gt;/wordpress/wp-login.php</li>
+            <li>Log in as website administrator</li>
+            <li>Go to Users</li>
+            <li>
+                For each user
+                <ol>
+                    <li>Click on user</li>
+                    <li>Scroll to the bottom, look for New Password</li>
+                    <li>Click Generate Password</li>
+                    <li>Use generated password or enter new password</li>
+                    <li>Click Update Profile</li>
+                    <li>Log out and try with new password</li>
+                </ol>
+            </li>
+        </ol>
+    </body>
+</html>
