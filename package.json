@@ -19,8 +19,8 @@
   "homepage": "https://github.com/sumwonyuno/cp-lockdown#readme",
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.1",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
     "@babel/preset-react": "^7.0.0"
   }
 }
