@@ -27,7 +27,7 @@ class AddRemovePrograms extends Section {
   }
 
   render() {
-    return React.createElement(React.Fragment, null, React.createElement("h3", null, "Location"), React.createElement("ol", null, React.createElement("li", null, "Open ", React.createElement(ControlPanel).type.prototype.getLink()), React.createElement("li", null, "Find ", React.createElement("strong", null, "Programs")), React.createElement("li", null, "Find and click on ", React.createElement("strong", null, "Uninstall a Program"))), React.createElement("h3", null, "Settings"), React.createElement("ul", null, React.createElement("li", null, "Do not remove any programs required by readme (e.g. web browser, work tools)"), React.createElement("li", null, "Remove all programs prohibited by readme (e.g. games, non-work tools)")));
+    return React.createElement(React.Fragment, null, React.createElement("h3", null, "Location"), React.createElement("ol", null, React.createElement("li", null, "Open ", React.createElement(ControlPanel).type.prototype.getLink()), React.createElement("li", null, "Find ", React.createElement("strong", null, "Programs")), React.createElement("li", null, "Find and click on ", React.createElement("strong", null, "Uninstall a Program"))), React.createElement("h3", null, "Settings"), React.createElement("ul", null, React.createElement("li", null, "Do not remove any programs required by readme (e.g. web browser, work tools)"), React.createElement("li", null, "Do not remove dependencies such as Microsoft Visual C++ redistributable, VMware Tools, etc."), React.createElement("li", null, "Remove all programs prohibited by readme (e.g. games, non-work tools)")));
   }
 
 }
