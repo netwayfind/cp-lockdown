@@ -404,7 +404,7 @@ class Rkhunter extends Section {
   }
 
   render() {
-    return React.createElement(React.Fragment, null, React.createElement("ol", null, React.createElement("li", null, "Open ", React.createElement(Terminal).type.prototype.getLink()), React.createElement("li", null, "sudo apt-get install rhkunter"), React.createElement("li", null, "Follow installation instructions"), React.createElement("li", null, "sudo rhkunter --update"), React.createElement("li", null, "sudo rkhunter -c"), React.createElement("li", null, "Follow scan instructions"), React.createElement("li", null, "After scan completes, review findings, and fix issues")));
+    return React.createElement(React.Fragment, null, React.createElement("ol", null, React.createElement("li", null, "Open ", React.createElement(Terminal).type.prototype.getLink()), React.createElement("li", null, "sudo apt-get install rkhunter"), React.createElement("li", null, "Follow installation instructions"), React.createElement("li", null, "sudo rkhunter --update"), React.createElement("li", null, "sudo rkhunter -c"), React.createElement("li", null, "Follow scan instructions"), React.createElement("li", null, "After scan completes, review findings, and fix issues")));
   }
 
 }

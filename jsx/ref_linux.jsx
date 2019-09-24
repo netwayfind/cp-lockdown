@@ -1041,9 +1041,9 @@ class Rkhunter extends Section {
             <React.Fragment>
                 <ol>
                     <li>Open {React.createElement(Terminal).type.prototype.getLink()}</li>
-                    <li>sudo apt-get install rhkunter</li>
+                    <li>sudo apt-get install rkhunter</li>
                     <li>Follow installation instructions</li>
-                    <li>sudo rhkunter --update</li>
+                    <li>sudo rkhunter --update</li>
                     <li>sudo rkhunter -c</li>
                     <li>Follow scan instructions</li>
                     <li>After scan completes, review findings, and fix issues</li>
