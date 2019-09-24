@@ -49,6 +49,7 @@ class AddRemovePrograms extends Section {
                 <h3>Settings</h3>
                 <ul>
                     <li>Do not remove any programs required by readme (e.g. web browser, work tools)</li>
+                    <li>Do not remove dependencies such as Microsoft Visual C++ redistributable, VMware Tools, etc.</li>
                     <li>Remove all programs prohibited by readme (e.g. games, non-work tools)</li>
                 </ul>
             </React.Fragment>
