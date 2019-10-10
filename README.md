@@ -6,13 +6,13 @@ Guides for locking down a computer
 # Where
 
 Online version:
-* https://sumwonyuno.github.io/cp-lockdown
+* https://netwayfind.github.io/cp-lockdown
 
 Local copy version:
 
 (Internet access still required for JavaScript dependencies)
 1. Download the latest copy
-   * https://github.com/sumwonyuno/cp-lockdown/archive/master.zip
+   * https://github.com/netwayfind/cp-lockdown/archive/master.zip
 1. Find 'cp-lockdown-master.zip' in the Downloads folder
 1. Unzip the 'cp-lockdown-master.zip' file
    * Windows: Right click .zip file, Extract All

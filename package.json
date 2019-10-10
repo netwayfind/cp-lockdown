@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sumwonyuno/cp-lockdown.git"
+    "url": "git+https://github.com/netwayfind/cp-lockdown.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sumwonyuno/cp-lockdown/issues"
+    "url": "https://github.com/netwayfind/cp-lockdown/issues"
   },
-  "homepage": "https://github.com/sumwonyuno/cp-lockdown#readme",
+  "homepage": "https://github.com/netwayfind/cp-lockdown#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.2.3",
