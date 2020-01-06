@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FTP</title>
+  </head>
+  <body>
+    <h1><a href="index.html">cp-lockdown</a> > FTP</h1>
+    <hr>
+    <b>vsftpd</b>
+    <p>
+    Edit /etc/vsftpd.conf and check the following settings:
+    <ul>
+      <li>
+        # FTP service
+        <br>
+        listen_port=21
+        <br>
+        ftp_data_port=20
+        <br>
+        max_login_fails=3
+      </li>
+      <li>
+        # FTP banner
+        <br>
+        ftpd_banner=[message here]
+        <br>
+        banner_file=[path to file]
+      </li>
+      <li>
+        # Disable anonymous users and related permissions
+        <br>
+        anonymous_enable=NO
+        <br>
+        anon_mkdir_write_enable=NO
+        <br>
+        anon_other_write_enable=NO
+        <br>
+        anon_upload_enable=NO
+        <br>
+        no_anon_password=NO
+        <br>
+        anon_root=
+      </li>
+      <li>
+        # Login with local users
+        <br>
+        local_enable=YES
+      </li>
+      <li>
+        # Users only need to download files? Disable write permissions.
+        <br>
+        write_enable=NO
+      </li>
+      <li>
+        # Need to isolate users? Use chroot.
+        <br>
+        chroot_local_user=YES
+      </li>
+    </ul>
+    Then restart vsftpd service for these settings to take in effect.
+    <p>
+    References:
+    <ul>
+      <li>https://help.ubuntu.com/community/vsftpd</li>
+      <li>https://manpages.ubuntu.com/manpages/bionic/en/man5/vsftpd.conf.5.html</li>
+    </ul>
+  </body>
+</html>
