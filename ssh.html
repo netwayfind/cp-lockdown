@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SSH</title>
+  </head>
+  <body>
+    <h1><a href="index.html">cp-lockdown</a> > SSH</h1>
+    <hr>
+    <b>OpenSSH sshd</b>
+    <p>
+    Edit /etc/ssh/sshd_config and check the following settings:
+    <ul>
+      <li>
+        # SSH service
+        <br>
+        Port 22
+        <br>
+        Protocol 2
+      </li>
+      <li>
+        # Disable root login
+        <br>
+        PermitRootLogin no
+      </li>
+      <li>
+        # If password login not allowed
+        <br>
+        AuthenticationMethods publickey
+        <br>
+        PasswordAuthentication no
+      </li>
+      <li>
+        # If password login allowed
+        <br>
+        AuthenticationMethods publickey,password
+        <br>
+        PasswordAuthentication yes
+      </li>
+      <li>
+        # No empty passwords for login
+        <br>
+        PermitEmptyPasswords no
+      </li>
+      <li>
+        # Banner text
+        <br>
+        Banner [message here]
+      </li>
+    </ul>
+    Then restart ssh service for these settings to take in effect.
+    <p>
+    References:
+    <ul>
+      <li>https://manpages.ubuntu.com/manpages/xenial/en/man5/sshd_config.5.html</li>
+    </ul>
+  </body>
+</html>
