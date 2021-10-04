@@ -1,78 +1,78 @@
 class Ubuntu1604 extends React.Component {
   render() {
-    return React.createElement(Template, {
+    return /*#__PURE__*/React.createElement(Template, {
       name: "Ubuntu 16.04+"
-    }, React.createElement(Group, {
+    }, /*#__PURE__*/React.createElement(Group, {
       name: "Users and Groups"
-    }, React.createElement(Users, {
+    }, /*#__PURE__*/React.createElement(Users, {
       version: "ubuntu16.04"
-    }), React.createElement(Groups, {
+    }), /*#__PURE__*/React.createElement(Groups, {
       version: "ubuntu16.04"
-    }), React.createElement(GuestAccess, {
+    }), /*#__PURE__*/React.createElement(GuestAccess, {
       version: "ubuntu16.04"
-    }), React.createElement(Sudo, {
+    }), /*#__PURE__*/React.createElement(Sudo, {
       version: "ubuntu16.04"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Networking"
-    }, React.createElement(Firewall, {
+    }, /*#__PURE__*/React.createElement(Firewall, {
       version: "ubuntu16.04"
-    }), React.createElement(NetworkConnections, {
+    }), /*#__PURE__*/React.createElement(NetworkConnections, {
       version: "ubuntu16.04"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Installation Check"
-    }, React.createElement(Applications, {
+    }, /*#__PURE__*/React.createElement(Applications, {
       version: "ubuntu16.04"
-    }), React.createElement(Services, {
+    }), /*#__PURE__*/React.createElement(Services, {
       version: "ubuntu16.04"
-    }), React.createElement(Updates, {
+    }), /*#__PURE__*/React.createElement(Updates, {
       version: "ubuntu16.04"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Scans"
-    }, React.createElement(Chkrootkit, {
+    }, /*#__PURE__*/React.createElement(Chkrootkit, {
       version: "ubuntu16.04"
-    }), React.createElement(Rkhunter, {
+    }), /*#__PURE__*/React.createElement(Rkhunter, {
       version: "ubuntu16.04"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Filesystem"
-    }, React.createElement(FindUnauthorizedFiles, {
+    }, /*#__PURE__*/React.createElement(FindUnauthorizedFiles, {
       version: "ubuntu16.04"
-    }), React.createElement(HostsFile, {
+    }), /*#__PURE__*/React.createElement(HostsFile, {
       version: "ubuntu16.04"
-    }), React.createElement(FilesystemPermissions, {
+    }), /*#__PURE__*/React.createElement(FilesystemPermissions, {
       version: "ubuntu16.04"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Configuration"
-    }, React.createElement(Auditd, {
+    }, /*#__PURE__*/React.createElement(Auditd, {
       version: "ubuntu16.04"
-    }), React.createElement(BootupManager, {
+    }), /*#__PURE__*/React.createElement(BootupManager, {
       version: "ubuntu16.04"
-    }), React.createElement(Cron, {
+    }), /*#__PURE__*/React.createElement(Cron, {
       version: "ubuntu16.04"
-    }), React.createElement(LibpamCracklib, {
+    }), /*#__PURE__*/React.createElement(LibpamCracklib, {
       version: "ubuntu16.04"
-    }), React.createElement(PasswordPolicy, {
+    }), /*#__PURE__*/React.createElement(PasswordPolicy, {
       version: "ubuntu16.04"
-    }), React.createElement(AccountLockoutPolicy, {
+    }), /*#__PURE__*/React.createElement(AccountLockoutPolicy, {
       version: "ubuntu16.04"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Logs"
-    }, React.createElement(SystemLog, {
+    }, /*#__PURE__*/React.createElement(SystemLog, {
       version: "ubuntu16.04"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "References"
-    }, React.createElement(DefaultGroups, {
+    }, /*#__PURE__*/React.createElement(DefaultGroups, {
       version: "ubuntu16.04"
-    }), React.createElement(DefaultUsers, {
+    }), /*#__PURE__*/React.createElement(DefaultUsers, {
       version: "ubuntu16.04"
-    }), React.createElement(OpenFile, {
+    }), /*#__PURE__*/React.createElement(OpenFile, {
       version: "ubuntu16.04"
-    }), React.createElement(Terminal, {
+    }), /*#__PURE__*/React.createElement(Terminal, {
       version: "ubuntu16.04"
-    }), React.createElement(SystemSettings, {
+    }), /*#__PURE__*/React.createElement(SystemSettings, {
       version: "ubuntu16.04"
     })));
   }
 
 }
 
-ReactDOM.render(React.createElement(Ubuntu1604, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(Ubuntu1604, null), document.getElementById("app"));

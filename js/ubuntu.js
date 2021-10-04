@@ -1,78 +1,78 @@
 class Ubuntu extends React.Component {
   render() {
-    return React.createElement(Template, {
+    return /*#__PURE__*/React.createElement(Template, {
       name: "Ubuntu"
-    }, React.createElement(Group, {
+    }, /*#__PURE__*/React.createElement(Group, {
       name: "Users and Groups"
-    }, React.createElement(Users, {
+    }, /*#__PURE__*/React.createElement(Users, {
       version: "ubuntu"
-    }), React.createElement(Groups, {
+    }), /*#__PURE__*/React.createElement(Groups, {
       version: "ubuntu"
-    }), React.createElement(GuestAccess, {
+    }), /*#__PURE__*/React.createElement(GuestAccess, {
       version: "ubuntu"
-    }), React.createElement(Sudo, {
+    }), /*#__PURE__*/React.createElement(Sudo, {
       version: "ubuntu"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Networking"
-    }, React.createElement(Firewall, {
+    }, /*#__PURE__*/React.createElement(Firewall, {
       version: "ubuntu"
-    }), React.createElement(NetworkConnections, {
+    }), /*#__PURE__*/React.createElement(NetworkConnections, {
       version: "ubuntu"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Installation Check"
-    }, React.createElement(Applications, {
+    }, /*#__PURE__*/React.createElement(Applications, {
       version: "ubuntu"
-    }), React.createElement(Services, {
+    }), /*#__PURE__*/React.createElement(Services, {
       version: "ubuntu"
-    }), React.createElement(Updates, {
+    }), /*#__PURE__*/React.createElement(Updates, {
       version: "ubuntu"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Scans"
-    }, React.createElement(Chkrootkit, {
+    }, /*#__PURE__*/React.createElement(Chkrootkit, {
       version: "ubuntu"
-    }), React.createElement(Rkhunter, {
+    }), /*#__PURE__*/React.createElement(Rkhunter, {
       version: "ubuntu"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Filesystem"
-    }, React.createElement(FindUnauthorizedFiles, {
+    }, /*#__PURE__*/React.createElement(FindUnauthorizedFiles, {
       version: "ubuntu"
-    }), React.createElement(HostsFile, {
+    }), /*#__PURE__*/React.createElement(HostsFile, {
       version: "ubuntu"
-    }), React.createElement(FilesystemPermissions, {
+    }), /*#__PURE__*/React.createElement(FilesystemPermissions, {
       version: "ubuntu"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Configuration"
-    }, React.createElement(Auditd, {
+    }, /*#__PURE__*/React.createElement(Auditd, {
       version: "ubuntu"
-    }), React.createElement(BootupManager, {
+    }), /*#__PURE__*/React.createElement(BootupManager, {
       version: "ubuntu"
-    }), React.createElement(Cron, {
+    }), /*#__PURE__*/React.createElement(Cron, {
       version: "ubuntu"
-    }), React.createElement(LibpamCracklib, {
+    }), /*#__PURE__*/React.createElement(LibpamCracklib, {
       version: "ubuntu"
-    }), React.createElement(PasswordPolicy, {
+    }), /*#__PURE__*/React.createElement(PasswordPolicy, {
       version: "ubuntu"
-    }), React.createElement(AccountLockoutPolicy, {
+    }), /*#__PURE__*/React.createElement(AccountLockoutPolicy, {
       version: "ubuntu"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Logs"
-    }, React.createElement(SystemLog, {
+    }, /*#__PURE__*/React.createElement(SystemLog, {
       version: "ubuntu"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "References"
-    }, React.createElement(DefaultGroups, {
+    }, /*#__PURE__*/React.createElement(DefaultGroups, {
       version: "ubuntu"
-    }), React.createElement(DefaultUsers, {
+    }), /*#__PURE__*/React.createElement(DefaultUsers, {
       version: "ubuntu"
-    }), React.createElement(OpenFile, {
+    }), /*#__PURE__*/React.createElement(OpenFile, {
       version: "ubuntu"
-    }), React.createElement(Terminal, {
+    }), /*#__PURE__*/React.createElement(Terminal, {
       version: "ubuntu"
-    }), React.createElement(SystemSettings, {
+    }), /*#__PURE__*/React.createElement(SystemSettings, {
       version: "ubuntu"
     })));
   }
 
 }
 
-ReactDOM.render(React.createElement(Ubuntu, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(Ubuntu, null), document.getElementById("app"));

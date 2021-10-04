@@ -41,7 +41,7 @@ class Template extends React.Component {
 
     if (section) {
       let name = section.type.prototype.displayName();
-      let content = React.createElement(React.Fragment, null, React.createElement("h2", null, name), section);
+      let content = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h2", null, name), section);
       ReactDOM.render(content, document.getElementById("content"));
     } else {
       ReactDOM.render("", document.getElementById("content"));
@@ -56,14 +56,14 @@ class Template extends React.Component {
       children.push(this.props.children[i]);
     }
 
-    return React.createElement(React.Fragment, null, React.createElement("div", {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
       className: "heading"
-    }, React.createElement("h1", null, React.createElement("a", {
+    }, /*#__PURE__*/React.createElement("h1", null, /*#__PURE__*/React.createElement("a", {
       href: "./index.html"
-    }, "cp-lockdown"), " > ", name)), React.createElement("div", {
+    }, "cp-lockdown"), " > ", name)), /*#__PURE__*/React.createElement("div", {
       className: "toc",
       id: "toc"
-    }, children), React.createElement("div", {
+    }, children), /*#__PURE__*/React.createElement("div", {
       className: "content",
       id: "content"
     }));
@@ -110,21 +110,21 @@ class Group extends React.Component {
 
     if (this.props.children.length === undefined) {
       let section = this.props.children;
-      children.push(React.createElement("div", null, React.createElement("input", {
+      children.push( /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
         type: "checkbox",
         onClick: e => this.updateStatus(e, 0)
-      }), React.createElement("span", null, this.state[0]), "\xA0", section.type.prototype.getLink()));
+      }), /*#__PURE__*/React.createElement("span", null, this.state[0]), "\xA0", section.type.prototype.getLink()));
     } else {
       for (let i in this.props.children) {
         let section = this.props.children[i];
-        children.push(React.createElement("div", null, React.createElement("input", {
+        children.push( /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
           type: "checkbox",
           onClick: e => this.updateStatus(e, i)
-        }), React.createElement("span", null, this.state[i]), "\xA0", section.type.prototype.getLink()));
+        }), /*#__PURE__*/React.createElement("span", null, this.state[i]), "\xA0", section.type.prototype.getLink()));
       }
     }
 
-    return React.createElement(React.Fragment, null, React.createElement("h4", null, name), children);
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h4", null, name), children);
   }
 
 }
@@ -145,7 +145,7 @@ class SectionLink extends React.Component {
     let section = this.props.section;
     let label = section.displayName();
     let link = "#" + section.constructor.name;
-    return React.createElement("a", {
+    return /*#__PURE__*/React.createElement("a", {
       href: link
     }, label);
   }

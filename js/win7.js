@@ -1,110 +1,110 @@
 class Windows7 extends React.Component {
   render() {
-    return React.createElement(Template, {
+    return /*#__PURE__*/React.createElement(Template, {
       name: "Windows 7"
-    }, React.createElement(Group, {
+    }, /*#__PURE__*/React.createElement(Group, {
       name: "Users and Groups"
-    }, React.createElement(LocalUsersAndGroups, {
+    }, /*#__PURE__*/React.createElement(LocalUsersAndGroups, {
       version: "win7"
-    }), React.createElement(AutomaticLogin, {
+    }), /*#__PURE__*/React.createElement(AutomaticLogin, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Installation Cleanup"
-    }, React.createElement(AddRemovePrograms, {
+    }, /*#__PURE__*/React.createElement(AddRemovePrograms, {
       version: "win7"
-    }), React.createElement(WindowsFeatures, {
+    }), /*#__PURE__*/React.createElement(WindowsFeatures, {
       version: "win7"
-    }), React.createElement(StartupPrograms, {
+    }), /*#__PURE__*/React.createElement(StartupPrograms, {
       version: "win7"
-    }), React.createElement(Services, {
+    }), /*#__PURE__*/React.createElement(Services, {
       version: "win7"
-    }), React.createElement(TaskScheduler, {
+    }), /*#__PURE__*/React.createElement(TaskScheduler, {
       version: "win7"
-    }), React.createElement(DiskCleanup, {
+    }), /*#__PURE__*/React.createElement(DiskCleanup, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Networking"
-    }, React.createElement(InternetConnectionSharing, {
+    }, /*#__PURE__*/React.createElement(InternetConnectionSharing, {
       version: "win7"
-    }), React.createElement(RemoteAssistanceAndRemoteDesktop, {
+    }), /*#__PURE__*/React.createElement(RemoteAssistanceAndRemoteDesktop, {
       version: "win7"
-    }), React.createElement(WindowsFirewall, {
+    }), /*#__PURE__*/React.createElement(WindowsFirewall, {
       version: "win7"
-    }), React.createElement(SharedFolders, {
+    }), /*#__PURE__*/React.createElement(SharedFolders, {
       version: "win7"
-    }), React.createElement(CrowdInspect, {
+    }), /*#__PURE__*/React.createElement(CrowdInspect, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Policies"
-    }, React.createElement(PasswordPolicy, {
+    }, /*#__PURE__*/React.createElement(PasswordPolicy, {
       version: "win7"
-    }), React.createElement(AccountLockoutPolicy, {
+    }), /*#__PURE__*/React.createElement(AccountLockoutPolicy, {
       version: "win7"
-    }), React.createElement(AuditPolicy, {
+    }), /*#__PURE__*/React.createElement(AuditPolicy, {
       version: "win7"
-    }), React.createElement(UserRightsAssignment, {
+    }), /*#__PURE__*/React.createElement(UserRightsAssignment, {
       version: "win7"
-    }), React.createElement(SecurityOptions, {
+    }), /*#__PURE__*/React.createElement(SecurityOptions, {
       version: "win7"
-    }), React.createElement(AdvancedAuditPolicyConfiguration, {
+    }), /*#__PURE__*/React.createElement(AdvancedAuditPolicyConfiguration, {
       version: "win7"
-    }), React.createElement(LocalGroupPolicyEditor, {
+    }), /*#__PURE__*/React.createElement(LocalGroupPolicyEditor, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Scans"
-    }, React.createElement(MicrosoftBaselineSecurityAnalyzer, {
+    }, /*#__PURE__*/React.createElement(MicrosoftBaselineSecurityAnalyzer, {
       version: "win7"
-    }), React.createElement(MicrosoftSecurityEssentials, {
+    }), /*#__PURE__*/React.createElement(MicrosoftSecurityEssentials, {
       version: "win7"
-    }), React.createElement(AntiMalwareTools, {
+    }), /*#__PURE__*/React.createElement(AntiMalwareTools, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Filesystem"
-    }, React.createElement(ShowHiddenFilesAndFolders, {
+    }, /*#__PURE__*/React.createElement(ShowHiddenFilesAndFolders, {
       version: "win7"
-    }), React.createElement(FindUnauthorizedFiles, {
+    }), /*#__PURE__*/React.createElement(FindUnauthorizedFiles, {
       version: "win7"
-    }), React.createElement(UsersFolder, {
+    }), /*#__PURE__*/React.createElement(UsersFolder, {
       version: "win7"
-    }), React.createElement(ProgramFiles, {
+    }), /*#__PURE__*/React.createElement(ProgramFiles, {
       version: "win7"
-    }), React.createElement(ProgramFilesx86, {
+    }), /*#__PURE__*/React.createElement(ProgramFilesx86, {
       version: "win7"
-    }), React.createElement(HostsFile, {
+    }), /*#__PURE__*/React.createElement(HostsFile, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Updates"
-    }, React.createElement(ServicePacks, {
+    }, /*#__PURE__*/React.createElement(ServicePacks, {
       version: "win7"
-    }), React.createElement(AutomaticUpdates, {
+    }), /*#__PURE__*/React.createElement(AutomaticUpdates, {
       version: "win7"
-    }), React.createElement(WindowsUpdate, {
+    }), /*#__PURE__*/React.createElement(WindowsUpdate, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Configuration"
-    }, React.createElement(InternetExplorer, {
+    }, /*#__PURE__*/React.createElement(InternetExplorer, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Logs"
-    }, React.createElement(EventViewer, {
+    }, /*#__PURE__*/React.createElement(EventViewer, {
       version: "win7"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Reference"
-    }, React.createElement(AdministrativeTools, {
+    }, /*#__PURE__*/React.createElement(AdministrativeTools, {
       version: "win7"
-    }), React.createElement(CDrive, {
+    }), /*#__PURE__*/React.createElement(CDrive, {
       version: "win7"
-    }), React.createElement(CommandPrompt, {
+    }), /*#__PURE__*/React.createElement(CommandPrompt, {
       version: "win7"
-    }), React.createElement(ControlPanel, {
+    }), /*#__PURE__*/React.createElement(ControlPanel, {
       version: "win7"
-    }), React.createElement(Processes, {
+    }), /*#__PURE__*/React.createElement(Processes, {
       version: "win7"
-    }), React.createElement(TaskManager, {
+    }), /*#__PURE__*/React.createElement(TaskManager, {
       version: "win7"
     })));
   }
 
 }
 
-ReactDOM.render(React.createElement(Windows7, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(Windows7, null), document.getElementById("app"));

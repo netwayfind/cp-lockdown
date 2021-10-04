@@ -1,78 +1,78 @@
 class Debian8 extends React.Component {
   render() {
-    return React.createElement(Template, {
+    return /*#__PURE__*/React.createElement(Template, {
       name: "Debian 8+"
-    }, React.createElement(Group, {
+    }, /*#__PURE__*/React.createElement(Group, {
       name: "Users and Groups"
-    }, React.createElement(Users, {
+    }, /*#__PURE__*/React.createElement(Users, {
       version: "debian8"
-    }), React.createElement(Groups, {
+    }), /*#__PURE__*/React.createElement(Groups, {
       version: "debian8"
-    }), React.createElement(GuestAccess, {
+    }), /*#__PURE__*/React.createElement(GuestAccess, {
       version: "debian8"
-    }), React.createElement(Sudo, {
+    }), /*#__PURE__*/React.createElement(Sudo, {
       version: "debian8"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Networking"
-    }, React.createElement(Firewall, {
+    }, /*#__PURE__*/React.createElement(Firewall, {
       version: "debian8"
-    }), React.createElement(NetworkConnections, {
+    }), /*#__PURE__*/React.createElement(NetworkConnections, {
       version: "debian8"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Installation Check"
-    }, React.createElement(Applications, {
+    }, /*#__PURE__*/React.createElement(Applications, {
       version: "debian8"
-    }), React.createElement(Services, {
+    }), /*#__PURE__*/React.createElement(Services, {
       version: "debian8"
-    }), React.createElement(Updates, {
+    }), /*#__PURE__*/React.createElement(Updates, {
       version: "debian8"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Scans"
-    }, React.createElement(Chkrootkit, {
+    }, /*#__PURE__*/React.createElement(Chkrootkit, {
       version: "debian8"
-    }), React.createElement(Rkhunter, {
+    }), /*#__PURE__*/React.createElement(Rkhunter, {
       version: "debian8"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Filesystem"
-    }, React.createElement(FindUnauthorizedFiles, {
+    }, /*#__PURE__*/React.createElement(FindUnauthorizedFiles, {
       version: "debian8"
-    }), React.createElement(HostsFile, {
+    }), /*#__PURE__*/React.createElement(HostsFile, {
       version: "debian8"
-    }), React.createElement(FilesystemPermissions, {
+    }), /*#__PURE__*/React.createElement(FilesystemPermissions, {
       version: "debian8"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Configuration"
-    }, React.createElement(Auditd, {
+    }, /*#__PURE__*/React.createElement(Auditd, {
       version: "debian8"
-    }), React.createElement(BootupManager, {
+    }), /*#__PURE__*/React.createElement(BootupManager, {
       version: "debian8"
-    }), React.createElement(Cron, {
+    }), /*#__PURE__*/React.createElement(Cron, {
       version: "debian8"
-    }), React.createElement(LibpamCracklib, {
+    }), /*#__PURE__*/React.createElement(LibpamCracklib, {
       version: "debian8"
-    }), React.createElement(PasswordPolicy, {
+    }), /*#__PURE__*/React.createElement(PasswordPolicy, {
       version: "debian8"
-    }), React.createElement(AccountLockoutPolicy, {
+    }), /*#__PURE__*/React.createElement(AccountLockoutPolicy, {
       version: "debian8"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Logs"
-    }, React.createElement(SystemLog, {
+    }, /*#__PURE__*/React.createElement(SystemLog, {
       version: "debian8"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "References"
-    }, React.createElement(DefaultGroups, {
+    }, /*#__PURE__*/React.createElement(DefaultGroups, {
       version: "debian8"
-    }), React.createElement(DefaultUsers, {
+    }), /*#__PURE__*/React.createElement(DefaultUsers, {
       version: "debian8"
-    }), React.createElement(OpenFile, {
+    }), /*#__PURE__*/React.createElement(OpenFile, {
       version: "debian8"
-    }), React.createElement(Terminal, {
+    }), /*#__PURE__*/React.createElement(Terminal, {
       version: "debian8"
-    }), React.createElement(SystemSettings, {
+    }), /*#__PURE__*/React.createElement(SystemSettings, {
       version: "debian8"
     })));
   }
 
 }
 
-ReactDOM.render(React.createElement(Debian8, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(Debian8, null), document.getElementById("app"));
