@@ -1,110 +1,110 @@
 class Windows8Dot1 extends React.Component {
   render() {
-    return React.createElement(Template, {
+    return /*#__PURE__*/React.createElement(Template, {
       name: "Windows 8.1"
-    }, React.createElement(Group, {
+    }, /*#__PURE__*/React.createElement(Group, {
       name: "Users and Groups"
-    }, React.createElement(LocalUsersAndGroups, {
+    }, /*#__PURE__*/React.createElement(LocalUsersAndGroups, {
       version: "win8.1"
-    }), React.createElement(AutomaticLogin, {
+    }), /*#__PURE__*/React.createElement(AutomaticLogin, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Installation Cleanup"
-    }, React.createElement(AddRemovePrograms, {
+    }, /*#__PURE__*/React.createElement(AddRemovePrograms, {
       version: "win8.1"
-    }), React.createElement(WindowsFeatures, {
+    }), /*#__PURE__*/React.createElement(WindowsFeatures, {
       version: "win8.1"
-    }), React.createElement(StartupPrograms, {
+    }), /*#__PURE__*/React.createElement(StartupPrograms, {
       version: "win8.1"
-    }), React.createElement(Services, {
+    }), /*#__PURE__*/React.createElement(Services, {
       version: "win8.1"
-    }), React.createElement(TaskScheduler, {
+    }), /*#__PURE__*/React.createElement(TaskScheduler, {
       version: "win8.1"
-    }), React.createElement(DiskCleanup, {
+    }), /*#__PURE__*/React.createElement(DiskCleanup, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Networking"
-    }, React.createElement(InternetConnectionSharing, {
+    }, /*#__PURE__*/React.createElement(InternetConnectionSharing, {
       version: "win8.1"
-    }), React.createElement(RemoteAssistanceAndRemoteDesktop, {
+    }), /*#__PURE__*/React.createElement(RemoteAssistanceAndRemoteDesktop, {
       version: "win8.1"
-    }), React.createElement(WindowsFirewall, {
+    }), /*#__PURE__*/React.createElement(WindowsFirewall, {
       version: "win8.1"
-    }), React.createElement(SharedFolders, {
+    }), /*#__PURE__*/React.createElement(SharedFolders, {
       version: "win8.1"
-    }), React.createElement(CrowdInspect, {
+    }), /*#__PURE__*/React.createElement(CrowdInspect, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Policies"
-    }, React.createElement(PasswordPolicy, {
+    }, /*#__PURE__*/React.createElement(PasswordPolicy, {
       version: "win8.1"
-    }), React.createElement(AccountLockoutPolicy, {
+    }), /*#__PURE__*/React.createElement(AccountLockoutPolicy, {
       version: "win8.1"
-    }), React.createElement(AuditPolicy, {
+    }), /*#__PURE__*/React.createElement(AuditPolicy, {
       version: "win8.1"
-    }), React.createElement(UserRightsAssignment, {
+    }), /*#__PURE__*/React.createElement(UserRightsAssignment, {
       version: "win8.1"
-    }), React.createElement(SecurityOptions, {
+    }), /*#__PURE__*/React.createElement(SecurityOptions, {
       version: "win8.1"
-    }), React.createElement(AdvancedAuditPolicyConfiguration, {
+    }), /*#__PURE__*/React.createElement(AdvancedAuditPolicyConfiguration, {
       version: "win8.1"
-    }), React.createElement(LocalGroupPolicyEditor, {
+    }), /*#__PURE__*/React.createElement(LocalGroupPolicyEditor, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Scans"
-    }, React.createElement(MicrosoftBaselineSecurityAnalyzer, {
+    }, /*#__PURE__*/React.createElement(MicrosoftBaselineSecurityAnalyzer, {
       version: "win8.1"
-    }), React.createElement(WindowsDefender, {
+    }), /*#__PURE__*/React.createElement(WindowsDefender, {
       version: "win8.1"
-    }), React.createElement(AntiMalwareTools, {
+    }), /*#__PURE__*/React.createElement(AntiMalwareTools, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Filesystem"
-    }, React.createElement(ShowHiddenFilesAndFolders, {
+    }, /*#__PURE__*/React.createElement(ShowHiddenFilesAndFolders, {
       version: "win8.1"
-    }), React.createElement(FindUnauthorizedFiles, {
+    }), /*#__PURE__*/React.createElement(FindUnauthorizedFiles, {
       version: "win8.1"
-    }), React.createElement(UsersFolder, {
+    }), /*#__PURE__*/React.createElement(UsersFolder, {
       version: "win8.1"
-    }), React.createElement(ProgramFiles, {
+    }), /*#__PURE__*/React.createElement(ProgramFiles, {
       version: "win8.1"
-    }), React.createElement(ProgramFilesx86, {
+    }), /*#__PURE__*/React.createElement(ProgramFilesx86, {
       version: "win8.1"
-    }), React.createElement(HostsFile, {
+    }), /*#__PURE__*/React.createElement(HostsFile, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Updates"
-    }, React.createElement(ServicePacks, {
+    }, /*#__PURE__*/React.createElement(ServicePacks, {
       version: "win8.1"
-    }), React.createElement(AutomaticUpdates, {
+    }), /*#__PURE__*/React.createElement(AutomaticUpdates, {
       version: "win8.1"
-    }), React.createElement(WindowsUpdate, {
+    }), /*#__PURE__*/React.createElement(WindowsUpdate, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Configuration"
-    }, React.createElement(InternetExplorer, {
+    }, /*#__PURE__*/React.createElement(InternetExplorer, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Logs"
-    }, React.createElement(EventViewer, {
+    }, /*#__PURE__*/React.createElement(EventViewer, {
       version: "win8.1"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Reference"
-    }, React.createElement(AdministrativeTools, {
+    }, /*#__PURE__*/React.createElement(AdministrativeTools, {
       version: "win8.1"
-    }), React.createElement(CDrive, {
+    }), /*#__PURE__*/React.createElement(CDrive, {
       version: "win8.1"
-    }), React.createElement(CommandPrompt, {
+    }), /*#__PURE__*/React.createElement(CommandPrompt, {
       version: "win8.1"
-    }), React.createElement(ControlPanel, {
+    }), /*#__PURE__*/React.createElement(ControlPanel, {
       version: "win8.1"
-    }), React.createElement(Processes, {
+    }), /*#__PURE__*/React.createElement(Processes, {
       version: "win8.1"
-    }), React.createElement(TaskManager, {
+    }), /*#__PURE__*/React.createElement(TaskManager, {
       version: "win8.1"
     })));
   }
 
 }
 
-ReactDOM.render(React.createElement(Windows8Dot1, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(Windows8Dot1, null), document.getElementById("app"));

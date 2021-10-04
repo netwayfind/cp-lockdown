@@ -1,112 +1,112 @@
 class WindowsServer2008 extends React.Component {
   render() {
-    return React.createElement(Template, {
+    return /*#__PURE__*/React.createElement(Template, {
       name: "Windows Server 2008"
-    }, React.createElement(Group, {
+    }, /*#__PURE__*/React.createElement(Group, {
       name: "Users and Groups"
-    }, React.createElement(LocalUsersAndGroups, {
+    }, /*#__PURE__*/React.createElement(LocalUsersAndGroups, {
       version: "win2008"
-    }), React.createElement(AutomaticLogin, {
+    }), /*#__PURE__*/React.createElement(AutomaticLogin, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Installation Cleanup"
-    }, React.createElement(AddRemovePrograms, {
+    }, /*#__PURE__*/React.createElement(AddRemovePrograms, {
       version: "win2008"
-    }), React.createElement(WindowsFeatures, {
+    }), /*#__PURE__*/React.createElement(WindowsFeatures, {
       version: "win2008"
-    }), React.createElement(StartupPrograms, {
+    }), /*#__PURE__*/React.createElement(StartupPrograms, {
       version: "win2008"
-    }), React.createElement(Services, {
+    }), /*#__PURE__*/React.createElement(Services, {
       version: "win2008"
-    }), React.createElement(TaskScheduler, {
+    }), /*#__PURE__*/React.createElement(TaskScheduler, {
       version: "win2008"
-    }), React.createElement(DiskCleanup, {
+    }), /*#__PURE__*/React.createElement(DiskCleanup, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Networking"
-    }, React.createElement(InternetConnectionSharing, {
+    }, /*#__PURE__*/React.createElement(InternetConnectionSharing, {
       version: "win2008"
-    }), React.createElement(RemoteAssistanceAndRemoteDesktop, {
+    }), /*#__PURE__*/React.createElement(RemoteAssistanceAndRemoteDesktop, {
       version: "win2008"
-    }), React.createElement(WindowsFirewall, {
+    }), /*#__PURE__*/React.createElement(WindowsFirewall, {
       version: "win2008"
-    }), React.createElement(SharedFolders, {
+    }), /*#__PURE__*/React.createElement(SharedFolders, {
       version: "win2008"
-    }), React.createElement(CrowdInspect, {
+    }), /*#__PURE__*/React.createElement(CrowdInspect, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Policies"
-    }, React.createElement(PasswordPolicy, {
+    }, /*#__PURE__*/React.createElement(PasswordPolicy, {
       version: "win2008"
-    }), React.createElement(AccountLockoutPolicy, {
+    }), /*#__PURE__*/React.createElement(AccountLockoutPolicy, {
       version: "win2008"
-    }), React.createElement(AuditPolicy, {
+    }), /*#__PURE__*/React.createElement(AuditPolicy, {
       version: "win2008"
-    }), React.createElement(UserRightsAssignment, {
+    }), /*#__PURE__*/React.createElement(UserRightsAssignment, {
       version: "win2008"
-    }), React.createElement(SecurityOptions, {
+    }), /*#__PURE__*/React.createElement(SecurityOptions, {
       version: "win2008"
-    }), React.createElement(AdvancedAuditPolicyConfiguration, {
+    }), /*#__PURE__*/React.createElement(AdvancedAuditPolicyConfiguration, {
       version: "win2008"
-    }), React.createElement(LocalGroupPolicyEditor, {
+    }), /*#__PURE__*/React.createElement(LocalGroupPolicyEditor, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Scans"
-    }, React.createElement(MicrosoftBaselineSecurityAnalyzer, {
+    }, /*#__PURE__*/React.createElement(MicrosoftBaselineSecurityAnalyzer, {
       version: "win2008"
-    }), React.createElement(MicrosoftSafetyScanner, {
+    }), /*#__PURE__*/React.createElement(MicrosoftSafetyScanner, {
       version: "win2008"
-    }), React.createElement(AntiMalwareTools, {
+    }), /*#__PURE__*/React.createElement(AntiMalwareTools, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Filesystem"
-    }, React.createElement(ShowHiddenFilesAndFolders, {
+    }, /*#__PURE__*/React.createElement(ShowHiddenFilesAndFolders, {
       version: "win2008"
-    }), React.createElement(FindUnauthorizedFiles, {
+    }), /*#__PURE__*/React.createElement(FindUnauthorizedFiles, {
       version: "win2008"
-    }), React.createElement(UsersFolder, {
+    }), /*#__PURE__*/React.createElement(UsersFolder, {
       version: "win2008"
-    }), React.createElement(ProgramFiles, {
+    }), /*#__PURE__*/React.createElement(ProgramFiles, {
       version: "win2008"
-    }), React.createElement(ProgramFilesx86, {
+    }), /*#__PURE__*/React.createElement(ProgramFilesx86, {
       version: "win2008"
-    }), React.createElement(HostsFile, {
+    }), /*#__PURE__*/React.createElement(HostsFile, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Updates"
-    }, React.createElement(ServicePacks, {
+    }, /*#__PURE__*/React.createElement(ServicePacks, {
       version: "win2008"
-    }), React.createElement(AutomaticUpdates, {
+    }), /*#__PURE__*/React.createElement(AutomaticUpdates, {
       version: "win2008"
-    }), React.createElement(WindowsUpdate, {
+    }), /*#__PURE__*/React.createElement(WindowsUpdate, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Configuration"
-    }, React.createElement(InternetExplorer, {
+    }, /*#__PURE__*/React.createElement(InternetExplorer, {
       version: "win2008"
-    }), React.createElement(WindowsServerRoles, {
+    }), /*#__PURE__*/React.createElement(WindowsServerRoles, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Logs"
-    }, React.createElement(EventViewer, {
+    }, /*#__PURE__*/React.createElement(EventViewer, {
       version: "win2008"
-    })), React.createElement(Group, {
+    })), /*#__PURE__*/React.createElement(Group, {
       name: "Reference"
-    }, React.createElement(AdministrativeTools, {
+    }, /*#__PURE__*/React.createElement(AdministrativeTools, {
       version: "win2008"
-    }), React.createElement(CDrive, {
+    }), /*#__PURE__*/React.createElement(CDrive, {
       version: "win2008"
-    }), React.createElement(CommandPrompt, {
+    }), /*#__PURE__*/React.createElement(CommandPrompt, {
       version: "win2008"
-    }), React.createElement(ControlPanel, {
+    }), /*#__PURE__*/React.createElement(ControlPanel, {
       version: "win2008"
-    }), React.createElement(Processes, {
+    }), /*#__PURE__*/React.createElement(Processes, {
       version: "win2008"
-    }), React.createElement(TaskManager, {
+    }), /*#__PURE__*/React.createElement(TaskManager, {
       version: "win2008"
     })));
   }
 
 }
 
-ReactDOM.render(React.createElement(WindowsServer2008, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(WindowsServer2008, null), document.getElementById("app"));
