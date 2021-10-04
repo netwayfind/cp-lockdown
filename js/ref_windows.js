@@ -60,6 +60,8 @@ class AdministrativeTools extends Section {
       return this.option1();
     } else if (this.props.version === "win2016") {
       return this.option1();
+    } else if (this.props.version === "win2019") {
+      return this.option1();
     }
 
     return "unknown";
@@ -169,6 +171,8 @@ class AutomaticLogin extends Section {
       return this.option3();
     } else if (this.props.version === "win2016") {
       return this.option3();
+    } else if (this.props.version === "win2019") {
+      return this.option3();
     }
 
     return "unknown";
@@ -216,6 +220,8 @@ class AutomaticUpdates extends Section {
       return this.option2();
     } else if (this.props.version === "win2016") {
       return this.option2();
+    } else if (this.props.version === "win2019") {
+      return this.option5();
     }
 
     return "unknown";
@@ -235,6 +241,10 @@ class AutomaticUpdates extends Section {
 
   option4() {
     return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Location"), /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Open ", React.createElement(ControlPanel).type.prototype.getLink()), /*#__PURE__*/React.createElement("li", null, "Find and click on ", /*#__PURE__*/React.createElement("strong", null, "System")), /*#__PURE__*/React.createElement("li", null, "Find ", /*#__PURE__*/React.createElement("strong", null, "Windows Update")), /*#__PURE__*/React.createElement("li", null, "Find and click on ", /*#__PURE__*/React.createElement("strong", null, "Turn automatic updating on or off"))), /*#__PURE__*/React.createElement("h3", null, "Settings"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Install updates automatically (recommended)"), /*#__PURE__*/React.createElement("li", null, "Install new updates [ Every day ] at [ 3:00 AM ]")));
+  }
+
+  option5() {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Location"), /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Open ", React.createElement(WindowsSettings).type.prototype.getLink()), /*#__PURE__*/React.createElement("li", null, "Find and click on ", /*#__PURE__*/React.createElement("strong", null, "Update & Security")), /*#__PURE__*/React.createElement("li", null, "Find and click on ", /*#__PURE__*/React.createElement("strong", null, "Advanced Options"))), /*#__PURE__*/React.createElement("h3", null, "Settings"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Make sure settings for automatic Windows updates are enabled.")));
   }
 
 }
@@ -266,6 +276,8 @@ class CDrive extends Section {
     } else if (this.props.version === "win2012") {
       return this.option3();
     } else if (this.props.version === "win2016") {
+      return this.option3();
+    } else if (this.props.version === "win2019") {
       return this.option3();
     }
 
@@ -322,6 +334,8 @@ class CommandPrompt extends Section {
       return this.option3();
     } else if (this.props.version === "win2016") {
       return this.option3();
+    } else if (this.props.version === "win2019") {
+      return this.option3();
     }
 
     return "unknown";
@@ -368,6 +382,8 @@ class ControlPanel extends Section {
     } else if (this.props.version === "win2012") {
       return this.option3();
     } else if (this.props.version === "win2016") {
+      return this.option3();
+    } else if (this.props.version === "win2019") {
       return this.option3();
     }
 
@@ -435,6 +451,8 @@ class DiskCleanup extends Section {
     } else if (this.props.version === "win2012") {
       return this.option4();
     } else if (this.props.version === "win2016") {
+      return this.option1();
+    } else if (this.props.version === "win2019") {
       return this.option1();
     }
 
@@ -536,6 +554,8 @@ class InternetConnectionSharing extends Section {
       return this.option1();
     } else if (this.props.version === "win2016") {
       return this.option1();
+    } else if (this.props.version === "win2019") {
+      return this.option1();
     }
 
     return "unknown";
@@ -578,6 +598,8 @@ class InternetExplorer extends Section {
     } else if (this.props.version === "win2012") {
       return this.option2();
     } else if (this.props.version === "win2016") {
+      return this.option2();
+    } else if (this.props.version === "win2019") {
       return this.option2();
     }
 
@@ -639,6 +661,8 @@ class LocalUsersAndGroups extends Section {
       return this.option2();
     } else if (this.props.version === "win2016") {
       return this.option3();
+    } else if (this.props.version === "win2019") {
+      return this.option4();
     }
 
     return "unknown";
@@ -654,6 +678,10 @@ class LocalUsersAndGroups extends Section {
 
   option3() {
     return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Location"), /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Go to ", React.createElement(AdministrativeTools).type.prototype.getLink()), /*#__PURE__*/React.createElement("li", null, "Find and open ", /*#__PURE__*/React.createElement("strong", null, "Computer Management")), /*#__PURE__*/React.createElement("li", null, "Find and open ", /*#__PURE__*/React.createElement("strong", null, "System Tools")), /*#__PURE__*/React.createElement("li", null, "Find and open ", /*#__PURE__*/React.createElement("strong", null, "Local Users and Groups"))), /*#__PURE__*/React.createElement("h3", null, "Settings"), /*#__PURE__*/React.createElement("h4", null, "Users"), "For each user:", /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Right click on user, select ", /*#__PURE__*/React.createElement("strong", null, "Properties")), "Under ", /*#__PURE__*/React.createElement("strong", null, "General"), " tab", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Disable all users not required by readme"), /*#__PURE__*/React.createElement("li", null, "Set passwords to expire for all users")), "Under ", /*#__PURE__*/React.createElement("strong", null, "Member Of"), " tab", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Add user to necessary groups, e.g. Administrators"), /*#__PURE__*/React.createElement("li", null, "Remove user from unnecessary groups")), /*#__PURE__*/React.createElement("li", null, "Right click on user, select ", /*#__PURE__*/React.createElement("b", null, "Set Password")), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Make sure password meets the ", React.createElement(PasswordPolicy).type.prototype.getLink()), /*#__PURE__*/React.createElement("li", null, "Write down user and password for reference"))), "For the Administrator user:", /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Right click on Adminstrator user, select ", /*#__PURE__*/React.createElement("strong", null, "Rename")), /*#__PURE__*/React.createElement("li", null, "Change name to something else")), "For the Guest user:", /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Right click on Guest user, select ", /*#__PURE__*/React.createElement("strong", null, "Properties")), /*#__PURE__*/React.createElement("li", null, "[x] Account is disabled")), /*#__PURE__*/React.createElement("h4", null, "Groups"), "Check the users in all of the groups. These are the default entries.", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Access Control Assistance Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Administrators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "only the users required"))), /*#__PURE__*/React.createElement("li", null, "Backup Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Certificate Service DCOM Access", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Cryptographic Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Distributed COM Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Event Log Readers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Guests", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Guest"))), /*#__PURE__*/React.createElement("li", null, "Hyper-V Administrators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "IIS_IUSRS", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "NT AUTHORITY\\IUSR (S-1-5-17)"))), /*#__PURE__*/React.createElement("li", null, "Network Configuration Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Performance Log Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Performance Monitor Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Power Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Print Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "RDS Endpoint Servers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "RDS Management Servers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "RDS Remote Access Servers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Remote Desktop Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries; unless required by readme"))), /*#__PURE__*/React.createElement("li", null, "Remote Management Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Replicator", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Storage Replica Administrators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "System Managed Accounts Group", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "DefaultAccount"))), /*#__PURE__*/React.createElement("li", null, "Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "NT AUTHORITY\\Authenticated Users(S-1-5-11)"), /*#__PURE__*/React.createElement("li", null, "NT AUTHORITY\\INTERACTIVE (S-1-5-4)"), /*#__PURE__*/React.createElement("li", null, "only the users necessary on the system")))));
+  }
+
+  option4() {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Location"), /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Go to ", React.createElement(AdministrativeTools).type.prototype.getLink()), /*#__PURE__*/React.createElement("li", null, "Find and open ", /*#__PURE__*/React.createElement("strong", null, "Computer Management")), /*#__PURE__*/React.createElement("li", null, "Find and open ", /*#__PURE__*/React.createElement("strong", null, "System Tools")), /*#__PURE__*/React.createElement("li", null, "Find and open ", /*#__PURE__*/React.createElement("strong", null, "Local Users and Groups"))), /*#__PURE__*/React.createElement("h3", null, "Settings"), /*#__PURE__*/React.createElement("h4", null, "Users"), "For each user:", /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Right click on user, select ", /*#__PURE__*/React.createElement("strong", null, "Properties")), "Under ", /*#__PURE__*/React.createElement("strong", null, "General"), " tab", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Disable all users not required by readme"), /*#__PURE__*/React.createElement("li", null, "Set passwords to expire for all users")), "Under ", /*#__PURE__*/React.createElement("strong", null, "Member Of"), " tab", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Add user to necessary groups, e.g. Administrators"), /*#__PURE__*/React.createElement("li", null, "Remove user from unnecessary groups")), /*#__PURE__*/React.createElement("li", null, "Right click on user, select ", /*#__PURE__*/React.createElement("b", null, "Set Password")), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Make sure password meets the ", React.createElement(PasswordPolicy).type.prototype.getLink()), /*#__PURE__*/React.createElement("li", null, "Write down user and password for reference"))), "For the Administrator user:", /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Right click on Adminstrator user, select ", /*#__PURE__*/React.createElement("strong", null, "Rename")), /*#__PURE__*/React.createElement("li", null, "Change name to something else")), "For the Guest user:", /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", null, "Right click on Guest user, select ", /*#__PURE__*/React.createElement("strong", null, "Properties")), /*#__PURE__*/React.createElement("li", null, "[x] Account is disabled")), /*#__PURE__*/React.createElement("h4", null, "Groups"), "Check the users in all of the groups. These are the default entries.", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Access Control Assistance Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Administrators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "only the users required"))), /*#__PURE__*/React.createElement("li", null, "Backup Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Certificate Service DCOM Access", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Cryptographic Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Device Owners", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Distributed COM Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Event Log Readers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Guests", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Guest"))), /*#__PURE__*/React.createElement("li", null, "Hyper-V Administrators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "IIS_IUSRS", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "NT AUTHORITY\\IUSR (S-1-5-17)"))), /*#__PURE__*/React.createElement("li", null, "Network Configuration Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Performance Log Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Performance Monitor Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Power Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Print Operators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "RDS Endpoint Servers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "RDS Management Servers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "RDS Remote Access Servers", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Remote Desktop Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries; unless required by readme"))), /*#__PURE__*/React.createElement("li", null, "Remote Management Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Replicator", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "Storage Replica Administrators", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "No entries"))), /*#__PURE__*/React.createElement("li", null, "System Managed Accounts Group", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "DefaultAccount"))), /*#__PURE__*/React.createElement("li", null, "Users", /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "NT AUTHORITY\\Authenticated Users(S-1-5-11)"), /*#__PURE__*/React.createElement("li", null, "NT AUTHORITY\\INTERACTIVE (S-1-5-4)"), /*#__PURE__*/React.createElement("li", null, "only the users necessary on the system")))));
   }
 
 }
@@ -685,6 +713,8 @@ class MicrosoftBaselineSecurityAnalyzer extends Section {
     } else if (this.props.version === "win2012") {
       return this.option1();
     } else if (this.props.version === "win2016") {
+      return this.option1();
+    } else if (this.props.version === "win2019") {
       return this.option1();
     }
 
@@ -789,6 +819,8 @@ class Processes extends Section {
       return this.win8dot1();
     } else if (this.props.version === "win2016") {
       return this.win8dot1();
+    } else if (this.props.version === "win2019") {
+      return this.win8dot1();
     }
 
     return "unknown";
@@ -847,6 +879,8 @@ class ProgramFiles extends Section {
     } else if (this.props.version === "win2012") {
       return this.win2012();
     } else if (this.props.version === "win2016") {
+      return this.win2012();
+    } else if (this.props.version === "win2019") {
       return this.win2012();
     }
 
@@ -910,6 +944,8 @@ class ProgramFilesx86 extends Section {
     } else if (this.props.version === "win2012") {
       return this.win2012();
     } else if (this.props.version === "win2016") {
+      return this.win2012();
+    } else if (this.props.version === "win2019") {
       return this.win2012();
     }
 
@@ -1008,6 +1044,8 @@ class ServicePacks extends Section {
       return this.none();
     } else if (this.props.version === "win2016") {
       return this.none();
+    } else if (this.props.version === "win2019") {
+      return this.none();
     }
 
     return "unknown";
@@ -1093,6 +1131,8 @@ class ShowHiddenFilesAndFolders extends Section {
       return this.option1();
     } else if (this.props.version === "win2016") {
       return this.option1();
+    } else if (this.props.version === "win2019") {
+      return this.option1();
     }
 
     return "unknown";
@@ -1135,6 +1175,8 @@ class StartupPrograms extends Section {
     } else if (this.props.version === "win2012") {
       return this.option4();
     } else if (this.props.version === "win2016") {
+      return this.option4();
+    } else if (this.props.version === "win2019") {
       return this.option4();
     }
 
@@ -1186,6 +1228,8 @@ class TaskManager extends Section {
     } else if (this.props.version === "win2012") {
       return this.option2();
     } else if (this.props.version === "win2016") {
+      return this.option2();
+    } else if (this.props.version === "win2019") {
       return this.option2();
     }
 
@@ -1298,6 +1342,8 @@ class WindowsFeatures extends Section {
       return this.option3();
     } else if (this.props.version === "win2016") {
       return this.option3();
+    } else if (this.props.version === "win2019") {
+      return this.option3();
     }
 
     return "unknown";
@@ -1352,6 +1398,8 @@ class WindowsFirewall extends Section {
     } else if (this.props.version === "win2012") {
       return this.option2();
     } else if (this.props.version === "win2016") {
+      return this.option2();
+    } else if (this.props.version === "win2019") {
       return this.option2();
     }
 
@@ -1434,6 +1482,8 @@ class WindowsUpdate extends Section {
       return this.option1();
     } else if (this.props.version === "win2016") {
       return this.option1();
+    } else if (this.props.version === "win2019") {
+      return this.option2();
     }
 
     return "unknown";
